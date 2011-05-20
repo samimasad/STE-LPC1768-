@@ -1,0 +1,22 @@
+# DO NOT DELETE
+
+adc_interrupt_test.o: C:/nxpdrv/LPC1700CMSIS/Drivers/include/lpc17xx_adc.h
+adc_interrupt_test.o: C:/nxpdrv/LPC1700CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx/LPC17xx.h
+adc_interrupt_test.o: C:/nxpdrv/LPC1700CMSIS/Core/CM3/CoreSupport/core_cm3.h
+adc_interrupt_test.o: C:/nxpdrv/LPC1700CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.h
+adc_interrupt_test.o: C:/nxpdrv/LPC1700CMSIS/Drivers/include/lpc_types.h
+adc_interrupt_test.o: C:/nxpdrv/LPC1700CMSIS/Drivers/include/lpc17xx_uart.h
+adc_interrupt_test.o: C:/nxpdrv/LPC1700CMSIS/Drivers/include/lpc17xx_timer.h
+adc_interrupt_test.o: lpc17xx_libcfg.h
+adc_interrupt_test.o: C:/nxpdrv/LPC1700CMSIS/Drivers/include/lpc17xx_pinsel.h
+adc_interrupt_test.o: C:/nxpdrv/LPC1700CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx/lpc17xx.h
+adc_interrupt_test.o: C:/nxpdrv/LPC1700CMSIS/Drivers/include/lpc17xx_nvic.h
+adc_interrupt_test.o: debug_frmwrk.h
+debug_frmwrk.o: debug_frmwrk.h
+debug_frmwrk.o: C:/nxpdrv/LPC1700CMSIS/Drivers/include/lpc17xx_uart.h
+debug_frmwrk.o: C:/nxpdrv/LPC1700CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx/LPC17xx.h
+debug_frmwrk.o: C:/nxpdrv/LPC1700CMSIS/Core/CM3/CoreSupport/core_cm3.h
+debug_frmwrk.o: C:/nxpdrv/LPC1700CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.h
+debug_frmwrk.o: C:/nxpdrv/LPC1700CMSIS/Drivers/include/lpc_types.h
+debug_frmwrk.o: C:/nxpdrv/LPC1700CMSIS/Drivers/include/lpc17xx_pinsel.h
+debug_frmwrk.o: C:/nxpdrv/LPC1700CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx/lpc17xx.h

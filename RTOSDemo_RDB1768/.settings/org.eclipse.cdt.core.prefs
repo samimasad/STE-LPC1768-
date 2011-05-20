@@ -1,0 +1,3 @@
+#Fri Nov 26 15:26:35 CET 2010
+eclipse.preferences.version=1
+environment/project/com.crt.advproject.config.exe.debug.358435974=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<environment append\="true" appendContributed\="true">\r\n<variable delimiter\=";" name\="PATH" operation\="replace" value\="C\:\\nxp\\lpcxpresso_3.5\\bin;C\:\\nxp\\lpcxpresso_3.5\\msys\\bin;C\:\\nxp\\lpcxpresso_3.5\\tools\\bin"/>\r\n</environment>\r\n

@@ -1,0 +1,3 @@
+#Fri Dec 10 10:41:52 CET 2010
+eclipse.preferences.version=1
+environment/project/com.crt.advproject.toolchain.exe.debug.1952154568=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<environment append\="true" appendContributed\="true">\r\n<variable delimiter\=";" name\="PROJ_ROOT" operation\="append" value\="${WorkspaceDirPath}/lpc17xx.cmsis.driver.library"/>\r\n<variable delimiter\=";" name\="NXPMCU_WINBASE" operation\="append" value\="${WorkspaceDirPath}/lpc17xx.cmsis.driver.library"/>\r\n<variable delimiter\=";" name\="INSTALL_ROOT" operation\="append" value\="${eclipse_home}/.."/>\r\n</environment>\r\n

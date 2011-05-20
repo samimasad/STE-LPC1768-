@@ -1,0 +1,21 @@
+# DO NOT DELETE
+
+can_AFLUT_dynamic.o: E:/NXP/nxpmcu/LPC1700CMSIS/Drivers/include/lpc17xx_can.h
+can_AFLUT_dynamic.o: E:/NXP/nxpmcu/LPC1700CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx/LPC17xx.h
+can_AFLUT_dynamic.o: E:/NXP/nxpmcu/LPC1700CMSIS/Core/CM3/CoreSupport/core_cm3.h
+can_AFLUT_dynamic.o: E:/NXP/nxpmcu/LPC1700CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.h
+can_AFLUT_dynamic.o: E:/NXP/nxpmcu/LPC1700CMSIS/Drivers/include/lpc_types.h
+can_AFLUT_dynamic.o: lpc17xx_libcfg.h
+can_AFLUT_dynamic.o: E:/NXP/nxpmcu/LPC1700CMSIS/Drivers/include/lpc17xx_nvic.h
+can_AFLUT_dynamic.o: E:/NXP/nxpmcu/LPC1700CMSIS/Drivers/include/lpc17xx_pinsel.h
+can_AFLUT_dynamic.o: E:/NXP/nxpmcu/LPC1700CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx/lpc17xx.h
+can_AFLUT_dynamic.o: debug_frmwrk.h
+can_AFLUT_dynamic.o: E:/NXP/nxpmcu/LPC1700CMSIS/Drivers/include/lpc17xx_uart.h
+debug_frmwrk.o: debug_frmwrk.h
+debug_frmwrk.o: E:/NXP/nxpmcu/LPC1700CMSIS/Drivers/include/lpc17xx_uart.h
+debug_frmwrk.o: E:/NXP/nxpmcu/LPC1700CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx/LPC17xx.h
+debug_frmwrk.o: E:/NXP/nxpmcu/LPC1700CMSIS/Core/CM3/CoreSupport/core_cm3.h
+debug_frmwrk.o: E:/NXP/nxpmcu/LPC1700CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.h
+debug_frmwrk.o: E:/NXP/nxpmcu/LPC1700CMSIS/Drivers/include/lpc_types.h
+debug_frmwrk.o: E:/NXP/nxpmcu/LPC1700CMSIS/Drivers/include/lpc17xx_pinsel.h
+debug_frmwrk.o: E:/NXP/nxpmcu/LPC1700CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx/lpc17xx.h

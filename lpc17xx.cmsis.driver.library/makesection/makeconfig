@@ -1,0 +1,27 @@
+########################################################################
+#
+# Configuration file for "make" session. 
+#
+########################################################################
+
+########################################################################
+#
+# Note: 
+# Add path of "tools" directory (in this folder) 
+# to the HEAD of SYSTEM PATH variable
+#
+########################################################################
+
+PROJ_ROOT			=C:/Users/Dewrek/Documents/lpcxpresso_3.4/workspace/lpc17xx.cmsis.driver.library
+CMCORE_TYPE			=CM3
+DEVICE				=LPC17xx
+MANUFACTURE			=NXP
+TOOL 				=gnu
+DEBUG_MODE			=1
+
+
+GNU_INSTALL_ROOT	=$(INSTALL_ROOT)/tools
+GNU_VERSION			=
+IAR_INSTALL_ROOT	=C:/Program Files/IAR Systems/Embedded Workbench 5.0 Kickstart
+KEIL_INSTALL_ROOT	=C:/Keil
+ADS_INSTALL_ROOT	=C:/Program Files/ARM

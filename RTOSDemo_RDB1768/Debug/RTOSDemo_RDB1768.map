@@ -1,0 +1,2978 @@
+Archive member included because of file (symbol)
+
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_aeabi_uldivmod.o)
+                              ./src/Drivers/source/lpc17xx_i2s.o (__aeabi_uldivmod)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(bpabi.o)
+                              c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_aeabi_uldivmod.o) (__gnu_uldivmod_helper)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_dvmd_tls.o)
+                              c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_divdi3.o)
+                              c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(bpabi.o) (__divdi3)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_udivdi3.o)
+                              c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(bpabi.o) (__udivdi3)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_udivsi3.o)
+                              c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_divdi3.o) (__aeabi_uidiv)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_clz.o)
+                              c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_divdi3.o) (__clz_tab)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-abs.o)
+                              ./src/LCD/lcd.o (abs)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcmp.o)
+                              ./src/FreeRTOS/tasks.o (memcmp)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+                              ./src/webserver/httpd.o (memcpy)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                              ./src/webserver/uip_arp.o (memset)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcat.o)
+                              ./src/webserver/httpd-cgi.o (strcat)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strchr.o)
+                              ./src/webserver/httpd-cgi.o (strchr)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcpy.o)
+                              ./src/webserver/httpd.o (strcpy)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+                              ./src/webserver/httpd-cgi.o (strlen)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+                              ./src/webserver/httpd-cgi.o (strncmp)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncpy.o)
+                              ./src/webserver/httpd.o (strncpy)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strrchr.o)
+                              ./src/webserver/httpd.o (strrchr)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strstr.o)
+                              ./src/webserver/uIP_Task.o (strstr)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+                              c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strstr.o) (memchr)
+
+Allocating common symbols
+Common symbol       size              file
+
+ulString            0x4               ./src/webserver/httpd-cgi.o
+uip_len             0x2               ./src/webserver/uip.o
+pcStatus            0x4               ./src/webserver/httpd-cgi.o
+xHighPriorityTask   0x4               ./src/Common Demo Tasks/QPeek.o
+uip_sappdata        0x4               ./src/webserver/uip.o
+uip_acc32           0x4               ./src/webserver/uip.o
+xMediumPriorityTask
+                    0x4               ./src/Common Demo Tasks/QPeek.o
+xQueueRegistry      0x50              ./src/FreeRTOS/queue.o
+uip_flags           0x1               ./src/webserver/uip.o
+uip_appdata         0x4               ./src/webserver/uip.o
+uip_conn            0x4               ./src/webserver/uip.o
+uip_conns           0x1fe0            ./src/webserver/uip.o
+xHighestPriorityTask
+                    0x4               ./src/Common Demo Tasks/QPeek.o
+uip_listenports     0x50              ./src/webserver/uip.o
+uip_draddr          0x4               ./src/webserver/uip.o
+uip_stat            0x2c              ./src/webserver/uip.o
+FULLCAN_ENABLE      0x1               ./src/Drivers/source/lpc17xx_can.o
+uip_netmask         0x4               ./src/webserver/uip.o
+uip_hostaddr        0x4               ./src/webserver/uip.o
+uip_buf             0x4               ./src/webserver/emac.o
+uip_slen            0x2               ./src/webserver/uip.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./src/webserver/emac.o
+ .data          0x00000000        0x0 ./src/webserver/emac.o
+ .text.lEMACInit
+                0x00000000        0x0 ./src/webserver/emac.o
+ .text.prvGetNextBuffer
+                0x00000000        0x0 ./src/webserver/emac.o
+ .text.prvInitDescriptors
+                0x00000000        0x0 ./src/webserver/emac.o
+ .text.prvSetupEMACHardware
+                0x00000000        0x0 ./src/webserver/emac.o
+ .text.prvConfigurePHY
+                0x00000000        0x0 ./src/webserver/emac.o
+ .text.prvSetupLinkStatus
+                0x00000000        0x0 ./src/webserver/emac.o
+ .text.ulGetEMACRxData
+                0x00000000        0x0 ./src/webserver/emac.o
+ .text.vSendEMACTxData
+                0x00000000        0x0 ./src/webserver/emac.o
+ .text.prvWritePHY
+                0x00000000        0x0 ./src/webserver/emac.o
+ .text.prvReadPHY
+                0x00000000        0x0 ./src/webserver/emac.o
+ COMMON         0x00000000        0x0 ./src/webserver/emac.o
+ .text          0x00000000        0x0 ./src/webserver/http-strings.o
+ .data          0x00000000        0x0 ./src/webserver/http-strings.o
+ .bss           0x00000000        0x0 ./src/webserver/http-strings.o
+ .rodata        0x00000000        0x0 ./src/webserver/http-strings.o
+ .text          0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .data          0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .bss           0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .rodata        0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text.nullfunction
+                0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text.httpd_cgi
+                0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text.generate_file_stats
+                0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text.file_stats
+                0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text.generate_tcp_stats
+                0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text.tcp_stats
+                0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text.generate_net_stats
+                0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text.net_stats
+                0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text.generate_rtos_stats
+                0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text.rtos_stats
+                0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text.generate_io_state
+                0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text.generate_runtime_stats
+                0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text.run_time
+                0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text.led_io   0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ COMMON         0x00000000        0x0 ./src/webserver/httpd-cgi.o
+ .text          0x00000000        0x0 ./src/webserver/httpd-fs.o
+ .data          0x00000000        0x0 ./src/webserver/httpd-fs.o
+ .bss           0x00000000        0x0 ./src/webserver/httpd-fs.o
+ .rodata        0x00000000        0x0 ./src/webserver/httpd-fs.o
+ .text.httpd_fs_strcmp
+                0x00000000        0x0 ./src/webserver/httpd-fs.o
+ .text.httpd_fs_open
+                0x00000000        0x0 ./src/webserver/httpd-fs.o
+ .text.httpd_fs_init
+                0x00000000        0x0 ./src/webserver/httpd-fs.o
+ .text.httpd_fs_count
+                0x00000000        0x0 ./src/webserver/httpd-fs.o
+ .text          0x00000000        0x0 ./src/webserver/httpd.o
+ .data          0x00000000        0x0 ./src/webserver/httpd.o
+ .bss           0x00000000        0x0 ./src/webserver/httpd.o
+ .text.generate_part_of_file
+                0x00000000        0x0 ./src/webserver/httpd.o
+ .text.send_file
+                0x00000000        0x0 ./src/webserver/httpd.o
+ .text.send_part_of_file
+                0x00000000        0x0 ./src/webserver/httpd.o
+ .text.next_scriptstate
+                0x00000000        0x0 ./src/webserver/httpd.o
+ .text.handle_script
+                0x00000000        0x0 ./src/webserver/httpd.o
+ .text.send_headers
+                0x00000000        0x0 ./src/webserver/httpd.o
+ .text.handle_output
+                0x00000000        0x0 ./src/webserver/httpd.o
+ .text.handle_input
+                0x00000000        0x0 ./src/webserver/httpd.o
+ .text.handle_connection
+                0x00000000        0x0 ./src/webserver/httpd.o
+ .text.httpd_appcall
+                0x00000000        0x0 ./src/webserver/httpd.o
+ .text.httpd_init
+                0x00000000        0x0 ./src/webserver/httpd.o
+ .text          0x00000000        0x0 ./src/webserver/psock.o
+ .data          0x00000000        0x0 ./src/webserver/psock.o
+ .bss           0x00000000        0x0 ./src/webserver/psock.o
+ .text.buf_setup
+                0x00000000        0x0 ./src/webserver/psock.o
+ .text.buf_bufdata
+                0x00000000        0x0 ./src/webserver/psock.o
+ .text.buf_bufto
+                0x00000000        0x0 ./src/webserver/psock.o
+ .text.send_data
+                0x00000000        0x0 ./src/webserver/psock.o
+ .text.data_acked
+                0x00000000        0x0 ./src/webserver/psock.o
+ .text.psock_send
+                0x00000000        0x0 ./src/webserver/psock.o
+ .text.psock_generator_send
+                0x00000000        0x0 ./src/webserver/psock.o
+ .text.psock_datalen
+                0x00000000        0x0 ./src/webserver/psock.o
+ .text.psock_newdata
+                0x00000000        0x0 ./src/webserver/psock.o
+ .text.psock_readto
+                0x00000000        0x0 ./src/webserver/psock.o
+ .rodata        0x00000000        0x0 ./src/webserver/psock.o
+ .text.psock_readbuf
+                0x00000000        0x0 ./src/webserver/psock.o
+ .text.psock_init
+                0x00000000        0x0 ./src/webserver/psock.o
+ .text          0x00000000        0x0 ./src/webserver/timer.o
+ .data          0x00000000        0x0 ./src/webserver/timer.o
+ .bss           0x00000000        0x0 ./src/webserver/timer.o
+ .text.timer_set
+                0x00000000        0x0 ./src/webserver/timer.o
+ .text.timer_reset
+                0x00000000        0x0 ./src/webserver/timer.o
+ .text.timer_restart
+                0x00000000        0x0 ./src/webserver/timer.o
+ .text.timer_expired
+                0x00000000        0x0 ./src/webserver/timer.o
+ .text          0x00000000        0x0 ./src/webserver/uIP_Task.o
+ .data          0x00000000        0x0 ./src/webserver/uIP_Task.o
+ .text.clock_init
+                0x00000000        0x0 ./src/webserver/uIP_Task.o
+ .text.clock_time
+                0x00000000        0x0 ./src/webserver/uIP_Task.o
+ .text.vuIP_Task
+                0x00000000        0x0 ./src/webserver/uIP_Task.o
+ .text.NVIC_SetPriority
+                0x00000000        0x0 ./src/webserver/uIP_Task.o
+ .text.NVIC_EnableIRQ
+                0x00000000        0x0 ./src/webserver/uIP_Task.o
+ .text.prvSetMACAddress
+                0x00000000        0x0 ./src/webserver/uIP_Task.o
+ .rodata        0x00000000        0x0 ./src/webserver/uIP_Task.o
+ .text.vApplicationProcessFormInput
+                0x00000000        0x0 ./src/webserver/uIP_Task.o
+ .text          0x00000000        0x0 ./src/webserver/uip.o
+ .data          0x00000000        0x0 ./src/webserver/uip.o
+ .bss           0x00000000        0x0 ./src/webserver/uip.o
+ .rodata        0x00000000        0x0 ./src/webserver/uip.o
+ .text.uip_setipid
+                0x00000000        0x0 ./src/webserver/uip.o
+ .text.uip_add32
+                0x00000000        0x0 ./src/webserver/uip.o
+ .text.chksum   0x00000000        0x0 ./src/webserver/uip.o
+ .text.uip_chksum
+                0x00000000        0x0 ./src/webserver/uip.o
+ .text.uip_ipchksum
+                0x00000000        0x0 ./src/webserver/uip.o
+ .text.upper_layer_chksum
+                0x00000000        0x0 ./src/webserver/uip.o
+ .text.uip_tcpchksum
+                0x00000000        0x0 ./src/webserver/uip.o
+ .text.uip_udpchksum
+                0x00000000        0x0 ./src/webserver/uip.o
+ .text.uip_init
+                0x00000000        0x0 ./src/webserver/uip.o
+ .text.uip_connect
+                0x00000000        0x0 ./src/webserver/uip.o
+ .text.uip_unlisten
+                0x00000000        0x0 ./src/webserver/uip.o
+ .text.uip_listen
+                0x00000000        0x0 ./src/webserver/uip.o
+ .text.uip_add_rcv_nxt
+                0x00000000        0x0 ./src/webserver/uip.o
+ .text.uip_process
+                0x00000000        0x0 ./src/webserver/uip.o
+ .text.htons    0x00000000        0x0 ./src/webserver/uip.o
+ .text.uip_send
+                0x00000000        0x0 ./src/webserver/uip.o
+ COMMON         0x00000000        0x0 ./src/webserver/uip.o
+ .text          0x00000000        0x0 ./src/webserver/uip_arp.o
+ .data          0x00000000        0x0 ./src/webserver/uip_arp.o
+ .bss           0x00000000        0x0 ./src/webserver/uip_arp.o
+ .rodata        0x00000000        0x0 ./src/webserver/uip_arp.o
+ .text.uip_arp_init
+                0x00000000        0x0 ./src/webserver/uip_arp.o
+ .text.uip_arp_timer
+                0x00000000        0x0 ./src/webserver/uip_arp.o
+ .text.uip_arp_update
+                0x00000000        0x0 ./src/webserver/uip_arp.o
+ .text.uip_arp_ipin
+                0x00000000        0x0 ./src/webserver/uip_arp.o
+ .text.uip_arp_arpin
+                0x00000000        0x0 ./src/webserver/uip_arp.o
+ .text.uip_arp_out
+                0x00000000        0x0 ./src/webserver/uip_arp.o
+ .text          0x00000000        0x0 ./src/ParTest.o
+ .data          0x00000000        0x0 ./src/ParTest.o
+ .bss           0x00000000        0x0 ./src/ParTest.o
+ .text.vParTestSetLED
+                0x00000000        0x0 ./src/ParTest.o
+ .text.vParTestToggleLED
+                0x00000000        0x0 ./src/ParTest.o
+ .text.uxParTextGetLED
+                0x00000000        0x0 ./src/ParTest.o
+ .text          0x00000000        0x0 ./src/cr_startup_lpc17.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc17.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc17.o
+ .text          0x00000000        0x0 ./src/main.o
+ .text.pcGetTaskStatusMessage
+                0x00000000        0x0 ./src/main.o
+ .text          0x00000000        0x0 ./src/printf-stdarg.o
+ .data          0x00000000        0x0 ./src/printf-stdarg.o
+ .bss           0x00000000        0x0 ./src/printf-stdarg.o
+ .text.printf   0x00000000        0x0 ./src/printf-stdarg.o
+ .text.snprintf
+                0x00000000        0x0 ./src/printf-stdarg.o
+ .text.write    0x00000000        0x0 ./src/printf-stdarg.o
+ .text          0x00000000        0x0 ./src/syscalls.o
+ .data          0x00000000        0x0 ./src/syscalls.o
+ .bss           0x00000000        0x0 ./src/syscalls.o
+ .text._read_r  0x00000000        0x0 ./src/syscalls.o
+ .text._lseek_r
+                0x00000000        0x0 ./src/syscalls.o
+ .text._write_r
+                0x00000000        0x0 ./src/syscalls.o
+ .text._close_r
+                0x00000000        0x0 ./src/syscalls.o
+ .text._sbrk_r  0x00000000        0x0 ./src/syscalls.o
+ .text._fstat_r
+                0x00000000        0x0 ./src/syscalls.o
+ .text._isatty_r
+                0x00000000        0x0 ./src/syscalls.o
+ .text          0x00000000        0x0 ./src/LPCUSB/USB_CDC.o
+ .data          0x00000000        0x0 ./src/LPCUSB/USB_CDC.o
+ .bss           0x00000000        0x0 ./src/LPCUSB/USB_CDC.o
+ .rodata        0x00000000        0x0 ./src/LPCUSB/USB_CDC.o
+ .text.BulkOut  0x00000000        0x0 ./src/LPCUSB/USB_CDC.o
+ .text.BulkIn   0x00000000        0x0 ./src/LPCUSB/USB_CDC.o
+ .text.HandleClassRequest
+                0x00000000        0x0 ./src/LPCUSB/USB_CDC.o
+ .text.VCOM_putchar
+                0x00000000        0x0 ./src/LPCUSB/USB_CDC.o
+ .text.VCOM_getchar
+                0x00000000        0x0 ./src/LPCUSB/USB_CDC.o
+ .text.USBFrameHandler
+                0x00000000        0x0 ./src/LPCUSB/USB_CDC.o
+ .text.CPUcpsie
+                0x00000000        0x0 ./src/LPCUSB/USB_CDC.o
+ .text.vUSBTask
+                0x00000000        0x0 ./src/LPCUSB/USB_CDC.o
+ .text.NVIC_SetPriority
+                0x00000000        0x0 ./src/LPCUSB/USB_CDC.o
+ .text.NVIC_EnableIRQ
+                0x00000000        0x0 ./src/LPCUSB/USB_CDC.o
+ .text          0x00000000        0x0 ./src/LPCUSB/usbcontrol.o
+ .data          0x00000000        0x0 ./src/LPCUSB/usbcontrol.o
+ .bss           0x00000000        0x0 ./src/LPCUSB/usbcontrol.o
+ .text._HandleRequest
+                0x00000000        0x0 ./src/LPCUSB/usbcontrol.o
+ .text.StallControlPipe
+                0x00000000        0x0 ./src/LPCUSB/usbcontrol.o
+ .text.DataIn   0x00000000        0x0 ./src/LPCUSB/usbcontrol.o
+ .text.USBHandleControlTransfer
+                0x00000000        0x0 ./src/LPCUSB/usbcontrol.o
+ .text.USBRegisterRequestHandler
+                0x00000000        0x0 ./src/LPCUSB/usbcontrol.o
+ .text          0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .data          0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwCmdWrite
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwEPRealize
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwEPEnable
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwEPConfig
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwRegisterEPIntHandler
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwRegisterDevIntHandler
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwRegisterFrameHandler
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwSetAddress
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwConnect
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwNakIntEnable
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwEPGetStatus
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwEPStall
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwEPWrite
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwEPRead
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwConfigDevice
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwInit
+                0x00000000        0x0 ./src/LPCUSB/usbhw_lpc.o
+ .text          0x00000000        0x0 ./src/LPCUSB/usbinit.o
+ .data          0x00000000        0x0 ./src/LPCUSB/usbinit.o
+ .bss           0x00000000        0x0 ./src/LPCUSB/usbinit.o
+ .text.HandleUsbReset
+                0x00000000        0x0 ./src/LPCUSB/usbinit.o
+ .text.USBInit  0x00000000        0x0 ./src/LPCUSB/usbinit.o
+ .text          0x00000000        0x0 ./src/LPCUSB/usbstdreq.o
+ .data          0x00000000        0x0 ./src/LPCUSB/usbstdreq.o
+ .bss           0x00000000        0x0 ./src/LPCUSB/usbstdreq.o
+ .text.USBRegisterDescriptors
+                0x00000000        0x0 ./src/LPCUSB/usbstdreq.o
+ .text.USBGetDescriptor
+                0x00000000        0x0 ./src/LPCUSB/usbstdreq.o
+ .text.USBSetConfiguration
+                0x00000000        0x0 ./src/LPCUSB/usbstdreq.o
+ .text.HandleStdDeviceReq
+                0x00000000        0x0 ./src/LPCUSB/usbstdreq.o
+ .text.HandleStdInterfaceReq
+                0x00000000        0x0 ./src/LPCUSB/usbstdreq.o
+ .text.HandleStdEndPointReq
+                0x00000000        0x0 ./src/LPCUSB/usbstdreq.o
+ .text.USBHandleStandardRequest
+                0x00000000        0x0 ./src/LPCUSB/usbstdreq.o
+ .text.USBRegisterCustomReqHandler
+                0x00000000        0x0 ./src/LPCUSB/usbstdreq.o
+ .text          0x00000000        0x0 ./src/LCD/lcd.o
+ .data          0x00000000        0x0 ./src/LCD/lcd.o
+ .bss           0x00000000        0x0 ./src/LCD/lcd.o
+ .text.LCD_FilledRect
+                0x00000000        0x0 ./src/LCD/lcd.o
+ .text.LCD_Rect
+                0x00000000        0x0 ./src/LCD/lcd.o
+ .text.LCD_PlotPoint
+                0x00000000        0x0 ./src/LCD/lcd.o
+ .text.LCD_FilledCircle
+                0x00000000        0x0 ./src/LCD/lcd.o
+ .text.LCD_Circle
+                0x00000000        0x0 ./src/LCD/lcd.o
+ .text.LCD_Line
+                0x00000000        0x0 ./src/LCD/lcd.o
+ .text.LCD_ClearScreen
+                0x00000000        0x0 ./src/LCD/lcd.o
+ .text.LCD_WriteBitMap8x15
+                0x00000000        0x0 ./src/LCD/lcd.o
+ .text.LCD_PrintChar
+                0x00000000        0x0 ./src/LCD/lcd.o
+ .text.LCD_PrintString
+                0x00000000        0x0 ./src/LCD/lcd.o
+ .text          0x00000000        0x0 ./src/LCD/lcd_driver.o
+ .data          0x00000000        0x0 ./src/LCD/lcd_driver.o
+ .bss           0x00000000        0x0 ./src/LCD/lcd_driver.o
+ .text.LCDdriver_WriteData
+                0x00000000        0x0 ./src/LCD/lcd_driver.o
+ .text.LCDdriver_WriteCom
+                0x00000000        0x0 ./src/LCD/lcd_driver.o
+ .text.ms_delay
+                0x00000000        0x0 ./src/LCD/lcd_driver.o
+ .text.LCDdriver_ConfigGPIOtoLCD
+                0x00000000        0x0 ./src/LCD/lcd_driver.o
+ .text.LCDdriver_initialisation
+                0x00000000        0x0 ./src/LCD/lcd_driver.o
+ .text          0x00000000        0x0 ./src/LCD/system_fixed_be_8_15.o
+ .data          0x00000000        0x0 ./src/LCD/system_fixed_be_8_15.o
+ .bss           0x00000000        0x0 ./src/LCD/system_fixed_be_8_15.o
+ .rodata        0x00000000        0x0 ./src/LCD/system_fixed_be_8_15.o
+ .text          0x00000000        0x0 ./src/FreeRTOS/list.o
+ .data          0x00000000        0x0 ./src/FreeRTOS/list.o
+ .bss           0x00000000        0x0 ./src/FreeRTOS/list.o
+ .text          0x00000000        0x0 ./src/FreeRTOS/queue.o
+ .data          0x00000000        0x0 ./src/FreeRTOS/queue.o
+ .bss           0x00000000        0x0 ./src/FreeRTOS/queue.o
+ .text.xQueueReceiveFromISR
+                0x00000000        0x0 ./src/FreeRTOS/queue.o
+ .text.uxQueueMessagesWaitingFromISR
+                0x00000000        0x0 ./src/FreeRTOS/queue.o
+ .text.vQueueDelete
+                0x00000000        0x0 ./src/FreeRTOS/queue.o
+ .text.xQueueIsQueueEmptyFromISR
+                0x00000000        0x0 ./src/FreeRTOS/queue.o
+ .text.xQueueIsQueueFullFromISR
+                0x00000000        0x0 ./src/FreeRTOS/queue.o
+ .text.vQueueUnregisterQueue
+                0x00000000        0x0 ./src/FreeRTOS/queue.o
+ .text          0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text.vTaskDelete
+                0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text.vTaskDelayUntil
+                0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text.xTaskResumeFromISR
+                0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text.vTaskEndScheduler
+                0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text.xTaskGetTickCountFromISR
+                0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text.uxTaskGetNumberOfTasks
+                0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text.vTaskList
+                0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text.vTaskGetRunTimeStats
+                0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text.vTaskStartTrace
+                0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text.ulTaskEndTrace
+                0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text.prvListTaskWithinSingleList
+                0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text.prvGenerateRunTimeStatsForTasksInList
+                0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text.usTaskCheckFreeStackSpace
+                0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text.uxTaskGetStackHighWaterMark
+                0x00000000        0x0 ./src/FreeRTOS/tasks.o
+ .text          0x00000000        0x0 ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .text.xPortGetFreeHeapSize
+                0x00000000        0x0 ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .text.vPortInitialiseBlocks
+                0x00000000        0x0 ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .text          0x00000000        0x0 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .bss           0x00000000        0x0 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .rodata        0x00000000        0x0 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .text.vPortEndScheduler
+                0x00000000        0x0 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .text.ADC_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .text.ADC_DeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .text.ADC_GetData
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .text.ADC_StartCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .text.ADC_BurstCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .text.ADC_PowerdownCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .text.ADC_EdgeStartConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .text.ADC_IntConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .text.ADC_ChannelCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .text.ADC_ChannelGetData
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .text.ADC_ChannelGetStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .text.ADC_GlobalGetData
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .text.ADC_GlobalGetStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_adc.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_SetBaudRate
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_DeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_SetupAFLUT
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_LoadExplicitEntry
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_LoadFullCANEntry
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_LoadGroupEntry
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_RemoveEntry
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_SendMsg
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_ReceiveMsg
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.FCAN_ReadObj
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_GetCTRLStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_GetCRStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_IRQCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_SetupCBS
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_SetAFMode
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_ModeConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text.CAN_IntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ COMMON         0x00000000        0x0 ./src/Drivers/source/lpc17xx_can.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .text.CLKPWR_SetPCLKDiv
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .text.CLKPWR_GetPCLKSEL
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .text.CLKPWR_GetPCLK
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .text.CLKPWR_ConfigPPWR
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .text.CLKPWR_Sleep
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .text.__WFI    0x00000000        0x0 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .text.CLKPWR_DeepSleep
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .text.CLKPWR_PowerDown
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .text.CLKPWR_DeepPowerDown
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_dac.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_dac.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_dac.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_dac.o
+ .text.DAC_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_dac.o
+ .text.DAC_UpdateValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_dac.o
+ .text.DAC_SetBias
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_dac.o
+ .text.DAC_ConfigDAConverterControl
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_dac.o
+ .text.DAC_SetDMATimeOut
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_dac.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.rx_descr_init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.tx_descr_init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.write_PHY
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.read_PHY
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.setEmacAddr
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_DeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_CheckPHYStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_SetPHYMode
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_UpdatePHYStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_SetHashFilter
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_CRCCalc
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_SetFilterMode
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_GetWoLStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_WritePacketBuffer
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_ReadPacketBuffer
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_StandardIRQHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_SetupIntCBS
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_IntCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_IntGetStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_CheckReceiveIndex
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_CheckTransmitIndex
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_CheckReceiveDataStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_GetReceiveDataSize
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_UpdateRxConsumeIndex
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text.EMAC_UpdateTxProduceIndex
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_emac.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpdma.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpdma.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpdma.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpdma.o
+ .text.GPDMA_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpdma.o
+ .text.GPDMA_Setup
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpdma.o
+ .text.GPDMA_ChannelCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpdma.o
+ .text.GPDMA_IntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpdma.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.GPIO_GetPointer
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_HalfWordGetPointer
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_ByteGetPointer
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.GPIO_SetDir
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.GPIO_SetValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.GPIO_ClearValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.GPIO_ReadValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_SetDir
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_SetValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_ClearValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_ReadValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_SetMask
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_HalfWordSetDir
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_HalfWordSetMask
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_HalfWordSetValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_HalfWordClearValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_HalfWordReadValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_ByteSetDir
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_ByteSetMask
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_ByteSetValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_ByteClearValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text.FIO_ByteReadValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_gpio.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_getNum
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_Start
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_Stop
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_SendByte
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_GetByte
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_IntCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.NVIC_EnableIRQ
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.NVIC_DisableIRQ
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_MasterHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_SlaveHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_SetClock
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_DeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_Cmd  0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_MasterTransferData
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_SlaveTransferData
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_SetOwnSlaveAddr
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_MonitorModeConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_MonitorModeCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C_MonitorGetDatabuffer
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C0_StdIntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C1_StdIntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text.I2C2_StdIntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2c.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_GetWordWidth
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_GetChannel
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_Config
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_DeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_GetLevel
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_Start
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_Send
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_Receive
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_Pause
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_Mute
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_Stop
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_FreqConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_SetBitRate
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_ModeConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_DMAConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_DMACmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_IRQConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_IRQCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text.I2S_IntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_i2s.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .text.check_failed
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_ConfigChannel
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_WriteToShadow
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_ConfigCapture
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_ClearCapture
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_GetCapture
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_CountConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_Start
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_Stop
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_ACMode
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_DCMode
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_IntConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_IntSet
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_IntClear
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text.MCPWM_GetIntStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_nvic.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_nvic.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_nvic.o
+ .text.NVIC_DeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_nvic.o
+ .text.NVIC_SCBDeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_nvic.o
+ .text.NVIC_SetVTOR
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_nvic.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_pinsel.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_pinsel.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_pinsel.o
+ .text.PINSEL_SetPinFunc
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pinsel.o
+ .text.PINSEL_ConfigTraceFunc
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pinsel.o
+ .text.PINSEL_SetResistorMode
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pinsel.o
+ .text.PINSEL_SetOpenDrainMode
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pinsel.o
+ .text.PINSEL_SetI2C0Pins
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pinsel.o
+ .text.PINSEL_ConfigPin
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pinsel.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text.PWM_GetIntStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text.PWM_ClearIntPending
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text.PWM_ConfigStructInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text.PWM_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text.PWM_DeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text.PWM_Cmd  0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text.PWM_CounterCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text.PWM_ResetCounter
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text.PWM_ConfigMatch
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text.PWM_ConfigCapture
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text.PWM_GetCaptureValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text.PWM_MatchUpdate
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text.PWM_ChannelConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text.PWM_ChannelCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_pwm.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_Reset
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_DeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_ConfigStructInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_GetStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_GetPosition
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_SetMaxPosition
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_SetPositionComp
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_GetIndex
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_SetIndexComp
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_SetTimerReload
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_GetTimer
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_GetVelocity
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_GetVelocityCap
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_SetVelocityComp
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_SetDigiFilter
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_GetIntStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_IntCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_IntSet
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_IntClear
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text.QEI_CalculateRPM
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_qei.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_rit.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_rit.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_rit.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_rit.o
+ .text.RIT_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rit.o
+ .text.RIT_DeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rit.o
+ .text.RIT_TimerConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rit.o
+ .text.RIT_Cmd  0x00000000        0x0 ./src/Drivers/source/lpc17xx_rit.o
+ .text.RIT_TimerClearCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rit.o
+ .text.RIT_TimerEnableOnBreakCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rit.o
+ .text.RIT_GetIntStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rit.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_DeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_ResetClockTickCounter
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_Cmd  0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_CntIncrIntConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_AlarmIntConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_SetTime
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_GetTime
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_SetFullTime
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_GetFullTime
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_SetAlarmTime
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_GetAlarmTime
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_SetFullAlarmTime
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_GetFullAlarmTime
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_GetIntPending
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_ClearIntPending
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_CalibCounterCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_CalibConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_WriteGPREG
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text.RTC_ReadGPREG
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_rtc.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text.SPI_IntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text.SPI_SetClock
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text.SPI_DeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text.SPI_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text.SPI_ConfigStructInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text.SPI_SendData
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text.SPI_ReceiveData
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text.SPI_ReadWrite
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text.SPI_IntCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text.SPI_GetIntStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text.SPI_ClearIntPending
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text.SPI_GetStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text.SPI_CheckStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text.SPI_StdIntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_spi.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_getNum
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_IntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_SetClock
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_DeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_ConfigStructInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_Cmd  0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_LoopBackCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_SlaveOutputCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_SendData
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_ReceiveData
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_ReadWrite
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_GetStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_IntConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_GetRawIntStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_GetIntStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_ClearIntPending
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP_DMACmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP0_StdIntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text.SSP1_StdIntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_ssp.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_GetPClock
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_ConverUSecToVal
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_ConverPtrToTimeNum
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_GetIntStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_GetIntCaptureStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_ClearIntPending
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_ClearIntCapturePending
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_ConfigStructInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_DeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_Cmd  0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_ResetCounter
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_ConfigMatch
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_ConfigCapture
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text.TIM_GetCaptureValue
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_timer.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.getUartNum
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.uart_set_divisors
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_GenIntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_DeInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_ConfigStructInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_SendData
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_ReceiveData
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_ForceBreak
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_IrDAInvtInputCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_IrDACmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_IrDAPulseDivConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_IntConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_GetLineStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_CheckBusy
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_FIFOConfig
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_FIFOConfigStructInit
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_ABCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_TxCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_FullModemForcePinState
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_FullModemConfigMode
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_FullModemGetStatus
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_RS485Config
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_RS485ReceiverCmd
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_RS485Send
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_RS485SendSlvAddr
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_RS485SendData
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_Send
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_Receive
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART_SetupCbs
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART0_StdIntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART1_StdIntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART2_StdIntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text.UART3_StdIntHandler
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_uart.o
+ .text          0x00000000        0x0 ./src/Drivers/source/lpc17xx_wdt.o
+ .data          0x00000000        0x0 ./src/Drivers/source/lpc17xx_wdt.o
+ .bss           0x00000000        0x0 ./src/Drivers/source/lpc17xx_wdt.o
+ .text.WDT_SetTimeOut
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_wdt.o
+ .rodata        0x00000000        0x0 ./src/Drivers/source/lpc17xx_wdt.o
+ .text.WDT_Init
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_wdt.o
+ .text.WDT_Start
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_wdt.o
+ .text.WDT_ReadTimeOutFlag
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_wdt.o
+ .text.WDT_ClrTimeOutFlag
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_wdt.o
+ .text.WDT_UpdateTimeOut
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_wdt.o
+ .text.WDT_Feed
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_wdt.o
+ .text.__disable_irq
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_wdt.o
+ .text.__enable_irq
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_wdt.o
+ .text.WDT_GetCurrentCount
+                0x00000000        0x0 ./src/Drivers/source/lpc17xx_wdt.o
+ .text          0x00000000        0x0 ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .data          0x00000000        0x0 ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .bss           0x00000000        0x0 ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .text.SystemCoreClockUpdate
+                0x00000000        0x0 ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .text.SystemInit
+                0x00000000        0x0 ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .text          0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .data          0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .bss           0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__get_PSP
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__set_PSP
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__get_MSP
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__set_MSP
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__get_BASEPRI
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__set_BASEPRI
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__get_PRIMASK
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__set_PRIMASK
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__get_FAULTMASK
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__set_FAULTMASK
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__get_CONTROL
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__set_CONTROL
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__REV    0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__REV16  0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__REVSH  0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__RBIT   0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__LDREXB
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__LDREXH
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__LDREXW
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__STREXB
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__STREXH
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text.__STREXW
+                0x00000000        0x0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .text          0x00000000        0x0 ./src/Common Demo Tasks/BlockQ.o
+ .data          0x00000000        0x0 ./src/Common Demo Tasks/BlockQ.o
+ .text          0x00000000        0x0 ./src/Common Demo Tasks/GenQTest.o
+ .data          0x00000000        0x0 ./src/Common Demo Tasks/GenQTest.o
+ .text          0x00000000        0x0 ./src/Common Demo Tasks/PollQ.o
+ .data          0x00000000        0x0 ./src/Common Demo Tasks/PollQ.o
+ .text          0x00000000        0x0 ./src/Common Demo Tasks/QPeek.o
+ .data          0x00000000        0x0 ./src/Common Demo Tasks/QPeek.o
+ .text          0x00000000        0x0 ./src/Common Demo Tasks/blocktim.o
+ .data          0x00000000        0x0 ./src/Common Demo Tasks/blocktim.o
+ .text          0x00000000        0x0 ./src/Common Demo Tasks/flash.o
+ .data          0x00000000        0x0 ./src/Common Demo Tasks/flash.o
+ .bss           0x00000000        0x0 ./src/Common Demo Tasks/flash.o
+ .rodata        0x00000000        0x0 ./src/Common Demo Tasks/flash.o
+ .text.vStartLEDFlashTasks
+                0x00000000        0x0 ./src/Common Demo Tasks/flash.o
+ .text.vLEDFlashTask
+                0x00000000        0x0 ./src/Common Demo Tasks/flash.o
+ .text          0x00000000        0x0 ./src/Common Demo Tasks/integer.o
+ .data          0x00000000        0x0 ./src/Common Demo Tasks/integer.o
+ .text          0x00000000        0x0 ./src/Common Demo Tasks/recmutex.o
+ .data          0x00000000        0x0 ./src/Common Demo Tasks/recmutex.o
+ .text          0x00000000        0x0 ./src/Common Demo Tasks/semtest.o
+ .data          0x00000000        0x0 ./src/Common Demo Tasks/semtest.o
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_aeabi_uldivmod.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_aeabi_uldivmod.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(bpabi.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(bpabi.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(bpabi.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_dvmd_tls.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_divdi3.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_divdi3.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_divdi3.o)
+ .ARM.extab     0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_divdi3.o)
+ .ARM.exidx     0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_divdi3.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_udivdi3.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_udivdi3.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_udivdi3.o)
+ .ARM.extab     0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_udivdi3.o)
+ .ARM.exidx     0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_udivdi3.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_udivsi3.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_clz.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_clz.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_clz.o)
+ .rodata        0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_clz.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-abs.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-abs.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-abs.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcmp.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcmp.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcat.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcat.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcat.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strchr.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strchr.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strchr.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcpy.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcpy.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcpy.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncpy.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncpy.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strrchr.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strrchr.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strrchr.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strstr.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strstr.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strstr.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x00000000         0x00080000         xr
+SRAM             0x10000000         0x00008000         xrw
+AHBRAM0          0x2007c000         0x00004000
+AHBRAM1          0x20080000         0x00004000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/webserver/emac.o
+LOAD ./src/webserver/http-strings.o
+LOAD ./src/webserver/httpd-cgi.o
+LOAD ./src/webserver/httpd-fs.o
+LOAD ./src/webserver/httpd.o
+LOAD ./src/webserver/psock.o
+LOAD ./src/webserver/timer.o
+LOAD ./src/webserver/uIP_Task.o
+LOAD ./src/webserver/uip.o
+LOAD ./src/webserver/uip_arp.o
+LOAD ./src/ParTest.o
+LOAD ./src/cr_startup_lpc17.o
+LOAD ./src/main.o
+LOAD ./src/printf-stdarg.o
+LOAD ./src/syscalls.o
+LOAD ./src/LPCUSB/USB_CDC.o
+LOAD ./src/LPCUSB/usbcontrol.o
+LOAD ./src/LPCUSB/usbhw_lpc.o
+LOAD ./src/LPCUSB/usbinit.o
+LOAD ./src/LPCUSB/usbstdreq.o
+LOAD ./src/LCD/lcd.o
+LOAD ./src/LCD/lcd_driver.o
+LOAD ./src/LCD/system_fixed_be_8_15.o
+LOAD ./src/FreeRTOS/list.o
+LOAD ./src/FreeRTOS/queue.o
+LOAD ./src/FreeRTOS/tasks.o
+LOAD ./src/FreeRTOS/portable/MemMang/heap_2.o
+LOAD ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+LOAD ./src/Drivers/source/lpc17xx_adc.o
+LOAD ./src/Drivers/source/lpc17xx_can.o
+LOAD ./src/Drivers/source/lpc17xx_clkpwr.o
+LOAD ./src/Drivers/source/lpc17xx_dac.o
+LOAD ./src/Drivers/source/lpc17xx_emac.o
+LOAD ./src/Drivers/source/lpc17xx_gpdma.o
+LOAD ./src/Drivers/source/lpc17xx_gpio.o
+LOAD ./src/Drivers/source/lpc17xx_i2c.o
+LOAD ./src/Drivers/source/lpc17xx_i2s.o
+LOAD ./src/Drivers/source/lpc17xx_libcfg_default.o
+LOAD ./src/Drivers/source/lpc17xx_mcpwm.o
+LOAD ./src/Drivers/source/lpc17xx_nvic.o
+LOAD ./src/Drivers/source/lpc17xx_pinsel.o
+LOAD ./src/Drivers/source/lpc17xx_pwm.o
+LOAD ./src/Drivers/source/lpc17xx_qei.o
+LOAD ./src/Drivers/source/lpc17xx_rit.o
+LOAD ./src/Drivers/source/lpc17xx_rtc.o
+LOAD ./src/Drivers/source/lpc17xx_spi.o
+LOAD ./src/Drivers/source/lpc17xx_ssp.o
+LOAD ./src/Drivers/source/lpc17xx_timer.o
+LOAD ./src/Drivers/source/lpc17xx_uart.o
+LOAD ./src/Drivers/source/lpc17xx_wdt.o
+LOAD ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+LOAD ./src/Core/CM3/CoreSupport/core_cm3.o
+LOAD ./src/Common Demo Tasks/BlockQ.o
+LOAD ./src/Common Demo Tasks/GenQTest.o
+LOAD ./src/Common Demo Tasks/PollQ.o
+LOAD ./src/Common Demo Tasks/QPeek.o
+LOAD ./src/Common Demo Tasks/blocktim.o
+LOAD ./src/Common Demo Tasks/flash.o
+LOAD ./src/Common Demo Tasks/integer.o
+LOAD ./src/Common Demo Tasks/recmutex.o
+LOAD ./src/Common Demo Tasks/semtest.o
+START GROUP
+LOAD c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a
+LOAD c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a
+END GROUP
+                0x10008000                _vRamTop = 0x10008000
+
+.text           0x00000000     0x59a8
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xc4 ./src/cr_startup_lpc17.o
+                0x00000000                g_pfnVectors
+ *(.text*)
+ .text.prvReturnBuffer
+                0x000000c4       0x5c ./src/webserver/emac.o
+ .text.vEMAC_ISR
+                0x00000120       0xd4 ./src/webserver/emac.o
+                0x00000120                vEMAC_ISR
+ .text.vParTestInitialise
+                0x000001f4       0x28 ./src/ParTest.o
+                0x000001f4                vParTestInitialise
+ .text.Reset_Handler
+                0x0000021c       0x84 ./src/cr_startup_lpc17.o
+                0x0000021c                Reset_Handler
+                0x0000021c                ResetISR
+ .text.NMI_Handler
+                0x000002a0        0x8 ./src/cr_startup_lpc17.o
+ .text.HardFault_Handler
+                0x000002a8        0x8 ./src/cr_startup_lpc17.o
+ .text.MemManage_Handler
+                0x000002b0        0x8 ./src/cr_startup_lpc17.o
+ .text.BusFault_Handler
+                0x000002b8        0x8 ./src/cr_startup_lpc17.o
+ .text.UsageFault_Handler
+                0x000002c0        0x8 ./src/cr_startup_lpc17.o
+ .text.DebugMon_Handler
+                0x000002c8        0x8 ./src/cr_startup_lpc17.o
+ .text.IntDefaultHandler
+                0x000002d0        0x8 ./src/cr_startup_lpc17.o
+                0x000002d0                TIMER2_IRQHandler
+                0x000002d0                RIT_IRQHandler
+                0x000002d0                I2C0_IRQHandler
+                0x000002d0                PWM1_IRQHandler
+                0x000002d0                I2C1_IRQHandler
+                0x000002d0                EINT2_IRQHandler
+                0x000002d0                UART1_IRQHandler
+                0x000002d0                EINT3_IRQHandler
+                0x000002d0                TIMER3_IRQHandler
+                0x000002d0                UART0_IRQHandler
+                0x000002d0                PLL0_IRQHandler
+                0x000002d0                CAN_IRQHandler
+                0x000002d0                PLL1_IRQHandler
+                0x000002d0                SSP0_IRQHandler
+                0x000002d0                I2S_IRQHandler
+                0x000002d0                I2C2_IRQHandler
+                0x000002d0                RTC_IRQHandler
+                0x000002d0                TIMER0_IRQHandler
+                0x000002d0                SPI_IRQHandler
+                0x000002d0                EINT1_IRQHandler
+                0x000002d0                TIMER1_IRQHandler
+                0x000002d0                UART2_IRQHandler
+                0x000002d0                ADC_IRQHandler
+                0x000002d0                SSP1_IRQHandler
+                0x000002d0                BOD_IRQHandler
+                0x000002d0                WDT_IRQHandler
+                0x000002d0                QEI_IRQHandler
+                0x000002d0                EINT0_IRQHandler
+                0x000002d0                DMA_IRQHandler
+                0x000002d0                UART3_IRQHandler
+                0x000002d0                MCPWM_IRQHandler
+                0x000002d0                ENET_IRQHandler
+ .text.main     0x000002d8       0x68 ./src/main.o
+                0x000002d8                main
+ .text.vApplicationTickHook
+                0x00000340      0x130 ./src/main.o
+                0x00000340                vApplicationTickHook
+ .text.prvSetupHardware
+                0x00000470      0x308 ./src/main.o
+ .text.vApplicationStackOverflowHook
+                0x00000778        0xc ./src/main.o
+                0x00000778                vApplicationStackOverflowHook
+ .text.vConfigureTimerForRunTimeStats
+                0x00000784       0x90 ./src/main.o
+                0x00000784                vConfigureTimerForRunTimeStats
+ .text.printchar
+                0x00000814       0x30 ./src/printf-stdarg.o
+ .text.prints   0x00000844       0xec ./src/printf-stdarg.o
+ .text.printi   0x00000930      0x12c ./src/printf-stdarg.o
+ .text.print    0x00000a5c      0x260 ./src/printf-stdarg.o
+ .text.sprintf  0x00000cbc       0x30 ./src/printf-stdarg.o
+                0x00000cbc                sprintf
+ .text.USB_IRQHandler
+                0x00000cec        0xc ./src/LPCUSB/USB_CDC.o
+                0x00000cec                USB_IRQHandler
+ .text.Wait4DevInt
+                0x00000cf8       0x38 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwCmd
+                0x00000d30       0x40 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwCmdRead
+                0x00000d70       0x48 ./src/LPCUSB/usbhw_lpc.o
+ .text.USBHwISR
+                0x00000db8      0x194 ./src/LPCUSB/usbhw_lpc.o
+                0x00000db8                USBHwISR
+ .text.vListInitialise
+                0x00000f4c       0x48 ./src/FreeRTOS/list.o
+                0x00000f4c                vListInitialise
+ .text.vListInitialiseItem
+                0x00000f94       0x1c ./src/FreeRTOS/list.o
+                0x00000f94                vListInitialiseItem
+ .text.vListInsertEnd
+                0x00000fb0       0x50 ./src/FreeRTOS/list.o
+                0x00000fb0                vListInsertEnd
+ .text.vListInsert
+                0x00001000       0x74 ./src/FreeRTOS/list.o
+                0x00001000                vListInsert
+ .text.vListRemove
+                0x00001074       0x54 ./src/FreeRTOS/list.o
+                0x00001074                vListRemove
+ .text.xQueueCreate
+                0x000010c8       0xd4 ./src/FreeRTOS/queue.o
+                0x000010c8                xQueueCreate
+ .text.xQueueCreateMutex
+                0x0000119c       0x98 ./src/FreeRTOS/queue.o
+                0x0000119c                xQueueCreateMutex
+ .text.xQueueGiveMutexRecursive
+                0x00001234       0x58 ./src/FreeRTOS/queue.o
+                0x00001234                xQueueGiveMutexRecursive
+ .text.xQueueTakeMutexRecursive
+                0x0000128c       0x60 ./src/FreeRTOS/queue.o
+                0x0000128c                xQueueTakeMutexRecursive
+ .text.xQueueGenericSend
+                0x000012ec      0x124 ./src/FreeRTOS/queue.o
+                0x000012ec                xQueueGenericSend
+ .text.xQueueGenericSendFromISR
+                0x00001410       0x90 ./src/FreeRTOS/queue.o
+                0x00001410                xQueueGenericSendFromISR
+ .text.xQueueGenericReceive
+                0x000014a0      0x18c ./src/FreeRTOS/queue.o
+                0x000014a0                xQueueGenericReceive
+ .text.uxQueueMessagesWaiting
+                0x0000162c       0x24 ./src/FreeRTOS/queue.o
+                0x0000162c                uxQueueMessagesWaiting
+ .text.prvCopyDataToQueue
+                0x00001650       0xc4 ./src/FreeRTOS/queue.o
+ .text.prvCopyDataFromQueue
+                0x00001714       0x50 ./src/FreeRTOS/queue.o
+ .text.prvUnlockQueue
+                0x00001764       0x98 ./src/FreeRTOS/queue.o
+ .text.prvIsQueueEmpty
+                0x000017fc       0x2c ./src/FreeRTOS/queue.o
+ .text.prvIsQueueFull
+                0x00001828       0x30 ./src/FreeRTOS/queue.o
+ .text.vQueueAddToRegistry
+                0x00001858       0x64 ./src/FreeRTOS/queue.o
+                0x00001858                vQueueAddToRegistry
+ .text.xTaskGenericCreate
+                0x000018bc      0x1c0 ./src/FreeRTOS/tasks.o
+                0x000018bc                xTaskGenericCreate
+ .text.vTaskDelay
+                0x00001a7c       0xb8 ./src/FreeRTOS/tasks.o
+                0x00001a7c                vTaskDelay
+ .text.uxTaskPriorityGet
+                0x00001b34       0x40 ./src/FreeRTOS/tasks.o
+                0x00001b34                uxTaskPriorityGet
+ .text.vTaskPrioritySet
+                0x00001b74      0x134 ./src/FreeRTOS/tasks.o
+                0x00001b74                vTaskPrioritySet
+ .text.vTaskSuspend
+                0x00001ca8       0xbc ./src/FreeRTOS/tasks.o
+                0x00001ca8                vTaskSuspend
+ .text.xTaskIsTaskSuspended
+                0x00001d64       0x50 ./src/FreeRTOS/tasks.o
+                0x00001d64                xTaskIsTaskSuspended
+ .text.vTaskResume
+                0x00001db4       0xac ./src/FreeRTOS/tasks.o
+                0x00001db4                vTaskResume
+ .text.vTaskStartScheduler
+                0x00001e60       0x7c ./src/FreeRTOS/tasks.o
+                0x00001e60                vTaskStartScheduler
+ .text.vTaskSuspendAll
+                0x00001edc       0x24 ./src/FreeRTOS/tasks.o
+                0x00001edc                vTaskSuspendAll
+ .text.xTaskResumeAll
+                0x00001f00      0x178 ./src/FreeRTOS/tasks.o
+                0x00001f00                xTaskResumeAll
+ .text.xTaskGetTickCount
+                0x00002078       0x28 ./src/FreeRTOS/tasks.o
+                0x00002078                xTaskGetTickCount
+ .text.vTaskIncrementTick
+                0x000020a0      0x168 ./src/FreeRTOS/tasks.o
+                0x000020a0                vTaskIncrementTick
+ .text.vTaskSwitchContext
+                0x00002208      0x24c ./src/FreeRTOS/tasks.o
+                0x00002208                vTaskSwitchContext
+ .text.vTaskPlaceOnEventList
+                0x00002454       0xd4 ./src/FreeRTOS/tasks.o
+                0x00002454                vTaskPlaceOnEventList
+ .text.xTaskRemoveFromEventList
+                0x00002528       0xd8 ./src/FreeRTOS/tasks.o
+                0x00002528                xTaskRemoveFromEventList
+ .text.vTaskSetTimeOutState
+                0x00002600       0x30 ./src/FreeRTOS/tasks.o
+                0x00002600                vTaskSetTimeOutState
+ .text.xTaskCheckForTimeOut
+                0x00002630       0xa8 ./src/FreeRTOS/tasks.o
+                0x00002630                xTaskCheckForTimeOut
+ .text.vTaskMissedYield
+                0x000026d8       0x18 ./src/FreeRTOS/tasks.o
+                0x000026d8                vTaskMissedYield
+ .text.prvIdleTask
+                0x000026f0       0x10 ./src/FreeRTOS/tasks.o
+ .text.prvInitialiseTCBVariables
+                0x00002700       0x84 ./src/FreeRTOS/tasks.o
+ .text.prvInitialiseTaskLists
+                0x00002784       0xa4 ./src/FreeRTOS/tasks.o
+ .text.prvCheckTasksWaitingTermination
+                0x00002828       0xb0 ./src/FreeRTOS/tasks.o
+ .text.prvAllocateTCBAndStack
+                0x000028d8       0x78 ./src/FreeRTOS/tasks.o
+ .text.prvDeleteTCB
+                0x00002950       0x20 ./src/FreeRTOS/tasks.o
+ .text.xTaskGetCurrentTaskHandle
+                0x00002970       0x20 ./src/FreeRTOS/tasks.o
+                0x00002970                xTaskGetCurrentTaskHandle
+ .text.vTaskPriorityInherit
+                0x00002990       0xd8 ./src/FreeRTOS/tasks.o
+                0x00002990                vTaskPriorityInherit
+ .text.vTaskPriorityDisinherit
+                0x00002a68       0x90 ./src/FreeRTOS/tasks.o
+                0x00002a68                vTaskPriorityDisinherit
+ .text.pvPortMalloc
+                0x00002af8      0x1b8 ./src/FreeRTOS/portable/MemMang/heap_2.o
+                0x00002af8                pvPortMalloc
+ .text.vPortFree
+                0x00002cb0       0x88 ./src/FreeRTOS/portable/MemMang/heap_2.o
+                0x00002cb0                vPortFree
+ .text.pxPortInitialiseStack
+                0x00002d38       0x60 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+                0x00002d38                pxPortInitialiseStack
+ .text.vPortSVCHandler
+                0x00002d98       0x20 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+                0x00002d98                vPortSVCHandler
+ .text.vPortStartFirstTask
+                0x00002db8       0x10 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+                0x00002db8                vPortStartFirstTask
+ .text.xPortStartScheduler
+                0x00002dc8       0x54 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+                0x00002dc8                xPortStartScheduler
+ .text.vPortYieldFromISR
+                0x00002e1c       0x18 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+                0x00002e1c                vPortYieldFromISR
+ .text.vPortEnterCritical
+                0x00002e34       0x2c ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+                0x00002e34                vPortEnterCritical
+ .text.vPortExitCritical
+                0x00002e60       0x38 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+                0x00002e60                vPortExitCritical
+ .text.xPortPendSVHandler
+                0x00002e98       0x3c ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+                0x00002e98                xPortPendSVHandler
+ .text.xPortSysTickHandler
+                0x00002ed4       0x38 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+                0x00002ed4                xPortSysTickHandler
+ .text.prvSetupTimerInterrupt
+                0x00002f0c       0x2c ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .text.vStartBlockingQueueTasks
+                0x00002f38      0x250 ./src/Common Demo Tasks/BlockQ.o
+                0x00002f38                vStartBlockingQueueTasks
+ .text.vBlockingQueueProducer
+                0x00003188       0x64 ./src/Common Demo Tasks/BlockQ.o
+ .text.vBlockingQueueConsumer
+                0x000031ec       0x70 ./src/Common Demo Tasks/BlockQ.o
+ .text.xAreBlockingQueuesStillRunning
+                0x0000325c       0xc4 ./src/Common Demo Tasks/BlockQ.o
+                0x0000325c                xAreBlockingQueuesStillRunning
+ .text.vStartGenericQueueTasks
+                0x00003320      0x120 ./src/Common Demo Tasks/GenQTest.o
+                0x00003320                vStartGenericQueueTasks
+ .text.prvSendFrontAndBackTest
+                0x00003440      0x468 ./src/Common Demo Tasks/GenQTest.o
+ .text.prvLowPriorityMutexTask
+                0x000038a8      0x160 ./src/Common Demo Tasks/GenQTest.o
+ .text.prvMediumPriorityMutexTask
+                0x00003a08       0x2c ./src/Common Demo Tasks/GenQTest.o
+ .text.prvHighPriorityMutexTask
+                0x00003a34       0x64 ./src/Common Demo Tasks/GenQTest.o
+ .text.xAreGenericQueueTasksStillRunning
+                0x00003a98       0x94 ./src/Common Demo Tasks/GenQTest.o
+                0x00003a98                xAreGenericQueueTasksStillRunning
+ .text.vStartPolledQueueTasks
+                0x00003b2c       0xb4 ./src/Common Demo Tasks/PollQ.o
+                0x00003b2c                vStartPolledQueueTasks
+ .text.vPolledQueueProducer
+                0x00003be0       0x8c ./src/Common Demo Tasks/PollQ.o
+ .text.vPolledQueueConsumer
+                0x00003c6c       0x90 ./src/Common Demo Tasks/PollQ.o
+ .text.xArePollingQueuesStillRunning
+                0x00003cfc       0x5c ./src/Common Demo Tasks/PollQ.o
+                0x00003cfc                xArePollingQueuesStillRunning
+ .text.vStartQueuePeekTasks
+                0x00003d58      0x10c ./src/Common Demo Tasks/QPeek.o
+                0x00003d58                vStartQueuePeekTasks
+ .text.prvHighestPriorityPeekTask
+                0x00003e64      0x168 ./src/Common Demo Tasks/QPeek.o
+ .text.prvHighPriorityPeekTask
+                0x00003fcc       0xc0 ./src/Common Demo Tasks/QPeek.o
+ .text.prvMediumPriorityPeekTask
+                0x0000408c       0x8c ./src/Common Demo Tasks/QPeek.o
+ .text.prvLowPriorityPeekTask
+                0x00004118      0x174 ./src/Common Demo Tasks/QPeek.o
+ .text.xAreQueuePeekTasksStillRunning
+                0x0000428c       0x58 ./src/Common Demo Tasks/QPeek.o
+                0x0000428c                xAreQueuePeekTasksStillRunning
+ .text.vCreateBlockTimeTasks
+                0x000042e4       0xac ./src/Common Demo Tasks/blocktim.o
+                0x000042e4                vCreateBlockTimeTasks
+ .text.vPrimaryBlockTimeTestTask
+                0x00004390      0x470 ./src/Common Demo Tasks/blocktim.o
+ .text.vSecondaryBlockTimeTestTask
+                0x00004800      0x150 ./src/Common Demo Tasks/blocktim.o
+ .text.xAreBlockTimeTestTasksStillRunning
+                0x00004950       0x94 ./src/Common Demo Tasks/blocktim.o
+                0x00004950                xAreBlockTimeTestTasksStillRunning
+ .text.vStartIntegerMathTasks
+                0x000049e4       0x6c ./src/Common Demo Tasks/integer.o
+                0x000049e4                vStartIntegerMathTasks
+ .text.vCompeteingIntMathTask
+                0x00004a50       0x84 ./src/Common Demo Tasks/integer.o
+ .text.xAreIntegerMathsTaskStillRunning
+                0x00004ad4       0x60 ./src/Common Demo Tasks/integer.o
+                0x00004ad4                xAreIntegerMathsTaskStillRunning
+ .text.vStartRecursiveMutexTasks
+                0x00004b34       0xec ./src/Common Demo Tasks/recmutex.o
+                0x00004b34                vStartRecursiveMutexTasks
+ .text.prvRecursiveMutexControllingTask
+                0x00004c20      0x118 ./src/Common Demo Tasks/recmutex.o
+ .text.prvRecursiveMutexBlockingTask
+                0x00004d38       0xdc ./src/Common Demo Tasks/recmutex.o
+ .text.prvRecursiveMutexPollingTask
+                0x00004e14       0xa0 ./src/Common Demo Tasks/recmutex.o
+ .text.xAreRecursiveMutexTasksStillRunning
+                0x00004eb4       0xe4 ./src/Common Demo Tasks/recmutex.o
+                0x00004eb4                xAreRecursiveMutexTasksStillRunning
+ .text.vStartSemaphoreTasks
+                0x00004f98      0x1e0 ./src/Common Demo Tasks/semtest.o
+                0x00004f98                vStartSemaphoreTasks
+ .text.prvSemaphoreTest
+                0x00005178      0x138 ./src/Common Demo Tasks/semtest.o
+ .text.xAreSemaphoreTasksStillRunning
+                0x000052b0       0x7c ./src/Common Demo Tasks/semtest.o
+                0x000052b0                xAreSemaphoreTasksStillRunning
+ .text          0x0000532c       0x60 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcmp.o)
+                0x0000532c                memcmp
+ .text          0x0000538c      0x12c c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+                0x0000538c                memcpy
+ .text          0x000054b8       0xb0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                0x000054b8                memset
+ .text          0x00005568       0x80 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncpy.o)
+                0x00005568                strncpy
+ *(.rodata*)
+ .rodata        0x000055e8      0x1f8 ./src/main.o
+ .rodata        0x000057e0        0x8 ./src/printf-stdarg.o
+ .rodata        0x000057e8       0x64 ./src/FreeRTOS/tasks.o
+ .rodata        0x0000584c        0x2 ./src/FreeRTOS/portable/MemMang/heap_2.o
+ *fill*         0x0000584e        0x2 00
+ .rodata        0x00005850       0x30 ./src/Common Demo Tasks/BlockQ.o
+ .rodata        0x00005880       0x40 ./src/Common Demo Tasks/GenQTest.o
+ .rodata        0x000058c0       0x20 ./src/Common Demo Tasks/PollQ.o
+ .rodata        0x000058e0       0x34 ./src/Common Demo Tasks/QPeek.o
+ .rodata        0x00005914       0x24 ./src/Common Demo Tasks/blocktim.o
+ .rodata        0x00005938        0x8 ./src/Common Demo Tasks/integer.o
+ .rodata        0x00005940       0x28 ./src/Common Demo Tasks/recmutex.o
+ .rodata        0x00005968       0x40 ./src/Common Demo Tasks/semtest.o
+
+.glue_7         0x000059a8        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x000059a8        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x000059a8        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x000059a8        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x000059a8                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x000059a8                __exidx_end = .
+                0x000059a8                _etext = .
+
+.data           0x10000000       0x10 load address 0x000059a8
+                0x10000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data          0x10000000        0x4 ./src/main.o
+ .data          0x10000004        0x4 ./src/FreeRTOS/tasks.o
+ .data          0x10000008        0x4 ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .data          0x1000000c        0x4 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+                0x10000010                _edata = .
+
+.bss            0x10000010     0x4f04 load address 0x000059b8
+                0x10000010                _bss = .
+ *(.bss*)
+ .bss           0x10000010        0x8 ./src/webserver/emac.o
+ .bss           0x10000018        0x4 ./src/webserver/uIP_Task.o
+                0x10000018                xEMACSemaphore
+ .bss           0x1000001c        0x4 ./src/main.o
+ .bss           0x10000020       0x48 ./src/LPCUSB/usbhw_lpc.o
+ .bss           0x10000068      0x17c ./src/FreeRTOS/tasks.o
+                0x10000068                pxCurrentTCB
+ *fill*         0x100001e4        0x4 00
+ .bss           0x100001e8     0x4c18 ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .bss           0x10004e00       0x18 ./src/Common Demo Tasks/BlockQ.o
+ .bss           0x10004e18       0x20 ./src/Common Demo Tasks/GenQTest.o
+ .bss           0x10004e38        0xc ./src/Common Demo Tasks/PollQ.o
+ .bss           0x10004e44        0xc ./src/Common Demo Tasks/QPeek.o
+ .bss           0x10004e50       0x20 ./src/Common Demo Tasks/blocktim.o
+ .bss           0x10004e70        0x4 ./src/Common Demo Tasks/integer.o
+ .bss           0x10004e74       0x30 ./src/Common Demo Tasks/recmutex.o
+ .bss           0x10004ea4       0x12 ./src/Common Demo Tasks/semtest.o
+ *(COMMON)
+ *fill*         0x10004eb6        0x2 00
+ COMMON         0x10004eb8       0x50 ./src/FreeRTOS/queue.o
+                0x10004eb8                xQueueRegistry
+ COMMON         0x10004f08        0xc ./src/Common Demo Tasks/QPeek.o
+                0x10004f08                xHighPriorityTask
+                0x10004f0c                xMediumPriorityTask
+                0x10004f10                xHighestPriorityTask
+                0x10004f14                _ebss = .
+
+.cr_heap        0x10004f14        0x0
+                0x10004f14                end = .
+                0x10004f14                _pvHeapStart = .
+                0x10007ff0                _vStackTop = (_vRamTop - 0x10)
+
+.ETHRAM
+
+.USBRAM
+OUTPUT(RTOSDemo_RDB1768.axf elf32-littlearm)
+
+.debug_abbrev   0x00000000     0x4dbc
+ .debug_abbrev  0x00000000      0x1df ./src/webserver/emac.o
+ .debug_abbrev  0x000001df       0x54 ./src/webserver/http-strings.o
+ .debug_abbrev  0x00000233      0x1ca ./src/webserver/httpd-cgi.o
+ .debug_abbrev  0x000003fd      0x146 ./src/webserver/httpd-fs.o
+ .debug_abbrev  0x00000543      0x1c8 ./src/webserver/httpd.o
+ .debug_abbrev  0x0000070b      0x1e0 ./src/webserver/psock.o
+ .debug_abbrev  0x000008eb       0xb7 ./src/webserver/timer.o
+ .debug_abbrev  0x000009a2      0x201 ./src/webserver/uIP_Task.o
+ .debug_abbrev  0x00000ba3      0x237 ./src/webserver/uip.o
+ .debug_abbrev  0x00000dda      0x18c ./src/webserver/uip_arp.o
+ .debug_abbrev  0x00000f66      0x106 ./src/ParTest.o
+ .debug_abbrev  0x0000106c       0xbf ./src/cr_startup_lpc17.o
+ .debug_abbrev  0x0000112b      0x142 ./src/main.o
+ .debug_abbrev  0x0000126d      0x147 ./src/printf-stdarg.o
+ .debug_abbrev  0x000013b4       0x84 ./src/syscalls.o
+ .debug_abbrev  0x00001438      0x1cb ./src/LPCUSB/USB_CDC.o
+ .debug_abbrev  0x00001603      0x10c ./src/LPCUSB/usbcontrol.o
+ .debug_abbrev  0x0000170f      0x1ff ./src/LPCUSB/usbhw_lpc.o
+ .debug_abbrev  0x0000190e       0xa0 ./src/LPCUSB/usbinit.o
+ .debug_abbrev  0x000019ae      0x152 ./src/LPCUSB/usbstdreq.o
+ .debug_abbrev  0x00001b00      0x118 ./src/LCD/lcd.o
+ .debug_abbrev  0x00001c18       0xa3 ./src/LCD/lcd_driver.o
+ .debug_abbrev  0x00001cbb       0x6e ./src/LCD/system_fixed_be_8_15.o
+ .debug_abbrev  0x00001d29       0xcc ./src/FreeRTOS/list.o
+ .debug_abbrev  0x00001df5      0x171 ./src/FreeRTOS/queue.o
+ .debug_abbrev  0x00001f66      0x1b9 ./src/FreeRTOS/tasks.o
+ .debug_abbrev  0x0000211f      0x169 ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .debug_abbrev  0x00002288      0x11e ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .debug_abbrev  0x000023a6      0x14e ./src/Drivers/source/lpc17xx_adc.o
+ .debug_abbrev  0x000024f4      0x1ab ./src/Drivers/source/lpc17xx_can.o
+ .debug_abbrev  0x0000269f      0x18a ./src/Drivers/source/lpc17xx_clkpwr.o
+ .debug_abbrev  0x00002829       0xf9 ./src/Drivers/source/lpc17xx_dac.o
+ .debug_abbrev  0x00002922      0x215 ./src/Drivers/source/lpc17xx_emac.o
+ .debug_abbrev  0x00002b37      0x179 ./src/Drivers/source/lpc17xx_gpdma.o
+ .debug_abbrev  0x00002cb0      0x1bd ./src/Drivers/source/lpc17xx_gpio.o
+ .debug_abbrev  0x00002e6d      0x242 ./src/Drivers/source/lpc17xx_i2c.o
+ .debug_abbrev  0x000030af      0x18e ./src/Drivers/source/lpc17xx_i2s.o
+ .debug_abbrev  0x0000323d       0x6a ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .debug_abbrev  0x000032a7      0x14a ./src/Drivers/source/lpc17xx_mcpwm.o
+ .debug_abbrev  0x000033f1       0xef ./src/Drivers/source/lpc17xx_nvic.o
+ .debug_abbrev  0x000034e0      0x11e ./src/Drivers/source/lpc17xx_pinsel.o
+ .debug_abbrev  0x000035fe      0x196 ./src/Drivers/source/lpc17xx_pwm.o
+ .debug_abbrev  0x00003794      0x1d8 ./src/Drivers/source/lpc17xx_qei.o
+ .debug_abbrev  0x0000396c      0x116 ./src/Drivers/source/lpc17xx_rit.o
+ .debug_abbrev  0x00003a82      0x17a ./src/Drivers/source/lpc17xx_rtc.o
+ .debug_abbrev  0x00003bfc      0x186 ./src/Drivers/source/lpc17xx_spi.o
+ .debug_abbrev  0x00003d82      0x1cb ./src/Drivers/source/lpc17xx_ssp.o
+ .debug_abbrev  0x00003f4d      0x195 ./src/Drivers/source/lpc17xx_timer.o
+ .debug_abbrev  0x000040e2      0x22a ./src/Drivers/source/lpc17xx_uart.o
+ .debug_abbrev  0x0000430c      0x13b ./src/Drivers/source/lpc17xx_wdt.o
+ .debug_abbrev  0x00004447       0xc4 ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .debug_abbrev  0x0000450b       0xd9 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .debug_abbrev  0x000045e4      0x104 ./src/Common Demo Tasks/BlockQ.o
+ .debug_abbrev  0x000046e8       0xe8 ./src/Common Demo Tasks/GenQTest.o
+ .debug_abbrev  0x000047d0       0xb5 ./src/Common Demo Tasks/PollQ.o
+ .debug_abbrev  0x00004885       0xf9 ./src/Common Demo Tasks/QPeek.o
+ .debug_abbrev  0x0000497e       0xe6 ./src/Common Demo Tasks/blocktim.o
+ .debug_abbrev  0x00004a64       0x9c ./src/Common Demo Tasks/flash.o
+ .debug_abbrev  0x00004b00       0xc3 ./src/Common Demo Tasks/integer.o
+ .debug_abbrev  0x00004bc3       0xf5 ./src/Common Demo Tasks/recmutex.o
+ .debug_abbrev  0x00004cb8      0x104 ./src/Common Demo Tasks/semtest.o
+
+.debug_info     0x00000000    0x17aaf
+ .debug_info    0x00000000      0xc1a ./src/webserver/emac.o
+ .debug_info    0x00000c1a      0x442 ./src/webserver/http-strings.o
+ .debug_info    0x0000105c      0xc2d ./src/webserver/httpd-cgi.o
+ .debug_info    0x00001c89      0x4a7 ./src/webserver/httpd-fs.o
+ .debug_info    0x00002130      0x8cb ./src/webserver/httpd.o
+ .debug_info    0x000029fb      0x7a6 ./src/webserver/psock.o
+ .debug_info    0x000031a1      0x15e ./src/webserver/timer.o
+ .debug_info    0x000032ff      0xe0f ./src/webserver/uIP_Task.o
+ .debug_info    0x0000410e      0xe00 ./src/webserver/uip.o
+ .debug_info    0x00004f0e      0x4ad ./src/webserver/uip_arp.o
+ .debug_info    0x000053bb      0x485 ./src/ParTest.o
+ .debug_info    0x00005840      0x166 ./src/cr_startup_lpc17.o
+ .debug_info    0x000059a6      0x72a ./src/main.o
+ .debug_info    0x000060d0      0x3ee ./src/printf-stdarg.o
+ .debug_info    0x000064be      0x2bf ./src/syscalls.o
+ .debug_info    0x0000677d      0x84f ./src/LPCUSB/USB_CDC.o
+ .debug_info    0x00006fcc      0x2f0 ./src/LPCUSB/usbcontrol.o
+ .debug_info    0x000072bc      0xfa0 ./src/LPCUSB/usbhw_lpc.o
+ .debug_info    0x0000825c       0xce ./src/LPCUSB/usbinit.o
+ .debug_info    0x0000832a      0x3f9 ./src/LPCUSB/usbstdreq.o
+ .debug_info    0x00008723      0x5c7 ./src/LCD/lcd.o
+ .debug_info    0x00008cea       0xfa ./src/LCD/lcd_driver.o
+ .debug_info    0x00008de4       0x84 ./src/LCD/system_fixed_be_8_15.o
+ .debug_info    0x00008e68      0x2b5 ./src/FreeRTOS/list.o
+ .debug_info    0x0000911d      0x8bd ./src/FreeRTOS/queue.o
+ .debug_info    0x000099da     0x1240 ./src/FreeRTOS/tasks.o
+ .debug_info    0x0000ac1a      0x2bb ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .debug_info    0x0000aed5      0x1f6 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .debug_info    0x0000b0cb      0x5f9 ./src/Drivers/source/lpc17xx_adc.o
+ .debug_info    0x0000b6c4     0x1187 ./src/Drivers/source/lpc17xx_can.o
+ .debug_info    0x0000c84b      0x61a ./src/Drivers/source/lpc17xx_clkpwr.o
+ .debug_info    0x0000ce65      0x263 ./src/Drivers/source/lpc17xx_dac.o
+ .debug_info    0x0000d0c8      0xdf5 ./src/Drivers/source/lpc17xx_emac.o
+ .debug_info    0x0000debd      0x474 ./src/Drivers/source/lpc17xx_gpdma.o
+ .debug_info    0x0000e331      0xba8 ./src/Drivers/source/lpc17xx_gpio.o
+ .debug_info    0x0000eed9      0xca6 ./src/Drivers/source/lpc17xx_i2c.o
+ .debug_info    0x0000fb7f      0x913 ./src/Drivers/source/lpc17xx_i2s.o
+ .debug_info    0x00010492       0xcd ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .debug_info    0x0001055f      0x7e4 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .debug_info    0x00010d43      0x3c1 ./src/Drivers/source/lpc17xx_nvic.o
+ .debug_info    0x00011104      0x4a5 ./src/Drivers/source/lpc17xx_pinsel.o
+ .debug_info    0x000115a9      0x801 ./src/Drivers/source/lpc17xx_pwm.o
+ .debug_info    0x00011daa      0x819 ./src/Drivers/source/lpc17xx_qei.o
+ .debug_info    0x000125c3      0x2f7 ./src/Drivers/source/lpc17xx_rit.o
+ .debug_info    0x000128ba      0x9f1 ./src/Drivers/source/lpc17xx_rtc.o
+ .debug_info    0x000132ab      0x631 ./src/Drivers/source/lpc17xx_spi.o
+ .debug_info    0x000138dc      0x849 ./src/Drivers/source/lpc17xx_ssp.o
+ .debug_info    0x00014125      0x81d ./src/Drivers/source/lpc17xx_timer.o
+ .debug_info    0x00014942     0x12dc ./src/Drivers/source/lpc17xx_uart.o
+ .debug_info    0x00015c1e      0x315 ./src/Drivers/source/lpc17xx_wdt.o
+ .debug_info    0x00015f33      0x33a ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .debug_info    0x0001626d      0x54c ./src/Core/CM3/CoreSupport/core_cm3.o
+ .debug_info    0x000167b9      0x2f4 ./src/Common Demo Tasks/BlockQ.o
+ .debug_info    0x00016aad      0x27d ./src/Common Demo Tasks/GenQTest.o
+ .debug_info    0x00016d2a      0x1b9 ./src/Common Demo Tasks/PollQ.o
+ .debug_info    0x00016ee3      0x265 ./src/Common Demo Tasks/QPeek.o
+ .debug_info    0x00017148      0x23b ./src/Common Demo Tasks/blocktim.o
+ .debug_info    0x00017383      0x128 ./src/Common Demo Tasks/flash.o
+ .debug_info    0x000174ab      0x172 ./src/Common Demo Tasks/integer.o
+ .debug_info    0x0001761d      0x241 ./src/Common Demo Tasks/recmutex.o
+ .debug_info    0x0001785e      0x251 ./src/Common Demo Tasks/semtest.o
+
+.debug_line     0x00000000    0x12676
+ .debug_line    0x00000000      0x656 ./src/webserver/emac.o
+ .debug_line    0x00000656       0x40 ./src/webserver/http-strings.o
+ .debug_line    0x00000696      0x41a ./src/webserver/httpd-cgi.o
+ .debug_line    0x00000ab0      0x330 ./src/webserver/httpd-fs.o
+ .debug_line    0x00000de0      0x425 ./src/webserver/httpd.o
+ .debug_line    0x00001205      0x428 ./src/webserver/psock.o
+ .debug_line    0x0000162d      0x4f2 ./src/webserver/timer.o
+ .debug_line    0x00001b1f      0x6e2 ./src/webserver/uIP_Task.o
+ .debug_line    0x00002201      0x636 ./src/webserver/uip.o
+ .debug_line    0x00002837      0x3b7 ./src/webserver/uip_arp.o
+ .debug_line    0x00002bee      0x557 ./src/ParTest.o
+ .debug_line    0x00003145       0xce ./src/cr_startup_lpc17.o
+ .debug_line    0x00003213      0x772 ./src/main.o
+ .debug_line    0x00003985      0x251 ./src/printf-stdarg.o
+ .debug_line    0x00003bd6      0x31e ./src/syscalls.o
+ .debug_line    0x00003ef4      0x5ef ./src/LPCUSB/USB_CDC.o
+ .debug_line    0x000044e3      0x2e8 ./src/LPCUSB/usbcontrol.o
+ .debug_line    0x000047cb      0x4e5 ./src/LPCUSB/usbhw_lpc.o
+ .debug_line    0x00004cb0      0x287 ./src/LPCUSB/usbinit.o
+ .debug_line    0x00004f37      0x34a ./src/LPCUSB/usbstdreq.o
+ .debug_line    0x00005281      0x3a2 ./src/LCD/lcd.o
+ .debug_line    0x00005623      0x176 ./src/LCD/lcd_driver.o
+ .debug_line    0x00005799       0x42 ./src/LCD/system_fixed_be_8_15.o
+ .debug_line    0x000057db      0x51a ./src/FreeRTOS/list.o
+ .debug_line    0x00005cf5      0x715 ./src/FreeRTOS/queue.o
+ .debug_line    0x0000640a      0x968 ./src/FreeRTOS/tasks.o
+ .debug_line    0x00006d72      0x52d ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .debug_line    0x0000729f      0x584 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .debug_line    0x00007823      0x4bc ./src/Drivers/source/lpc17xx_adc.o
+ .debug_line    0x00007cdf      0x852 ./src/Drivers/source/lpc17xx_can.o
+ .debug_line    0x00008531      0x42d ./src/Drivers/source/lpc17xx_clkpwr.o
+ .debug_line    0x0000895e      0x406 ./src/Drivers/source/lpc17xx_dac.o
+ .debug_line    0x00008d64      0x64d ./src/Drivers/source/lpc17xx_emac.o
+ .debug_line    0x000093b1      0x43f ./src/Drivers/source/lpc17xx_gpdma.o
+ .debug_line    0x000097f0      0x562 ./src/Drivers/source/lpc17xx_gpio.o
+ .debug_line    0x00009d52      0x6cc ./src/Drivers/source/lpc17xx_i2c.o
+ .debug_line    0x0000a41e      0x5b2 ./src/Drivers/source/lpc17xx_i2s.o
+ .debug_line    0x0000a9d0      0x2f3 ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .debug_line    0x0000acc3      0x519 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .debug_line    0x0000b1dc      0x3a9 ./src/Drivers/source/lpc17xx_nvic.o
+ .debug_line    0x0000b585      0x3f3 ./src/Drivers/source/lpc17xx_pinsel.o
+ .debug_line    0x0000b978      0x51c ./src/Drivers/source/lpc17xx_pwm.o
+ .debug_line    0x0000be94      0x565 ./src/Drivers/source/lpc17xx_qei.o
+ .debug_line    0x0000c3f9      0x438 ./src/Drivers/source/lpc17xx_rit.o
+ .debug_line    0x0000c831      0x5b5 ./src/Drivers/source/lpc17xx_rtc.o
+ .debug_line    0x0000cde6      0x515 ./src/Drivers/source/lpc17xx_spi.o
+ .debug_line    0x0000d2fb      0x602 ./src/Drivers/source/lpc17xx_ssp.o
+ .debug_line    0x0000d8fd      0x54f ./src/Drivers/source/lpc17xx_timer.o
+ .debug_line    0x0000de4c      0x7a5 ./src/Drivers/source/lpc17xx_uart.o
+ .debug_line    0x0000e5f1      0x499 ./src/Drivers/source/lpc17xx_wdt.o
+ .debug_line    0x0000ea8a      0x339 ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .debug_line    0x0000edc3      0x3eb ./src/Core/CM3/CoreSupport/core_cm3.o
+ .debug_line    0x0000f1ae      0x5da ./src/Common Demo Tasks/BlockQ.o
+ .debug_line    0x0000f788      0x64d ./src/Common Demo Tasks/GenQTest.o
+ .debug_line    0x0000fdd5      0x5ba ./src/Common Demo Tasks/PollQ.o
+ .debug_line    0x0001038f      0x613 ./src/Common Demo Tasks/QPeek.o
+ .debug_line    0x000109a2      0x610 ./src/Common Demo Tasks/blocktim.o
+ .debug_line    0x00010fb2      0x57d ./src/Common Demo Tasks/flash.o
+ .debug_line    0x0001152f      0x593 ./src/Common Demo Tasks/integer.o
+ .debug_line    0x00011ac2      0x5df ./src/Common Demo Tasks/recmutex.o
+ .debug_line    0x000120a1      0x5d5 ./src/Common Demo Tasks/semtest.o
+
+.debug_macinfo  0x00000000   0x16bc74
+ .debug_macinfo
+                0x00000000     0x89d4 ./src/webserver/emac.o
+ .debug_macinfo
+                0x000089d4      0xc74 ./src/webserver/http-strings.o
+ .debug_macinfo
+                0x00009648     0x46e5 ./src/webserver/httpd-cgi.o
+ .debug_macinfo
+                0x0000dd2d     0x43d4 ./src/webserver/httpd-fs.o
+ .debug_macinfo
+                0x00012101     0x4508 ./src/webserver/httpd.o
+ .debug_macinfo
+                0x00016609     0x46ff ./src/webserver/psock.o
+ .debug_macinfo
+                0x0001ad08     0x5e6e ./src/webserver/timer.o
+ .debug_macinfo
+                0x00020b76     0xa8b3 ./src/webserver/uIP_Task.o
+ .debug_macinfo
+                0x0002b429     0x469a ./src/webserver/uip.o
+ .debug_macinfo
+                0x0002fac3     0x45a3 ./src/webserver/uip_arp.o
+ .debug_macinfo
+                0x00034066     0x5ede ./src/ParTest.o
+ .debug_macinfo
+                0x00039f44      0xcc0 ./src/cr_startup_lpc17.o
+ .debug_macinfo
+                0x0003ac04     0x964a ./src/main.o
+ .debug_macinfo
+                0x0004424e      0xd62 ./src/printf-stdarg.o
+ .debug_macinfo
+                0x00044fb0     0x1361 ./src/syscalls.o
+ .debug_macinfo
+                0x00046311     0x7a21 ./src/LPCUSB/USB_CDC.o
+ .debug_macinfo
+                0x0004dd32     0x1b68 ./src/LPCUSB/usbcontrol.o
+ .debug_macinfo
+                0x0004f89a     0x57ee ./src/LPCUSB/usbhw_lpc.o
+ .debug_macinfo
+                0x00055088     0x1b3c ./src/LPCUSB/usbinit.o
+ .debug_macinfo
+                0x00056bc4     0x1c30 ./src/LPCUSB/usbstdreq.o
+ .debug_macinfo
+                0x000587f4     0x1aab ./src/LCD/lcd.o
+ .debug_macinfo
+                0x0005a29f     0xf58a ./src/LCD/lcd_driver.o
+ .debug_macinfo
+                0x00069829      0xc74 ./src/LCD/system_fixed_be_8_15.o
+ .debug_macinfo
+                0x0006a49d     0x6271 ./src/FreeRTOS/list.o
+ .debug_macinfo
+                0x0007070e     0x6e6a ./src/FreeRTOS/queue.o
+ .debug_macinfo
+                0x00077578     0x7332 ./src/FreeRTOS/tasks.o
+ .debug_macinfo
+                0x0007e8aa     0x691e ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .debug_macinfo
+                0x000851c8     0x6788 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .debug_macinfo
+                0x0008b950     0x73e7 ./src/Drivers/source/lpc17xx_adc.o
+ .debug_macinfo
+                0x00092d37     0x8806 ./src/Drivers/source/lpc17xx_can.o
+ .debug_macinfo
+                0x0009b53d     0x5e39 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .debug_macinfo
+                0x000a1376     0x6d14 ./src/Drivers/source/lpc17xx_dac.o
+ .debug_macinfo
+                0x000a808a     0x8963 ./src/Drivers/source/lpc17xx_emac.o
+ .debug_macinfo
+                0x000b09ed     0x801b ./src/Drivers/source/lpc17xx_gpdma.o
+ .debug_macinfo
+                0x000b8a08     0x4ef8 ./src/Drivers/source/lpc17xx_gpio.o
+ .debug_macinfo
+                0x000bd900     0x850a ./src/Drivers/source/lpc17xx_i2c.o
+ .debug_macinfo
+                0x000c5e0a     0x7e35 ./src/Drivers/source/lpc17xx_i2s.o
+ .debug_macinfo
+                0x000cdc3f     0x29d6 ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .debug_macinfo
+                0x000d0615     0x759b ./src/Drivers/source/lpc17xx_mcpwm.o
+ .debug_macinfo
+                0x000d7bb0     0x4b2f ./src/Drivers/source/lpc17xx_nvic.o
+ .debug_macinfo
+                0x000dc6df     0x5013 ./src/Drivers/source/lpc17xx_pinsel.o
+ .debug_macinfo
+                0x000e16f2     0x7440 ./src/Drivers/source/lpc17xx_pwm.o
+ .debug_macinfo
+                0x000e8b32     0x83d9 ./src/Drivers/source/lpc17xx_qei.o
+ .debug_macinfo
+                0x000f0f0b     0x6c3d ./src/Drivers/source/lpc17xx_rit.o
+ .debug_macinfo
+                0x000f7b48     0x7431 ./src/Drivers/source/lpc17xx_rtc.o
+ .debug_macinfo
+                0x000fef79     0x75c7 ./src/Drivers/source/lpc17xx_spi.o
+ .debug_macinfo
+                0x00106540     0x7c89 ./src/Drivers/source/lpc17xx_ssp.o
+ .debug_macinfo
+                0x0010e1c9     0x83ff ./src/Drivers/source/lpc17xx_timer.o
+ .debug_macinfo
+                0x001165c8     0x83f8 ./src/Drivers/source/lpc17xx_uart.o
+ .debug_macinfo
+                0x0011e9c0     0x7ef0 ./src/Drivers/source/lpc17xx_wdt.o
+ .debug_macinfo
+                0x001268b0     0x4c35 ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .debug_macinfo
+                0x0012b4e5     0x2692 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .debug_macinfo
+                0x0012db77     0x6cb8 ./src/Common Demo Tasks/BlockQ.o
+ .debug_macinfo
+                0x0013482f     0x72fe ./src/Common Demo Tasks/GenQTest.o
+ .debug_macinfo
+                0x0013bb2d     0x6de7 ./src/Common Demo Tasks/PollQ.o
+ .debug_macinfo
+                0x00142914     0x730e ./src/Common Demo Tasks/QPeek.o
+ .debug_macinfo
+                0x00149c22     0x6d2c ./src/Common Demo Tasks/blocktim.o
+ .debug_macinfo
+                0x0015094e     0x6690 ./src/Common Demo Tasks/flash.o
+ .debug_macinfo
+                0x00156fde     0x66ea ./src/Common Demo Tasks/integer.o
+ .debug_macinfo
+                0x0015d6c8     0x72b9 ./src/Common Demo Tasks/recmutex.o
+ .debug_macinfo
+                0x00164981     0x72f3 ./src/Common Demo Tasks/semtest.o
+
+.debug_frame    0x00000000     0x52fc
+ .debug_frame   0x00000000      0x188 ./src/webserver/emac.o
+ .debug_frame   0x00000188      0x1cc ./src/webserver/httpd-cgi.o
+ .debug_frame   0x00000354       0x88 ./src/webserver/httpd-fs.o
+ .debug_frame   0x000003dc      0x16c ./src/webserver/httpd.o
+ .debug_frame   0x00000548      0x184 ./src/webserver/psock.o
+ .debug_frame   0x000006cc       0x8c ./src/webserver/timer.o
+ .debug_frame   0x00000758       0xd8 ./src/webserver/uIP_Task.o
+ .debug_frame   0x00000830      0x1e8 ./src/webserver/uip.o
+ .debug_frame   0x00000a18       0xc8 ./src/webserver/uip_arp.o
+ .debug_frame   0x00000ae0       0x7c ./src/ParTest.o
+ .debug_frame   0x00000b5c       0xd8 ./src/cr_startup_lpc17.o
+ .debug_frame   0x00000c34       0xb8 ./src/main.o
+ .debug_frame   0x00000cec      0x11c ./src/printf-stdarg.o
+ .debug_frame   0x00000e08       0xd4 ./src/syscalls.o
+ .debug_frame   0x00000edc      0x160 ./src/LPCUSB/USB_CDC.o
+ .debug_frame   0x0000103c       0xac ./src/LPCUSB/usbcontrol.o
+ .debug_frame   0x000010e8      0x27c ./src/LPCUSB/usbhw_lpc.o
+ .debug_frame   0x00001364       0x48 ./src/LPCUSB/usbinit.o
+ .debug_frame   0x000013ac      0x100 ./src/LPCUSB/usbstdreq.o
+ .debug_frame   0x000014ac      0x154 ./src/LCD/lcd.o
+ .debug_frame   0x00001600       0x9c ./src/LCD/lcd_driver.o
+ .debug_frame   0x0000169c       0x9c ./src/FreeRTOS/list.o
+ .debug_frame   0x00001738      0x27c ./src/FreeRTOS/queue.o
+ .debug_frame   0x000019b4      0x500 ./src/FreeRTOS/tasks.o
+ .debug_frame   0x00001eb4       0x80 ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .debug_frame   0x00001f34      0x110 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .debug_frame   0x00002044      0x1ac ./src/Drivers/source/lpc17xx_adc.o
+ .debug_frame   0x000021f0      0x254 ./src/Drivers/source/lpc17xx_can.o
+ .debug_frame   0x00002444      0x10c ./src/Drivers/source/lpc17xx_clkpwr.o
+ .debug_frame   0x00002550       0xb0 ./src/Drivers/source/lpc17xx_dac.o
+ .debug_frame   0x00002600      0x300 ./src/Drivers/source/lpc17xx_emac.o
+ .debug_frame   0x00002900       0x84 ./src/Drivers/source/lpc17xx_gpdma.o
+ .debug_frame   0x00002984      0x2c4 ./src/Drivers/source/lpc17xx_gpio.o
+ .debug_frame   0x00002c48      0x2c8 ./src/Drivers/source/lpc17xx_i2c.o
+ .debug_frame   0x00002f10      0x290 ./src/Drivers/source/lpc17xx_i2s.o
+ .debug_frame   0x000031a0       0x2c ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .debug_frame   0x000031cc      0x1b8 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .debug_frame   0x00003384       0x64 ./src/Drivers/source/lpc17xx_nvic.o
+ .debug_frame   0x000033e8       0xbc ./src/Drivers/source/lpc17xx_pinsel.o
+ .debug_frame   0x000034a4      0x1d4 ./src/Drivers/source/lpc17xx_pwm.o
+ .debug_frame   0x00003678      0x2b4 ./src/Drivers/source/lpc17xx_qei.o
+ .debug_frame   0x0000392c       0xf0 ./src/Drivers/source/lpc17xx_rit.o
+ .debug_frame   0x00003a1c      0x28c ./src/Drivers/source/lpc17xx_rtc.o
+ .debug_frame   0x00003ca8      0x1c8 ./src/Drivers/source/lpc17xx_spi.o
+ .debug_frame   0x00003e70      0x280 ./src/Drivers/source/lpc17xx_ssp.o
+ .debug_frame   0x000040f0      0x1ec ./src/Drivers/source/lpc17xx_timer.o
+ .debug_frame   0x000042dc      0x42c ./src/Drivers/source/lpc17xx_uart.o
+ .debug_frame   0x00004708      0x124 ./src/Drivers/source/lpc17xx_wdt.o
+ .debug_frame   0x0000482c       0x40 ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .debug_frame   0x0000486c      0x248 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .debug_frame   0x00004ab4       0x8c ./src/Common Demo Tasks/BlockQ.o
+ .debug_frame   0x00004b40       0xc8 ./src/Common Demo Tasks/GenQTest.o
+ .debug_frame   0x00004c08       0x8c ./src/Common Demo Tasks/PollQ.o
+ .debug_frame   0x00004c94       0xc8 ./src/Common Demo Tasks/QPeek.o
+ .debug_frame   0x00004d5c       0x8c ./src/Common Demo Tasks/blocktim.o
+ .debug_frame   0x00004de8       0x50 ./src/Common Demo Tasks/flash.o
+ .debug_frame   0x00004e38       0x6c ./src/Common Demo Tasks/integer.o
+ .debug_frame   0x00004ea4       0xac ./src/Common Demo Tasks/recmutex.o
+ .debug_frame   0x00004f50       0x6c ./src/Common Demo Tasks/semtest.o
+ .debug_frame   0x00004fbc       0x50 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(bpabi.o)
+ .debug_frame   0x0000500c       0x38 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_divdi3.o)
+ .debug_frame   0x00005044       0x38 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_udivdi3.o)
+ .debug_frame   0x0000507c       0x20 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_udivsi3.o)
+ .debug_frame   0x0000509c       0x20 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-abs.o)
+ .debug_frame   0x000050bc       0x2c c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcmp.o)
+ .debug_frame   0x000050e8       0x30 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+ .debug_frame   0x00005118       0x28 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .debug_frame   0x00005140       0x28 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcat.o)
+ .debug_frame   0x00005168       0x20 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strchr.o)
+ .debug_frame   0x00005188       0x20 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcpy.o)
+ .debug_frame   0x000051a8       0x20 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .debug_frame   0x000051c8       0x2c c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+ .debug_frame   0x000051f4       0x28 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncpy.o)
+ .debug_frame   0x0000521c       0x2c c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strrchr.o)
+ .debug_frame   0x00005248       0x8c c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strstr.o)
+ .debug_frame   0x000052d4       0x28 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+
+.debug_loc      0x00000000     0x85b6
+ .debug_loc     0x00000000      0x294 ./src/webserver/emac.o
+ .debug_loc     0x00000294      0x304 ./src/webserver/httpd-cgi.o
+ .debug_loc     0x00000598       0xdc ./src/webserver/httpd-fs.o
+ .debug_loc     0x00000674      0x251 ./src/webserver/httpd.o
+ .debug_loc     0x000008c5      0x294 ./src/webserver/psock.o
+ .debug_loc     0x00000b59       0xdc ./src/webserver/timer.o
+ .debug_loc     0x00000c35      0x169 ./src/webserver/uIP_Task.o
+ .debug_loc     0x00000d9e      0x34c ./src/webserver/uip.o
+ .debug_loc     0x000010ea      0x132 ./src/webserver/uip_arp.o
+ .debug_loc     0x0000121c       0xd0 ./src/ParTest.o
+ .debug_loc     0x000012ec      0x164 ./src/cr_startup_lpc17.o
+ .debug_loc     0x00001450      0x126 ./src/main.o
+ .debug_loc     0x00001576      0x1df ./src/printf-stdarg.o
+ .debug_loc     0x00001755      0x181 ./src/syscalls.o
+ .debug_loc     0x000018d6      0x251 ./src/LPCUSB/USB_CDC.o
+ .debug_loc     0x00001b27      0x113 ./src/LPCUSB/usbcontrol.o
+ .debug_loc     0x00001c3a      0x440 ./src/LPCUSB/usbhw_lpc.o
+ .debug_loc     0x0000207a       0x62 ./src/LPCUSB/usbinit.o
+ .debug_loc     0x000020dc      0x1b8 ./src/LPCUSB/usbstdreq.o
+ .debug_loc     0x00002294      0x229 ./src/LCD/lcd.o
+ .debug_loc     0x000024bd      0x107 ./src/LCD/lcd_driver.o
+ .debug_loc     0x000025c4      0x113 ./src/FreeRTOS/list.o
+ .debug_loc     0x000026d7      0x44c ./src/FreeRTOS/queue.o
+ .debug_loc     0x00002b23      0x895 ./src/FreeRTOS/tasks.o
+ .debug_loc     0x000033b8       0xc4 ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .debug_loc     0x0000347c      0x170 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .debug_loc     0x000035ec      0x2cb ./src/Drivers/source/lpc17xx_adc.o
+ .debug_loc     0x000038b7      0x3e4 ./src/Drivers/source/lpc17xx_can.o
+ .debug_loc     0x00003c9b      0x1b3 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .debug_loc     0x00003e4e      0x113 ./src/Drivers/source/lpc17xx_dac.o
+ .debug_loc     0x00003f61      0x58a ./src/Drivers/source/lpc17xx_emac.o
+ .debug_loc     0x000044eb       0xd0 ./src/Drivers/source/lpc17xx_gpdma.o
+ .debug_loc     0x000045bb      0x4ba ./src/Drivers/source/lpc17xx_gpio.o
+ .debug_loc     0x00004a75      0x4cd ./src/Drivers/source/lpc17xx_i2c.o
+ .debug_loc     0x00004f42      0x44e ./src/Drivers/source/lpc17xx_i2s.o
+ .debug_loc     0x00005390       0x37 ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .debug_loc     0x000053c7      0x33b ./src/Drivers/source/lpc17xx_mcpwm.o
+ .debug_loc     0x00005702       0xa5 ./src/Drivers/source/lpc17xx_nvic.o
+ .debug_loc     0x000057a7      0x14a ./src/Drivers/source/lpc17xx_pinsel.o
+ .debug_loc     0x000058f1      0x302 ./src/Drivers/source/lpc17xx_pwm.o
+ .debug_loc     0x00005bf3      0x485 ./src/Drivers/source/lpc17xx_qei.o
+ .debug_loc     0x00006078      0x181 ./src/Drivers/source/lpc17xx_rit.o
+ .debug_loc     0x000061f9      0x44c ./src/Drivers/source/lpc17xx_rtc.o
+ .debug_loc     0x00006645      0x2f6 ./src/Drivers/source/lpc17xx_spi.o
+ .debug_loc     0x0000693b      0x434 ./src/Drivers/source/lpc17xx_ssp.o
+ .debug_loc     0x00006d6f      0x339 ./src/Drivers/source/lpc17xx_timer.o
+ .debug_loc     0x000070a8      0x720 ./src/Drivers/source/lpc17xx_uart.o
+ .debug_loc     0x000077c8      0x1de ./src/Drivers/source/lpc17xx_wdt.o
+ .debug_loc     0x000079a6       0x56 ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .debug_loc     0x000079fc      0x3de ./src/Core/CM3/CoreSupport/core_cm3.o
+ .debug_loc     0x00007dda       0xdd ./src/Common Demo Tasks/BlockQ.o
+ .debug_loc     0x00007eb7      0x13e ./src/Common Demo Tasks/GenQTest.o
+ .debug_loc     0x00007ff5       0xdc ./src/Common Demo Tasks/PollQ.o
+ .debug_loc     0x000080d1      0x13e ./src/Common Demo Tasks/QPeek.o
+ .debug_loc     0x0000820f       0xdc ./src/Common Demo Tasks/blocktim.o
+ .debug_loc     0x000082eb       0x6e ./src/Common Demo Tasks/flash.o
+ .debug_loc     0x00008359       0xa5 ./src/Common Demo Tasks/integer.o
+ .debug_loc     0x000083fe      0x113 ./src/Common Demo Tasks/recmutex.o
+ .debug_loc     0x00008511       0xa5 ./src/Common Demo Tasks/semtest.o
+
+.debug_pubnames
+                0x00000000     0x3305
+ .debug_pubnames
+                0x00000000       0x62 ./src/webserver/emac.o
+ .debug_pubnames
+                0x00000062      0x271 ./src/webserver/http-strings.o
+ .debug_pubnames
+                0x000002d3       0x4c ./src/webserver/httpd-cgi.o
+ .debug_pubnames
+                0x0000031f       0xd5 ./src/webserver/httpd-fs.o
+ .debug_pubnames
+                0x000003f4       0x33 ./src/webserver/httpd.o
+ .debug_pubnames
+                0x00000427       0x90 ./src/webserver/psock.o
+ .debug_pubnames
+                0x000004b7       0x54 ./src/webserver/timer.o
+ .debug_pubnames
+                0x0000050b       0x72 ./src/webserver/uIP_Task.o
+ .debug_pubnames
+                0x0000057d      0x1aa ./src/webserver/uip.o
+ .debug_pubnames
+                0x00000727       0x68 ./src/webserver/uip_arp.o
+ .debug_pubnames
+                0x0000078f       0x66 ./src/ParTest.o
+ .debug_pubnames
+                0x000007f5       0x35 ./src/cr_startup_lpc17.o
+ .debug_pubnames
+                0x0000082a       0x94 ./src/main.o
+ .debug_pubnames
+                0x000008be       0x40 ./src/printf-stdarg.o
+ .debug_pubnames
+                0x000008fe       0x6c ./src/syscalls.o
+ .debug_pubnames
+                0x0000096a       0x61 ./src/LPCUSB/USB_CDC.o
+ .debug_pubnames
+                0x000009cb       0x4d ./src/LPCUSB/usbcontrol.o
+ .debug_pubnames
+                0x00000a18      0x132 ./src/LPCUSB/usbhw_lpc.o
+ .debug_pubnames
+                0x00000b4a       0x1e ./src/LPCUSB/usbinit.o
+ .debug_pubnames
+                0x00000b68       0x7f ./src/LPCUSB/usbstdreq.o
+ .debug_pubnames
+                0x00000be7       0xc7 ./src/LCD/lcd.o
+ .debug_pubnames
+                0x00000cae       0x89 ./src/LCD/lcd_driver.o
+ .debug_pubnames
+                0x00000d37       0x3b ./src/LCD/system_fixed_be_8_15.o
+ .debug_pubnames
+                0x00000d72       0x71 ./src/FreeRTOS/list.o
+ .debug_pubnames
+                0x00000de3      0x18c ./src/FreeRTOS/queue.o
+ .debug_pubnames
+                0x00000f6f      0x2f9 ./src/FreeRTOS/tasks.o
+ .debug_pubnames
+                0x00001268       0x64 ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .debug_pubnames
+                0x000012cc      0x10d ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .debug_pubnames
+                0x000013d9      0x110 ./src/Drivers/source/lpc17xx_adc.o
+ .debug_pubnames
+                0x000014e9      0x21a ./src/Drivers/source/lpc17xx_can.o
+ .debug_pubnames
+                0x00001703       0xbb ./src/Drivers/source/lpc17xx_clkpwr.o
+ .debug_pubnames
+                0x000017be       0x7a ./src/Drivers/source/lpc17xx_dac.o
+ .debug_pubnames
+                0x00001838      0x225 ./src/Drivers/source/lpc17xx_emac.o
+ .debug_pubnames
+                0x00001a5d       0xa7 ./src/Drivers/source/lpc17xx_gpdma.o
+ .debug_pubnames
+                0x00001b04      0x196 ./src/Drivers/source/lpc17xx_gpio.o
+ .debug_pubnames
+                0x00001c9a      0x165 ./src/Drivers/source/lpc17xx_i2c.o
+ .debug_pubnames
+                0x00001dff      0x157 ./src/Drivers/source/lpc17xx_i2s.o
+ .debug_pubnames
+                0x00001f56       0x23 ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .debug_pubnames
+                0x00001f79      0x13b ./src/Drivers/source/lpc17xx_mcpwm.o
+ .debug_pubnames
+                0x000020b4       0x46 ./src/Drivers/source/lpc17xx_nvic.o
+ .debug_pubnames
+                0x000020fa       0xa6 ./src/Drivers/source/lpc17xx_pinsel.o
+ .debug_pubnames
+                0x000021a0      0x127 ./src/Drivers/source/lpc17xx_pwm.o
+ .debug_pubnames
+                0x000022c7      0x1aa ./src/Drivers/source/lpc17xx_qei.o
+ .debug_pubnames
+                0x00002471       0x97 ./src/Drivers/source/lpc17xx_rit.o
+ .debug_pubnames
+                0x00002508      0x1ab ./src/Drivers/source/lpc17xx_rtc.o
+ .debug_pubnames
+                0x000026b3      0x11a ./src/Drivers/source/lpc17xx_spi.o
+ .debug_pubnames
+                0x000027cd      0x17f ./src/Drivers/source/lpc17xx_ssp.o
+ .debug_pubnames
+                0x0000294c      0x157 ./src/Drivers/source/lpc17xx_timer.o
+ .debug_pubnames
+                0x00002aa3      0x311 ./src/Drivers/source/lpc17xx_uart.o
+ .debug_pubnames
+                0x00002db4       0xaa ./src/Drivers/source/lpc17xx_wdt.o
+ .debug_pubnames
+                0x00002e5e       0x4f ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .debug_pubnames
+                0x00002ead      0x159 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .debug_pubnames
+                0x00003006       0x52 ./src/Common Demo Tasks/BlockQ.o
+ .debug_pubnames
+                0x00003058       0x54 ./src/Common Demo Tasks/GenQTest.o
+ .debug_pubnames
+                0x000030ac       0x4f ./src/Common Demo Tasks/PollQ.o
+ .debug_pubnames
+                0x000030fb       0x95 ./src/Common Demo Tasks/QPeek.o
+ .debug_pubnames
+                0x00003190       0x53 ./src/Common Demo Tasks/blocktim.o
+ .debug_pubnames
+                0x000031e3       0x2a ./src/Common Demo Tasks/flash.o
+ .debug_pubnames
+                0x0000320d       0x52 ./src/Common Demo Tasks/integer.o
+ .debug_pubnames
+                0x0000325f       0x58 ./src/Common Demo Tasks/recmutex.o
+ .debug_pubnames
+                0x000032b7       0x4e ./src/Common Demo Tasks/semtest.o
+
+.debug_aranges  0x00000000     0x1998
+ .debug_aranges
+                0x00000000       0x78 ./src/webserver/emac.o
+ .debug_aranges
+                0x00000078       0x88 ./src/webserver/httpd-cgi.o
+ .debug_aranges
+                0x00000100       0x38 ./src/webserver/httpd-fs.o
+ .debug_aranges
+                0x00000138       0x70 ./src/webserver/httpd.o
+ .debug_aranges
+                0x000001a8       0x78 ./src/webserver/psock.o
+ .debug_aranges
+                0x00000220       0x38 ./src/webserver/timer.o
+ .debug_aranges
+                0x00000258       0x50 ./src/webserver/uIP_Task.o
+ .debug_aranges
+                0x000002a8       0x98 ./src/webserver/uip.o
+ .debug_aranges
+                0x00000340       0x48 ./src/webserver/uip_arp.o
+ .debug_aranges
+                0x00000388       0x38 ./src/ParTest.o
+ .debug_aranges
+                0x000003c0       0x58 ./src/cr_startup_lpc17.o
+ .debug_aranges
+                0x00000418       0x48 ./src/main.o
+ .debug_aranges
+                0x00000460       0x58 ./src/printf-stdarg.o
+ .debug_aranges
+                0x000004b8       0x50 ./src/syscalls.o
+ .debug_aranges
+                0x00000508       0x70 ./src/LPCUSB/USB_CDC.o
+ .debug_aranges
+                0x00000578       0x40 ./src/LPCUSB/usbcontrol.o
+ .debug_aranges
+                0x000005b8       0xb8 ./src/LPCUSB/usbhw_lpc.o
+ .debug_aranges
+                0x00000670       0x28 ./src/LPCUSB/usbinit.o
+ .debug_aranges
+                0x00000698       0x58 ./src/LPCUSB/usbstdreq.o
+ .debug_aranges
+                0x000006f0       0x68 ./src/LCD/lcd.o
+ .debug_aranges
+                0x00000758       0x40 ./src/LCD/lcd_driver.o
+ .debug_aranges
+                0x00000798       0x40 ./src/FreeRTOS/list.o
+ .debug_aranges
+                0x000007d8       0xb8 ./src/FreeRTOS/queue.o
+ .debug_aranges
+                0x00000890      0x160 ./src/FreeRTOS/tasks.o
+ .debug_aranges
+                0x000009f0       0x38 ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .debug_aranges
+                0x00000a28       0x70 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .debug_aranges
+                0x00000a98       0x80 ./src/Drivers/source/lpc17xx_adc.o
+ .debug_aranges
+                0x00000b18       0xa8 ./src/Drivers/source/lpc17xx_can.o
+ .debug_aranges
+                0x00000bc0       0x60 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .debug_aranges
+                0x00000c20       0x40 ./src/Drivers/source/lpc17xx_dac.o
+ .debug_aranges
+                0x00000c60       0xe8 ./src/Drivers/source/lpc17xx_emac.o
+ .debug_aranges
+                0x00000d48       0x38 ./src/Drivers/source/lpc17xx_gpdma.o
+ .debug_aranges
+                0x00000d80       0xc8 ./src/Drivers/source/lpc17xx_gpio.o
+ .debug_aranges
+                0x00000e48       0xd0 ./src/Drivers/source/lpc17xx_i2c.o
+ .debug_aranges
+                0x00000f18       0xb8 ./src/Drivers/source/lpc17xx_i2s.o
+ .debug_aranges
+                0x00000fd0       0x20 ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .debug_aranges
+                0x00000ff0       0x90 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .debug_aranges
+                0x00001080       0x30 ./src/Drivers/source/lpc17xx_nvic.o
+ .debug_aranges
+                0x000010b0       0x48 ./src/Drivers/source/lpc17xx_pinsel.o
+ .debug_aranges
+                0x000010f8       0x88 ./src/Drivers/source/lpc17xx_pwm.o
+ .debug_aranges
+                0x00001180       0xc0 ./src/Drivers/source/lpc17xx_qei.o
+ .debug_aranges
+                0x00001240       0x50 ./src/Drivers/source/lpc17xx_rit.o
+ .debug_aranges
+                0x00001290       0xb8 ./src/Drivers/source/lpc17xx_rtc.o
+ .debug_aranges
+                0x00001348       0x88 ./src/Drivers/source/lpc17xx_spi.o
+ .debug_aranges
+                0x000013d0       0xb8 ./src/Drivers/source/lpc17xx_ssp.o
+ .debug_aranges
+                0x00001488       0x90 ./src/Drivers/source/lpc17xx_timer.o
+ .debug_aranges
+                0x00001518      0x128 ./src/Drivers/source/lpc17xx_uart.o
+ .debug_aranges
+                0x00001640       0x68 ./src/Drivers/source/lpc17xx_wdt.o
+ .debug_aranges
+                0x000016a8       0x28 ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .debug_aranges
+                0x000016d0       0xc8 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .debug_aranges
+                0x00001798       0x38 ./src/Common Demo Tasks/BlockQ.o
+ .debug_aranges
+                0x000017d0       0x48 ./src/Common Demo Tasks/GenQTest.o
+ .debug_aranges
+                0x00001818       0x38 ./src/Common Demo Tasks/PollQ.o
+ .debug_aranges
+                0x00001850       0x48 ./src/Common Demo Tasks/QPeek.o
+ .debug_aranges
+                0x00001898       0x38 ./src/Common Demo Tasks/blocktim.o
+ .debug_aranges
+                0x000018d0       0x28 ./src/Common Demo Tasks/flash.o
+ .debug_aranges
+                0x000018f8       0x30 ./src/Common Demo Tasks/integer.o
+ .debug_aranges
+                0x00001928       0x40 ./src/Common Demo Tasks/recmutex.o
+ .debug_aranges
+                0x00001968       0x30 ./src/Common Demo Tasks/semtest.o
+
+.debug_ranges   0x00000000     0x17c0
+ .debug_ranges  0x00000000       0x70 ./src/webserver/emac.o
+ .debug_ranges  0x00000070       0x80 ./src/webserver/httpd-cgi.o
+ .debug_ranges  0x000000f0       0x30 ./src/webserver/httpd-fs.o
+ .debug_ranges  0x00000120       0x68 ./src/webserver/httpd.o
+ .debug_ranges  0x00000188       0x70 ./src/webserver/psock.o
+ .debug_ranges  0x000001f8       0x30 ./src/webserver/timer.o
+ .debug_ranges  0x00000228       0x48 ./src/webserver/uIP_Task.o
+ .debug_ranges  0x00000270       0x90 ./src/webserver/uip.o
+ .debug_ranges  0x00000300       0x40 ./src/webserver/uip_arp.o
+ .debug_ranges  0x00000340       0x30 ./src/ParTest.o
+ .debug_ranges  0x00000370       0x50 ./src/cr_startup_lpc17.o
+ .debug_ranges  0x000003c0       0x40 ./src/main.o
+ .debug_ranges  0x00000400       0x50 ./src/printf-stdarg.o
+ .debug_ranges  0x00000450       0x48 ./src/syscalls.o
+ .debug_ranges  0x00000498       0x68 ./src/LPCUSB/USB_CDC.o
+ .debug_ranges  0x00000500       0x38 ./src/LPCUSB/usbcontrol.o
+ .debug_ranges  0x00000538       0xb0 ./src/LPCUSB/usbhw_lpc.o
+ .debug_ranges  0x000005e8       0x20 ./src/LPCUSB/usbinit.o
+ .debug_ranges  0x00000608       0x50 ./src/LPCUSB/usbstdreq.o
+ .debug_ranges  0x00000658       0x60 ./src/LCD/lcd.o
+ .debug_ranges  0x000006b8       0x38 ./src/LCD/lcd_driver.o
+ .debug_ranges  0x000006f0       0x38 ./src/FreeRTOS/list.o
+ .debug_ranges  0x00000728       0xb0 ./src/FreeRTOS/queue.o
+ .debug_ranges  0x000007d8      0x158 ./src/FreeRTOS/tasks.o
+ .debug_ranges  0x00000930       0x30 ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .debug_ranges  0x00000960       0x68 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .debug_ranges  0x000009c8       0x78 ./src/Drivers/source/lpc17xx_adc.o
+ .debug_ranges  0x00000a40       0xa0 ./src/Drivers/source/lpc17xx_can.o
+ .debug_ranges  0x00000ae0       0x58 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .debug_ranges  0x00000b38       0x38 ./src/Drivers/source/lpc17xx_dac.o
+ .debug_ranges  0x00000b70       0xe0 ./src/Drivers/source/lpc17xx_emac.o
+ .debug_ranges  0x00000c50       0x30 ./src/Drivers/source/lpc17xx_gpdma.o
+ .debug_ranges  0x00000c80       0xc0 ./src/Drivers/source/lpc17xx_gpio.o
+ .debug_ranges  0x00000d40       0xc8 ./src/Drivers/source/lpc17xx_i2c.o
+ .debug_ranges  0x00000e08       0xb0 ./src/Drivers/source/lpc17xx_i2s.o
+ .debug_ranges  0x00000eb8       0x18 ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .debug_ranges  0x00000ed0       0x88 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .debug_ranges  0x00000f58       0x28 ./src/Drivers/source/lpc17xx_nvic.o
+ .debug_ranges  0x00000f80       0x40 ./src/Drivers/source/lpc17xx_pinsel.o
+ .debug_ranges  0x00000fc0       0x80 ./src/Drivers/source/lpc17xx_pwm.o
+ .debug_ranges  0x00001040       0xb8 ./src/Drivers/source/lpc17xx_qei.o
+ .debug_ranges  0x000010f8       0x48 ./src/Drivers/source/lpc17xx_rit.o
+ .debug_ranges  0x00001140       0xb0 ./src/Drivers/source/lpc17xx_rtc.o
+ .debug_ranges  0x000011f0       0x80 ./src/Drivers/source/lpc17xx_spi.o
+ .debug_ranges  0x00001270       0xb0 ./src/Drivers/source/lpc17xx_ssp.o
+ .debug_ranges  0x00001320       0x88 ./src/Drivers/source/lpc17xx_timer.o
+ .debug_ranges  0x000013a8      0x120 ./src/Drivers/source/lpc17xx_uart.o
+ .debug_ranges  0x000014c8       0x60 ./src/Drivers/source/lpc17xx_wdt.o
+ .debug_ranges  0x00001528       0x20 ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .debug_ranges  0x00001548       0xc0 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .debug_ranges  0x00001608       0x30 ./src/Common Demo Tasks/BlockQ.o
+ .debug_ranges  0x00001638       0x40 ./src/Common Demo Tasks/GenQTest.o
+ .debug_ranges  0x00001678       0x30 ./src/Common Demo Tasks/PollQ.o
+ .debug_ranges  0x000016a8       0x40 ./src/Common Demo Tasks/QPeek.o
+ .debug_ranges  0x000016e8       0x30 ./src/Common Demo Tasks/blocktim.o
+ .debug_ranges  0x00001718       0x20 ./src/Common Demo Tasks/flash.o
+ .debug_ranges  0x00001738       0x28 ./src/Common Demo Tasks/integer.o
+ .debug_ranges  0x00001760       0x38 ./src/Common Demo Tasks/recmutex.o
+ .debug_ranges  0x00001798       0x28 ./src/Common Demo Tasks/semtest.o
+
+.debug_str      0x00000000     0x8446
+ .debug_str     0x00000000      0x5e5 ./src/webserver/emac.o
+                                0x687 (size before relaxing)
+ .debug_str     0x000005e5      0x1f7 ./src/webserver/http-strings.o
+                                0x26e (size before relaxing)
+ .debug_str     0x000007dc      0x350 ./src/webserver/httpd-cgi.o
+                                0x4c4 (size before relaxing)
+ .debug_str     0x00000b2c      0x177 ./src/webserver/httpd-fs.o
+                                0x2a6 (size before relaxing)
+ .debug_str     0x00000ca3       0xd1 ./src/webserver/httpd.o
+                                0x46a (size before relaxing)
+ .debug_str     0x00000d74       0xde ./src/webserver/psock.o
+                                0x375 (size before relaxing)
+ .debug_str     0x00000e52       0x61 ./src/webserver/timer.o
+                                0x16a (size before relaxing)
+ .debug_str     0x00000eb3      0x370 ./src/webserver/uIP_Task.o
+                                0x852 (size before relaxing)
+ .debug_str     0x00001223      0x29b ./src/webserver/uip.o
+                                0x624 (size before relaxing)
+ .debug_str     0x000014be      0x118 ./src/webserver/uip_arp.o
+                                0x2f9 (size before relaxing)
+ .debug_str     0x000015d6      0x183 ./src/ParTest.o
+                                0x2a4 (size before relaxing)
+ .debug_str     0x00001759       0xd4 ./src/cr_startup_lpc17.o
+                                0x15e (size before relaxing)
+ .debug_str     0x0000182d      0x113 ./src/main.o
+                                0x439 (size before relaxing)
+ .debug_str     0x00001940       0x88 ./src/printf-stdarg.o
+                                0x127 (size before relaxing)
+ .debug_str     0x000019c8       0x64 ./src/syscalls.o
+                                0x131 (size before relaxing)
+ .debug_str     0x00001a2c      0x158 ./src/LPCUSB/USB_CDC.o
+                                0x583 (size before relaxing)
+ .debug_str     0x00001b84       0xcc ./src/LPCUSB/usbcontrol.o
+                                0x200 (size before relaxing)
+ .debug_str     0x00001c50      0x5de ./src/LPCUSB/usbhw_lpc.o
+                                0x93b (size before relaxing)
+ .debug_str     0x0000222e       0x47 ./src/LPCUSB/usbinit.o
+                                0x10e (size before relaxing)
+ .debug_str     0x00002275      0x168 ./src/LPCUSB/usbstdreq.o
+                                0x2a7 (size before relaxing)
+ .debug_str     0x000023dd      0x15b ./src/LCD/lcd.o
+                                0x22b (size before relaxing)
+ .debug_str     0x00002538       0x90 ./src/LCD/lcd_driver.o
+                                0x110 (size before relaxing)
+ .debug_str     0x000025c8       0x22 ./src/LCD/system_fixed_be_8_15.o
+                                 0xc3 (size before relaxing)
+ .debug_str     0x000025ea      0x142 ./src/FreeRTOS/list.o
+                                0x245 (size before relaxing)
+ .debug_str     0x0000272c      0x3b8 ./src/FreeRTOS/queue.o
+                                0x58f (size before relaxing)
+ .debug_str     0x00002ae4      0x83f ./src/FreeRTOS/tasks.o
+                                0xa95 (size before relaxing)
+ .debug_str     0x00003323      0x15a ./src/FreeRTOS/portable/MemMang/heap_2.o
+                                0x269 (size before relaxing)
+ .debug_str     0x0000347d      0x133 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+                                0x256 (size before relaxing)
+ .debug_str     0x000035b0      0x38c ./src/Drivers/source/lpc17xx_adc.o
+                                0x4c2 (size before relaxing)
+ .debug_str     0x0000393c      0x881 ./src/Drivers/source/lpc17xx_can.o
+                                0x9fb (size before relaxing)
+ .debug_str     0x000041bd       0xea ./src/Drivers/source/lpc17xx_clkpwr.o
+                                0x37a (size before relaxing)
+ .debug_str     0x000042a7      0x13d ./src/Drivers/source/lpc17xx_dac.o
+                                0x247 (size before relaxing)
+ .debug_str     0x000043e4      0x388 ./src/Drivers/source/lpc17xx_emac.o
+                                0x700 (size before relaxing)
+ .debug_str     0x0000476c      0x267 ./src/Drivers/source/lpc17xx_gpdma.o
+                                0x3bb (size before relaxing)
+ .debug_str     0x000049d3      0x233 ./src/Drivers/source/lpc17xx_gpio.o
+                                0x461 (size before relaxing)
+ .debug_str     0x00004c06      0x43c ./src/Drivers/source/lpc17xx_i2c.o
+                                0x80f (size before relaxing)
+ .debug_str     0x00005042      0x2d5 ./src/Drivers/source/lpc17xx_i2s.o
+                                0x46d (size before relaxing)
+ .debug_str     0x00005317       0x41 ./src/Drivers/source/lpc17xx_libcfg_default.o
+                                0x147 (size before relaxing)
+ .debug_str     0x00005358      0x402 ./src/Drivers/source/lpc17xx_mcpwm.o
+                                0x549 (size before relaxing)
+ .debug_str     0x0000575a       0x4d ./src/Drivers/source/lpc17xx_nvic.o
+                                0x1f3 (size before relaxing)
+ .debug_str     0x000057a7      0x150 ./src/Drivers/source/lpc17xx_pinsel.o
+                                0x383 (size before relaxing)
+ .debug_str     0x000058f7      0x428 ./src/Drivers/source/lpc17xx_pwm.o
+                                0x5bd (size before relaxing)
+ .debug_str     0x00005d1f      0x350 ./src/Drivers/source/lpc17xx_qei.o
+                                0x4bb (size before relaxing)
+ .debug_str     0x0000606f       0xe1 ./src/Drivers/source/lpc17xx_rit.o
+                                0x238 (size before relaxing)
+ .debug_str     0x00006150      0x3d2 ./src/Drivers/source/lpc17xx_rtc.o
+                                0x59a (size before relaxing)
+ .debug_str     0x00006522      0x242 ./src/Drivers/source/lpc17xx_spi.o
+                                0x409 (size before relaxing)
+ .debug_str     0x00006764      0x249 ./src/Drivers/source/lpc17xx_ssp.o
+                                0x474 (size before relaxing)
+ .debug_str     0x000069ad      0x327 ./src/Drivers/source/lpc17xx_timer.o
+                                0x57f (size before relaxing)
+ .debug_str     0x00006cd4      0xa13 ./src/Drivers/source/lpc17xx_uart.o
+                                0xc21 (size before relaxing)
+ .debug_str     0x000076e7      0x151 ./src/Drivers/source/lpc17xx_wdt.o
+                                0x2a5 (size before relaxing)
+ .debug_str     0x00007838       0x5c ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+                                0x282 (size before relaxing)
+ .debug_str     0x00007894      0x14e ./src/Core/CM3/CoreSupport/core_cm3.o
+                                0x275 (size before relaxing)
+ .debug_str     0x000079e2      0x20a ./src/Common Demo Tasks/BlockQ.o
+                                0x35a (size before relaxing)
+ .debug_str     0x00007bec      0x164 ./src/Common Demo Tasks/GenQTest.o
+                                0x2b1 (size before relaxing)
+ .debug_str     0x00007d50       0xc6 ./src/Common Demo Tasks/PollQ.o
+                                0x20f (size before relaxing)
+ .debug_str     0x00007e16       0xfc ./src/Common Demo Tasks/QPeek.o
+                                0x255 (size before relaxing)
+ .debug_str     0x00007f12      0x142 ./src/Common Demo Tasks/blocktim.o
+                                0x286 (size before relaxing)
+ .debug_str     0x00008054       0x78 ./src/Common Demo Tasks/flash.o
+                                0x1a0 (size before relaxing)
+ .debug_str     0x000080cc       0x96 ./src/Common Demo Tasks/integer.o
+                                0x1c0 (size before relaxing)
+ .debug_str     0x00008162      0x18c ./src/Common Demo Tasks/recmutex.o
+                                0x2de (size before relaxing)
+ .debug_str     0x000082ee      0x158 ./src/Common Demo Tasks/semtest.o
+                                0x2b8 (size before relaxing)
+
+.comment        0x00000000      0xa3f
+ .comment       0x00000000       0x2b ./src/webserver/emac.o
+ .comment       0x0000002b       0x2b ./src/webserver/http-strings.o
+ .comment       0x00000056       0x2b ./src/webserver/httpd-cgi.o
+ .comment       0x00000081       0x2b ./src/webserver/httpd-fs.o
+ .comment       0x000000ac       0x2b ./src/webserver/httpd.o
+ .comment       0x000000d7       0x2b ./src/webserver/psock.o
+ .comment       0x00000102       0x2b ./src/webserver/timer.o
+ .comment       0x0000012d       0x2b ./src/webserver/uIP_Task.o
+ .comment       0x00000158       0x2b ./src/webserver/uip.o
+ .comment       0x00000183       0x2b ./src/webserver/uip_arp.o
+ .comment       0x000001ae       0x2b ./src/ParTest.o
+ .comment       0x000001d9       0x2b ./src/cr_startup_lpc17.o
+ .comment       0x00000204       0x2b ./src/main.o
+ .comment       0x0000022f       0x2b ./src/printf-stdarg.o
+ .comment       0x0000025a       0x2b ./src/syscalls.o
+ .comment       0x00000285       0x2b ./src/LPCUSB/USB_CDC.o
+ .comment       0x000002b0       0x2b ./src/LPCUSB/usbcontrol.o
+ .comment       0x000002db       0x2b ./src/LPCUSB/usbhw_lpc.o
+ .comment       0x00000306       0x2b ./src/LPCUSB/usbinit.o
+ .comment       0x00000331       0x2b ./src/LPCUSB/usbstdreq.o
+ .comment       0x0000035c       0x2b ./src/LCD/lcd.o
+ .comment       0x00000387       0x2b ./src/LCD/lcd_driver.o
+ .comment       0x000003b2       0x2b ./src/LCD/system_fixed_be_8_15.o
+ .comment       0x000003dd       0x2b ./src/FreeRTOS/list.o
+ .comment       0x00000408       0x2b ./src/FreeRTOS/queue.o
+ .comment       0x00000433       0x2b ./src/FreeRTOS/tasks.o
+ .comment       0x0000045e       0x2b ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .comment       0x00000489       0x2b ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .comment       0x000004b4       0x2b ./src/Drivers/source/lpc17xx_adc.o
+ .comment       0x000004df       0x2b ./src/Drivers/source/lpc17xx_can.o
+ .comment       0x0000050a       0x2b ./src/Drivers/source/lpc17xx_clkpwr.o
+ .comment       0x00000535       0x2b ./src/Drivers/source/lpc17xx_dac.o
+ .comment       0x00000560       0x2b ./src/Drivers/source/lpc17xx_emac.o
+ .comment       0x0000058b       0x2b ./src/Drivers/source/lpc17xx_gpdma.o
+ .comment       0x000005b6       0x2b ./src/Drivers/source/lpc17xx_gpio.o
+ .comment       0x000005e1       0x2b ./src/Drivers/source/lpc17xx_i2c.o
+ .comment       0x0000060c       0x2b ./src/Drivers/source/lpc17xx_i2s.o
+ .comment       0x00000637       0x2b ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .comment       0x00000662       0x2b ./src/Drivers/source/lpc17xx_mcpwm.o
+ .comment       0x0000068d       0x2b ./src/Drivers/source/lpc17xx_nvic.o
+ .comment       0x000006b8       0x2b ./src/Drivers/source/lpc17xx_pinsel.o
+ .comment       0x000006e3       0x2b ./src/Drivers/source/lpc17xx_pwm.o
+ .comment       0x0000070e       0x2b ./src/Drivers/source/lpc17xx_qei.o
+ .comment       0x00000739       0x2b ./src/Drivers/source/lpc17xx_rit.o
+ .comment       0x00000764       0x2b ./src/Drivers/source/lpc17xx_rtc.o
+ .comment       0x0000078f       0x2b ./src/Drivers/source/lpc17xx_spi.o
+ .comment       0x000007ba       0x2b ./src/Drivers/source/lpc17xx_ssp.o
+ .comment       0x000007e5       0x2b ./src/Drivers/source/lpc17xx_timer.o
+ .comment       0x00000810       0x2b ./src/Drivers/source/lpc17xx_uart.o
+ .comment       0x0000083b       0x2b ./src/Drivers/source/lpc17xx_wdt.o
+ .comment       0x00000866       0x2b ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .comment       0x00000891       0x2b ./src/Core/CM3/CoreSupport/core_cm3.o
+ .comment       0x000008bc       0x2b ./src/Common Demo Tasks/BlockQ.o
+ .comment       0x000008e7       0x2b ./src/Common Demo Tasks/GenQTest.o
+ .comment       0x00000912       0x2b ./src/Common Demo Tasks/PollQ.o
+ .comment       0x0000093d       0x2b ./src/Common Demo Tasks/QPeek.o
+ .comment       0x00000968       0x2b ./src/Common Demo Tasks/blocktim.o
+ .comment       0x00000993       0x2b ./src/Common Demo Tasks/flash.o
+ .comment       0x000009be       0x2b ./src/Common Demo Tasks/integer.o
+ .comment       0x000009e9       0x2b ./src/Common Demo Tasks/recmutex.o
+ .comment       0x00000a14       0x2b ./src/Common Demo Tasks/semtest.o
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x31 ./src/webserver/emac.o
+ .ARM.attributes
+                0x00000031       0x31 ./src/webserver/http-strings.o
+ .ARM.attributes
+                0x00000062       0x31 ./src/webserver/httpd-cgi.o
+ .ARM.attributes
+                0x00000093       0x31 ./src/webserver/httpd-fs.o
+ .ARM.attributes
+                0x000000c4       0x31 ./src/webserver/httpd.o
+ .ARM.attributes
+                0x000000f5       0x31 ./src/webserver/psock.o
+ .ARM.attributes
+                0x00000126       0x31 ./src/webserver/timer.o
+ .ARM.attributes
+                0x00000157       0x31 ./src/webserver/uIP_Task.o
+ .ARM.attributes
+                0x00000188       0x31 ./src/webserver/uip.o
+ .ARM.attributes
+                0x000001b9       0x31 ./src/webserver/uip_arp.o
+ .ARM.attributes
+                0x000001ea       0x31 ./src/ParTest.o
+ .ARM.attributes
+                0x0000021b       0x31 ./src/cr_startup_lpc17.o
+ .ARM.attributes
+                0x0000024c       0x31 ./src/main.o
+ .ARM.attributes
+                0x0000027d       0x31 ./src/printf-stdarg.o
+ .ARM.attributes
+                0x000002ae       0x31 ./src/syscalls.o
+ .ARM.attributes
+                0x000002df       0x31 ./src/LPCUSB/USB_CDC.o
+ .ARM.attributes
+                0x00000310       0x31 ./src/LPCUSB/usbcontrol.o
+ .ARM.attributes
+                0x00000341       0x31 ./src/LPCUSB/usbhw_lpc.o
+ .ARM.attributes
+                0x00000372       0x31 ./src/LPCUSB/usbinit.o
+ .ARM.attributes
+                0x000003a3       0x31 ./src/LPCUSB/usbstdreq.o
+ .ARM.attributes
+                0x000003d4       0x31 ./src/LCD/lcd.o
+ .ARM.attributes
+                0x00000405       0x31 ./src/LCD/lcd_driver.o
+ .ARM.attributes
+                0x00000436       0x31 ./src/LCD/system_fixed_be_8_15.o
+ .ARM.attributes
+                0x00000467       0x31 ./src/FreeRTOS/list.o
+ .ARM.attributes
+                0x00000498       0x31 ./src/FreeRTOS/queue.o
+ .ARM.attributes
+                0x000004c9       0x31 ./src/FreeRTOS/tasks.o
+ .ARM.attributes
+                0x000004fa       0x31 ./src/FreeRTOS/portable/MemMang/heap_2.o
+ .ARM.attributes
+                0x0000052b       0x31 ./src/FreeRTOS/portable/GCC/ARM_CM3/port.o
+ .ARM.attributes
+                0x0000055c       0x31 ./src/Drivers/source/lpc17xx_adc.o
+ .ARM.attributes
+                0x0000058d       0x31 ./src/Drivers/source/lpc17xx_can.o
+ .ARM.attributes
+                0x000005be       0x31 ./src/Drivers/source/lpc17xx_clkpwr.o
+ .ARM.attributes
+                0x000005ef       0x31 ./src/Drivers/source/lpc17xx_dac.o
+ .ARM.attributes
+                0x00000620       0x31 ./src/Drivers/source/lpc17xx_emac.o
+ .ARM.attributes
+                0x00000651       0x31 ./src/Drivers/source/lpc17xx_gpdma.o
+ .ARM.attributes
+                0x00000682       0x31 ./src/Drivers/source/lpc17xx_gpio.o
+ .ARM.attributes
+                0x000006b3       0x31 ./src/Drivers/source/lpc17xx_i2c.o
+ .ARM.attributes
+                0x000006e4       0x31 ./src/Drivers/source/lpc17xx_i2s.o
+ .ARM.attributes
+                0x00000715       0x31 ./src/Drivers/source/lpc17xx_libcfg_default.o
+ .ARM.attributes
+                0x00000746       0x31 ./src/Drivers/source/lpc17xx_mcpwm.o
+ .ARM.attributes
+                0x00000777       0x31 ./src/Drivers/source/lpc17xx_nvic.o
+ .ARM.attributes
+                0x000007a8       0x31 ./src/Drivers/source/lpc17xx_pinsel.o
+ .ARM.attributes
+                0x000007d9       0x31 ./src/Drivers/source/lpc17xx_pwm.o
+ .ARM.attributes
+                0x0000080a       0x31 ./src/Drivers/source/lpc17xx_qei.o
+ .ARM.attributes
+                0x0000083b       0x31 ./src/Drivers/source/lpc17xx_rit.o
+ .ARM.attributes
+                0x0000086c       0x31 ./src/Drivers/source/lpc17xx_rtc.o
+ .ARM.attributes
+                0x0000089d       0x31 ./src/Drivers/source/lpc17xx_spi.o
+ .ARM.attributes
+                0x000008ce       0x31 ./src/Drivers/source/lpc17xx_ssp.o
+ .ARM.attributes
+                0x000008ff       0x31 ./src/Drivers/source/lpc17xx_timer.o
+ .ARM.attributes
+                0x00000930       0x31 ./src/Drivers/source/lpc17xx_uart.o
+ .ARM.attributes
+                0x00000961       0x31 ./src/Drivers/source/lpc17xx_wdt.o
+ .ARM.attributes
+                0x00000992       0x31 ./src/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o
+ .ARM.attributes
+                0x000009c3       0x31 ./src/Core/CM3/CoreSupport/core_cm3.o
+ .ARM.attributes
+                0x000009f4       0x31 ./src/Common Demo Tasks/BlockQ.o
+ .ARM.attributes
+                0x00000a25       0x31 ./src/Common Demo Tasks/GenQTest.o
+ .ARM.attributes
+                0x00000a56       0x31 ./src/Common Demo Tasks/PollQ.o
+ .ARM.attributes
+                0x00000a87       0x31 ./src/Common Demo Tasks/QPeek.o
+ .ARM.attributes
+                0x00000ab8       0x31 ./src/Common Demo Tasks/blocktim.o
+ .ARM.attributes
+                0x00000ae9       0x31 ./src/Common Demo Tasks/flash.o
+ .ARM.attributes
+                0x00000b1a       0x31 ./src/Common Demo Tasks/integer.o
+ .ARM.attributes
+                0x00000b4b       0x31 ./src/Common Demo Tasks/recmutex.o
+ .ARM.attributes
+                0x00000b7c       0x31 ./src/Common Demo Tasks/semtest.o
+ .ARM.attributes
+                0x00000bad       0x17 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x00000bc4       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(bpabi.o)
+ .ARM.attributes
+                0x00000beb       0x17 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000c02       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_divdi3.o)
+ .ARM.attributes
+                0x00000c29       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_udivdi3.o)
+ .ARM.attributes
+                0x00000c50       0x17 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000c67       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libgcc.a(_clz.o)
+ .ARM.attributes
+                0x00000c8e       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-abs.o)
+ .ARM.attributes
+                0x00000cb5       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcmp.o)
+ .ARM.attributes
+                0x00000cdc       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x00000d03       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000d2a       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcat.o)
+ .ARM.attributes
+                0x00000d51       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strchr.o)
+ .ARM.attributes
+                0x00000d78       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x00000d9f       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x00000dc6       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+ .ARM.attributes
+                0x00000ded       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncpy.o)
+ .ARM.attributes
+                0x00000e14       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strrchr.o)
+ .ARM.attributes
+                0x00000e3b       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strstr.o)
+ .ARM.attributes
+                0x00000e62       0x27 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)

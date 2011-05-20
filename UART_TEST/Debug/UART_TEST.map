@@ -1,0 +1,884 @@
+Archive member included because of file (symbol)
+
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc176x.o (__main)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+                              c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o) (_ctype_init)
+c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+                              c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o) (_init_alloc)
+
+Allocating common symbols
+Common symbol       size              file
+
+rb                  0x210             ./src/uart_fullmodem_test.o
+TxIntStat           0x1               ./src/uart_fullmodem_test.o
+RTS_State           0x4               ./src/uart_fullmodem_test.o
+__heaps             0x4               c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+__end_of_heap       0x4               c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./src/core_cm3.o
+ .data          0x00000000        0x0 ./src/core_cm3.o
+ .bss           0x00000000        0x0 ./src/core_cm3.o
+ .text.__get_PSP
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__set_PSP
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__get_MSP
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__set_MSP
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__get_BASEPRI
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__set_BASEPRI
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__get_PRIMASK
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__set_PRIMASK
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__get_FAULTMASK
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__set_FAULTMASK
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__get_CONTROL
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__set_CONTROL
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__REV    0x00000000        0x0 ./src/core_cm3.o
+ .text.__REV16  0x00000000        0x0 ./src/core_cm3.o
+ .text.__REVSH  0x00000000        0x0 ./src/core_cm3.o
+ .text.__RBIT   0x00000000        0x0 ./src/core_cm3.o
+ .text.__LDREXB
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__LDREXH
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__LDREXW
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__STREXB
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__STREXH
+                0x00000000        0x0 ./src/core_cm3.o
+ .text.__STREXW
+                0x00000000        0x0 ./src/core_cm3.o
+ .text          0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .text          0x00000000        0x0 ./src/lpc17xx_adc.o
+ .data          0x00000000        0x0 ./src/lpc17xx_adc.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_adc.o
+ .text          0x00000000        0x0 ./src/lpc17xx_can.o
+ .data          0x00000000        0x0 ./src/lpc17xx_can.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_can.o
+ .text          0x00000000        0x0 ./src/lpc17xx_clkpwr.o
+ .data          0x00000000        0x0 ./src/lpc17xx_clkpwr.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_clkpwr.o
+ .text.CLKPWR_SetPCLKDiv
+                0x00000000        0x0 ./src/lpc17xx_clkpwr.o
+ .text.CLKPWR_Sleep
+                0x00000000        0x0 ./src/lpc17xx_clkpwr.o
+ .text.__WFI    0x00000000        0x0 ./src/lpc17xx_clkpwr.o
+ .text.CLKPWR_DeepSleep
+                0x00000000        0x0 ./src/lpc17xx_clkpwr.o
+ .text.CLKPWR_PowerDown
+                0x00000000        0x0 ./src/lpc17xx_clkpwr.o
+ .text.CLKPWR_DeepPowerDown
+                0x00000000        0x0 ./src/lpc17xx_clkpwr.o
+ .text          0x00000000        0x0 ./src/lpc17xx_dac.o
+ .data          0x00000000        0x0 ./src/lpc17xx_dac.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_dac.o
+ .text          0x00000000        0x0 ./src/lpc17xx_emac.o
+ .data          0x00000000        0x0 ./src/lpc17xx_emac.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_emac.o
+ .text          0x00000000        0x0 ./src/lpc17xx_gpdma.o
+ .data          0x00000000        0x0 ./src/lpc17xx_gpdma.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_gpdma.o
+ .text          0x00000000        0x0 ./src/lpc17xx_gpio.o
+ .data          0x00000000        0x0 ./src/lpc17xx_gpio.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_gpio.o
+ .text          0x00000000        0x0 ./src/lpc17xx_i2c.o
+ .data          0x00000000        0x0 ./src/lpc17xx_i2c.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_i2c.o
+ .text          0x00000000        0x0 ./src/lpc17xx_i2s.o
+ .data          0x00000000        0x0 ./src/lpc17xx_i2s.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_i2s.o
+ .text          0x00000000        0x0 ./src/lpc17xx_libcfg_default.o
+ .data          0x00000000        0x0 ./src/lpc17xx_libcfg_default.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_libcfg_default.o
+ .text          0x00000000        0x0 ./src/lpc17xx_mcpwm.o
+ .data          0x00000000        0x0 ./src/lpc17xx_mcpwm.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_mcpwm.o
+ .text          0x00000000        0x0 ./src/lpc17xx_nvic.o
+ .data          0x00000000        0x0 ./src/lpc17xx_nvic.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_nvic.o
+ .text          0x00000000        0x0 ./src/lpc17xx_pinsel.o
+ .data          0x00000000        0x0 ./src/lpc17xx_pinsel.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_pinsel.o
+ .text.PINSEL_ConfigTraceFunc
+                0x00000000        0x0 ./src/lpc17xx_pinsel.o
+ .text.PINSEL_SetI2C0Pins
+                0x00000000        0x0 ./src/lpc17xx_pinsel.o
+ .text          0x00000000        0x0 ./src/lpc17xx_pwm.o
+ .data          0x00000000        0x0 ./src/lpc17xx_pwm.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_pwm.o
+ .text          0x00000000        0x0 ./src/lpc17xx_qei.o
+ .data          0x00000000        0x0 ./src/lpc17xx_qei.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_qei.o
+ .text          0x00000000        0x0 ./src/lpc17xx_rit.o
+ .data          0x00000000        0x0 ./src/lpc17xx_rit.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_rit.o
+ .text          0x00000000        0x0 ./src/lpc17xx_rtc.o
+ .data          0x00000000        0x0 ./src/lpc17xx_rtc.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_rtc.o
+ .text          0x00000000        0x0 ./src/lpc17xx_spi.o
+ .data          0x00000000        0x0 ./src/lpc17xx_spi.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_spi.o
+ .text          0x00000000        0x0 ./src/lpc17xx_ssp.o
+ .data          0x00000000        0x0 ./src/lpc17xx_ssp.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_ssp.o
+ .text          0x00000000        0x0 ./src/lpc17xx_timer.o
+ .data          0x00000000        0x0 ./src/lpc17xx_timer.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_timer.o
+ .text          0x00000000        0x0 ./src/lpc17xx_uart.o
+ .data          0x00000000        0x0 ./src/lpc17xx_uart.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART_ForceBreak
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART_IrDAInvtInputCmd
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART_IrDACmd
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART_IrDAPulseDivConfig
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART_GetLineStatus
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART_ABCmd
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART_FullModemConfigMode
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART_RS485Config
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART_RS485ReceiverCmd
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART_RS485Send
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART_RS485SendSlvAddr
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART_RS485SendData
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART0_StdIntHandler
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART2_StdIntHandler
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART3_StdIntHandler
+                0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text          0x00000000        0x0 ./src/lpc17xx_wdt.o
+ .data          0x00000000        0x0 ./src/lpc17xx_wdt.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_wdt.o
+ .text          0x00000000        0x0 ./src/system_LPC17xx.o
+ .data          0x00000000        0x0 ./src/system_LPC17xx.o
+ .bss           0x00000000        0x0 ./src/system_LPC17xx.o
+ .text.SystemCoreClockUpdate
+                0x00000000        0x0 ./src/system_LPC17xx.o
+ .text          0x00000000        0x0 ./src/uart_fullmodem_test.o
+ .data          0x00000000        0x0 ./src/uart_fullmodem_test.o
+ .bss           0x00000000        0x0 ./src/uart_fullmodem_test.o
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .text._start_module__init_alloc
+                0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .text._end_module__init_alloc
+                0x00000000        0x0 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x00000000         0x00080000         xr
+RamLoc32         0x10000000         0x00008000         xrw
+RamAHB32         0x2007c000         0x00008000         xrw
+CANAccFilterRAM  0x40038000         0x00000800         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/core_cm3.o
+LOAD ./src/cr_startup_lpc176x.o
+LOAD ./src/lpc17xx_adc.o
+LOAD ./src/lpc17xx_can.o
+LOAD ./src/lpc17xx_clkpwr.o
+LOAD ./src/lpc17xx_dac.o
+LOAD ./src/lpc17xx_emac.o
+LOAD ./src/lpc17xx_gpdma.o
+LOAD ./src/lpc17xx_gpio.o
+LOAD ./src/lpc17xx_i2c.o
+LOAD ./src/lpc17xx_i2s.o
+LOAD ./src/lpc17xx_libcfg_default.o
+LOAD ./src/lpc17xx_mcpwm.o
+LOAD ./src/lpc17xx_nvic.o
+LOAD ./src/lpc17xx_pinsel.o
+LOAD ./src/lpc17xx_pwm.o
+LOAD ./src/lpc17xx_qei.o
+LOAD ./src/lpc17xx_rit.o
+LOAD ./src/lpc17xx_rtc.o
+LOAD ./src/lpc17xx_spi.o
+LOAD ./src/lpc17xx_ssp.o
+LOAD ./src/lpc17xx_timer.o
+LOAD ./src/lpc17xx_uart.o
+LOAD ./src/lpc17xx_wdt.o
+LOAD ./src/system_LPC17xx.o
+LOAD ./src/uart_fullmodem_test.o
+START GROUP
+LOAD c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a
+LOAD c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libcr_eabihelpers.a
+END GROUP
+                0x00080000                __top_MFlash512 = 0x80000
+                0x10008000                __top_RamLoc32 = 0x10008000
+                0x20084000                __top_RamAHB32 = 0x20084000
+                0x40038800                __top_CANAccFilterRAM = 0x40038800
+
+.text           0x00000000     0x26d0
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xcc ./src/cr_startup_lpc176x.o
+                0x00000000                g_pfnVectors
+ *(.text*)
+ .text.ResetISR
+                0x000000cc       0x68 ./src/cr_startup_lpc176x.o
+                0x000000cc                ResetISR
+ .text.NMI_Handler
+                0x00000134        0x8 ./src/cr_startup_lpc176x.o
+                0x00000134                NMI_Handler
+ .text.HardFault_Handler
+                0x0000013c        0x8 ./src/cr_startup_lpc176x.o
+                0x0000013c                HardFault_Handler
+ .text.MemManage_Handler
+                0x00000144        0x8 ./src/cr_startup_lpc176x.o
+                0x00000144                MemManage_Handler
+ .text.BusFault_Handler
+                0x0000014c        0x8 ./src/cr_startup_lpc176x.o
+                0x0000014c                BusFault_Handler
+ .text.UsageFault_Handler
+                0x00000154        0x8 ./src/cr_startup_lpc176x.o
+                0x00000154                UsageFault_Handler
+ .text.SVCall_Handler
+                0x0000015c        0x8 ./src/cr_startup_lpc176x.o
+                0x0000015c                SVCall_Handler
+ .text.DebugMon_Handler
+                0x00000164        0x8 ./src/cr_startup_lpc176x.o
+                0x00000164                DebugMon_Handler
+ .text.PendSV_Handler
+                0x0000016c        0x8 ./src/cr_startup_lpc176x.o
+                0x0000016c                PendSV_Handler
+ .text.SysTick_Handler
+                0x00000174        0x8 ./src/cr_startup_lpc176x.o
+                0x00000174                SysTick_Handler
+ .text.IntDefaultHandler
+                0x0000017c        0x8 ./src/cr_startup_lpc176x.o
+                0x0000017c                TIMER2_IRQHandler
+                0x0000017c                RIT_IRQHandler
+                0x0000017c                I2C0_IRQHandler
+                0x0000017c                USBActivity_IRQHandler
+                0x0000017c                PWM1_IRQHandler
+                0x0000017c                I2C1_IRQHandler
+                0x0000017c                EINT2_IRQHandler
+                0x0000017c                EINT3_IRQHandler
+                0x0000017c                CANActivity_IRQHandler
+                0x0000017c                TIMER3_IRQHandler
+                0x0000017c                UART0_IRQHandler
+                0x0000017c                IntDefaultHandler
+                0x0000017c                PLL0_IRQHandler
+                0x0000017c                CAN_IRQHandler
+                0x0000017c                PLL1_IRQHandler
+                0x0000017c                SSP0_IRQHandler
+                0x0000017c                I2S_IRQHandler
+                0x0000017c                I2C2_IRQHandler
+                0x0000017c                RTC_IRQHandler
+                0x0000017c                TIMER0_IRQHandler
+                0x0000017c                SPI_IRQHandler
+                0x0000017c                EINT1_IRQHandler
+                0x0000017c                TIMER1_IRQHandler
+                0x0000017c                UART2_IRQHandler
+                0x0000017c                ADC_IRQHandler
+                0x0000017c                SSP1_IRQHandler
+                0x0000017c                USB_IRQHandler
+                0x0000017c                BOD_IRQHandler
+                0x0000017c                WDT_IRQHandler
+                0x0000017c                QEI_IRQHandler
+                0x0000017c                EINT0_IRQHandler
+                0x0000017c                DMA_IRQHandler
+                0x0000017c                UART3_IRQHandler
+                0x0000017c                MCPWM_IRQHandler
+                0x0000017c                ENET_IRQHandler
+ .text.CLKPWR_GetPCLKSEL
+                0x00000184       0x54 ./src/lpc17xx_clkpwr.o
+                0x00000184                CLKPWR_GetPCLKSEL
+ .text.CLKPWR_GetPCLK
+                0x000001d8       0x70 ./src/lpc17xx_clkpwr.o
+                0x000001d8                CLKPWR_GetPCLK
+ .text.CLKPWR_ConfigPPWR
+                0x00000248       0x7c ./src/lpc17xx_clkpwr.o
+                0x00000248                CLKPWR_ConfigPPWR
+ .text.NVIC_DeInit
+                0x000002c4       0x7c ./src/lpc17xx_nvic.o
+                0x000002c4                NVIC_DeInit
+ .text.NVIC_SCBDeInit
+                0x00000340       0xbc ./src/lpc17xx_nvic.o
+                0x00000340                NVIC_SCBDeInit
+ .text.NVIC_SetVTOR
+                0x000003fc       0x28 ./src/lpc17xx_nvic.o
+                0x000003fc                NVIC_SetVTOR
+ .text.PINSEL_SetPinFunc
+                0x00000424       0xa4 ./src/lpc17xx_pinsel.o
+                0x00000424                PINSEL_SetPinFunc
+ .text.PINSEL_SetResistorMode
+                0x000004c8       0xa4 ./src/lpc17xx_pinsel.o
+                0x000004c8                PINSEL_SetResistorMode
+ .text.PINSEL_SetOpenDrainMode
+                0x0000056c       0x84 ./src/lpc17xx_pinsel.o
+                0x0000056c                PINSEL_SetOpenDrainMode
+ .text.PINSEL_ConfigPin
+                0x000005f0       0x4c ./src/lpc17xx_pinsel.o
+                0x000005f0                PINSEL_ConfigPin
+ .text.getUartNum
+                0x0000063c       0x60 ./src/lpc17xx_uart.o
+                0x0000063c                getUartNum
+ .text.uart_set_divisors
+                0x0000069c      0x26c ./src/lpc17xx_uart.o
+                0x0000069c                uart_set_divisors
+ .text.UART_GenIntHandler
+                0x00000908      0x1d0 ./src/lpc17xx_uart.o
+                0x00000908                UART_GenIntHandler
+ .text.UART_DeInit
+                0x00000ad8       0xcc ./src/lpc17xx_uart.o
+                0x00000ad8                UART_DeInit
+ .text.UART_Init
+                0x00000ba4      0x360 ./src/lpc17xx_uart.o
+                0x00000ba4                UART_Init
+ .text.UART_ConfigStructInit
+                0x00000f04       0x34 ./src/lpc17xx_uart.o
+                0x00000f04                UART_ConfigStructInit
+ .text.UART_SendData
+                0x00000f38       0x78 ./src/lpc17xx_uart.o
+                0x00000f38                UART_SendData
+ .text.UART_ReceiveData
+                0x00000fb0       0x7c ./src/lpc17xx_uart.o
+                0x00000fb0                UART_ReceiveData
+ .text.UART_IntConfig
+                0x0000102c      0x1d4 ./src/lpc17xx_uart.o
+                0x0000102c                UART_IntConfig
+ .text.UART_CheckBusy
+                0x00001200       0x34 ./src/lpc17xx_uart.o
+                0x00001200                UART_CheckBusy
+ .text.UART_FIFOConfig
+                0x00001234      0x18c ./src/lpc17xx_uart.o
+                0x00001234                UART_FIFOConfig
+ .text.UART_FIFOConfigStructInit
+                0x000013c0       0x34 ./src/lpc17xx_uart.o
+                0x000013c0                UART_FIFOConfigStructInit
+ .text.UART_TxCmd
+                0x000013f4       0xf0 ./src/lpc17xx_uart.o
+                0x000013f4                UART_TxCmd
+ .text.UART_FullModemForcePinState
+                0x000014e4       0xd0 ./src/lpc17xx_uart.o
+                0x000014e4                UART_FullModemForcePinState
+ .text.UART_FullModemGetStatus
+                0x000015b4       0x38 ./src/lpc17xx_uart.o
+                0x000015b4                UART_FullModemGetStatus
+ .text.UART_Send
+                0x000015ec      0x100 ./src/lpc17xx_uart.o
+                0x000015ec                UART_Send
+ .text.UART_Receive
+                0x000016ec       0xc8 ./src/lpc17xx_uart.o
+                0x000016ec                UART_Receive
+ .text.UART_SetupCbs
+                0x000017b4       0xb4 ./src/lpc17xx_uart.o
+                0x000017b4                UART_SetupCbs
+ .text.UART1_StdIntHandler
+                0x00001868       0x14 ./src/lpc17xx_uart.o
+                0x00001868                UART1_StdIntHandler
+ .text.SystemInit
+                0x0000187c      0x214 ./src/system_LPC17xx.o
+                0x0000187c                SystemInit
+ .text.print_menu
+                0x00001a90       0xa0 ./src/uart_fullmodem_test.o
+                0x00001a90                print_menu
+ .text.UART1_IRQHandler
+                0x00001b30        0xc ./src/uart_fullmodem_test.o
+                0x00001b30                UART1_IRQHandler
+ .text.UART1_ModemCallBack
+                0x00001b3c       0x4c ./src/uart_fullmodem_test.o
+                0x00001b3c                UART1_ModemCallBack
+ .text.UART1_IntReceive
+                0x00001b88       0xe4 ./src/uart_fullmodem_test.o
+                0x00001b88                UART1_IntReceive
+ .text.UART1_IntTransmit
+                0x00001c6c      0x100 ./src/uart_fullmodem_test.o
+                0x00001c6c                UART1_IntTransmit
+ .text.UART1_IntErr
+                0x00001d6c       0x10 ./src/uart_fullmodem_test.o
+                0x00001d6c                UART1_IntErr
+ .text.UARTSend
+                0x00001d7c       0xd4 ./src/uart_fullmodem_test.o
+                0x00001d7c                UARTSend
+ .text.UARTReceive
+                0x00001e50      0x110 ./src/uart_fullmodem_test.o
+                0x00001e50                UARTReceive
+ .text.c_entry  0x00001f60      0x2bc ./src/uart_fullmodem_test.o
+                0x00001f60                c_entry
+ .text.NVIC_SetPriorityGrouping
+                0x0000221c       0x58 ./src/uart_fullmodem_test.o
+ .text.NVIC_SetPriority
+                0x00002274       0x5c ./src/uart_fullmodem_test.o
+ .text.NVIC_EnableIRQ
+                0x000022d0       0x38 ./src/uart_fullmodem_test.o
+ .text.main     0x00002308       0x10 ./src/uart_fullmodem_test.o
+                0x00002308                main
+ .text.check_failed
+                0x00002318        0xc ./src/uart_fullmodem_test.o
+                0x00002318                check_failed
+ .text.__weak_main
+                0x00002324       0x10 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+                0x00002324                __main
+                0x00002324                __weak_main
+ .text          0x00002334      0x36c c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+                0x00002334                _start_module_ctype
+                0x00002408                islower
+                0x000024f8                tolower
+                0x00002458                ispunct
+                0x00002480                isspace
+                0x00002694                _end_module_ctype
+                0x000024d0                isxdigit
+                0x00002610                _ctype_init
+                0x000024a8                isupper
+                0x00002368                isalpha
+                0x000023e0                isgraph
+                0x00002340                isalnum
+                0x00002430                isprint
+                0x00002570                _set_ctype_8859
+                0x000023b8                isdigit
+                0x00002390                iscntrl
+                0x00002534                toupper
+ .text._init_alloc
+                0x000026a0       0x18 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+                0x000026a0                _init_alloc
+ *(.rodata*)
+ .rodata        0x000026b8       0x18 ./src/lpc17xx_uart.o
+
+.glue_7         0x000026d0        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x000026d0        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x000026d0        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x000026d0        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x000026d0                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x000026d0                __exidx_end = .
+                0x000026d0                _etext = .
+
+.data           0x10000000      0x284 load address 0x000026d0
+                0x10000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data.SystemCoreClock
+                0x10000000        0x4 ./src/system_LPC17xx.o
+                0x10000000                SystemCoreClock
+ .data.menu1    0x10000004       0x1c ./src/uart_fullmodem_test.o
+                0x10000004                menu1
+ .data.menu2    0x10000020       0x48 ./src/uart_fullmodem_test.o
+                0x10000020                menu2
+ .data.menu3    0x10000068       0x18 ./src/uart_fullmodem_test.o
+                0x10000068                menu3
+ .data          0x10000080      0x204 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+                0x10000080                __ctype
+                0x10000284                _edata = .
+
+.bss            0x10000284      0x264 load address 0x00002954
+                0x10000284                _bss = .
+ *(.bss*)
+ .bss.uartCbsDat
+                0x10000284       0x40 ./src/lpc17xx_uart.o
+                0x10000284                uartCbsDat
+ .bss.pfnModemCbs
+                0x100002c4        0x4 ./src/lpc17xx_uart.o
+                0x100002c4                pfnModemCbs
+ *(COMMON)
+ COMMON         0x100002c8      0x218 ./src/uart_fullmodem_test.o
+                0x100002c8                rb
+                0x100004d8                TxIntStat
+                0x100004dc                RTS_State
+ COMMON         0x100004e0        0x8 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+                0x100004e0                __heaps
+                0x100004e4                __end_of_heap
+                0x100004e8                _ebss = .
+
+.cr_heap        0x100004e8        0x0 load address 0x00002954
+                0x100004e8                end = .
+                0x100004e8                _pvHeapStart = .
+                0x10008000                _vRamTop = __top_RamLoc32
+                0x10008000                _vStackTop = (_vRamTop - 0x0)
+OUTPUT(UART_TEST.axf elf32-littlearm)
+
+.debug_abbrev   0x00000000      0xfc1
+ .debug_abbrev  0x00000000       0xd9 ./src/core_cm3.o
+ .debug_abbrev  0x000000d9       0xbd ./src/cr_startup_lpc176x.o
+ .debug_abbrev  0x00000196       0x4d ./src/lpc17xx_adc.o
+ .debug_abbrev  0x000001e3       0x4d ./src/lpc17xx_can.o
+ .debug_abbrev  0x00000230      0x17d ./src/lpc17xx_clkpwr.o
+ .debug_abbrev  0x000003ad       0x4d ./src/lpc17xx_dac.o
+ .debug_abbrev  0x000003fa       0x4d ./src/lpc17xx_emac.o
+ .debug_abbrev  0x00000447       0x4d ./src/lpc17xx_gpdma.o
+ .debug_abbrev  0x00000494       0x4d ./src/lpc17xx_gpio.o
+ .debug_abbrev  0x000004e1       0x4d ./src/lpc17xx_i2c.o
+ .debug_abbrev  0x0000052e       0x4d ./src/lpc17xx_i2s.o
+ .debug_abbrev  0x0000057b       0x2c ./src/lpc17xx_libcfg_default.o
+ .debug_abbrev  0x000005a7       0x4d ./src/lpc17xx_mcpwm.o
+ .debug_abbrev  0x000005f4       0xeb ./src/lpc17xx_nvic.o
+ .debug_abbrev  0x000006df      0x113 ./src/lpc17xx_pinsel.o
+ .debug_abbrev  0x000007f2       0x4d ./src/lpc17xx_pwm.o
+ .debug_abbrev  0x0000083f       0x4d ./src/lpc17xx_qei.o
+ .debug_abbrev  0x0000088c       0x4d ./src/lpc17xx_rit.o
+ .debug_abbrev  0x000008d9       0x4d ./src/lpc17xx_rtc.o
+ .debug_abbrev  0x00000926       0x4d ./src/lpc17xx_spi.o
+ .debug_abbrev  0x00000973       0x4d ./src/lpc17xx_ssp.o
+ .debug_abbrev  0x000009c0       0x4d ./src/lpc17xx_timer.o
+ .debug_abbrev  0x00000a0d      0x23b ./src/lpc17xx_uart.o
+ .debug_abbrev  0x00000c48       0x4d ./src/lpc17xx_wdt.o
+ .debug_abbrev  0x00000c95       0xc6 ./src/system_LPC17xx.o
+ .debug_abbrev  0x00000d5b      0x266 ./src/uart_fullmodem_test.o
+
+.debug_info     0x00000000     0x4533
+ .debug_info    0x00000000      0x54c ./src/core_cm3.o
+ .debug_info    0x0000054c      0x1ec ./src/cr_startup_lpc176x.o
+ .debug_info    0x00000738       0x8d ./src/lpc17xx_adc.o
+ .debug_info    0x000007c5       0x8d ./src/lpc17xx_can.o
+ .debug_info    0x00000852      0x613 ./src/lpc17xx_clkpwr.o
+ .debug_info    0x00000e65       0x8d ./src/lpc17xx_dac.o
+ .debug_info    0x00000ef2       0x8d ./src/lpc17xx_emac.o
+ .debug_info    0x00000f7f       0x8d ./src/lpc17xx_gpdma.o
+ .debug_info    0x0000100c       0x8d ./src/lpc17xx_gpio.o
+ .debug_info    0x00001099       0x8d ./src/lpc17xx_i2c.o
+ .debug_info    0x00001126       0x8d ./src/lpc17xx_i2s.o
+ .debug_info    0x000011b3       0x77 ./src/lpc17xx_libcfg_default.o
+ .debug_info    0x0000122a       0x8d ./src/lpc17xx_mcpwm.o
+ .debug_info    0x000012b7      0x3d8 ./src/lpc17xx_nvic.o
+ .debug_info    0x0000168f      0x49b ./src/lpc17xx_pinsel.o
+ .debug_info    0x00001b2a       0x8d ./src/lpc17xx_pwm.o
+ .debug_info    0x00001bb7       0x8d ./src/lpc17xx_qei.o
+ .debug_info    0x00001c44       0x8d ./src/lpc17xx_rit.o
+ .debug_info    0x00001cd1       0x8d ./src/lpc17xx_rtc.o
+ .debug_info    0x00001d5e       0x8d ./src/lpc17xx_spi.o
+ .debug_info    0x00001deb       0x8d ./src/lpc17xx_ssp.o
+ .debug_info    0x00001e78       0x8d ./src/lpc17xx_timer.o
+ .debug_info    0x00001f05     0x12ef ./src/lpc17xx_uart.o
+ .debug_info    0x000031f4       0x8d ./src/lpc17xx_wdt.o
+ .debug_info    0x00003281      0x334 ./src/system_LPC17xx.o
+ .debug_info    0x000035b5      0xf7e ./src/uart_fullmodem_test.o
+
+.debug_line     0x00000000     0x4de5
+ .debug_line    0x00000000      0x3d6 ./src/core_cm3.o
+ .debug_line    0x000003d6      0x30c ./src/cr_startup_lpc176x.o
+ .debug_line    0x000006e2      0x2af ./src/lpc17xx_adc.o
+ .debug_line    0x00000991      0x2af ./src/lpc17xx_can.o
+ .debug_line    0x00000c40      0x346 ./src/lpc17xx_clkpwr.o
+ .debug_line    0x00000f86      0x2af ./src/lpc17xx_dac.o
+ .debug_line    0x00001235      0x2b1 ./src/lpc17xx_emac.o
+ .debug_line    0x000014e6      0x2b3 ./src/lpc17xx_gpdma.o
+ .debug_line    0x00001799      0x290 ./src/lpc17xx_gpio.o
+ .debug_line    0x00001a29      0x2c3 ./src/lpc17xx_i2c.o
+ .debug_line    0x00001cec      0x2af ./src/lpc17xx_i2s.o
+ .debug_line    0x00001f9b      0x261 ./src/lpc17xx_libcfg_default.o
+ .debug_line    0x000021fc      0x2b3 ./src/lpc17xx_mcpwm.o
+ .debug_line    0x000024af      0x2c2 ./src/lpc17xx_nvic.o
+ .debug_line    0x00002771      0x30c ./src/lpc17xx_pinsel.o
+ .debug_line    0x00002a7d      0x2af ./src/lpc17xx_pwm.o
+ .debug_line    0x00002d2c      0x2af ./src/lpc17xx_qei.o
+ .debug_line    0x00002fdb      0x2af ./src/lpc17xx_rit.o
+ .debug_line    0x0000328a      0x2af ./src/lpc17xx_rtc.o
+ .debug_line    0x00003539      0x2af ./src/lpc17xx_spi.o
+ .debug_line    0x000037e8      0x2af ./src/lpc17xx_ssp.o
+ .debug_line    0x00003a97      0x2c7 ./src/lpc17xx_timer.o
+ .debug_line    0x00003d5e      0x6b6 ./src/lpc17xx_uart.o
+ .debug_line    0x00004414      0x2c3 ./src/lpc17xx_wdt.o
+ .debug_line    0x000046d7      0x2b2 ./src/system_LPC17xx.o
+ .debug_line    0x00004989      0x45c ./src/uart_fullmodem_test.o
+
+.debug_macinfo  0x00000000    0xcc69a
+ .debug_macinfo
+                0x00000000     0x2669 ./src/core_cm3.o
+ .debug_macinfo
+                0x00002669     0x26af ./src/cr_startup_lpc176x.o
+ .debug_macinfo
+                0x00004d18     0x894a ./src/lpc17xx_adc.o
+ .debug_macinfo
+                0x0000d662     0x9d69 ./src/lpc17xx_can.o
+ .debug_macinfo
+                0x000173cb     0x800e ./src/lpc17xx_clkpwr.o
+ .debug_macinfo
+                0x0001f3d9     0x8277 ./src/lpc17xx_dac.o
+ .debug_macinfo
+                0x00027650     0x9ec6 ./src/lpc17xx_emac.o
+ .debug_macinfo
+                0x00031516     0x957e ./src/lpc17xx_gpdma.o
+ .debug_macinfo
+                0x0003aa94     0x6fd0 ./src/lpc17xx_gpio.o
+ .debug_macinfo
+                0x00041a64     0x8ef4 ./src/lpc17xx_i2c.o
+ .debug_macinfo
+                0x0004a958     0x9398 ./src/lpc17xx_i2s.o
+ .debug_macinfo
+                0x00053cf0     0x29ad ./src/lpc17xx_libcfg_default.o
+ .debug_macinfo
+                0x0005669d     0x8afe ./src/lpc17xx_mcpwm.o
+ .debug_macinfo
+                0x0005f19b     0x6d04 ./src/lpc17xx_nvic.o
+ .debug_macinfo
+                0x00065e9f     0x71e8 ./src/lpc17xx_pinsel.o
+ .debug_macinfo
+                0x0006d087     0x89a3 ./src/lpc17xx_pwm.o
+ .debug_macinfo
+                0x00075a2a     0x993c ./src/lpc17xx_qei.o
+ .debug_macinfo
+                0x0007f366     0x81a0 ./src/lpc17xx_rit.o
+ .debug_macinfo
+                0x00087506     0x8994 ./src/lpc17xx_rtc.o
+ .debug_macinfo
+                0x0008fe9a     0x8b2a ./src/lpc17xx_spi.o
+ .debug_macinfo
+                0x000989c4     0x91ec ./src/lpc17xx_ssp.o
+ .debug_macinfo
+                0x000a1bb0     0x8de9 ./src/lpc17xx_timer.o
+ .debug_macinfo
+                0x000aa999     0x995b ./src/lpc17xx_uart.o
+ .debug_macinfo
+                0x000b42f4     0x88da ./src/lpc17xx_wdt.o
+ .debug_macinfo
+                0x000bcbce     0x6e0a ./src/system_LPC17xx.o
+ .debug_macinfo
+                0x000c39d8     0x8cc2 ./src/uart_fullmodem_test.o
+
+.debug_frame    0x00000000      0xbb0
+ .debug_frame   0x00000000      0x248 ./src/core_cm3.o
+ .debug_frame   0x00000248      0x120 ./src/cr_startup_lpc176x.o
+ .debug_frame   0x00000368      0x10c ./src/lpc17xx_clkpwr.o
+ .debug_frame   0x00000474       0x64 ./src/lpc17xx_nvic.o
+ .debug_frame   0x000004d8       0xbc ./src/lpc17xx_pinsel.o
+ .debug_frame   0x00000594      0x42c ./src/lpc17xx_uart.o
+ .debug_frame   0x000009c0       0x40 ./src/system_LPC17xx.o
+ .debug_frame   0x00000a00      0x1b0 ./src/uart_fullmodem_test.o
+
+.debug_loc      0x00000000     0x13b9
+ .debug_loc     0x00000000      0x3de ./src/core_cm3.o
+ .debug_loc     0x000003de      0x1e5 ./src/cr_startup_lpc176x.o
+ .debug_loc     0x000005c3      0x1b3 ./src/lpc17xx_clkpwr.o
+ .debug_loc     0x00000776       0xa5 ./src/lpc17xx_nvic.o
+ .debug_loc     0x0000081b      0x14a ./src/lpc17xx_pinsel.o
+ .debug_loc     0x00000965      0x720 ./src/lpc17xx_uart.o
+ .debug_loc     0x00001085       0x56 ./src/system_LPC17xx.o
+ .debug_loc     0x000010db      0x2de ./src/uart_fullmodem_test.o
+
+.debug_pubnames
+                0x00000000      0x86b
+ .debug_pubnames
+                0x00000000      0x159 ./src/core_cm3.o
+ .debug_pubnames
+                0x00000159       0xfd ./src/cr_startup_lpc176x.o
+ .debug_pubnames
+                0x00000256       0xbb ./src/lpc17xx_clkpwr.o
+ .debug_pubnames
+                0x00000311       0x46 ./src/lpc17xx_nvic.o
+ .debug_pubnames
+                0x00000357       0xa6 ./src/lpc17xx_pinsel.o
+ .debug_pubnames
+                0x000003fd      0x311 ./src/lpc17xx_uart.o
+ .debug_pubnames
+                0x0000070e       0x4f ./src/system_LPC17xx.o
+ .debug_pubnames
+                0x0000075d      0x10e ./src/uart_fullmodem_test.o
+
+.debug_aranges  0x00000000      0x3e8
+ .debug_aranges
+                0x00000000       0xc8 ./src/core_cm3.o
+ .debug_aranges
+                0x000000c8       0x70 ./src/cr_startup_lpc176x.o
+ .debug_aranges
+                0x00000138       0x60 ./src/lpc17xx_clkpwr.o
+ .debug_aranges
+                0x00000198       0x30 ./src/lpc17xx_nvic.o
+ .debug_aranges
+                0x000001c8       0x48 ./src/lpc17xx_pinsel.o
+ .debug_aranges
+                0x00000210      0x128 ./src/lpc17xx_uart.o
+ .debug_aranges
+                0x00000338       0x28 ./src/system_LPC17xx.o
+ .debug_aranges
+                0x00000360       0x88 ./src/uart_fullmodem_test.o
+
+.debug_ranges   0x00000000      0x3a8
+ .debug_ranges  0x00000000       0xc0 ./src/core_cm3.o
+ .debug_ranges  0x000000c0       0x68 ./src/cr_startup_lpc176x.o
+ .debug_ranges  0x00000128       0x58 ./src/lpc17xx_clkpwr.o
+ .debug_ranges  0x00000180       0x28 ./src/lpc17xx_nvic.o
+ .debug_ranges  0x000001a8       0x40 ./src/lpc17xx_pinsel.o
+ .debug_ranges  0x000001e8      0x120 ./src/lpc17xx_uart.o
+ .debug_ranges  0x00000308       0x20 ./src/system_LPC17xx.o
+ .debug_ranges  0x00000328       0x80 ./src/uart_fullmodem_test.o
+
+.debug_str      0x00000000     0x1902
+ .debug_str     0x00000000      0x21b ./src/core_cm3.o
+                                0x253 (size before relaxing)
+ .debug_str     0x0000021b       0xfa ./src/cr_startup_lpc176x.o
+                                0x1ea (size before relaxing)
+ .debug_str     0x00000315       0x22 ./src/lpc17xx_adc.o
+                                0x105 (size before relaxing)
+ .debug_str     0x00000337       0x15 ./src/lpc17xx_can.o
+                                0x105 (size before relaxing)
+ .debug_str     0x0000034c      0x265 ./src/lpc17xx_clkpwr.o
+                                0x36b (size before relaxing)
+ .debug_str     0x000005b1       0x15 ./src/lpc17xx_dac.o
+                                0x105 (size before relaxing)
+ .debug_str     0x000005c6       0x16 ./src/lpc17xx_emac.o
+                                0x106 (size before relaxing)
+ .debug_str     0x000005dc       0x17 ./src/lpc17xx_gpdma.o
+                                0x107 (size before relaxing)
+ .debug_str     0x000005f3       0x16 ./src/lpc17xx_gpio.o
+                                0x106 (size before relaxing)
+ .debug_str     0x00000609       0x15 ./src/lpc17xx_i2c.o
+                                0x105 (size before relaxing)
+ .debug_str     0x0000061e       0x15 ./src/lpc17xx_i2s.o
+                                0x105 (size before relaxing)
+ .debug_str     0x00000633       0x20 ./src/lpc17xx_libcfg_default.o
+                                0x103 (size before relaxing)
+ .debug_str     0x00000653       0x17 ./src/lpc17xx_mcpwm.o
+                                0x107 (size before relaxing)
+ .debug_str     0x0000066a       0x6c ./src/lpc17xx_nvic.o
+                                0x1e4 (size before relaxing)
+ .debug_str     0x000006d6      0x241 ./src/lpc17xx_pinsel.o
+                                0x374 (size before relaxing)
+ .debug_str     0x00000917       0x15 ./src/lpc17xx_pwm.o
+                                0x105 (size before relaxing)
+ .debug_str     0x0000092c       0x15 ./src/lpc17xx_qei.o
+                                0x105 (size before relaxing)
+ .debug_str     0x00000941       0x15 ./src/lpc17xx_rit.o
+                                0x105 (size before relaxing)
+ .debug_str     0x00000956       0x15 ./src/lpc17xx_rtc.o
+                                0x105 (size before relaxing)
+ .debug_str     0x0000096b       0x15 ./src/lpc17xx_spi.o
+                                0x105 (size before relaxing)
+ .debug_str     0x00000980       0x15 ./src/lpc17xx_ssp.o
+                                0x105 (size before relaxing)
+ .debug_str     0x00000995       0x17 ./src/lpc17xx_timer.o
+                                0x107 (size before relaxing)
+ .debug_str     0x000009ac      0xa61 ./src/lpc17xx_uart.o
+                                0xc12 (size before relaxing)
+ .debug_str     0x0000140d       0x15 ./src/lpc17xx_wdt.o
+                                0x105 (size before relaxing)
+ .debug_str     0x00001422       0x39 ./src/system_LPC17xx.o
+                                0x25f (size before relaxing)
+ .debug_str     0x0000145b      0x4a7 ./src/uart_fullmodem_test.o
+                                0x9d7 (size before relaxing)
+
+.comment        0x00000000      0x4df
+ .comment       0x00000000       0x2b ./src/core_cm3.o
+ .comment       0x0000002b       0x2b ./src/cr_startup_lpc176x.o
+ .comment       0x00000056       0x2b ./src/lpc17xx_adc.o
+ .comment       0x00000081       0x2b ./src/lpc17xx_can.o
+ .comment       0x000000ac       0x2b ./src/lpc17xx_clkpwr.o
+ .comment       0x000000d7       0x2b ./src/lpc17xx_dac.o
+ .comment       0x00000102       0x2b ./src/lpc17xx_emac.o
+ .comment       0x0000012d       0x2b ./src/lpc17xx_gpdma.o
+ .comment       0x00000158       0x2b ./src/lpc17xx_gpio.o
+ .comment       0x00000183       0x2b ./src/lpc17xx_i2c.o
+ .comment       0x000001ae       0x2b ./src/lpc17xx_i2s.o
+ .comment       0x000001d9       0x2b ./src/lpc17xx_libcfg_default.o
+ .comment       0x00000204       0x2b ./src/lpc17xx_mcpwm.o
+ .comment       0x0000022f       0x2b ./src/lpc17xx_nvic.o
+ .comment       0x0000025a       0x2b ./src/lpc17xx_pinsel.o
+ .comment       0x00000285       0x2b ./src/lpc17xx_pwm.o
+ .comment       0x000002b0       0x2b ./src/lpc17xx_qei.o
+ .comment       0x000002db       0x2b ./src/lpc17xx_rit.o
+ .comment       0x00000306       0x2b ./src/lpc17xx_rtc.o
+ .comment       0x00000331       0x2b ./src/lpc17xx_spi.o
+ .comment       0x0000035c       0x2b ./src/lpc17xx_ssp.o
+ .comment       0x00000387       0x2b ./src/lpc17xx_timer.o
+ .comment       0x000003b2       0x2b ./src/lpc17xx_uart.o
+ .comment       0x000003dd       0x2b ./src/lpc17xx_wdt.o
+ .comment       0x00000408       0x2b ./src/system_LPC17xx.o
+ .comment       0x00000433       0x2b ./src/uart_fullmodem_test.o
+ .comment       0x0000045e       0x2b c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .comment       0x00000489       0x2b c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+ .comment       0x000004b4       0x2b c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x31 ./src/core_cm3.o
+ .ARM.attributes
+                0x00000031       0x31 ./src/cr_startup_lpc176x.o
+ .ARM.attributes
+                0x00000062       0x31 ./src/lpc17xx_adc.o
+ .ARM.attributes
+                0x00000093       0x31 ./src/lpc17xx_can.o
+ .ARM.attributes
+                0x000000c4       0x31 ./src/lpc17xx_clkpwr.o
+ .ARM.attributes
+                0x000000f5       0x31 ./src/lpc17xx_dac.o
+ .ARM.attributes
+                0x00000126       0x31 ./src/lpc17xx_emac.o
+ .ARM.attributes
+                0x00000157       0x31 ./src/lpc17xx_gpdma.o
+ .ARM.attributes
+                0x00000188       0x31 ./src/lpc17xx_gpio.o
+ .ARM.attributes
+                0x000001b9       0x31 ./src/lpc17xx_i2c.o
+ .ARM.attributes
+                0x000001ea       0x31 ./src/lpc17xx_i2s.o
+ .ARM.attributes
+                0x0000021b       0x31 ./src/lpc17xx_libcfg_default.o
+ .ARM.attributes
+                0x0000024c       0x31 ./src/lpc17xx_mcpwm.o
+ .ARM.attributes
+                0x0000027d       0x31 ./src/lpc17xx_nvic.o
+ .ARM.attributes
+                0x000002ae       0x31 ./src/lpc17xx_pinsel.o
+ .ARM.attributes
+                0x000002df       0x31 ./src/lpc17xx_pwm.o
+ .ARM.attributes
+                0x00000310       0x31 ./src/lpc17xx_qei.o
+ .ARM.attributes
+                0x00000341       0x31 ./src/lpc17xx_rit.o
+ .ARM.attributes
+                0x00000372       0x31 ./src/lpc17xx_rtc.o
+ .ARM.attributes
+                0x000003a3       0x31 ./src/lpc17xx_spi.o
+ .ARM.attributes
+                0x000003d4       0x31 ./src/lpc17xx_ssp.o
+ .ARM.attributes
+                0x00000405       0x31 ./src/lpc17xx_timer.o
+ .ARM.attributes
+                0x00000436       0x31 ./src/lpc17xx_uart.o
+ .ARM.attributes
+                0x00000467       0x31 ./src/lpc17xx_wdt.o
+ .ARM.attributes
+                0x00000498       0x31 ./src/system_LPC17xx.o
+ .ARM.attributes
+                0x000004c9       0x31 ./src/uart_fullmodem_test.o
+ .ARM.attributes
+                0x000004fa       0x31 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x0000052b       0x31 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+ .ARM.attributes
+                0x0000055c       0x31 c:/nxp/lpcxpresso_3.5/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
