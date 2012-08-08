@@ -43,7 +43,7 @@
 #define I2CDEV_M LPC_I2C0
 #elif (USEDI2CDEV_M == 2)
 #define I2CDEV_M LPC_I2C2
-#elif
+#else
 #error "Master I2C device not defined!"
 #endif
 

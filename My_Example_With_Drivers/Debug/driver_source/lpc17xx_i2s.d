@@ -1,26 +1,23 @@
-driver_source/lpc17xx_i2s.d driver_source/lpc17xx_i2s.o:  \
+driver_source/lpc17xx_i2s.d driver_source/lpc17xx_i2s.o: \
  ../driver_source/lpc17xx_i2s.c \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\driver_include/lpc17xx_i2s.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\CMSISv1p30_LPC17xx\inc/LPC17xx.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\CMSISv1p30_LPC17xx\inc/core_cm3.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\CMSISv1p30_LPC17xx\inc/system_LPC17xx.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\driver_include/lpc_types.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\driver_include/lpc17xx_clkpwr.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\CMSISv1p30_LPC17xx\inc/lpc17xx.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\driver_include/lpc17xx_libcfg_default.h
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc17xx_i2s.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/LPC17xx.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/core_cm3.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/system_LPC17xx.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc_types.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc17xx_clkpwr.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc17xx_libcfg_default.h
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\driver_include/lpc17xx_i2s.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc17xx_i2s.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\CMSISv1p30_LPC17xx\inc/LPC17xx.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/LPC17xx.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\CMSISv1p30_LPC17xx\inc/core_cm3.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/core_cm3.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\CMSISv1p30_LPC17xx\inc/system_LPC17xx.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/system_LPC17xx.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\driver_include/lpc_types.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc_types.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\driver_include/lpc17xx_clkpwr.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc17xx_clkpwr.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\CMSISv1p30_LPC17xx\inc/lpc17xx.h:
-
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\driver_include/lpc17xx_libcfg_default.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc17xx_libcfg_default.h:

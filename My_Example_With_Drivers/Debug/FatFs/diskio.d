@@ -1,39 +1,39 @@
 FatFs/diskio.d FatFs/diskio.o: ../FatFs/diskio.c ../FatFs/diskio.h \
-  ../FatFs/integer.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\driver_include/lpc_types.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\driver_include/lpc17xx_sd.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\UsbHost\Host/usbhost_lpc17xx.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\UsbHost\Include/usbhost_inc.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\UsbHost\Include/usbhost_cpu.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\UsbHost\Include/usbhost_err.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\UsbHost\Uart/usbhost_uart.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\UsbHost\MassStorage/usbhost_ms.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\CMSISv1p30_LPC17xx\inc/LPC17xx.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\CMSISv1p30_LPC17xx\inc/core_cm3.h \
-  C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\CMSISv1p30_LPC17xx\inc/system_LPC17xx.h
+ ../FatFs/integer.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc_types.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc17xx_sd.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Host/usbhost_lpc17xx.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Include/usbhost_inc.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Include/usbhost_cpu.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Include/usbhost_err.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Uart/usbhost_uart.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/MassStorage/usbhost_ms.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/LPC17xx.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/core_cm3.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/system_LPC17xx.h
 
 ../FatFs/diskio.h:
 
 ../FatFs/integer.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\driver_include/lpc_types.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc_types.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\driver_include/lpc17xx_sd.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc17xx_sd.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\UsbHost\Host/usbhost_lpc17xx.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Host/usbhost_lpc17xx.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\UsbHost\Include/usbhost_inc.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Include/usbhost_inc.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\UsbHost\Include/usbhost_cpu.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Include/usbhost_cpu.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\UsbHost\Include/usbhost_err.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Include/usbhost_err.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\UsbHost\Uart/usbhost_uart.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Uart/usbhost_uart.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\My_Example_With_Drivers\UsbHost\MassStorage/usbhost_ms.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/MassStorage/usbhost_ms.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\CMSISv1p30_LPC17xx\inc/LPC17xx.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/LPC17xx.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\CMSISv1p30_LPC17xx\inc/core_cm3.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/core_cm3.h:
 
-C:\Documents\ and\ Settings\nlv14991\My\ Documents\lpcxpresso_3.5\workspace\CMSISv1p30_LPC17xx\inc/system_LPC17xx.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/system_LPC17xx.h:

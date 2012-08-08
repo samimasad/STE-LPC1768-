@@ -1,6 +1,6 @@
 #include "diskio.h"
-#include "LPC17xx_spi.h"
-#include "LPC17xx_sd.h"
+#include "lpc17xx_spi.h"
+#include "lpc17xx_sd.h"
 
 /* 512 bytes for each sector */
 #define SD_SECTOR_SIZE	512
