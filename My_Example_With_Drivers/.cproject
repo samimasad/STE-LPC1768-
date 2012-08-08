@@ -48,6 +48,8 @@
 									<listOptionValue builtIn="false" value=""/>
 									<listOptionValue builtIn="false" value=""/>
 									<listOptionValue builtIn="false" value=""/>
+									<listOptionValue builtIn="false" value=""/>
+									<listOptionValue builtIn="false" value="__NEWLIB__"/>
 								</option>
 								<option id="gnu.c.compiler.option.misc.other.387834042" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-fsigned-char -c -fmessage-length=0 -fno-builtin -ffunction-sections " valueType="string"/>
 								<option id="gnu.c.compiler.option.include.paths.220211450" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
@@ -65,7 +67,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS_Library/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS_Library/portable}&quot;"/>
 								</option>
-								<option id="com.crt.advproject.gcc.hdrlib.591215034" name="Use headers for C library" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.none" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.hdrlib.591215034" name="Use headers for C library" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlib" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.warnings.pedantic.461415182" name="Pedantic (-pedantic)" superClass="gnu.c.compiler.option.warnings.pedantic" value="false" valueType="boolean"/>
 								<option id="gnu.c.compiler.option.warnings.allwarn.1555614592" name="All warnings (-Wall)" superClass="gnu.c.compiler.option.warnings.allwarn" value="false" valueType="boolean"/>
 								<option id="gnu.c.compiler.option.preprocessor.undef.symbol.1459136224" name="Undefined symbols (-U)" superClass="gnu.c.compiler.option.preprocessor.undef.symbol" valueType="undefDefinedSymbols">

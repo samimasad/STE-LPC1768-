@@ -12,9 +12,11 @@
 //#include "lpc17xx_libcfg.h"
 #include "lpc17xx_nvic.h"
 
-#define LED_NUM     4                   /* Number of user LEDs                */
+//#define LED_NUM     4                   /* Number of user LEDs                */
+#define LED_NUM     3                   /* Number of user LEDs , do not use first LED , used by USB               */
 
-const unsigned long led_mask[] = { 1L<<18,1L<<20,1<<21, 1<<23 };
+//const unsigned long led_mask[] = { 1L<<18,1L<<20,1<<21, 1<<23 };
+const unsigned long led_mask[] = {1L<<20,1<<21, 1<<23 };			/* Number of user LEDs , do not use first LED , used by USB   */
 volatile unsigned long SysTickCnt;      /* SysTick Counter                    */
 
 void SysTick_Handler (void) {           /* SysTick Interrupt Handler (1ms)    */
@@ -40,6 +42,7 @@ int entry_led (void) {                       /* Main Program                    
 #endif
 */
 
+
   SysTick_Config(SystemCoreClock/1000 - 1); /* Generate interrupt each 1 ms   */
 
 
@@ -61,6 +64,7 @@ int entry_led (void) {                       /* Main Program                    
     GPIO_SetValue(1, 0xFFFFFFFF);
     Delay(500);
 */
+
 
 
     GPIO_SetValue(1, led_mask[num]);

@@ -117,7 +117,7 @@ int main( void )
 	/* Start the scheduler so the created tasks start executing. */
 	xTaskCreate( vLEDTask, ( signed char * ) "LED_TOGGOLE", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
 
-	xTaskCreate( vLCDTask, ( signed char * ) "LCD_DISPLAY", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
+	//xTaskCreate( vLCDTask, ( signed char * ) "LCD_DISPLAY", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
 
 	xTaskCreate( vuIP_Task, ( signed char * ) "uIP", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY+1, NULL );
 
