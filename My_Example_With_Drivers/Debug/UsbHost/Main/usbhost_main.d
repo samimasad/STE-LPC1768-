@@ -11,7 +11,6 @@ UsbHost/Main/usbhost_main.d UsbHost/Main/usbhost_main.o: \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/system_LPC17xx.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/FatFs/diskio.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/FatFs/integer.h \
- /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc_types.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/FatFs/ff.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/FatFs/ffconf.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc17xx_rtc.h \
@@ -40,8 +39,6 @@ UsbHost/Main/usbhost_main.d UsbHost/Main/usbhost_main.o: \
 /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/FatFs/diskio.h:
 
 /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/FatFs/integer.h:
-
-/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc_types.h:
 
 /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/FatFs/ff.h:
 

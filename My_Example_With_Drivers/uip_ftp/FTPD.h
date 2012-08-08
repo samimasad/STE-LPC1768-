@@ -108,7 +108,7 @@ typedef struct
 
 extern FATFS USBFs[_VOLUMES];		/* File system object for each logical drive */
 
-extern u16_t driveAttached;
+extern char driveAttached;
 
 extern void ftpd_init(void);
 

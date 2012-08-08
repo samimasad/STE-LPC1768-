@@ -274,11 +274,12 @@ DSTATUS USB_disk_status (
 {
 
 
-	if (drv) return STA_NOINIT;		/* Supports only single drive */
-	if(boot_sig != 0xAA55)
-		return Stat;
-	else
-		return OK;
+	//if (drv) return STA_NOINIT;		/* Supports only single drive */
+	//if(boot_sig != 0xAA55)
+	//	return Stat;
+	//else
+	//	return OK;
+	return OK ; //todo fix this and make proper check
 }
 
 /*-----------------------------------------------------------------------*/

@@ -71,7 +71,7 @@ MODIFICATION DETAILS
 
 ftpd_state_t ftpd_state[NUM_FTP_DAEMONS];
 
-u16_t driveAttached;
+CHAR driveAttached;
 
 
 /*---------------------------------------------------------------------------*/

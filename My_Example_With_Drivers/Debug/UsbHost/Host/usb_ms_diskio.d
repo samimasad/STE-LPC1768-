@@ -2,7 +2,6 @@ UsbHost/Host/usb_ms_diskio.d UsbHost/Host/usb_ms_diskio.o: \
  ../UsbHost/Host/usb_ms_diskio.c \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/FatFs/diskio.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/FatFs/integer.h \
- /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc_types.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Include/usbhost_inc.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Include/usbhost_cpu.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Include/usbhost_err.h \
@@ -20,8 +19,6 @@ UsbHost/Host/usb_ms_diskio.d UsbHost/Host/usb_ms_diskio.o: \
 /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/FatFs/diskio.h:
 
 /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/FatFs/integer.h:
-
-/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc_types.h:
 
 /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Include/usbhost_inc.h:
 

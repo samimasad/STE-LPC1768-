@@ -27,6 +27,7 @@
 #include "diskio.h"
 #include "ff.h"
 #include "lpc17xx_rtc.h"
+#include "ff.h"
 #endif
 /*
 **************************************************************************************************************
@@ -66,56 +67,73 @@ int usb_host_main( void *pvParameters )
      //PRINT_Log("usb_host_main init the USB FS \n\r");
     //disk_initialize(USB);
 
-    PRINT_Log("usb_host_main f_mount \n\r");
+    //PRINT_Log("usb_host_main f_mount \n\r");
     rc = f_mount(USB,&USBFs[USB]);
-    //change driver to USB
-    f_chdrive(USB);
-    PRINT_Log("f_mount return %x \n\r",rc);
 
+    PRINT_Log("f_mount return %x \n\r",rc);
+    //change driver to USB
+    rc = f_chdrive(USB);
+    PRINT_Log("f_chdrive return %x \n\r",rc);
+    vTaskDelay(500);
+/*
     //open the file and check if we have errors or not
     PRINT_Log("Open the file \n\r");
     rc = f_open(&File1,FILENAME_R,FA_READ);
     PRINT_Log("f_open return %x \n\r",rc);
+
+
     //read the file and print it in the UART
     do
     {
     	f_read(&File1,read_buffer,79,&bytes_read);
     	read_buffer[bytes_read]='\0';
-    	//if(bytes_read>1)
-    		//PRINT_Log(read_buffer);
+    	if(bytes_read>1)
+    		PRINT_Log(read_buffer);
 
     }while(bytes_read>0);
 
     f_close(&File1);
     rc = f_opendir(&dir, "");
-    static char lfn[_MAX_LFN * (_DF1S ? 2 : 1) + 1];
+*/
+    //static char lfn[_MAX_LFN * (_DF1S ? 2 : 1) + 1];
+    static char lfn[_MAX_LFN * (0 ? 2 : 1) + 1]; //need to change from hard coded 0
     fno.lfname = lfn;
     fno.lfsize = sizeof(lfn);
     char *fn;
+    int counter = 0;
     PRINT_Log("\n\rDisplay Directory info:\n\r");
     //print out the directory
     //then get inside one sub and print out the content
-    do{
-    rc = f_readdir(&dir, &fno);
-    if(rc != 0)
-    	break;
-   	fn = *fno.lfname ? fno.lfname : fno.fname;
-   	//check what is the type of it
-   	switch(fno.fattrib & AM_DIR)
-   	{
-   	case AM_DIR:
-   		sprintf(file_attr,"Dir");
-   		sprintf(dir_name,"/%s",fn);
-   		break;
-   	default:
-   		sprintf(file_attr,"File");
+    //open dir
 
-   	}
-   	if(fno.fname[0] != '\0')
-   		PRINT_Log("%s: %s Attrib %x\n\r",file_attr,fn,fno.fattrib );
+    rc = f_opendir(&dir,"/");
+    PRINT_Log("f_opendir return %x \n\r",rc);
+
+    do{
+		rc = f_readdir(&dir, &fno);
+
+		if(rc != 0)
+		{
+			PRINT_Log("f_readdir return %x \n\r",rc);
+			break;
+		}
+		fn = *fno.lfname ? fno.lfname : fno.fname;
+		//check what is the type of it
+		switch(fno.fattrib & AM_DIR)
+		{
+		case AM_DIR:
+			sprintf(file_attr,"Dir");
+			sprintf(dir_name,"/%s",fn);
+			break;
+		default:
+			sprintf(file_attr,"File");
+
+		}
+		if(fno.fname[0] != '\0')
+			PRINT_Log("%s: %s Attrib %x\n\r",file_attr,fn,fno.fattrib );
 
     }while(fno.fname[0] != 0);
-
+#if 0
     //change directory
 	rc = f_chdir(dir_name);
     rc = f_opendir(&dir, dir_name);
@@ -123,6 +141,8 @@ int usb_host_main( void *pvParameters )
 	//find the first file and just open it and send it out
 	do{
 		rc = f_readdir(&dir, &fno);
+		if(rc != 0)
+		    break;
 		fn = *fno.lfname ? fno.lfname : fno.fname;
 		PRINT_Log("%s: %s Attrib %x\n\r",file_attr,fn,fno.fattrib );
 	}//while(fno.fname[0] != 0);
@@ -141,7 +161,7 @@ int usb_host_main( void *pvParameters )
 
 */
 
-
+#endif
 
 
 
@@ -171,7 +191,11 @@ int usb_host_main( void *pvParameters )
         return (0);
     }
 #endif
-    while(1);
+    while(1)
+    {
+    	vTaskDelay(100);
+
+    }
 }
 
 /*

@@ -1,6 +1,5 @@
 FatFs/diskio.d FatFs/diskio.o: ../FatFs/diskio.c ../FatFs/diskio.h \
  ../FatFs/integer.h \
- /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc_types.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc17xx_sd.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Host/usbhost_lpc17xx.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Include/usbhost_inc.h \
@@ -15,8 +14,6 @@ FatFs/diskio.d FatFs/diskio.o: ../FatFs/diskio.c ../FatFs/diskio.h \
 ../FatFs/diskio.h:
 
 ../FatFs/integer.h:
-
-/home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc_types.h:
 
 /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/driver_include/lpc17xx_sd.h:
 

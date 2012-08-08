@@ -57,7 +57,7 @@ MODIFICATION DETAILS
 #include "psock.h"
 
 #include "FTPD.h"
-
+#include "ff.h"
 
 #include "Connections.h"
 #define NUM_COMMANDS (sizeof(Cmd_dictionary)/sizeof(Cmd_dict_struct))

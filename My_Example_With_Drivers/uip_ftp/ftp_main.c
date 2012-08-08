@@ -281,9 +281,11 @@ void appdata_init(void) {
 		uip_conns[i].appdata = (void *)&(tcp_appdata[i]);
 
 	}
-    f_mount(USB,&USBFs[USB]);
-    //change driver to USB
-    f_chdrive(USB);
+	/*
+	//check status first , if it is already mounted leave it alone
+	f_mount(USB,&USBFs[USB]);
+	//change driver to USB
+	f_chdrive(USB);*/
 
 
 

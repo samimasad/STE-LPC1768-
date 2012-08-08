@@ -10,7 +10,8 @@
 #include "usbhost_lpc17xx.h"
 
 
-
+#define TRUE 1
+#define FALSE 0
 
 
 
@@ -23,6 +24,7 @@ DSTATUS disk_initialize (
 {
 	DSTATUS stat = STA_NOINIT;
 	int result;
+	PRINT_Log("disk_initialize for disk %x \n\r",drv);
 
 	switch (drv) {
 	case ATA :
@@ -45,6 +47,7 @@ DSTATUS disk_initialize (
 		driveAttached = TRUE ;
 		return stat;
 	}
+	PRINT_Log("disk_initialize return problem");
 	return STA_NOINIT;
 }
 
@@ -57,7 +60,7 @@ DSTATUS disk_status (
 	BYTE drv		/* Physical drive nmuber (0..) */
 )
 {
-	DSTATUS stat;
+	DSTATUS stat = STA_NOINIT ;
 	int result;
 
 	switch (drv) {
@@ -68,13 +71,13 @@ DSTATUS disk_status (
 		return stat;
 
 	case MMC :
-		result = MMC_disk_status(0);
+		stat = MMC_disk_status(0);
 		// translate the reslut code here
 
 		return stat;
 
 	case USB :
-		result = USB_disk_status();
+		stat = USB_disk_status();
 		// translate the reslut code here
 
 		return stat;

@@ -390,6 +390,7 @@ void  UART_Init_usb(USB_INT32U baudrate)
 	 */
 	UART_ConfigStructInit(&UARTConfigStruct);
 	UARTConfigStruct.Baud_rate =  baudrate ;
+	//UARTConfigStruct.Baud_rate = 115200 ;
 	// Initialize UART1 peripheral with given to corresponding parameter
 	UART_Init((LPC_UART_TypeDef *)LPC_UART1, &UARTConfigStruct);
 

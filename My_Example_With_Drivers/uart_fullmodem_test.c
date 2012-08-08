@@ -446,13 +446,16 @@ int entry(void)
 
 
 	/* Initialize UART Configuration parameter structure to default state:
-	 * Baudrate = 9600bps
+	 * Baudrate = 115200pbs
 	 * 8 data bit
 	 * 1 Stop bit
 	 * None parity
 	 */
+
+
 	UART_ConfigStructInit(&UARTConfigStruct);
 
+	UARTConfigStruct.Baud_rate = 115200 ;
 	// Initialize UART1 peripheral with given to corresponding parameter
 	UART_Init((LPC_UART_TypeDef *)LPC_UART1, &UARTConfigStruct);
 
