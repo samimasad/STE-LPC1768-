@@ -306,6 +306,8 @@ uint8_t buffer[100]; //for debug
 			/* Set LED7. */
 //			vParTestSetLED( ulLEDNo, pdFALSE );
 			GPIO_SetValue(1, 0xB40000);
+			sprintf(buffer,"There is request to change LED state  \n\r");
+			UART_Send((LPC_UART_TypeDef *)LPC_UART1, buffer, strlen(buffer),BLOCKING);
 		}
 		else
 		{

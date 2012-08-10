@@ -29,6 +29,10 @@
 #include "lpc17xx_rtc.h"
 #include "ff.h"
 #endif
+
+#ifdef AES_ENABLE
+#include "cypher.h"
+#endif
 /*
 **************************************************************************************************************
 *                                          MAIN FUNCTION
@@ -133,6 +137,10 @@ int usb_host_main( void *pvParameters )
 			PRINT_Log("%s: %s Attrib %x\n\r",file_attr,fn,fno.fattrib );
 
     }while(fno.fname[0] != 0);
+
+    //check AES
+
+
 #if 0
     //change directory
 	rc = f_chdir(dir_name);

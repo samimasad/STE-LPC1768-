@@ -98,8 +98,8 @@ to exclude the API function. */
 /* IP address configuration. */
 #define configIP_ADDR0		192
 #define configIP_ADDR1		168
-#define configIP_ADDR2		2
-#define configIP_ADDR3		201
+#define configIP_ADDR2		0
+#define configIP_ADDR3		120
 
 /* System Control Block (SCB) includes:
    Flash Accelerator Module, Clocking and Power Control, External Interrupts,

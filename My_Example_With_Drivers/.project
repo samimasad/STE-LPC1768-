@@ -3,6 +3,7 @@
 	<name>My_Example_With_Drivers</name>
 	<comment></comment>
 	<projects>
+		<project>aes_lib</project>
 		<project>CMSISv1p30_LPC17xx</project>
 		<project>FreeRTOS_Library</project>
 	</projects>
