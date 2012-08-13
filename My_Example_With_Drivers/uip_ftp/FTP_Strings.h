@@ -46,6 +46,7 @@ MODIFICATION DETAILS
 #define Resp200 "200 Command OK\r\n"
 #define Resp214A "214-The following commands are recognised\r\n"
 #define Resp214B "214 Done\r\n"
+#define Resp215 "215 FreeRTOS LPC1768\r\n"
 #define Resp220 "220 LPC1768 FTP Server\r\n"
 #define Resp221 "221 Closing control connection\r\n"
 #define Resp226 "226 Closing data connection\r\n"

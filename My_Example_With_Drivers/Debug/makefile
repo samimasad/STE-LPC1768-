@@ -38,7 +38,7 @@ all: example_driver.axf
 example_driver.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/Debug" -L"/home/nlv14991/workspaceLPC/aes_lib/Debug" -L"/home/nlv14991/workspaceLPC/STE-LPC1768-/FreeRTOS_Library/Debug" -Xlinker --gc-sections -Xlinker -Map=example_driver.map -mcpu=cortex-m3 -mthumb -T "My_Example_With_Drivers_Debug.ld" -o"example_driver.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/Debug" -L"/home/nlv14991/workspaceLPC/STE-LPC1768-/aes_lib/Debug" -L"/home/nlv14991/workspaceLPC/STE-LPC1768-/FreeRTOS_Library/Debug" -Xlinker --gc-sections -Xlinker -Map=example_driver.map -mcpu=cortex-m3 -mthumb -T "My_Example_With_Drivers_Debug.ld" -o"example_driver.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

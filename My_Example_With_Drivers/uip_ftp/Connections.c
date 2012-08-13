@@ -93,6 +93,7 @@ PT_THREAD(Cmd_dele(ftpd_state_t *s));
 PT_THREAD(Cmd_mkd(ftpd_state_t *s));
 PT_THREAD(Cmd_rmd(ftpd_state_t *s));
 PT_THREAD(Cmd_help(ftpd_state_t *s));
+PT_THREAD(Cmd_syst(ftpd_state_t *s));
 
 
 /* Local static variables */
@@ -120,6 +121,7 @@ Cmd_dict_struct const Cmd_dictionary[] =
     {"RMD", Cmd_rmd},
     {"XRMD", Cmd_rmd},
     {"HELP", Cmd_help},
+    {"SYST", Cmd_syst},
     // Unknown command response must always be the last in the list
     {"UNKN", Cmd_ukwn}
 };
@@ -1458,6 +1460,24 @@ PT_THREAD(Cmd_help(ftpd_state_t *s))
         PSOCK_GENERATOR_SEND(&s->cmdpsout, Generate_help_data, s);
     }
     
+    PSOCK_SEND_STR(&s->cmdpsout, Resp214B);
+
+    PSOCK_END(&s->cmdpsout);
+}
+
+PT_THREAD(Cmd_syst(ftpd_state_t *s))
+{
+    PSOCK_BEGIN(&s->cmdpsout);
+
+    PRINT_Log("\r\nSYST Command");
+
+    PSOCK_SEND_STR(&s->cmdpsout, Resp215);
+
+    for (s->count = 0; s->count < (NUM_COMMANDS - 1); s->count++)
+    {
+        PSOCK_GENERATOR_SEND(&s->cmdpsout, Generate_help_data, s);
+    }
+
     PSOCK_SEND_STR(&s->cmdpsout, Resp214B);
 
     PSOCK_END(&s->cmdpsout);
