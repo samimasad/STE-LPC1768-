@@ -300,12 +300,19 @@ uint8_t buffer[100]; //for debug
 
     if( c )
     {
+    	GPIO_SetDir(1, 0xB40000, 1);
 		/* Turn LED's on or off in accordance with the check box status. */
 		if( strstr( c, "LED0=1" ) != NULL )
 		{
 			/* Set LED7. */
 //			vParTestSetLED( ulLEDNo, pdFALSE );
-			GPIO_SetValue(1, 0xB40000);
+			//GPIO_SetValue(1, 0xB40000);
+
+			GPIO_SetValue(1, 1L<<20);
+			GPIO_SetValue(1, 1<<21);
+			GPIO_SetValue(1, 1<<23);
+
+
 			sprintf(buffer,"There is request to change LED state  \n\r");
 			UART_Send((LPC_UART_TypeDef *)LPC_UART1, buffer, strlen(buffer),BLOCKING);
 		}
@@ -313,13 +320,15 @@ uint8_t buffer[100]; //for debug
 		{
 			/* Clear LED7. */
 //			vParTestSetLED( ulLEDNo, pdTRUE );
-			GPIO_ClearValue(1, 0xB40000);
+			GPIO_ClearValue(1, 1L<<20);
+			GPIO_ClearValue(1, 1L<<21);
+			GPIO_ClearValue(1, 1L<<23);
 		}
 
 		if( strstr( c, "LCD_TEXT=&" ) == NULL ) //meaning there is no text
 		{
 
-			sprintf(buffer,"There is text to write to LCD  \n\r");
+
 			UART_Send((LPC_UART_TypeDef *)LPC_UART1, buffer, strlen(buffer),BLOCKING);
 
 
@@ -352,8 +361,17 @@ uint8_t buffer[100]; //for debug
 				counter++;
 			}
 			LCD_String[counter] = '\0' ;//put an end of string
-			LCD_ClearScreen();
-			LCD_PrintText(LCD_String);
+			if(counter > 1)
+				{
+				sprintf(buffer,"There is text to write to LCD  \n\r");
+				LCD_ClearScreen();
+				LCD_PrintText(LCD_String);
+				}
+			else
+				{
+				sprintf(buffer,"There is NO text to write to LCD  \n\r");
+				}
+
 
 
 		}
