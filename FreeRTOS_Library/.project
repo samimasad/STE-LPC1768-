@@ -3,6 +3,7 @@
 	<name>FreeRTOS_Library</name>
 	<comment></comment>
 	<projects>
+		<project>CMSISv2p00_LPC17xx</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

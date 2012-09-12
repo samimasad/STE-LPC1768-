@@ -330,17 +330,17 @@ Status GPDMA_Setup(GPDMA_Channel_CFG_Type *GPDMAChannelConfig, fnGPDMACbs_Type *
 	/* Re-Configure DMA Request Select for source peripheral */
 	if (GPDMAChannelConfig->SrcConn > 15)
 	{
-		DMAREQSEL |= (1<<(GPDMAChannelConfig->SrcConn - 16));
+		LPC_SC->DMAREQSEL |= (1<<(GPDMAChannelConfig->SrcConn - 16));
 	} else {
-		DMAREQSEL &= ~(1<<(GPDMAChannelConfig->SrcConn - 8));
+		LPC_SC->DMAREQSEL &= ~(1<<(GPDMAChannelConfig->SrcConn - 8));
 	}
 
 	/* Re-Configure DMA Request Select for Destination peripheral */
 	if (GPDMAChannelConfig->DstConn > 15)
 	{
-		DMAREQSEL |= (1<<(GPDMAChannelConfig->DstConn - 16));
+		LPC_SC->DMAREQSEL |= (1<<(GPDMAChannelConfig->DstConn - 16));
 	} else {
-		DMAREQSEL &= ~(1<<(GPDMAChannelConfig->DstConn - 8));
+		LPC_SC->DMAREQSEL &= ~(1<<(GPDMAChannelConfig->DstConn - 8));
 	}
 
 	/* Enable DMA channels, little endian */

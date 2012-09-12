@@ -21,9 +21,11 @@ uip_ftp/FTPD.d uip_ftp/FTPD.o: ../uip_ftp/FTPD.c \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Include/usbhost_err.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/Uart/usbhost_uart.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/MassStorage/usbhost_ms.h \
- /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/LPC17xx.h \
- /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/core_cm3.h \
- /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/system_LPC17xx.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv2p00_LPC17xx/inc/LPC17xx.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv2p00_LPC17xx/inc/core_cm3.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv2p00_LPC17xx/inc/core_cmInstr.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv2p00_LPC17xx/inc/core_cmFunc.h \
+ /home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv2p00_LPC17xx/inc/system_LPC17xx.h \
  ../uip_ftp/ftp_server.h \
  /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/webserver/uipopt.h
 
@@ -75,11 +77,15 @@ uip_ftp/FTPD.d uip_ftp/FTPD.o: ../uip_ftp/FTPD.c \
 
 /home/nlv14991/workspaceLPC/STE-LPC1768-/My_Example_With_Drivers/UsbHost/MassStorage/usbhost_ms.h:
 
-/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/LPC17xx.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv2p00_LPC17xx/inc/LPC17xx.h:
 
-/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/core_cm3.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv2p00_LPC17xx/inc/core_cm3.h:
 
-/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv1p30_LPC17xx/inc/system_LPC17xx.h:
+/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv2p00_LPC17xx/inc/core_cmInstr.h:
+
+/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv2p00_LPC17xx/inc/core_cmFunc.h:
+
+/home/nlv14991/workspaceLPC/STE-LPC1768-/CMSISv2p00_LPC17xx/inc/system_LPC17xx.h:
 
 ../uip_ftp/ftp_server.h:
 
