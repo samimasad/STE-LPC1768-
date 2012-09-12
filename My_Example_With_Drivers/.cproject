@@ -36,7 +36,7 @@
 									<listOptionValue builtIn="false" value="FATFS_FLAG"/>
 									<listOptionValue builtIn="false" value="PACK_STRUCT_END=__attribute\(\(packed\)\)"/>
 									<listOptionValue builtIn="false" value="ALIGN_STRUCT_END=__attribute\(\(aligned\(4\)\)\)"/>
-									<listOptionValue builtIn="false" value="__USE_CMSIS=CMSISv1p30_LPC17xx"/>
+									<listOptionValue builtIn="false" value="__USE_CMSIS=CMSISv2p00_LPC17xx"/>
 									<listOptionValue builtIn="false" value="__CODE_RED"/>
 									<listOptionValue builtIn="false" value="LED_TICK"/>
 									<listOptionValue builtIn="false" value="__NEWLIB__"/>
@@ -93,12 +93,12 @@
 									<listOptionValue builtIn="false" value="-Map=${BuildArtifactFileBaseName}.map"/>
 								</option>
 								<option id="gnu.c.link.option.paths.1172120167" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv1p30_LPC17xx/Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv2p00_LPC17xx/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aes_lib/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS_Library/Debug}&quot;"/>
 								</option>
 								<option id="gnu.c.link.option.libs.1681926572" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
-									<listOptionValue builtIn="false" value="CMSISv1p30_LPC17xx"/>
+									<listOptionValue builtIn="false" value="CMSISv2p00_LPC17xx"/>
 									<listOptionValue builtIn="false" value="FreeRTOS_Library"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.2138084207" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
