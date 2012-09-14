@@ -12,6 +12,7 @@ RM := rm -rf
 -include webserver/subdir.mk
 -include uip_ftp/subdir.mk
 -include driver_source/subdir.mk
+-include Zigbee/subdir.mk
 -include UsbHost/Uart/subdir.mk
 -include UsbHost/MassStorage/subdir.mk
 -include UsbHost/Main/subdir.mk

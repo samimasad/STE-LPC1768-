@@ -18,6 +18,7 @@ webserver \
 uip_ftp \
 . \
 driver_source \
+Zigbee \
 UsbHost/Uart \
 UsbHost/MassStorage \
 UsbHost/Main \

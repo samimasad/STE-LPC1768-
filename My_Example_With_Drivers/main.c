@@ -75,6 +75,7 @@ extern void vuIP_Task( void *pvParameters );
 extern void vUSBTask( void *pvParameters );
 extern void usb_host_main( void *pvParameters );
 extern void ftp_main( void *pvParameters );
+extern void vZigbeeTask( void *pvParameters ) ;
 /* Enable the software interrupt and set its priority. */
 static void prvSetupSoftwareInterrupt();
 
@@ -115,7 +116,7 @@ int main( void )
 
 	//xTaskCreate( vUARTTask, ( signed char * ) "UART_Modem", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
 	/* Start the scheduler so the created tasks start executing. */
-	//xTaskCreate( vLEDTask, ( signed char * ) "LED_TOGGOLE", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
+	xTaskCreate( vLEDTask, ( signed char * ) "LED_TOGGOLE", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
 
 	//xTaskCreate( vLCDTask, ( signed char * ) "LCD_DISPLAY", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
 
@@ -123,7 +124,7 @@ int main( void )
 
 	//xTaskCreate( vUSBTask, ( signed char * ) "USB_Device", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
 	xTaskCreate( usb_host_main, ( signed char * ) "USB_Device", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY+3, NULL );
-
+	xTaskCreate( vZigbeeTask, ( signed char * ) "Zigbee", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
 
 	vTaskStartScheduler();
 
