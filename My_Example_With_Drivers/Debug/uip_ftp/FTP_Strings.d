@@ -1,1 +1,1 @@
-uip_ftp/FTP_Strings.d uip_ftp/FTP_Strings.o: ../uip_ftp/FTP_Strings.c
+uip_ftp/FTP_Strings.d: ../uip_ftp/FTP_Strings.c

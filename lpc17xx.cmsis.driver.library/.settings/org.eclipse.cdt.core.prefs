@@ -1,3 +1,13 @@
-#Fri Dec 10 10:41:52 CET 2010
 eclipse.preferences.version=1
-environment/project/com.crt.advproject.toolchain.exe.debug.1952154568=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<environment append\="true" appendContributed\="true">\r\n<variable delimiter\=";" name\="PROJ_ROOT" operation\="append" value\="${WorkspaceDirPath}/lpc17xx.cmsis.driver.library"/>\r\n<variable delimiter\=";" name\="NXPMCU_WINBASE" operation\="append" value\="${WorkspaceDirPath}/lpc17xx.cmsis.driver.library"/>\r\n<variable delimiter\=";" name\="INSTALL_ROOT" operation\="append" value\="${eclipse_home}/.."/>\r\n</environment>\r\n
+environment/project/com.crt.advproject.toolchain.exe.debug.1952154568=
+environment/project/com.crt.advproject.toolchain.exe.debug.1952154568/INSTALL_ROOT/delimiter=;
+environment/project/com.crt.advproject.toolchain.exe.debug.1952154568/INSTALL_ROOT/operation=append
+environment/project/com.crt.advproject.toolchain.exe.debug.1952154568/INSTALL_ROOT/value=${eclipse_home}/..
+environment/project/com.crt.advproject.toolchain.exe.debug.1952154568/NXPMCU_WINBASE/delimiter=;
+environment/project/com.crt.advproject.toolchain.exe.debug.1952154568/NXPMCU_WINBASE/operation=append
+environment/project/com.crt.advproject.toolchain.exe.debug.1952154568/NXPMCU_WINBASE/value=${WorkspaceDirPath}/lpc17xx.cmsis.driver.library
+environment/project/com.crt.advproject.toolchain.exe.debug.1952154568/PROJ_ROOT/delimiter=;
+environment/project/com.crt.advproject.toolchain.exe.debug.1952154568/PROJ_ROOT/operation=append
+environment/project/com.crt.advproject.toolchain.exe.debug.1952154568/PROJ_ROOT/value=${WorkspaceDirPath}/lpc17xx.cmsis.driver.library
+environment/project/com.crt.advproject.toolchain.exe.debug.1952154568/append=true
+environment/project/com.crt.advproject.toolchain.exe.debug.1952154568/appendContributed=true

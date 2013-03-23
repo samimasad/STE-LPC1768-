@@ -1,2 +1,1 @@
-webserver/http-strings.d webserver/http-strings.o: \
- ../webserver/http-strings.c
+webserver/http-strings.d: ../webserver/http-strings.c

@@ -1,15 +1,16 @@
 /*
  * GENERATED FILE - DO NOT EDIT
- * (C) Code Red Technologies Ltd, 2008-2012
+ * (C) Code Red Technologies Ltd, 2008-2013
  * Linker script memory definitions
  * Created from LinkMemoryTemplate
- * By LPCXpresso v4.2.3 [Build 255] [30/05/2012]  on Fri Sep 14 08:49:15 CEST 2012)
+ * By LPCXpresso v5.1.2 [Build 2065] [2013-02-20]  on Sat Mar 23 11:12:18 CET 2013)
 */
 
 MEMORY
 {
   /* Define each memory region */
-  MFlash512 (rx) : ORIGIN = 0x0, LENGTH = 0x80000 /* 512k */
+  MFlash512 (rx) : ORIGIN = 0x0, LENGTH = 0x2000 /* 8k */
+  /**** NOTE: MFlash512 (512k) restricted to 8k by license type ****/ 
   RamLoc32 (rwx) : ORIGIN = 0x10000000, LENGTH = 0x8000 /* 32k */
   RamAHB32 (rwx) : ORIGIN = 0x2007c000, LENGTH = 0x8000 /* 32k */
 
