@@ -124,7 +124,7 @@ int main( void )
 
 	//xTaskCreate( vUSBTask, ( signed char * ) "USB_Device", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
 	xTaskCreate( usb_host_main, ( signed char * ) "USB_Device", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY+3, NULL );
-	xTaskCreate( vZigbeeTask, ( signed char * ) "Zigbee", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
+	//xTaskCreate( vZigbeeTask, ( signed char * ) "Zigbee", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
 
 	vTaskStartScheduler();
 

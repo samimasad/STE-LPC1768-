@@ -44,6 +44,9 @@
 								</option>
 								<option id="gnu.c.compiler.option.misc.other.387834042" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-fsigned-char -c -fmessage-length=0 -fno-builtin -ffunction-sections " valueType="string"/>
 								<option id="gnu.c.compiler.option.include.paths.220211450" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aes_lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS_Library}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv2p00_LPC17xx}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS_Library/demo_code}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aes_lib/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/My_Example_With_Drivers/webserver}&quot;"/>
@@ -72,6 +75,9 @@
 								<option id="com.crt.advproject.gas.thumb.709413895" name="Thumb mode" superClass="com.crt.advproject.gas.thumb" value="true" valueType="boolean"/>
 								<option id="gnu.both.asm.option.flags.crt.1443627356" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -DDEBUG -D__CODE_RED -D__NEWLIB__" valueType="string"/>
 								<option id="gnu.both.asm.option.include.paths.1514831780" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aes_lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS_Library}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv2p00_LPC17xx}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/My_Example_With_Drivers/driver_include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv2p00_LPC17xx/inc}&quot;"/>
 								</option>
@@ -83,24 +89,25 @@
 								<option id="com.crt.advproject.link.cpp.hdrlib.102124159" name="Use C library" superClass="com.crt.advproject.link.cpp.hdrlib"/>
 							</tool>
 							<tool id="com.crt.advproject.link.exe.debug.1881894119" name="MCU Linker" superClass="com.crt.advproject.link.exe.debug">
-								<option id="com.crt.advproject.link.manage.920980770" name="Manage linker script" superClass="com.crt.advproject.link.manage" value="false" valueType="boolean"/>
+								<option id="com.crt.advproject.link.manage.920980770" name="Manage linker script" superClass="com.crt.advproject.link.manage" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.hdrlib.596678266" name="Use C library" superClass="com.crt.advproject.link.gcc.hdrlib" value="com.crt.advproject.gcc.link.hdrlib.newlib.nohost" valueType="enumerated"/>
 								<option id="com.crt.advproject.link.arch.1062750096" name="Architecture" superClass="com.crt.advproject.link.arch" value="com.crt.advproject.link.target.cm3" valueType="enumerated"/>
 								<option id="com.crt.advproject.link.thumb.410739989" name="Thumb mode" superClass="com.crt.advproject.link.thumb" value="true" valueType="boolean"/>
-								<option id="com.crt.advproject.link.script.672911007" name="Linker script" superClass="com.crt.advproject.link.script" value="&quot;link_template.ld&quot;" valueType="string"/>
+								<option id="com.crt.advproject.link.script.672911007" name="Linker script" superClass="com.crt.advproject.link.script" value="&quot;My_Example_With_Drivers_Debug.ld&quot;" valueType="string"/>
 								<option id="gnu.c.link.option.nostdlibs.1714688548" name="No startup or default libs (-nostdlib)" superClass="gnu.c.link.option.nostdlibs" value="true" valueType="boolean"/>
 								<option id="gnu.c.link.option.other.854399636" name="Other options (-Xlinker [option])" superClass="gnu.c.link.option.other" valueType="stringList">
 									<listOptionValue builtIn="false" value="--gc-sections"/>
 									<listOptionValue builtIn="false" value="-Map=${BuildArtifactFileBaseName}.map"/>
 								</option>
 								<option id="gnu.c.link.option.paths.1172120167" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv2p00_LPC17xx/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aes_lib/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS_Library/Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv2p00_LPC17xx/Debug}&quot;"/>
 								</option>
 								<option id="gnu.c.link.option.libs.1681926572" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
-									<listOptionValue builtIn="false" value="CMSISv2p00_LPC17xx"/>
-									<listOptionValue builtIn="false" value="FreeRTOS_Library"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="aes_lib"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="FreeRTOS_Library"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="CMSISv2p00_LPC17xx"/>
 								</option>
 								<option id="com.crt.advproject.link.scriptdir.1713434262" name="Script path" superClass="com.crt.advproject.link.scriptdir" value="&quot;C:\Users\Sami\git\STE-LPC1768-\My_Example_With_Drivers\linkscripts&quot;" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.2138084207" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
@@ -115,7 +122,29 @@
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="CMSISv2p00_LPC17xx;" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/CMSISv2p00_LPC17xx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/CMSISv2p00_LPC17xx/Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="CMSISv2p00_LPC17xx" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="FreeRTOS_Library;" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/FreeRTOS_Library"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/FreeRTOS_Library/Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="FreeRTOS_Library" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="aes_lib;" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/aes_lib"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/aes_lib/Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="aes_lib" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
 			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 			<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
@@ -650,4 +679,9 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/My_Example_With_Drivers"/>
+		</configuration>
+	</storageModule>
 </cproject>

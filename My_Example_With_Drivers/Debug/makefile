@@ -35,11 +35,16 @@ endif
 # All Target
 all: My_Example_With_Drivers.axf
 
+dependents:
+	-cd C:/Users/Sami/git/STE-LPC1768-/CMSISv2p00_LPC17xx/Debug && $(MAKE) clean all
+	-cd C:/Users/Sami/git/STE-LPC1768-/FreeRTOS_Library/Debug && $(MAKE) clean all
+	-cd C:/Users/Sami/git/STE-LPC1768-/aes_lib/Debug && $(MAKE) clean all
+
 # Tool invocations
-My_Example_With_Drivers.axf: $(OBJS) $(USER_OBJS)
+My_Example_With_Drivers.axf: $(OBJS) $(USER_OBJS) C:/Users/Sami/git/STE-LPC1768-/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a C:/Users/Sami/git/STE-LPC1768-/FreeRTOS_Library/Debug/libFreeRTOS_Library.a C:/Users/Sami/git/STE-LPC1768-/aes_lib/Debug/libaes_lib.a
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug" -L"C:\Users\Sami\git\STE-LPC1768-\aes_lib\Debug" -L"C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug" -Xlinker --gc-sections -Xlinker -Map=My_Example_With_Drivers.map -mcpu=cortex-m3 -mthumb -T "link_template.ld" -L "C:\Users\Sami\git\STE-LPC1768-\My_Example_With_Drivers\linkscripts" -o "My_Example_With_Drivers.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"C:\Users\Sami\git\STE-LPC1768-\aes_lib\Debug" -L"C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug" -L"C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug" -Xlinker --gc-sections -Xlinker -Map=My_Example_With_Drivers.map -mcpu=cortex-m3 -mthumb -T "My_Example_With_Drivers_Debug.ld" -o "My_Example_With_Drivers.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
@@ -56,5 +61,8 @@ post-build:
 
 .PHONY: all clean dependents
 .SECONDARY: post-build
+C:/Users/Sami/git/STE-LPC1768-/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a:
+C:/Users/Sami/git/STE-LPC1768-/FreeRTOS_Library/Debug/libFreeRTOS_Library.a:
+C:/Users/Sami/git/STE-LPC1768-/aes_lib/Debug/libaes_lib.a:
 
 -include ../makefile.targets
