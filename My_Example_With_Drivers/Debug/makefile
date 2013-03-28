@@ -36,9 +36,9 @@ endif
 all: My_Example_With_Drivers.axf
 
 dependents:
-	-cd C:/Users/Sami/git/STE-LPC1768-/CMSISv2p00_LPC17xx/Debug && $(MAKE) clean all
-	-cd C:/Users/Sami/git/STE-LPC1768-/FreeRTOS_Library/Debug && $(MAKE) clean all
-	-cd C:/Users/Sami/git/STE-LPC1768-/aes_lib/Debug && $(MAKE) clean all
+	-cd C:/Users/Sami/git/STE-LPC1768-/CMSISv2p00_LPC17xx/Debug && $(MAKE) all
+	-cd C:/Users/Sami/git/STE-LPC1768-/FreeRTOS_Library/Debug && $(MAKE) all
+	-cd C:/Users/Sami/git/STE-LPC1768-/aes_lib/Debug && $(MAKE) all
 
 # Tool invocations
 My_Example_With_Drivers.axf: $(OBJS) $(USER_OBJS) C:/Users/Sami/git/STE-LPC1768-/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a C:/Users/Sami/git/STE-LPC1768-/FreeRTOS_Library/Debug/libFreeRTOS_Library.a C:/Users/Sami/git/STE-LPC1768-/aes_lib/Debug/libaes_lib.a
