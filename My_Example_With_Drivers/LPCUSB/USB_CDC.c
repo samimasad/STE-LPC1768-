@@ -355,11 +355,12 @@ int VCOM_getchar(void)
 	Simply calls the USB ISR
  */
 //void USBIntHandler(void)
+#ifndef USB_HOST_ONLY
 void USB_IRQHandler(void)
 {
 	USBHwISR();
 }
-
+#endif
 
 static void USBFrameHandler(unsigned short wFrame)
 {

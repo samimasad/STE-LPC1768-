@@ -1,5 +1,31 @@
 Archive member included because of file (symbol)
 
+C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+                              ./AOA/AndroidAccessoryHost.o (HcdDataTransfer)
+C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+                              C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o) (HcdDelayMS)
+C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+                              C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o) (USB_Host_Enumerate)
+C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+                              ./AOA/AndroidAccessoryHost.o (Pipe_Write_Stream_LE)
+C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+                              ./AOA/AndroidAccessoryHost.o (pipeselected)
+C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+                              C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o) (USB_ResetInterface)
+C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+                              C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o) (USB_Host_SendControlRequest)
+C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+                              C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o) (USB_Memory_Init)
+C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+                              C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o) (USB_IsInitialized)
+C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+                              C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o) (HAL_USBInit)
+C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+                              ./AOA/AndroidAccessoryHost.o (Android_GetAccessoryProtocol)
+C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+                              ./AOA/AndroidAccessoryHost.o (ProcessConfigurationDescriptor)
+C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
+                              ./AOA/AndroidAccessoryHost.o (ProcessDeviceDescriptor)
 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
                               ./cr_startup_lpc17.o (vPortSVCHandler)
 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
@@ -101,14 +127,19 @@ Allocating common symbols
 Common symbol       size              file
 
 ulString            0x4               ./webserver/httpd-cgi.o
+hostportspeed       0x1               C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
 TDBufNonVol         0x4               ./UsbHost/Host/usbhost_lpc17xx.o
+USB_IsInitialized   0x1               C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
 TxIntStat_zigbee    0x1               ./Zigbee/uart.o
 File1               0x228             ./UsbHost/Main/usbhost_main.o
 uip_len             0x2               ./webserver/uip.o
+USB_Host_ConfigurationNumber
+                    0x1               C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
 xCountingSemaphore  0x4               ./main.o
 USBFs               0x69c             ./UsbHost/Main/usbhost_main.o
 driveAttached       0x1               ./uip_ftp/FTPD.o
 pcStatus            0x4               ./webserver/httpd-cgi.o
+PipeInfo            0x80              C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
 uip_sappdata        0x4               ./webserver/uip.o
 uip_acc32           0x4               ./webserver/uip.o
 transferMCfg        0x2c              ./lcd_i2c.o
@@ -116,8 +147,10 @@ FATBuffer           0x4               ./UsbHost/Host/usbhost_lpc17xx.o
 MS_BlkSize          0x4               ./UsbHost/MassStorage/usbhost_ms.o
 uip_flags           0x1               ./webserver/uip.o
 RTS_State_usb       0x4               ./UsbHost/Uart/usbhost_uart.o
+USBPortNum          0x1               C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
 rb                  0x210             ./uart_fullmodem_test.o
 Hcca                0x4               ./UsbHost/Host/usbhost_lpc17xx.o
+hostselected        0x1               C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
 rb_zigbee           0x210             ./Zigbee/uart.o
 SysTickCnt          0x4               ./LedBlinky.o
 TxIntStat_usb       0x1               ./UsbHost/Uart/usbhost_uart.o
@@ -132,11 +165,13 @@ EDBulkOut           0x4               ./UsbHost/Host/usbhost_lpc17xx.o
 UserBuffer          0x4               ./UsbHost/Host/usbhost_lpc17xx.o
 gUSBConnected       0x4               ./UsbHost/Host/usbhost_lpc17xx.o
 TDBuffer            0x4               ./UsbHost/Host/usbhost_lpc17xx.o
+USB_HostState       0x1               C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
 ftpd_state          0xb40             ./uip_ftp/FTPD.o
 uip_listenports     0x50              ./webserver/uip.o
 uip_draddr          0x4               ./webserver/uip.o
 uip_stat            0x2c              ./webserver/uip.o
 EDBulkIn            0x4               ./UsbHost/Host/usbhost_lpc17xx.o
+pipeselected        0x1               C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
 EDCtrl              0x4               ./UsbHost/Host/usbhost_lpc17xx.o
 rb_usb              0x210             ./UsbHost/Uart/usbhost_uart.o
 TxIntStat           0x1               ./uart_fullmodem_test.o
@@ -147,6 +182,8 @@ __end_of_heap       0x4               c:/code_red/redsuite_5.1.2_2065/redsuite/t
 FULLCAN_ENABLE      0x1               ./driver_source/lpc17xx_can.o
 uip_netmask         0x4               ./webserver/uip.o
 RTS_State_zigbee    0x4               ./Zigbee/uart.o
+USB_Host_ControlPipeSize
+                    0x1               C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
 uip_hostaddr        0x4               ./webserver/uip.o
 tcp_appdata         0x1b8             ./uip_ftp/ftp_main.o
 __Ciob              0x140             c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(stdio.o)
@@ -923,8 +960,6 @@ Discarded input sections
                 0x00000000       0x2c ./LPCUSB/USB_CDC.o
  .text.VCOM_getchar
                 0x00000000       0x24 ./LPCUSB/USB_CDC.o
- .text.USB_IRQHandler
-                0x00000000        0x4 ./LPCUSB/USB_CDC.o
  .text.CPUcpsie
                 0x00000000        0xc ./LPCUSB/USB_CDC.o
  .text.vUSBTask
@@ -1013,6 +1048,27 @@ Discarded input sections
  .text.f_rename
                 0x00000000      0x250 ./FatFs/ff.o
  .text.f_mkfs   0x00000000      0x63c ./FatFs/ff.o
+ .text          0x00000000        0x0 ./AOA/AndroidAccessoryHost.o
+ .data          0x00000000        0x1 ./AOA/AndroidAccessoryHost.o
+ .bss           0x00000000      0x108 ./AOA/AndroidAccessoryHost.o
+ .text.sendCommand.part.1
+                0x00000000       0xdc ./AOA/AndroidAccessoryHost.o
+ .text.AndroidHost_Task
+                0x00000000      0x130 ./AOA/AndroidAccessoryHost.o
+ .text.Monitor_Task
+                0x00000000       0xe8 ./AOA/AndroidAccessoryHost.o
+ .text.EVENT_USB_Host_DeviceAttached
+                0x00000000       0x34 ./AOA/AndroidAccessoryHost.o
+ .text.EVENT_USB_Host_DeviceUnattached
+                0x00000000       0x28 ./AOA/AndroidAccessoryHost.o
+ .text.EVENT_USB_Host_DeviceEnumerationComplete
+                0x00000000      0x1a4 ./AOA/AndroidAccessoryHost.o
+ .text.EVENT_USB_Host_HostError
+                0x00000000       0x28 ./AOA/AndroidAccessoryHost.o
+ .text.EVENT_USB_Host_DeviceEnumerationFailed
+                0x00000000       0x3c ./AOA/AndroidAccessoryHost.o
+ .rodata.str1.4
+                0x00000000      0x2c8 ./AOA/AndroidAccessoryHost.o
  .text          0x00000000        0x0 ./LedBlinky.o
  .data          0x00000000        0x0 ./LedBlinky.o
  .bss           0x00000000        0x0 ./LedBlinky.o
@@ -1033,6 +1089,12 @@ Discarded input sections
                 0x00000000       0x80 ./lcd_i2c.o
  .text.Error_Loop_S
                 0x00000000        0x4 ./lcd_i2c.o
+ .text.lcd_entry
+                0x00000000       0x24 ./lcd_i2c.o
+ .text.vLCDTask
+                0x00000000        0x8 ./lcd_i2c.o
+ .rodata.str1.4
+                0x00000000        0x8 ./lcd_i2c.o
  .text          0x00000000        0x0 ./main.o
  .data          0x00000000        0x0 ./main.o
  .bss           0x00000000        0x0 ./main.o
@@ -1057,6 +1119,261 @@ Discarded input sections
  .text.vUARTTask
                 0x00000000        0x8 ./uart_fullmodem_test.o
  COMMON         0x00000000      0x218 ./uart_fullmodem_test.o
+ .text          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .data          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .bss           0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.Align4k  0x00000000       0x20 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.Offset4k
+                0x00000000       0x20 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .data.$RAM2    0x00000000      0x500 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdGetDeviceSpeed
+                0x00000000       0x58 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdGetFrameNumber
+                0x00000000       0x34 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdRhPortReset
+                0x00000000       0x5c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdRhPortEnable
+                0x00000000       0x2c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdRhPortDisable
+                0x00000000       0x2c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdInitDriver
+                0x00000000       0x5c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdDeInitDriver
+                0x00000000       0x2c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdOpenPipe
+                0x00000000      0x114 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdCancelTransfer
+                0x00000000      0x134 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdClosePipe
+                0x00000000       0x70 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdClearEndpointHalt
+                0x00000000       0x6c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdControlTransfer
+                0x00000000      0x150 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.QueueOneITD
+                0x00000000      0x178 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.QueueITDs
+                0x00000000       0xb0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdDataTransfer
+                0x00000000      0x138 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdGetPipeStatus
+                0x00000000       0x40 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.OHciRhStatusChangeIsr
+                0x00000000       0x2c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.ProcessDoneQueue
+                0x00000000      0x19c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdIrqHandler
+                0x00000000      0x164 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.QueueOneGTD
+                0x00000000       0xa4 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.QueueGTDs
+                0x00000000       0x80 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.WaitForTransferComplete
+                0x00000000       0x34 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.InsertEndpoint
+                0x00000000       0x68 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.RemoveEndpoint
+                0x00000000       0x80 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.BuildPeriodicStaticEdTree
+                0x00000000       0x68 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.Align16  0x00000000       0x1c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdED    0x00000000       0x24 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdGTD   0x00000000       0x24 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.HcdITD   0x00000000       0x24 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.IsIsoEndpoint
+                0x00000000       0x28 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.PipehandleCreate
+                0x00000000       0x2c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.PipehandleParse
+                0x00000000       0x5c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.AllocEd  0x00000000      0x1d4 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.AllocGtdForEd
+                0x00000000      0x11c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.AllocItdForEd
+                0x00000000      0x110 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.FreeED   0x00000000       0x70 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.FreeGtd  0x00000000       0x24 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.FreeItd  0x00000000       0x28 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.OHciHostInit
+                0x00000000      0x19c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.OHciHostReset
+                0x00000000       0x40 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text.OHciHostOperational
+                0x00000000       0x38 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .text          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+ .data          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+ .bss           0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+ .text.HcdDelayUS
+                0x00000000       0x30 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+ .text.HcdDelayMS
+                0x00000000       0x30 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+ .text.OpenPipe_VerifyParameters
+                0x00000000      0x170 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+ .text          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .data          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .bss           0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .bss.CurrentHostID
+                0x00000000        0x1 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .rodata        0x00000000       0x10 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .text.USB_Host_ProcessNextHostState
+                0x00000000      0x454 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .text.USB_Host_WaitMS
+                0x00000000       0x1c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .text.USB_Host_Enumerate
+                0x00000000       0x2c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .text.USB_Host_DeEnumerate
+                0x00000000       0x78 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .text.USB_Host_SetActiveHost
+                0x00000000       0x20 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .text.USB_Host_GetActiveHost
+                0x00000000       0x18 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .text.USB_Host_SetDeviceSpeed
+                0x00000000       0x28 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .text.USB_Host_GetDeviceSpeed
+                0x00000000       0x30 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .text.USB_Host_GetFrameNumber
+                0x00000000       0x18 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .bss.WaitMSRemaining.6102
+                0x00000000        0x2 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .bss.PostWaitState.6103
+                0x00000000        0x1 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ COMMON         0x00000000        0x1 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .text          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .data          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .bss           0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .text.Pipe_Discard_Stream
+                0x00000000      0x298 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .text.Pipe_Null_Stream
+                0x00000000      0x148 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .text.Pipe_Write_Stream_LE
+                0x00000000      0x164 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .text.Pipe_Read_Stream_LE
+                0x00000000      0x44c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .text.Pipe_Write_Stream_BE
+                0x00000000       0x20 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .text.Pipe_Read_Stream_BE
+                0x00000000       0x20 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .text.Pipe_Write_PStream_LE
+                0x00000000       0x20 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .text.Pipe_Write_PStream_BE
+                0x00000000       0x20 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .text.Pipe_Write_EStream_LE
+                0x00000000       0x20 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .text.Pipe_Write_EStream_BE
+                0x00000000       0x20 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .text.Pipe_Read_EStream_LE
+                0x00000000       0x20 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .text.Pipe_Read_EStream_BE
+                0x00000000       0x20 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .text          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .data          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .bss           0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .text.Pipe_ConfigurePipe
+                0x00000000      0x1b8 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .text.Pipe_ClosePipe
+                0x00000000       0xc4 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .text.Pipe_ClearPipes
+                0x00000000        0xc C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .text.Pipe_IsEndpointBound
+                0x00000000       0x1c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .text.Pipe_WaitUntilReady
+                0x00000000      0x204 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .text.Pipe_IsINReceived
+                0x00000000      0x13c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ COMMON         0x00000000       0x89 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .text          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .data          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .bss           0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .text.USB_Init
+                0x00000000       0x4c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .text.USB_Disable
+                0x00000000       0x34 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .text.USB_ResetInterface
+                0x00000000       0x1c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .text.USB_Init_Host
+                0x00000000       0x80 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ COMMON         0x00000000        0x1 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .text          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .data          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .bss           0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .text.USB_Host_SendControlRequest
+                0x00000000      0x2b0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .text.USB_Host_SetDeviceConfiguration
+                0x00000000       0xc0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .rodata        0x00000000        0x8 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .text.USB_Host_GetDeviceDescriptor
+                0x00000000       0x58 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .text.USB_Host_GetDeviceStringDescriptor
+                0x00000000       0x90 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .text.USB_Host_GetDeviceStatus
+                0x00000000       0x90 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .text.USB_Host_ClearEndpointStall
+                0x00000000       0x8c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .text.USB_Host_SetInterfaceAltSetting
+                0x00000000       0x8c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ COMMON         0x00000000        0x1 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .text          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .data          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .bss           0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .data.$RAM2    0x00000000      0x800 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .text.USB_Memory_Init
+                0x00000000       0x54 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .text.USB_Memory_Alloc
+                0x00000000      0x144 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .text.USB_Memory_Free
+                0x00000000      0x174 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .text          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .data          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .bss           0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .data.$RAM2    0x00000000        0x8 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .text.USB_USBTask
+                0x00000000        0xc C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .text.USB_HostTask
+                0x00000000       0x58 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ COMMON         0x00000000        0x5 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .text          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .data          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .bss           0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .text.NVIC_EnableIRQ
+                0x00000000       0x38 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .text.NVIC_DisableIRQ
+                0x00000000       0x3c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .text.HAL_USBInit
+                0x00000000       0x90 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .text.HAL_USBDeInit
+                0x00000000       0x50 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .text.HAL_EnableUSBInterrupt
+                0x00000000       0x1c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .text.HAL_DisableUSBInterrupt
+                0x00000000       0x1c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .text.HAL_USBConnect
+                0x00000000       0x18 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .text.USB_IRQHandler
+                0x00000000       0x10 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .text          0x00000000        0x0 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .data          0x00000000        0x0 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .bss           0x00000000        0x0 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .rodata        0x00000000       0x10 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .text.Android_GetAccessoryProtocol
+                0x00000000       0x58 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .text.Android_SendString
+                0x00000000       0x94 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .text.Android_StartAccessoryMode
+                0x00000000       0x58 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .text          0x00000000        0x0 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .data          0x00000000        0x0 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .bss           0x00000000        0x0 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .text.ProcessConfigurationDescriptor
+                0x00000000      0x17c C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .text.DCOMP_NextAndroidAccessoryInterface
+                0x00000000       0x48 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .text.DCOMP_NextInterfaceBulkEndpoint
+                0x00000000       0x60 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .text          0x00000000        0x0 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
+ .data          0x00000000        0x0 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
+ .bss           0x00000000        0x0 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
+ .text.ProcessDeviceDescriptor
+                0x00000000       0x68 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
  .bss           0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
  .rodata        0x00000000        0x4 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
  .data          0x00000000        0x0 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
@@ -1383,12 +1700,15 @@ LOAD ./FatFs/option/syncobj.o
 LOAD ./FatFs/option/syscall.o
 LOAD ./FatFs/diskio.o
 LOAD ./FatFs/ff.o
+LOAD ./AOA/AndroidAccessoryHost.o
 LOAD ./LedBlinky.o
 LOAD ./cr_startup_lpc17.o
 LOAD ./lcd_i2c.o
 LOAD ./main.o
 LOAD ./uart_fullmodem_test.o
 LOAD C:\Users\Sami\git\STE-LPC1768-\aes_lib\Debug\libaes_lib.a
+LOAD C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a
+LOAD C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a
 LOAD C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a
 LOAD C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a
 START GROUP
@@ -1400,7 +1720,7 @@ END GROUP
                 0x10008000                __top_RamLoc32 = 0x10008000
                 0x20084000                __top_RamAHB32 = 0x20084000
 
-.text           0x00000000    0x250a8
+.text           0x00000000    0x25048
  FILL mask 0xff
  *(.isr_vector)
  .isr_vector    0x00000000       0xc4 ./cr_startup_lpc17.o
@@ -1408,10 +1728,10 @@ END GROUP
                 0x000000c4                . = ALIGN (0x4)
                 0x000000c4                __section_table_start = .
                 0x000000c4                __data_section_table = .
-                0x000000c4        0x4 LONG 0x250a8 LOADADDR (.data)
+                0x000000c4        0x4 LONG 0x25048 LOADADDR (.data)
                 0x000000c8        0x4 LONG 0x10000000 ADDR (.data)
                 0x000000cc        0x4 LONG 0x34 SIZEOF (.data)
-                0x000000d0        0x4 LONG 0x250a8 LOADADDR (.data_RAM2)
+                0x000000d0        0x4 LONG 0x25048 LOADADDR (.data_RAM2)
                 0x000000d4        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
                 0x000000d8        0x4 LONG 0x0 SIZEOF (.data_RAM2)
                 0x000000dc                __data_section_table_end = .
@@ -2065,405 +2385,398 @@ END GROUP
  .text.LCD_PrintText
                 0x0000e97c       0xc8 ./lcd_i2c.o
                 0x0000e97c                LCD_PrintText
- .text.lcd_entry
-                0x0000ea44       0x24 ./lcd_i2c.o
-                0x0000ea44                lcd_entry
- .text.vLCDTask
-                0x0000ea68        0x8 ./lcd_i2c.o
-                0x0000ea68                vLCDTask
  .text.startup.main
-                0x0000ea70      0x21c ./main.o
-                0x0000ea70                main
+                0x0000ea44      0x1fc ./main.o
+                0x0000ea44                main
  .text.vSoftwareInterruptHandler
-                0x0000ec8c       0x50 ./main.o
-                0x0000ec8c                vSoftwareInterruptHandler
+                0x0000ec40       0x50 ./main.o
+                0x0000ec40                vSoftwareInterruptHandler
  .text.vApplicationMallocFailedHook
-                0x0000ecdc        0x4 ./main.o
-                0x0000ecdc                vApplicationMallocFailedHook
+                0x0000ec90        0x4 ./main.o
+                0x0000ec90                vApplicationMallocFailedHook
  .text.vApplicationStackOverflowHook
-                0x0000ece0       0x10 ./main.o
-                0x0000ece0                vApplicationStackOverflowHook
+                0x0000ec94       0x10 ./main.o
+                0x0000ec94                vApplicationStackOverflowHook
  .text.vApplicationIdleHook
-                0x0000ecf0        0x4 ./main.o
-                0x0000ecf0                vApplicationIdleHook
+                0x0000eca4        0x4 ./main.o
+                0x0000eca4                vApplicationIdleHook
  .text.vApplicationTickHook
-                0x0000ecf4        0x4 ./main.o
-                0x0000ecf4                vApplicationTickHook
- .text          0x0000ecf8      0x150 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
-                0x0000ecf8                pxPortInitialiseStack
-                0x0000ed18                vPortSVCHandler
-                0x0000ed38                vPortStartFirstTask
-                0x0000ed44                xPortStartScheduler
-                0x0000ed98                vPortEndScheduler
-                0x0000ed9c                vPortYieldFromISR
-                0x0000edac                vPortEnterCritical
-                0x0000edc4                vPortExitCritical
-                0x0000eddc                xPortPendSVHandler
-                0x0000ee18                xPortSysTickHandler
- .text          0x0000ee48      0x50c C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
-                0x0000ef6c                xQueueCreate
-                0x0000efdc                xQueueCreateCountingSemaphore
-                0x0000efec                xQueueGenericSend
-                0x0000f0d8                xQueueCreateMutex
-                0x0000f120                xQueueGenericSendFromISR
-                0x0000f180                xQueueGenericReceive
-                0x0000f2b0                xQueueReceiveFromISR
-                0x0000f30c                uxQueueMessagesWaiting
-                0x0000f320                uxQueueMessagesWaitingFromISR
-                0x0000f324                vQueueDelete
-                0x0000f338                xQueueIsQueueEmptyFromISR
-                0x0000f344                xQueueIsQueueFullFromISR
- .text          0x0000f354      0xac0 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
-                0x0000f354                xTaskGenericCreate
-                0x0000f508                vTaskDelete
-                0x0000f570                uxTaskPriorityGet
-                0x0000f598                vTaskPrioritySet
-                0x0000f640                xTaskIsTaskSuspended
-                0x0000f668                vTaskResume
-                0x0000f6cc                xTaskResumeFromISR
-                0x0000f738                vTaskStartScheduler
-                0x0000f784                vTaskEndScheduler
-                0x0000f7a0                vTaskSuspendAll
-                0x0000f7b4                xTaskGetTickCount
-                0x0000f7d0                xTaskGetTickCountFromISR
-                0x0000f7e0                uxTaskGetNumberOfTasks
-                0x0000f7ec                vTaskIncrementTick
-                0x0000f8a8                xTaskResumeAll
-                0x0000f9f4                vTaskDelay
-                0x0000fa44                vTaskDelayUntil
-                0x0000fac0                vTaskSwitchContext
-                0x0000fb7c                vTaskSuspend
-                0x0000fbe0                vTaskPlaceOnEventList
-                0x0000fc44                xTaskRemoveFromEventList
-                0x0000fcac                vTaskSetTimeOutState
-                0x0000fcc4                xTaskCheckForTimeOut
-                0x0000fd48                vTaskMissedYield
-                0x0000fd58                xTaskGetCurrentTaskHandle
-                0x0000fd64                vTaskPriorityInherit
-                0x0000fdc8                vTaskPriorityDisinherit
- .text          0x0000fe14      0x11c C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
-                0x0000fe14                pvPortMalloc
-                0x0000fed8                vPortFree
-                0x0000ff1c                xPortGetFreeHeapSize
-                0x0000ff2c                vPortInitialiseBlocks
- .text          0x0000ff30       0x98 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
-                0x0000ff30                vListInitialise
-                0x0000ff48                vListInitialiseItem
-                0x0000ff50                vListInsertEnd
-                0x0000ff6c                vListInsert
-                0x0000ffa4                vListRemove
+                0x0000eca8        0x4 ./main.o
+                0x0000eca8                vApplicationTickHook
+ .text          0x0000ecac      0x150 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+                0x0000ecac                pxPortInitialiseStack
+                0x0000eccc                vPortSVCHandler
+                0x0000ecec                vPortStartFirstTask
+                0x0000ecf8                xPortStartScheduler
+                0x0000ed4c                vPortEndScheduler
+                0x0000ed50                vPortYieldFromISR
+                0x0000ed60                vPortEnterCritical
+                0x0000ed78                vPortExitCritical
+                0x0000ed90                xPortPendSVHandler
+                0x0000edcc                xPortSysTickHandler
+ .text          0x0000edfc      0x50c C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
+                0x0000ef20                xQueueCreate
+                0x0000ef90                xQueueCreateCountingSemaphore
+                0x0000efa0                xQueueGenericSend
+                0x0000f08c                xQueueCreateMutex
+                0x0000f0d4                xQueueGenericSendFromISR
+                0x0000f134                xQueueGenericReceive
+                0x0000f264                xQueueReceiveFromISR
+                0x0000f2c0                uxQueueMessagesWaiting
+                0x0000f2d4                uxQueueMessagesWaitingFromISR
+                0x0000f2d8                vQueueDelete
+                0x0000f2ec                xQueueIsQueueEmptyFromISR
+                0x0000f2f8                xQueueIsQueueFullFromISR
+ .text          0x0000f308      0xac0 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+                0x0000f308                xTaskGenericCreate
+                0x0000f4bc                vTaskDelete
+                0x0000f524                uxTaskPriorityGet
+                0x0000f54c                vTaskPrioritySet
+                0x0000f5f4                xTaskIsTaskSuspended
+                0x0000f61c                vTaskResume
+                0x0000f680                xTaskResumeFromISR
+                0x0000f6ec                vTaskStartScheduler
+                0x0000f738                vTaskEndScheduler
+                0x0000f754                vTaskSuspendAll
+                0x0000f768                xTaskGetTickCount
+                0x0000f784                xTaskGetTickCountFromISR
+                0x0000f794                uxTaskGetNumberOfTasks
+                0x0000f7a0                vTaskIncrementTick
+                0x0000f85c                xTaskResumeAll
+                0x0000f9a8                vTaskDelay
+                0x0000f9f8                vTaskDelayUntil
+                0x0000fa74                vTaskSwitchContext
+                0x0000fb30                vTaskSuspend
+                0x0000fb94                vTaskPlaceOnEventList
+                0x0000fbf8                xTaskRemoveFromEventList
+                0x0000fc60                vTaskSetTimeOutState
+                0x0000fc78                xTaskCheckForTimeOut
+                0x0000fcfc                vTaskMissedYield
+                0x0000fd0c                xTaskGetCurrentTaskHandle
+                0x0000fd18                vTaskPriorityInherit
+                0x0000fd7c                vTaskPriorityDisinherit
+ .text          0x0000fdc8      0x11c C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+                0x0000fdc8                pvPortMalloc
+                0x0000fe8c                vPortFree
+                0x0000fed0                xPortGetFreeHeapSize
+                0x0000fee0                vPortInitialiseBlocks
+ .text          0x0000fee4       0x98 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+                0x0000fee4                vListInitialise
+                0x0000fefc                vListInitialiseItem
+                0x0000ff04                vListInsertEnd
+                0x0000ff20                vListInsert
+                0x0000ff58                vListRemove
  .text.SystemInit
-                0x0000ffc8       0xe4 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
-                0x0000ffc8                SystemInit
- .text.memcpy   0x000100ac        0x4 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcpy.o)
-                0x000100ac                memcpy
- .text.memset   0x000100b0        0x4 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
-                0x000100b0                memset
+                0x0000ff7c       0xe4 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x0000ff7c                SystemInit
+ .text.memcpy   0x00010060        0x4 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcpy.o)
+                0x00010060                memcpy
+ .text.memset   0x00010064        0x4 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
+                0x00010064                memset
  .text.lose_trailing_zeros
-                0x000100b4       0x1e c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+                0x00010068       0x1e c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
  .text.fp_round
-                0x000100d2       0x54 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+                0x00010086       0x54 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
  .text.pr_dec.constprop.1
-                0x00010126       0x22 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
- .text.sprintf  0x00010148       0x70 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
-                0x00010148                sprintf
+                0x000100da       0x22 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+ .text.sprintf  0x000100fc       0x70 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+                0x000100fc                sprintf
+ *fill*         0x0001016c        0x4 00
  .text.fp_display
-                0x000101b8      0x908 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+                0x00010170      0x908 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
  .text.snprintf
-                0x00010ac0       0x6c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
-                0x00010ac0                snprintf
+                0x00010a78       0x6c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+                0x00010a78                snprintf
  .text.vsprintf
-                0x00010b2c       0x5c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
-                0x00010b2c                vsprintf
- .text.memcmp   0x00010b88       0x38 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcmp.o)
-                0x00010b88                memcmp
+                0x00010ae4       0x5c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+                0x00010ae4                vsprintf
+ .text.memcmp   0x00010b40       0x38 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcmp.o)
+                0x00010b40                memcmp
  .text.__vfprintf
-                0x00010bc0      0xd54 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(printf.o)
-                0x00010bc0                __vfprintf
- .text.ch_val   0x00011914       0x34 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(scanf.o)
+                0x00010b78      0xd54 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(printf.o)
+                0x00010b78                __vfprintf
+ .text.ch_val   0x000118cc       0x34 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(scanf.o)
  .text.cr_rd_int
-                0x00011948      0x1a8 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(scanf.o)
- .text.vfscanf  0x00011af0      0x8f8 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(scanf.o)
-                0x00011af0                vfscanf
- .text.sscanf   0x000123e8       0x4c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(scanf.o)
-                0x000123e8                sscanf
- .text.strcat   0x00012434       0x1c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strcat.o)
-                0x00012434                strcat
- .text.strchr   0x00012450       0x16 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strchr.o)
-                0x00012450                strchr
- .text.strcmp   0x00012466       0x3c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strcmp.o)
-                0x00012466                strcmp
- .text.strcpy   0x000124a2       0x44 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strcpy.o)
-                0x000124a2                strcpy
- .text.strlen   0x000124e6       0x4c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
-                0x000124e6                strlen
- .text.strncmp  0x00012532       0x4e c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncmp.o)
-                0x00012532                strncmp
- .text.strncpy  0x00012580       0x54 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncpy.o)
-                0x00012580                strncpy
- .text.strrchr  0x000125d4       0x24 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strrchr.o)
-                0x000125d4                strrchr
- .text.strstr   0x000125f8       0x1e c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strstr.o)
-                0x000125f8                strstr
- .text.ungetc   0x00012616       0x38 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ungetc.o)
-                0x00012616                ungetc
+                0x00011900      0x1a8 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(scanf.o)
+ .text.vfscanf  0x00011aa8      0x8f8 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(scanf.o)
+                0x00011aa8                vfscanf
+ .text.sscanf   0x000123a0       0x4c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(scanf.o)
+                0x000123a0                sscanf
+ .text.strcat   0x000123ec       0x1c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strcat.o)
+                0x000123ec                strcat
+ .text.strchr   0x00012408       0x16 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strchr.o)
+                0x00012408                strchr
+ .text.strcmp   0x0001241e       0x3c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strcmp.o)
+                0x0001241e                strcmp
+ .text.strcpy   0x0001245a       0x44 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strcpy.o)
+                0x0001245a                strcpy
+ .text.strlen   0x0001249e       0x4c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+                0x0001249e                strlen
+ .text.strncmp  0x000124ea       0x4e c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncmp.o)
+                0x000124ea                strncmp
+ .text.strncpy  0x00012538       0x54 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncpy.o)
+                0x00012538                strncpy
+ .text.strrchr  0x0001258c       0x24 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strrchr.o)
+                0x0001258c                strrchr
+ .text.strstr   0x000125b0       0x1e c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strstr.o)
+                0x000125b0                strstr
+ .text.ungetc   0x000125ce       0x38 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ungetc.o)
+                0x000125ce                ungetc
  .text._Csys_read_
-                0x0001264e       0x22 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__fillbuf.o)
-                0x0001264e                _Csys_read_
+                0x00012606       0x22 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__fillbuf.o)
+                0x00012606                _Csys_read_
  .text.__filbuf
-                0x00012670      0x17c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__fillbuf.o)
-                0x00012670                __filbuf
+                0x00012628      0x17c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__fillbuf.o)
+                0x00012628                __filbuf
  .text._deferredlazyseek
-                0x000127ec       0x44 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
-                0x000127ec                _deferredlazyseek
+                0x000127a4       0x44 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
+                0x000127a4                _deferredlazyseek
  .text.__flsbuf
-                0x00012830      0x14e c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
-                0x00012830                __flsbuf
- .text._fflush  0x0001297e       0x58 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fflush.o)
-                0x0001297e                _fflush
- .text._frexpl  0x000129d6       0x60 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_frexpl.o)
-                0x000129d6                _frexpl
- *fill*         0x00012a36        0x2 00
- .text._ldexpl  0x00012a38       0x50 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_ldexpl.o)
-                0x00012a38                _ldexpl
+                0x000127e8      0x14e c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
+                0x000127e8                __flsbuf
+ .text._fflush  0x00012936       0x58 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fflush.o)
+                0x00012936                _fflush
+ .text._frexpl  0x0001298e       0x60 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_frexpl.o)
+                0x0001298e                _frexpl
+ *fill*         0x000129ee        0x2 00
+ .text._ldexpl  0x000129f0       0x50 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_ldexpl.o)
+                0x000129f0                _ldexpl
  .text._Cwritebuf
-                0x00012a88       0x84 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_writebuf.o)
-                0x00012a88                _Cwritebuf
- .text.malloc   0x00012b0c       0xbc c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x00012b0c                malloc
+                0x00012a40       0x84 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_writebuf.o)
+                0x00012a40                _Cwritebuf
+ .text.malloc   0x00012ac4       0xbc c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x00012ac4                malloc
  .text._Csys_alloc
-                0x00012bc8       0x20 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x00012bc8                _Csys_alloc
- .text.fseek    0x00012be8      0x104 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fseek.o)
-                0x00012be8                fseek
- .text.ftell    0x00012cec       0x4c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ftell.o)
-                0x00012cec                ftell
+                0x00012b80       0x20 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x00012b80                _Csys_alloc
+ .text.fseek    0x00012ba0      0x104 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fseek.o)
+                0x00012ba0                fseek
+ .text.ftell    0x00012ca4       0x4c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ftell.o)
+                0x00012ca4                ftell
  .text.__aeabi_dmul
-                0x00012d38      0x138 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
-                0x00012d38                __aeabi_dmul
+                0x00012cf0      0x138 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
+                0x00012cf0                __aeabi_dmul
  .text.__aeabi_ddiv
-                0x00012e70      0x168 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
-                0x00012e70                __aeabi_ddiv
+                0x00012e28      0x168 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
+                0x00012e28                __aeabi_ddiv
  .text.__aeabi_dsub
-                0x00012fd8      0x1f4 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
-                0x00012fd8                __aeabi_dsub
+                0x00012f90      0x1f4 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
+                0x00012f90                __aeabi_dsub
  .text.__aeabi_dadd
-                0x000131cc      0x154 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
-                0x000131cc                __aeabi_dadd
+                0x00013184      0x154 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
+                0x00013184                __aeabi_dadd
  .text.__aeabi_d2f
-                0x00013320       0x58 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
-                0x00013320                __aeabi_d2f
+                0x000132d8       0x58 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
+                0x000132d8                __aeabi_d2f
  .text.__aeabi_d2iz
-                0x00013378       0x40 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
-                0x00013378                __aeabi_d2iz
+                0x00013330       0x40 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
+                0x00013330                __aeabi_d2iz
  .text.__bhs_ui2d
-                0x000133b8       0x5c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
-                0x000133b8                __bhs_ui2d
+                0x00013370       0x5c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
+                0x00013370                __bhs_ui2d
  .text.__aeabi_i2d
-                0x00013414       0x10 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
-                0x00013414                __aeabi_i2d
+                0x000133cc       0x10 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
+                0x000133cc                __aeabi_i2d
  .text.__aeabi_dcmpeq
-                0x00013424       0x3c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
-                0x00013424                __aeabi_dcmpeq
+                0x000133dc       0x3c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
+                0x000133dc                __aeabi_dcmpeq
  .text.__aeabi_dcmplt
-                0x00013460       0x5c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
-                0x00013460                __aeabi_dcmplt
+                0x00013418       0x5c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
+                0x00013418                __aeabi_dcmplt
  .text.__aeabi_dcmple
-                0x000134bc       0x58 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
-                0x000134bc                __aeabi_dcmple
+                0x00013474       0x58 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
+                0x00013474                __aeabi_dcmple
  .text.__aeabi_dcmpge
-                0x00013514       0x5c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
-                0x00013514                __aeabi_dcmpge
+                0x000134cc       0x5c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
+                0x000134cc                __aeabi_dcmpge
  .text.__aeabi_memcpy
-                0x00013570       0x26 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(memcpy.o)
-                0x00013570                __aeabi_memcpy4
-                0x00013570                __aeabi_memcpy8
-                0x00013570                __aeabi_memcpy
+                0x00013528       0x26 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(memcpy.o)
+                0x00013528                __aeabi_memcpy4
+                0x00013528                __aeabi_memcpy8
+                0x00013528                __aeabi_memcpy
  .text.__aeabi_memset_lowlevel
-                0x00013596       0x24 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(memcpy.o)
-                0x00013596                __aeabi_lowlevel_memset
+                0x0001354e       0x24 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(memcpy.o)
+                0x0001354e                __aeabi_lowlevel_memset
  .text.__sys_appexit
-                0x000135ba        0x2 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_appexit.o)
-                0x000135ba                __sys_appexit
-                0x000135ba                __exit
+                0x00013572        0x2 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_appexit.o)
+                0x00013572                __sys_appexit
+                0x00013572                __exit
  .text.__sys_flen
-                0x000135bc        0x6 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_flen.o)
-                0x000135bc                __sys_flen
+                0x00013574        0x6 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_flen.o)
+                0x00013574                __sys_flen
  .text.__sys_istty
-                0x000135c2        0x6 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_istty.o)
-                0x000135c2                __sys_istty
+                0x0001357a        0x6 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_istty.o)
+                0x0001357a                __sys_istty
  .text.__sys_read
-                0x000135c8        0x4 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_read.o)
-                0x000135c8                __sys_read
+                0x00013580        0x4 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_read.o)
+                0x00013580                __sys_read
  .text.__sys_readc
-                0x000135cc        0x6 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_readc.o)
-                0x000135cc                __sys_readc
-                0x000135cc                __readc
+                0x00013584        0x6 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_readc.o)
+                0x00013584                __sys_readc
+                0x00013584                __readc
  .text.__sys_seek
-                0x000135d2        0x6 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_seek.o)
-                0x000135d2                __sys_seek
+                0x0001358a        0x6 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_seek.o)
+                0x0001358a                __sys_seek
  .text.__sys_write
-                0x000135d8        0x4 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_write.o)
-                0x000135d8                __sys_write
-                0x000135d8                __write
- .text._sbrk    0x000135dc       0x40 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(_cr_sbrk.o)
-                0x000135dc                _sbrk
+                0x00013590        0x4 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_write.o)
+                0x00013590                __sys_write
+                0x00013590                __write
+ .text._sbrk    0x00013594       0x40 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(_cr_sbrk.o)
+                0x00013594                _sbrk
  .text.__check_heap_overflow
-                0x0001361c       0x2c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(_cr_check_heap.o)
-                0x0001361c                __check_heap_overflow
+                0x000135d4       0x2c c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(_cr_check_heap.o)
+                0x000135d4                __check_heap_overflow
  *(.rodata .rodata.*)
- .rodata        0x00013648      0x288 ./webserver/http-strings.o
-                0x00013648                http_txt
-                0x00013650                http_text
-                0x00013658                http_jpg
-                0x00013660                http_gif
-                0x00013668                http_png
-                0x00013670                http_css
-                0x00013678                http_htm
-                0x00013680                http_shtml
-                0x00013688                http_html
-                0x00013690                http_content_type_binary
-                0x000136bc                http_content_type_jpg
-                0x000136dc                http_content_type_gif
-                0x000136f8                http_content_type_png
-                0x00013714                http_content_type_text
-                0x00013730                http_content_type_css
-                0x0001374c                http_content_type_html
-                0x00013768                http_content_type_plain
-                0x00013788                http_header_404
-                0x000137e4                http_header_200
-                0x00013838                http_referer
-                0x00013844                http_404_html
-                0x00013850                http_index_html
-                0x0001385c                http_crnl
-                0x00013860                http_host
-                0x00013868                http_location
-                0x00013874                http_texthtml
-                0x00013880                http_content_type
-                0x00013890                http_11
-                0x0001389c                http_10
-                0x000138a8                http_get
-                0x000138b0                http_302
-                0x000138b8                http_301
-                0x000138c0                http_200
-                0x000138c8                http_http
- .rodata        0x000138d0       0xc0 ./webserver/httpd-cgi.o
+ .rodata        0x00013600      0x288 ./webserver/http-strings.o
+                0x00013600                http_txt
+                0x00013608                http_text
+                0x00013610                http_jpg
+                0x00013618                http_gif
+                0x00013620                http_png
+                0x00013628                http_css
+                0x00013630                http_htm
+                0x00013638                http_shtml
+                0x00013640                http_html
+                0x00013648                http_content_type_binary
+                0x00013674                http_content_type_jpg
+                0x00013694                http_content_type_gif
+                0x000136b0                http_content_type_png
+                0x000136cc                http_content_type_text
+                0x000136e8                http_content_type_css
+                0x00013704                http_content_type_html
+                0x00013720                http_content_type_plain
+                0x00013740                http_header_404
+                0x0001379c                http_header_200
+                0x000137f0                http_referer
+                0x000137fc                http_404_html
+                0x00013808                http_index_html
+                0x00013814                http_crnl
+                0x00013818                http_host
+                0x00013820                http_location
+                0x0001382c                http_texthtml
+                0x00013838                http_content_type
+                0x00013848                http_11
+                0x00013854                http_10
+                0x00013860                http_get
+                0x00013868                http_302
+                0x00013870                http_301
+                0x00013878                http_200
+                0x00013880                http_http
+ .rodata        0x00013888       0xc0 ./webserver/httpd-cgi.o
  .rodata.str1.4
-                0x00013990      0x183 ./webserver/httpd-cgi.o
+                0x00013948      0x183 ./webserver/httpd-cgi.o
                                 0x184 (size before relaxing)
- *fill*         0x00013b13        0x1 00
- .rodata        0x00013b14     0x1578 ./webserver/httpd-fs.o
-                0x00013b14                file_tcp_shtml
-                0x00013b28                file_stats_shtml
-                0x00013b3c                file_runtime_shtml
-                0x00013b50                file_io_shtml
-                0x00013b64                file_index_shtml
-                0x00013b78                file_index_html
-                0x00013b8c                file_404_html
+ *fill*         0x00013acb        0x1 00
+ .rodata        0x00013acc     0x1578 ./webserver/httpd-fs.o
+                0x00013acc                file_tcp_shtml
+                0x00013ae0                file_stats_shtml
+                0x00013af4                file_runtime_shtml
+                0x00013b08                file_io_shtml
+                0x00013b1c                file_index_shtml
+                0x00013b30                file_index_html
+                0x00013b44                file_404_html
  .rodata.str1.4
-                0x0001508c      0x131 ./webserver/uIP_Task.o
+                0x00015044      0x131 ./webserver/uIP_Task.o
                                 0x134 (size before relaxing)
- *fill*         0x000151bd        0x3 00
- .rodata        0x000151c0        0x8 ./webserver/uip_arp.o
- .rodata        0x000151c8       0xf0 ./uip_ftp/Connections.o
-                0x000151f8                Cmd_dictionary
+ *fill*         0x00015175        0x3 00
+ .rodata        0x00015178        0x8 ./webserver/uip_arp.o
+ .rodata        0x00015180       0xf0 ./uip_ftp/Connections.o
+                0x000151b0                Cmd_dictionary
  .rodata.str1.4
-                0x000152b8      0xacc ./uip_ftp/Connections.o
+                0x00015270      0xacc ./uip_ftp/Connections.o
  .rodata.str1.4
-                0x00015d84      0x1cc ./uip_ftp/FTPD.o
+                0x00015d3c      0x1cc ./uip_ftp/FTPD.o
                                 0x1e0 (size before relaxing)
- .rodata        0x00015f50       0x3c ./driver_source/lpc17xx_gpio.o
+ .rodata        0x00015f08       0x3c ./driver_source/lpc17xx_gpio.o
  .rodata.str1.4
-                0x00015f8c       0x1f ./driver_source/lpc17xx_i2c.o
+                0x00015f44       0x1f ./driver_source/lpc17xx_i2c.o
                                  0x20 (size before relaxing)
- *fill*         0x00015fab        0x1 00
+ *fill*         0x00015f63        0x1 00
  .rodata.str1.4
-                0x00015fac       0x1f ./driver_source/lpc17xx_rtc.o
+                0x00015f64       0x1f ./driver_source/lpc17xx_rtc.o
                                  0x20 (size before relaxing)
- *fill*         0x00015fcb        0x1 00
+ *fill*         0x00015f83        0x1 00
  .rodata.str1.4
-                0x00015fcc       0x1f ./driver_source/lpc17xx_spi.o
+                0x00015f84       0x1f ./driver_source/lpc17xx_spi.o
                                  0x20 (size before relaxing)
- *fill*         0x00015feb        0x1 00
- .rodata        0x00015fec        0x8 ./driver_source/lpc17xx_uart.o
+ *fill*         0x00015fa3        0x1 00
+ .rodata        0x00015fa4        0x8 ./driver_source/lpc17xx_uart.o
  .rodata.str1.4
-                0x00015ff4       0x20 ./driver_source/lpc17xx_uart.o
- .rodata        0x00016014        0x8 ./UsbHost/MassStorage/usbhost_ms.o
+                0x00015fac       0x20 ./driver_source/lpc17xx_uart.o
+ .rodata        0x00015fcc        0x8 ./UsbHost/MassStorage/usbhost_ms.o
  .rodata.str1.4
-                0x0001601c       0x5f ./UsbHost/MassStorage/usbhost_ms.o
+                0x00015fd4       0x5f ./UsbHost/MassStorage/usbhost_ms.o
                                  0x60 (size before relaxing)
- *fill*         0x0001607b        0x1 00
+ *fill*         0x00016033        0x1 00
  .rodata.str1.4
-                0x0001607c       0x9f ./UsbHost/Main/usbhost_main.o
+                0x00016034       0x9f ./UsbHost/Main/usbhost_main.o
                                  0xa4 (size before relaxing)
- *fill*         0x0001611b        0x1 00
- .rodata        0x0001611c       0x10 ./UsbHost/Host/usbhost_lpc17xx.o
+ *fill*         0x000160d3        0x1 00
+ .rodata        0x000160d4       0x10 ./UsbHost/Host/usbhost_lpc17xx.o
  .rodata.str1.4
-                0x0001612c       0x9f ./UsbHost/Host/usbhost_lpc17xx.o
+                0x000160e4       0x9f ./UsbHost/Host/usbhost_lpc17xx.o
                                  0xc4 (size before relaxing)
- *fill*         0x000161cb        0x1 00
- .rodata        0x000161cc     0xeab0 ./FatFs/option/cc932.o
+ *fill*         0x00016183        0x1 00
+ .rodata        0x00016184     0xeab0 ./FatFs/option/cc932.o
  .rodata.str1.4
-                0x00024c7c       0x3f ./FatFs/diskio.o
+                0x00024c34       0x3f ./FatFs/diskio.o
                                  0x40 (size before relaxing)
- *fill*         0x00024cbb        0x1 00
- .rodata        0x00024cbc       0xb0 ./FatFs/ff.o
+ *fill*         0x00024c73        0x1 00
+ .rodata        0x00024c74       0xb0 ./FatFs/ff.o
  .rodata.str1.4
-                0x00024d6c       0x48 ./FatFs/ff.o
- .rodata        0x00024db4        0xc ./LedBlinky.o
-                0x00024db4                led_mask
+                0x00024d24       0x48 ./FatFs/ff.o
+ .rodata        0x00024d6c        0xc ./LedBlinky.o
+                0x00024d6c                led_mask
  .rodata.str1.4
-                0x00024dc0       0x75 ./cr_startup_lpc17.o
+                0x00024d78       0x75 ./cr_startup_lpc17.o
                                  0x78 (size before relaxing)
- *fill*         0x00024e35        0x3 00
+ *fill*         0x00024ded        0x3 00
  .rodata.str1.4
-                0x00024e38        0x8 ./lcd_i2c.o
+                0x00024df0       0x33 ./main.o
+                                 0x34 (size before relaxing)
+ *fill*         0x00024e23        0x1 00
+ .rodata        0x00024e24       0x14 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
  .rodata.str1.4
-                0x00024e40       0x3f ./main.o
-                                 0x40 (size before relaxing)
- *fill*         0x00024e7f        0x1 00
- .rodata        0x00024e80       0x14 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
- .rodata.str1.4
-                0x00024e94        0x8 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+                0x00024e38        0x8 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
  .rodata.str1.1
-                0x00024e9c       0x34 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+                0x00024e40       0x34 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
                                  0x35 (size before relaxing)
  .rodata.str1.1
-                0x00024ed0       0x31 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(printf.o)
+                0x00024e74       0x31 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(printf.o)
                                  0x38 (size before relaxing)
- *fill*         0x00024f01        0x7 00
+ *fill*         0x00024ea5        0x3 00
  .rodata.__huge_vall
-                0x00024f08        0x8 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_hugeval.o)
-                0x00024f08                __huge_vall
+                0x00024ea8        0x8 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_hugeval.o)
+                0x00024ea8                __huge_vall
  .rodata.str1.1
-                0x00024f10       0x18 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x00024eb0       0x18 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
  .rodata.__ctype
-                0x00024f28      0x180 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ctype.o)
-                0x00024f28                __ctype
-                0x000250a8                . = ALIGN (0x4)
+                0x00024ec8      0x180 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ctype.o)
+                0x00024ec8                __ctype
+                0x00025048                . = ALIGN (0x4)
 
-.glue_7         0x000250a8        0x0
+.glue_7         0x00025048        0x0
  .glue_7        0x00000000        0x0 linker stubs
 
-.glue_7t        0x000250a8        0x0
+.glue_7t        0x00025048        0x0
  .glue_7t       0x00000000        0x0 linker stubs
 
-.vfp11_veneer   0x000250a8        0x0
+.vfp11_veneer   0x00025048        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x000250a8        0x0
+.v4_bx          0x00025048        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000250a8                __exidx_start = .
+                0x00025048                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x000250a8                __exidx_end = .
-                0x000250a8                _etext = .
+                0x00025048                __exidx_end = .
+                0x00025048                _etext = .
 
-.data_RAM2      0x2007c000        0x0 load address 0x000250a8
+.data_RAM2      0x2007c000        0x0 load address 0x00025048
  FILL mask 0xff
  *(.data.$RAM2*)
  *(.data.$RamAHB32*)
@@ -2472,7 +2785,7 @@ END GROUP
 .uninit_RESERVED
  *(.bss.$RESERVED*)
 
-.data           0x10000000       0x34 load address 0x000250a8
+.data           0x10000000       0x34 load address 0x00025048
  FILL mask 0xff
                 0x10000000                _data = .
  *(vtable)
@@ -2600,7 +2913,7 @@ END GROUP
                 0x10008000                PROVIDE (_vStackTop, (__top_RamLoc32 - 0x0))
 OUTPUT(My_Example_With_Drivers.axf elf32-littlearm)
 
-.debug_info     0x00000000    0x2b161
+.debug_info     0x00000000    0x31eb0
  .debug_info    0x00000000      0xf72 ./webserver/emac.o
  .debug_info    0x00000f72      0x446 ./webserver/http-strings.o
  .debug_info    0x000013b8      0xd83 ./webserver/httpd-cgi.o
@@ -2646,29 +2959,43 @@ OUTPUT(My_Example_With_Drivers.axf elf32-littlearm)
  .debug_info    0x0001c45d      0x666 ./UsbHost/Main/usbhost_main.o
  .debug_info    0x0001cac3      0xa2b ./UsbHost/Host/usb_ms_diskio.o
  .debug_info    0x0001d4ee     0x21c3 ./UsbHost/Host/usbhost_lpc17xx.o
- .debug_info    0x0001f6b1      0xd7f ./LPCUSB/USB_CDC.o
- .debug_info    0x00020430      0x43b ./LPCUSB/usbcontrol.o
- .debug_info    0x0002086b     0x151d ./LPCUSB/usbhw_lpc.o
- .debug_info    0x00021d88      0x13c ./LPCUSB/usbinit.o
- .debug_info    0x00021ec4      0x595 ./LPCUSB/usbstdreq.o
- .debug_info    0x00022459      0x1d4 ./FatFs/option/cc932.o
- .debug_info    0x0002262d       0x62 ./FatFs/option/syncobj.o
- .debug_info    0x0002268f       0x77 ./FatFs/option/syscall.o
- .debug_info    0x00022706      0x34d ./FatFs/diskio.o
- .debug_info    0x00022a53     0x346a ./FatFs/ff.o
- .debug_info    0x00025ebd      0x6cf ./LedBlinky.o
- .debug_info    0x0002658c      0x93e ./cr_startup_lpc17.o
- .debug_info    0x00026eca      0x552 ./lcd_i2c.o
- .debug_info    0x0002741c      0x92b ./main.o
- .debug_info    0x00027d47     0x116b ./uart_fullmodem_test.o
- .debug_info    0x00028eb2      0x228 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
- .debug_info    0x000290da      0x823 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
- .debug_info    0x000298fd      0xf03 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
- .debug_info    0x0002a800      0x2f9 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
- .debug_info    0x0002aaf9      0x2d9 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
- .debug_info    0x0002add2      0x38f C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_info    0x0001f6b1      0xd6a ./LPCUSB/USB_CDC.o
+ .debug_info    0x0002041b      0x43b ./LPCUSB/usbcontrol.o
+ .debug_info    0x00020856     0x151d ./LPCUSB/usbhw_lpc.o
+ .debug_info    0x00021d73      0x13c ./LPCUSB/usbinit.o
+ .debug_info    0x00021eaf      0x595 ./LPCUSB/usbstdreq.o
+ .debug_info    0x00022444      0x1d4 ./FatFs/option/cc932.o
+ .debug_info    0x00022618       0x62 ./FatFs/option/syncobj.o
+ .debug_info    0x0002267a       0x77 ./FatFs/option/syscall.o
+ .debug_info    0x000226f1      0x34d ./FatFs/diskio.o
+ .debug_info    0x00022a3e     0x346a ./FatFs/ff.o
+ .debug_info    0x00025ea8      0xc4c ./AOA/AndroidAccessoryHost.o
+ .debug_info    0x00026af4      0x6cf ./LedBlinky.o
+ .debug_info    0x000271c3      0x93e ./cr_startup_lpc17.o
+ .debug_info    0x00027b01      0x552 ./lcd_i2c.o
+ .debug_info    0x00028053      0x92b ./main.o
+ .debug_info    0x0002897e     0x116b ./uart_fullmodem_test.o
+ .debug_info    0x00029ae9     0x1e5b C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .debug_info    0x0002b944      0x496 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+ .debug_info    0x0002bdda      0x7c8 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .debug_info    0x0002c5a2      0x8e9 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .debug_info    0x0002ce8b      0x65f C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .debug_info    0x0002d4ea      0x3dd C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .debug_info    0x0002d8c7      0x6d1 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .debug_info    0x0002df98      0x2f6 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .debug_info    0x0002e28e      0x32d C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .debug_info    0x0002e5bb      0x99d C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .debug_info    0x0002ef58      0x394 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .debug_info    0x0002f2ec      0x53a C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .debug_info    0x0002f826      0x3db C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
+ .debug_info    0x0002fc01      0x228 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+ .debug_info    0x0002fe29      0x823 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
+ .debug_info    0x0003064c      0xf03 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+ .debug_info    0x0003154f      0x2f9 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+ .debug_info    0x00031848      0x2d9 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+ .debug_info    0x00031b21      0x38f C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
 
-.debug_abbrev   0x00000000     0x873d
+.debug_abbrev   0x00000000     0x9e1a
  .debug_abbrev  0x00000000      0x2e1 ./webserver/emac.o
  .debug_abbrev  0x000002e1       0x4b ./webserver/http-strings.o
  .debug_abbrev  0x0000032c      0x262 ./webserver/httpd-cgi.o
@@ -2714,29 +3041,43 @@ OUTPUT(My_Example_With_Drivers.axf elf32-littlearm)
  .debug_abbrev  0x000059eb      0x186 ./UsbHost/Main/usbhost_main.o
  .debug_abbrev  0x00005b71      0x229 ./UsbHost/Host/usb_ms_diskio.o
  .debug_abbrev  0x00005d9a      0x425 ./UsbHost/Host/usbhost_lpc17xx.o
- .debug_abbrev  0x000061bf      0x2f8 ./LPCUSB/USB_CDC.o
- .debug_abbrev  0x000064b7      0x1d0 ./LPCUSB/usbcontrol.o
- .debug_abbrev  0x00006687      0x35a ./LPCUSB/usbhw_lpc.o
- .debug_abbrev  0x000069e1       0xc5 ./LPCUSB/usbinit.o
- .debug_abbrev  0x00006aa6      0x21e ./LPCUSB/usbstdreq.o
- .debug_abbrev  0x00006cc4       0xd4 ./FatFs/option/cc932.o
- .debug_abbrev  0x00006d98       0x2c ./FatFs/option/syncobj.o
- .debug_abbrev  0x00006dc4       0x2c ./FatFs/option/syscall.o
- .debug_abbrev  0x00006df0      0x12a ./FatFs/diskio.o
- .debug_abbrev  0x00006f1a      0x2ea ./FatFs/ff.o
- .debug_abbrev  0x00007204      0x237 ./LedBlinky.o
- .debug_abbrev  0x0000743b      0x202 ./cr_startup_lpc17.o
- .debug_abbrev  0x0000763d      0x246 ./lcd_i2c.o
- .debug_abbrev  0x00007883      0x1d7 ./main.o
- .debug_abbrev  0x00007a5a      0x376 ./uart_fullmodem_test.o
- .debug_abbrev  0x00007dd0      0x128 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
- .debug_abbrev  0x00007ef8      0x1b3 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
- .debug_abbrev  0x000080ab      0x318 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
- .debug_abbrev  0x000083c3      0x1ae C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
- .debug_abbrev  0x00008571       0xe9 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
- .debug_abbrev  0x0000865a       0xe3 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_abbrev  0x000061bf      0x2e3 ./LPCUSB/USB_CDC.o
+ .debug_abbrev  0x000064a2      0x1d0 ./LPCUSB/usbcontrol.o
+ .debug_abbrev  0x00006672      0x35a ./LPCUSB/usbhw_lpc.o
+ .debug_abbrev  0x000069cc       0xc5 ./LPCUSB/usbinit.o
+ .debug_abbrev  0x00006a91      0x21e ./LPCUSB/usbstdreq.o
+ .debug_abbrev  0x00006caf       0xd4 ./FatFs/option/cc932.o
+ .debug_abbrev  0x00006d83       0x2c ./FatFs/option/syncobj.o
+ .debug_abbrev  0x00006daf       0x2c ./FatFs/option/syscall.o
+ .debug_abbrev  0x00006ddb      0x12a ./FatFs/diskio.o
+ .debug_abbrev  0x00006f05      0x2ea ./FatFs/ff.o
+ .debug_abbrev  0x000071ef      0x2f7 ./AOA/AndroidAccessoryHost.o
+ .debug_abbrev  0x000074e6      0x237 ./LedBlinky.o
+ .debug_abbrev  0x0000771d      0x202 ./cr_startup_lpc17.o
+ .debug_abbrev  0x0000791f      0x246 ./lcd_i2c.o
+ .debug_abbrev  0x00007b65      0x1d7 ./main.o
+ .debug_abbrev  0x00007d3c      0x376 ./uart_fullmodem_test.o
+ .debug_abbrev  0x000080b2      0x2ae C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .debug_abbrev  0x00008360      0x122 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+ .debug_abbrev  0x00008482      0x24d C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .debug_abbrev  0x000086cf      0x1de C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .debug_abbrev  0x000088ad      0x1b5 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .debug_abbrev  0x00008a62      0x130 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .debug_abbrev  0x00008b92      0x1d0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .debug_abbrev  0x00008d62      0x125 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .debug_abbrev  0x00008e87      0x165 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .debug_abbrev  0x00008fec      0x15c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .debug_abbrev  0x00009148      0x11f C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .debug_abbrev  0x00009267      0x133 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .debug_abbrev  0x0000939a      0x113 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
+ .debug_abbrev  0x000094ad      0x128 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+ .debug_abbrev  0x000095d5      0x1b3 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
+ .debug_abbrev  0x00009788      0x318 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+ .debug_abbrev  0x00009aa0      0x1ae C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+ .debug_abbrev  0x00009c4e       0xe9 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+ .debug_abbrev  0x00009d37       0xe3 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
 
-.debug_loc      0x00000000    0x1ef73
+.debug_loc      0x00000000    0x20d3b
  .debug_loc     0x00000000      0xcee ./webserver/emac.o
  .debug_loc     0x00000cee      0x5e4 ./webserver/httpd-cgi.o
  .debug_loc     0x000012d2      0x1fa ./webserver/httpd-fs.o
@@ -2786,19 +3127,33 @@ OUTPUT(My_Example_With_Drivers.axf elf32-littlearm)
  .debug_loc     0x00015b54      0x203 ./FatFs/option/cc932.o
  .debug_loc     0x00015d57      0x29e ./FatFs/diskio.o
  .debug_loc     0x00015ff5     0x6b4b ./FatFs/ff.o
- .debug_loc     0x0001cb40       0xe6 ./LedBlinky.o
- .debug_loc     0x0001cc26      0x133 ./cr_startup_lpc17.o
- .debug_loc     0x0001cd59      0x1b5 ./lcd_i2c.o
- .debug_loc     0x0001cf0e       0x9f ./main.o
- .debug_loc     0x0001cfad      0x87f ./uart_fullmodem_test.o
- .debug_loc     0x0001d82c       0xdf C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
- .debug_loc     0x0001d90b      0x7db C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
- .debug_loc     0x0001e0e6      0xb71 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
- .debug_loc     0x0001ec57      0x1dd C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
- .debug_loc     0x0001ee34      0x11f C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
- .debug_loc     0x0001ef53       0x20 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_loc     0x0001cb40      0x759 ./AOA/AndroidAccessoryHost.o
+ .debug_loc     0x0001d299       0xe6 ./LedBlinky.o
+ .debug_loc     0x0001d37f      0x133 ./cr_startup_lpc17.o
+ .debug_loc     0x0001d4b2      0x1b5 ./lcd_i2c.o
+ .debug_loc     0x0001d667       0x9f ./main.o
+ .debug_loc     0x0001d706      0x87f ./uart_fullmodem_test.o
+ .debug_loc     0x0001df85      0x968 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .debug_loc     0x0001e8ed       0xa8 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+ .debug_loc     0x0001e995      0x1e1 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .debug_loc     0x0001eb76      0x2a0 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .debug_loc     0x0001ee16      0x144 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .debug_loc     0x0001ef5a       0xc8 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .debug_loc     0x0001f022      0x188 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .debug_loc     0x0001f1aa       0xa8 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .debug_loc     0x0001f252       0x64 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .debug_loc     0x0001f2b6      0x1b4 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .debug_loc     0x0001f46a       0xa8 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .debug_loc     0x0001f512       0xaa C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .debug_loc     0x0001f5bc       0x38 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
+ .debug_loc     0x0001f5f4       0xdf C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+ .debug_loc     0x0001f6d3      0x7db C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
+ .debug_loc     0x0001feae      0xb71 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+ .debug_loc     0x00020a1f      0x1dd C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+ .debug_loc     0x00020bfc      0x11f C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+ .debug_loc     0x00020d1b       0x20 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
 
-.debug_aranges  0x00000000     0x1890
+.debug_aranges  0x00000000     0x1d58
  .debug_aranges
                 0x00000000       0x38 ./webserver/emac.o
  .debug_aranges
@@ -2884,45 +3239,73 @@ OUTPUT(My_Example_With_Drivers.axf elf32-littlearm)
  .debug_aranges
                 0x00001230       0xc8 ./UsbHost/Host/usbhost_lpc17xx.o
  .debug_aranges
-                0x000012f8       0x60 ./LPCUSB/USB_CDC.o
+                0x000012f8       0x58 ./LPCUSB/USB_CDC.o
  .debug_aranges
-                0x00001358       0x28 ./LPCUSB/usbcontrol.o
+                0x00001350       0x28 ./LPCUSB/usbcontrol.o
  .debug_aranges
-                0x00001380       0x88 ./LPCUSB/usbhw_lpc.o
+                0x00001378       0x88 ./LPCUSB/usbhw_lpc.o
  .debug_aranges
-                0x00001408       0x28 ./LPCUSB/usbinit.o
+                0x00001400       0x28 ./LPCUSB/usbinit.o
  .debug_aranges
-                0x00001430       0x38 ./LPCUSB/usbstdreq.o
+                0x00001428       0x38 ./LPCUSB/usbstdreq.o
  .debug_aranges
-                0x00001468       0x28 ./FatFs/option/cc932.o
+                0x00001460       0x28 ./FatFs/option/cc932.o
  .debug_aranges
-                0x00001490       0x40 ./FatFs/diskio.o
+                0x00001488       0x40 ./FatFs/diskio.o
  .debug_aranges
-                0x000014d0      0x150 ./FatFs/ff.o
+                0x000014c8      0x150 ./FatFs/ff.o
  .debug_aranges
-                0x00001620       0x38 ./LedBlinky.o
+                0x00001618       0x58 ./AOA/AndroidAccessoryHost.o
  .debug_aranges
-                0x00001658       0x78 ./cr_startup_lpc17.o
+                0x00001670       0x38 ./LedBlinky.o
  .debug_aranges
-                0x000016d0       0x50 ./lcd_i2c.o
+                0x000016a8       0x78 ./cr_startup_lpc17.o
  .debug_aranges
-                0x00001720       0x48 ./main.o
+                0x00001720       0x50 ./lcd_i2c.o
  .debug_aranges
-                0x00001768       0x60 ./uart_fullmodem_test.o
+                0x00001770       0x48 ./main.o
  .debug_aranges
-                0x000017c8       0x20 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+                0x000017b8       0x60 ./uart_fullmodem_test.o
  .debug_aranges
-                0x000017e8       0x20 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
+                0x00001818      0x170 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
  .debug_aranges
-                0x00001808       0x20 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+                0x00001988       0x30 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
  .debug_aranges
-                0x00001828       0x20 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+                0x000019b8       0x60 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
  .debug_aranges
-                0x00001848       0x20 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+                0x00001a18       0x78 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
  .debug_aranges
-                0x00001868       0x28 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x00001a90       0x48 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .debug_aranges
+                0x00001ad8       0x38 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .debug_aranges
+                0x00001b10       0x50 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .debug_aranges
+                0x00001b60       0x30 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .debug_aranges
+                0x00001b90       0x28 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .debug_aranges
+                0x00001bb8       0x58 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .debug_aranges
+                0x00001c10       0x30 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .debug_aranges
+                0x00001c40       0x30 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .debug_aranges
+                0x00001c70       0x20 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
+ .debug_aranges
+                0x00001c90       0x20 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+ .debug_aranges
+                0x00001cb0       0x20 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
+ .debug_aranges
+                0x00001cd0       0x20 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+ .debug_aranges
+                0x00001cf0       0x20 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+ .debug_aranges
+                0x00001d10       0x20 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+ .debug_aranges
+                0x00001d30       0x28 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
 
-.debug_ranges   0x00000000     0x6f58
+.debug_ranges   0x00000000     0x75b8
  .debug_ranges  0x00000000      0x3e8 ./webserver/emac.o
  .debug_ranges  0x000003e8      0x168 ./webserver/httpd-cgi.o
  .debug_ranges  0x00000550       0x20 ./webserver/httpd-fs.o
@@ -2965,25 +3348,39 @@ OUTPUT(My_Example_With_Drivers.axf elf32-littlearm)
  .debug_ranges  0x00004a48       0x10 ./UsbHost/Main/usbhost_main.o
  .debug_ranges  0x00004a58       0x48 ./UsbHost/Host/usb_ms_diskio.o
  .debug_ranges  0x00004aa0      0x720 ./UsbHost/Host/usbhost_lpc17xx.o
- .debug_ranges  0x000051c0       0xb0 ./LPCUSB/USB_CDC.o
- .debug_ranges  0x00005270      0x128 ./LPCUSB/usbcontrol.o
- .debug_ranges  0x00005398      0x5a0 ./LPCUSB/usbhw_lpc.o
- .debug_ranges  0x00005938       0x18 ./LPCUSB/usbinit.o
- .debug_ranges  0x00005950      0x1e8 ./LPCUSB/usbstdreq.o
- .debug_ranges  0x00005b38       0x18 ./FatFs/option/cc932.o
- .debug_ranges  0x00005b50       0x90 ./FatFs/diskio.o
- .debug_ranges  0x00005be0      0xf00 ./FatFs/ff.o
- .debug_ranges  0x00006ae0       0x48 ./LedBlinky.o
- .debug_ranges  0x00006b28       0x68 ./cr_startup_lpc17.o
- .debug_ranges  0x00006b90       0x40 ./lcd_i2c.o
- .debug_ranges  0x00006bd0       0x50 ./main.o
- .debug_ranges  0x00006c20       0xf0 ./uart_fullmodem_test.o
- .debug_ranges  0x00006d10       0x28 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
- .debug_ranges  0x00006d38      0x1d0 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
- .debug_ranges  0x00006f08       0x38 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
- .debug_ranges  0x00006f40       0x18 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_ranges  0x000051c0       0xa8 ./LPCUSB/USB_CDC.o
+ .debug_ranges  0x00005268      0x128 ./LPCUSB/usbcontrol.o
+ .debug_ranges  0x00005390      0x5a0 ./LPCUSB/usbhw_lpc.o
+ .debug_ranges  0x00005930       0x18 ./LPCUSB/usbinit.o
+ .debug_ranges  0x00005948      0x1e8 ./LPCUSB/usbstdreq.o
+ .debug_ranges  0x00005b30       0x18 ./FatFs/option/cc932.o
+ .debug_ranges  0x00005b48       0x90 ./FatFs/diskio.o
+ .debug_ranges  0x00005bd8      0xf00 ./FatFs/ff.o
+ .debug_ranges  0x00006ad8      0x2c0 ./AOA/AndroidAccessoryHost.o
+ .debug_ranges  0x00006d98       0x48 ./LedBlinky.o
+ .debug_ranges  0x00006de0       0x68 ./cr_startup_lpc17.o
+ .debug_ranges  0x00006e48       0x40 ./lcd_i2c.o
+ .debug_ranges  0x00006e88       0x50 ./main.o
+ .debug_ranges  0x00006ed8       0xf0 ./uart_fullmodem_test.o
+ .debug_ranges  0x00006fc8      0x160 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .debug_ranges  0x00007128       0x20 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+ .debug_ranges  0x00007148       0x50 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .debug_ranges  0x00007198       0x68 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .debug_ranges  0x00007200       0x38 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .debug_ranges  0x00007238       0x28 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .debug_ranges  0x00007260       0x40 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .debug_ranges  0x000072a0       0x20 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .debug_ranges  0x000072c0       0x18 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .debug_ranges  0x000072d8       0x48 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .debug_ranges  0x00007320       0x20 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .debug_ranges  0x00007340       0x20 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .debug_ranges  0x00007360       0x10 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
+ .debug_ranges  0x00007370       0x28 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+ .debug_ranges  0x00007398      0x1d0 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+ .debug_ranges  0x00007568       0x38 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+ .debug_ranges  0x000075a0       0x18 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
 
-.debug_line     0x00000000    0x1f9cd
+.debug_line     0x00000000    0x2cbd6
  .debug_line    0x00000000      0x81e ./webserver/emac.o
  .debug_line    0x0000081e       0x3c ./webserver/http-strings.o
  .debug_line    0x0000085a      0x8fd ./webserver/httpd-cgi.o
@@ -3029,163 +3426,205 @@ OUTPUT(My_Example_With_Drivers.axf elf32-littlearm)
  .debug_line    0x000145b9      0x960 ./UsbHost/Main/usbhost_main.o
  .debug_line    0x00014f19      0x95f ./UsbHost/Host/usb_ms_diskio.o
  .debug_line    0x00015878      0xd82 ./UsbHost/Host/usbhost_lpc17xx.o
- .debug_line    0x000165fa      0x92e ./LPCUSB/USB_CDC.o
- .debug_line    0x00016f28      0x76d ./LPCUSB/usbcontrol.o
- .debug_line    0x00017695      0xa6a ./LPCUSB/usbhw_lpc.o
- .debug_line    0x000180ff      0x6e4 ./LPCUSB/usbinit.o
- .debug_line    0x000187e3      0x816 ./LPCUSB/usbstdreq.o
- .debug_line    0x00018ff9       0xcf ./FatFs/option/cc932.o
- .debug_line    0x000190c8       0x6e ./FatFs/option/syncobj.o
- .debug_line    0x00019136      0x5aa ./FatFs/option/syscall.o
- .debug_line    0x000196e0      0x8da ./FatFs/diskio.o
- .debug_line    0x00019fba     0x1791 ./FatFs/ff.o
- .debug_line    0x0001b74b      0x397 ./LedBlinky.o
- .debug_line    0x0001bae2      0x3f5 ./cr_startup_lpc17.o
- .debug_line    0x0001bed7      0x4c0 ./lcd_i2c.o
- .debug_line    0x0001c397      0x4e7 ./main.o
- .debug_line    0x0001c87e      0x659 ./uart_fullmodem_test.o
- .debug_line    0x0001ced7      0x3ff C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
- .debug_line    0x0001d2d6      0x921 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
- .debug_line    0x0001dbf7      0xb7a C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
- .debug_line    0x0001e771      0x745 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
- .debug_line    0x0001eeb6      0x721 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
- .debug_line    0x0001f5d7      0x3f6 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_line    0x000165fa      0x91c ./LPCUSB/USB_CDC.o
+ .debug_line    0x00016f16      0x76d ./LPCUSB/usbcontrol.o
+ .debug_line    0x00017683      0xa6a ./LPCUSB/usbhw_lpc.o
+ .debug_line    0x000180ed      0x6e4 ./LPCUSB/usbinit.o
+ .debug_line    0x000187d1      0x816 ./LPCUSB/usbstdreq.o
+ .debug_line    0x00018fe7       0xcf ./FatFs/option/cc932.o
+ .debug_line    0x000190b6       0x6e ./FatFs/option/syncobj.o
+ .debug_line    0x00019124      0x5aa ./FatFs/option/syscall.o
+ .debug_line    0x000196ce      0x8da ./FatFs/diskio.o
+ .debug_line    0x00019fa8     0x1791 ./FatFs/ff.o
+ .debug_line    0x0001b739     0x1828 ./AOA/AndroidAccessoryHost.o
+ .debug_line    0x0001cf61      0x397 ./LedBlinky.o
+ .debug_line    0x0001d2f8      0x3f5 ./cr_startup_lpc17.o
+ .debug_line    0x0001d6ed      0x4c0 ./lcd_i2c.o
+ .debug_line    0x0001dbad      0x4e5 ./main.o
+ .debug_line    0x0001e092      0x659 ./uart_fullmodem_test.o
+ .debug_line    0x0001e6eb     0x1351 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .debug_line    0x0001fa3c      0xc75 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+ .debug_line    0x000206b1      0xcc4 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .debug_line    0x00021375      0xdcb C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .debug_line    0x00022140      0xbc7 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .debug_line    0x00022d07      0xb14 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .debug_line    0x0002381b      0xb4c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .debug_line    0x00024367      0xb93 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .debug_line    0x00024efa      0xab7 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .debug_line    0x000259b1      0xd13 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .debug_line    0x000266c4     0x1369 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .debug_line    0x00027a2d     0x137f C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .debug_line    0x00028dac     0x1334 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
+ .debug_line    0x0002a0e0      0x3ff C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+ .debug_line    0x0002a4df      0x921 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
+ .debug_line    0x0002ae00      0xb7a C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+ .debug_line    0x0002b97a      0x745 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+ .debug_line    0x0002c0bf      0x721 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+ .debug_line    0x0002c7e0      0x3f6 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
 
-.debug_macinfo  0x00000000   0x273549
+.debug_macinfo  0x00000000   0x3261f6
  .debug_macinfo
-                0x00000000     0xc0d6 ./webserver/emac.o
+                0x00000000     0xc0f8 ./webserver/emac.o
  .debug_macinfo
-                0x0000c0d6     0x2328 ./webserver/http-strings.o
+                0x0000c0f8     0x234a ./webserver/http-strings.o
  .debug_macinfo
-                0x0000e3fe     0xd745 ./webserver/httpd-cgi.o
+                0x0000e442     0xd767 ./webserver/httpd-cgi.o
  .debug_macinfo
-                0x0001bb43     0x4a08 ./webserver/httpd-fs.o
+                0x0001bba9     0x4a2a ./webserver/httpd-fs.o
  .debug_macinfo
-                0x0002054b     0x68e3 ./webserver/httpd.o
+                0x000205d3     0x6905 ./webserver/httpd.o
  .debug_macinfo
-                0x00026e2e     0x779c ./webserver/psock.o
+                0x00026ed8     0x77be ./webserver/psock.o
  .debug_macinfo
-                0x0002e5ca     0x9570 ./webserver/timer.o
+                0x0002e696     0x9592 ./webserver/timer.o
  .debug_macinfo
-                0x00037b3a    0x11f81 ./webserver/uIP_Task.o
+                0x00037c28    0x11fa3 ./webserver/uIP_Task.o
  .debug_macinfo
-                0x00049abb     0xcb97 ./webserver/uip.o
+                0x00049bcb     0xcbb9 ./webserver/uip.o
  .debug_macinfo
-                0x00056652     0x697a ./webserver/uip_arp.o
+                0x00056784     0x699c ./webserver/uip_arp.o
  .debug_macinfo
-                0x0005cfcc     0xdbd8 ./uip_ftp/Connections.o
+                0x0005d120     0xdbfa ./uip_ftp/Connections.o
  .debug_macinfo
-                0x0006aba4     0xdb21 ./uip_ftp/FTPD.o
+                0x0006ad1a     0xdb43 ./uip_ftp/FTPD.o
  .debug_macinfo
-                0x000786c5     0x2328 ./uip_ftp/FTP_Strings.o
+                0x0007885d     0x234a ./uip_ftp/FTP_Strings.o
  .debug_macinfo
-                0x0007a9ed    0x11ecd ./uip_ftp/ftp_main.o
+                0x0007aba7    0x11eef ./uip_ftp/ftp_main.o
  .debug_macinfo
-                0x0008c8ba     0x90d7 ./driver_source/lpc17xx_adc.o
+                0x0008ca96     0x90f9 ./driver_source/lpc17xx_adc.o
  .debug_macinfo
-                0x00095991     0xa4f6 ./driver_source/lpc17xx_can.o
+                0x00095b8f     0xa518 ./driver_source/lpc17xx_can.o
  .debug_macinfo
-                0x0009fe87     0x86a2 ./driver_source/lpc17xx_clkpwr.o
+                0x000a00a7     0x86c4 ./driver_source/lpc17xx_clkpwr.o
  .debug_macinfo
-                0x000a8529     0x8a04 ./driver_source/lpc17xx_dac.o
+                0x000a876b     0x8a26 ./driver_source/lpc17xx_dac.o
  .debug_macinfo
-                0x000b0f2d     0xa653 ./driver_source/lpc17xx_emac.o
+                0x000b1191     0xa675 ./driver_source/lpc17xx_emac.o
  .debug_macinfo
-                0x000bb580     0x9d0b ./driver_source/lpc17xx_gpdma.o
+                0x000bb806     0x9d2d ./driver_source/lpc17xx_gpdma.o
  .debug_macinfo
-                0x000c528b     0x7761 ./driver_source/lpc17xx_gpio.o
+                0x000c5533     0x7783 ./driver_source/lpc17xx_gpio.o
  .debug_macinfo
-                0x000cc9ec     0x9681 ./driver_source/lpc17xx_i2c.o
+                0x000cccb6     0x96a3 ./driver_source/lpc17xx_i2c.o
  .debug_macinfo
-                0x000d606d     0x9b25 ./driver_source/lpc17xx_i2s.o
+                0x000d6359     0x9b47 ./driver_source/lpc17xx_i2s.o
  .debug_macinfo
-                0x000dfb92     0x2f92 ./driver_source/lpc17xx_libcfg_default.o
+                0x000dfea0     0x2fb4 ./driver_source/lpc17xx_libcfg_default.o
  .debug_macinfo
-                0x000e2b24     0x928b ./driver_source/lpc17xx_mcpwm.o
+                0x000e2e54     0x92ad ./driver_source/lpc17xx_mcpwm.o
  .debug_macinfo
-                0x000ebdaf     0x7398 ./driver_source/lpc17xx_nvic.o
+                0x000ec101     0x73ba ./driver_source/lpc17xx_nvic.o
  .debug_macinfo
-                0x000f3147     0x787c ./driver_source/lpc17xx_pinsel.o
+                0x000f34bb     0x789e ./driver_source/lpc17xx_pinsel.o
  .debug_macinfo
-                0x000fa9c3     0x9130 ./driver_source/lpc17xx_pwm.o
+                0x000fad59     0x9152 ./driver_source/lpc17xx_pwm.o
  .debug_macinfo
-                0x00103af3     0xa0c9 ./driver_source/lpc17xx_qei.o
+                0x00103eab     0xa0eb ./driver_source/lpc17xx_qei.o
  .debug_macinfo
-                0x0010dbbc     0x892d ./driver_source/lpc17xx_rit.o
+                0x0010df96     0x894f ./driver_source/lpc17xx_rit.o
  .debug_macinfo
-                0x001164e9     0x9121 ./driver_source/lpc17xx_rtc.o
+                0x001168e5     0x9143 ./driver_source/lpc17xx_rtc.o
  .debug_macinfo
-                0x0011f60a     0x826a ./driver_source/lpc17xx_sd.o
+                0x0011fa28     0x828c ./driver_source/lpc17xx_sd.o
  .debug_macinfo
-                0x00127874     0x92b7 ./driver_source/lpc17xx_spi.o
+                0x00127cb4     0x92d9 ./driver_source/lpc17xx_spi.o
  .debug_macinfo
-                0x00130b2b     0x9979 ./driver_source/lpc17xx_ssp.o
+                0x00130f8d     0x999b ./driver_source/lpc17xx_ssp.o
  .debug_macinfo
-                0x0013a4a4     0x9576 ./driver_source/lpc17xx_timer.o
+                0x0013a928     0x9598 ./driver_source/lpc17xx_timer.o
  .debug_macinfo
-                0x00143a1a     0xc426 ./driver_source/lpc17xx_uart.o
+                0x00143ec0     0xc448 ./driver_source/lpc17xx_uart.o
  .debug_macinfo
-                0x0014fe40     0x9067 ./driver_source/lpc17xx_wdt.o
+                0x00150308     0x9089 ./driver_source/lpc17xx_wdt.o
  .debug_macinfo
-                0x00158ea7     0x2328 ./Zigbee/.kdbgrc.uart.o
+                0x00159391     0x234a ./Zigbee/.kdbgrc.uart.o
  .debug_macinfo
-                0x0015b1cf     0xa9fe ./Zigbee/Zigbee_task.o
+                0x0015b6db     0xaa20 ./Zigbee/Zigbee_task.o
  .debug_macinfo
-                0x00165bcd     0xcae3 ./Zigbee/uart.o
+                0x001660fb     0xcb05 ./Zigbee/uart.o
  .debug_macinfo
-                0x001726b0     0xcaca ./UsbHost/Uart/usbhost_uart.o
+                0x00172c00     0xcaec ./UsbHost/Uart/usbhost_uart.o
  .debug_macinfo
-                0x0017f17a     0xa9e5 ./UsbHost/MassStorage/usbhost_ms.o
+                0x0017f6ec     0xaa07 ./UsbHost/MassStorage/usbhost_ms.o
  .debug_macinfo
-                0x00189b5f     0xc142 ./UsbHost/Main/usbhost_main.o
+                0x0018a0f3     0xc164 ./UsbHost/Main/usbhost_main.o
  .debug_macinfo
-                0x00195ca1     0xbea8 ./UsbHost/Host/usb_ms_diskio.o
+                0x00196257     0xbeca ./UsbHost/Host/usb_ms_diskio.o
  .debug_macinfo
-                0x001a1b49     0xa9e5 ./UsbHost/Host/usbhost_lpc17xx.o
+                0x001a2121     0xaa07 ./UsbHost/Host/usbhost_lpc17xx.o
  .debug_macinfo
-                0x001ac52e     0xe7cc ./LPCUSB/USB_CDC.o
+                0x001acb28     0xe7ee ./LPCUSB/USB_CDC.o
  .debug_macinfo
-                0x001bacfa     0xbdf5 ./LPCUSB/usbcontrol.o
+                0x001bb316     0xbe17 ./LPCUSB/usbcontrol.o
  .debug_macinfo
-                0x001c6aef     0xc3c1 ./LPCUSB/usbhw_lpc.o
+                0x001c712d     0xc3e3 ./LPCUSB/usbhw_lpc.o
  .debug_macinfo
-                0x001d2eb0     0xbdc9 ./LPCUSB/usbinit.o
+                0x001d3510     0xbdeb ./LPCUSB/usbinit.o
  .debug_macinfo
-                0x001dec79     0xbebd ./LPCUSB/usbstdreq.o
+                0x001df2fb     0xbedf ./LPCUSB/usbstdreq.o
  .debug_macinfo
-                0x001eab36     0x2b8f ./FatFs/option/cc932.o
+                0x001eb1da     0x2bb1 ./FatFs/option/cc932.o
  .debug_macinfo
-                0x001ed6c5     0x2b7f ./FatFs/option/syncobj.o
+                0x001edd8b     0x2ba1 ./FatFs/option/syncobj.o
  .debug_macinfo
-                0x001f0244     0x4c4c ./FatFs/option/syscall.o
+                0x001f092c     0x4c6e ./FatFs/option/syscall.o
  .debug_macinfo
-                0x001f4e90     0xae34 ./FatFs/diskio.o
+                0x001f559a     0xae56 ./FatFs/diskio.o
  .debug_macinfo
-                0x001ffcc4     0x3665 ./FatFs/ff.o
+                0x002003f0     0x3687 ./FatFs/ff.o
  .debug_macinfo
-                0x00203329     0x75d9 ./LedBlinky.o
+                0x00203a77    0x14dc8 ./AOA/AndroidAccessoryHost.o
  .debug_macinfo
-                0x0020a902     0x8c50 ./cr_startup_lpc17.o
+                0x0021883f     0x75fb ./LedBlinky.o
  .debug_macinfo
-                0x00213552     0x9c58 ./lcd_i2c.o
+                0x0021fe3a     0x8c72 ./cr_startup_lpc17.o
  .debug_macinfo
-                0x0021d1aa     0xa9a8 ./main.o
+                0x00228aac     0x9c7a ./lcd_i2c.o
  .debug_macinfo
-                0x00227b52     0x92a4 ./uart_fullmodem_test.o
+                0x00232726     0xa9ca ./main.o
  .debug_macinfo
-                0x00230df6     0x9ddd C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+                0x0023d0f0     0x92c6 ./uart_fullmodem_test.o
  .debug_macinfo
-                0x0023abd3     0xc256 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
+                0x002463b6     0xb834 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
  .debug_macinfo
-                0x00246e29     0xcfab C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+                0x00251bea     0xaa42 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
  .debug_macinfo
-                0x00253dd4     0xbc8f C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+                0x0025c62c     0xaa5b C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
  .debug_macinfo
-                0x0025fa63     0xb5b5 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+                0x00267087     0xaa4e C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
  .debug_macinfo
-                0x0026b018     0x8531 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x00271ad5     0xaa3e C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .debug_macinfo
+                0x0027c513     0xaa4d C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .debug_macinfo
+                0x00286f60     0xaa51 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .debug_macinfo
+                0x002919b1     0xab45 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .debug_macinfo
+                0x0029c4f6     0xaa5a C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .debug_macinfo
+                0x002a6f50     0xaa25 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .debug_macinfo
+                0x002b1975    0x10a85 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .debug_macinfo
+                0x002c23fa    0x10b11 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .debug_macinfo
+                0x002d2f0b    0x10b98 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
+ .debug_macinfo
+                0x002e3aa3     0x9ddd C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+ .debug_macinfo
+                0x002ed880     0xc256 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
+ .debug_macinfo
+                0x002f9ad6     0xcfab C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+ .debug_macinfo
+                0x00306a81     0xbc8f C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+ .debug_macinfo
+                0x00312710     0xb5b5 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+ .debug_macinfo
+                0x0031dcc5     0x8531 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
 
-.debug_str      0x00000000     0x8c83
+.debug_str      0x00000000     0xb0e7
  .debug_str     0x00000000      0x65b ./webserver/emac.o
                                 0x6fe (size before relaxing)
  .debug_str     0x0000065b      0x1f3 ./webserver/http-strings.o
@@ -3206,117 +3645,145 @@ OUTPUT(My_Example_With_Drivers.axf elf32-littlearm)
                                 0x66d (size before relaxing)
  .debug_str     0x0000167b      0x114 ./webserver/uip_arp.o
                                 0x314 (size before relaxing)
- .debug_str     0x0000178f      0x5d6 ./uip_ftp/Connections.o
+ .debug_str     0x0000178f      0x5d1 ./uip_ftp/Connections.o
                                 0x8fe (size before relaxing)
- .debug_str     0x00001d65       0x73 ./uip_ftp/FTPD.o
+ .debug_str     0x00001d60       0x73 ./uip_ftp/FTPD.o
                                 0x5ba (size before relaxing)
- .debug_str     0x00001dd8       0xa1 ./uip_ftp/FTP_Strings.o
+ .debug_str     0x00001dd3       0xa1 ./uip_ftp/FTP_Strings.o
                                 0x12c (size before relaxing)
- .debug_str     0x00001e79       0x7a ./uip_ftp/ftp_main.o
+ .debug_str     0x00001e74       0x7a ./uip_ftp/ftp_main.o
                                 0xbf5 (size before relaxing)
- .debug_str     0x00001ef3      0x387 ./driver_source/lpc17xx_adc.o
+ .debug_str     0x00001eee      0x387 ./driver_source/lpc17xx_adc.o
                                 0x4f1 (size before relaxing)
- .debug_str     0x0000227a      0x87c ./driver_source/lpc17xx_can.o
+ .debug_str     0x00002275      0x87c ./driver_source/lpc17xx_can.o
                                 0xa2a (size before relaxing)
- .debug_str     0x00002af6       0xe5 ./driver_source/lpc17xx_clkpwr.o
+ .debug_str     0x00002af1       0xe5 ./driver_source/lpc17xx_clkpwr.o
                                 0x3da (size before relaxing)
- .debug_str     0x00002bdb      0x138 ./driver_source/lpc17xx_dac.o
+ .debug_str     0x00002bd6      0x138 ./driver_source/lpc17xx_dac.o
                                 0x276 (size before relaxing)
- .debug_str     0x00002d13      0x36e ./driver_source/lpc17xx_emac.o
+ .debug_str     0x00002d0e      0x36e ./driver_source/lpc17xx_emac.o
                                 0x738 (size before relaxing)
- .debug_str     0x00003081      0x34f ./driver_source/lpc17xx_gpdma.o
+ .debug_str     0x0000307c      0x34f ./driver_source/lpc17xx_gpdma.o
                                 0x718 (size before relaxing)
- .debug_str     0x000033d0      0x30f ./driver_source/lpc17xx_gpio.o
+ .debug_str     0x000033cb      0x30f ./driver_source/lpc17xx_gpio.o
                                 0x490 (size before relaxing)
- .debug_str     0x000036df      0x430 ./driver_source/lpc17xx_i2c.o
+ .debug_str     0x000036da      0x430 ./driver_source/lpc17xx_i2c.o
                                 0x840 (size before relaxing)
- .debug_str     0x00003b0f      0x23c ./driver_source/lpc17xx_i2s.o
+ .debug_str     0x00003b0a      0x233 ./driver_source/lpc17xx_i2s.o
                                 0x49c (size before relaxing)
- .debug_str     0x00003d4b       0x3c ./driver_source/lpc17xx_libcfg_default.o
+ .debug_str     0x00003d3d       0x3c ./driver_source/lpc17xx_libcfg_default.o
                                 0x161 (size before relaxing)
- .debug_str     0x00003d87      0x3fd ./driver_source/lpc17xx_mcpwm.o
+ .debug_str     0x00003d79      0x3fd ./driver_source/lpc17xx_mcpwm.o
                                 0x578 (size before relaxing)
- .debug_str     0x00004184       0x48 ./driver_source/lpc17xx_nvic.o
+ .debug_str     0x00004176       0x48 ./driver_source/lpc17xx_nvic.o
                                 0x235 (size before relaxing)
- .debug_str     0x000041cc      0x14b ./driver_source/lpc17xx_pinsel.o
+ .debug_str     0x000041be      0x14b ./driver_source/lpc17xx_pinsel.o
                                 0x3c5 (size before relaxing)
- .debug_str     0x00004317      0x423 ./driver_source/lpc17xx_pwm.o
+ .debug_str     0x00004309      0x423 ./driver_source/lpc17xx_pwm.o
                                 0x5ec (size before relaxing)
- .debug_str     0x0000473a      0x35b ./driver_source/lpc17xx_qei.o
+ .debug_str     0x0000472c      0x35b ./driver_source/lpc17xx_qei.o
                                 0x4fa (size before relaxing)
- .debug_str     0x00004a95       0xe3 ./driver_source/lpc17xx_rit.o
+ .debug_str     0x00004a87       0xe3 ./driver_source/lpc17xx_rit.o
                                 0x267 (size before relaxing)
- .debug_str     0x00004b78      0x3ad ./driver_source/lpc17xx_rtc.o
+ .debug_str     0x00004b6a      0x3ad ./driver_source/lpc17xx_rtc.o
                                 0x5c9 (size before relaxing)
- .debug_str     0x00004f25      0x267 ./driver_source/lpc17xx_sd.o
+ .debug_str     0x00004f17      0x267 ./driver_source/lpc17xx_sd.o
                                 0x54c (size before relaxing)
- .debug_str     0x0000518c      0x1c8 ./driver_source/lpc17xx_spi.o
+ .debug_str     0x0000517e      0x1c8 ./driver_source/lpc17xx_spi.o
                                 0x430 (size before relaxing)
- .debug_str     0x00005354      0x224 ./driver_source/lpc17xx_ssp.o
+ .debug_str     0x00005346      0x224 ./driver_source/lpc17xx_ssp.o
                                 0x49b (size before relaxing)
- .debug_str     0x00005578      0x312 ./driver_source/lpc17xx_timer.o
+ .debug_str     0x0000556a      0x312 ./driver_source/lpc17xx_timer.o
                                 0x5ae (size before relaxing)
- .debug_str     0x0000588a      0x9ca ./driver_source/lpc17xx_uart.o
+ .debug_str     0x0000587c      0x9ca ./driver_source/lpc17xx_uart.o
                                 0xea8 (size before relaxing)
- .debug_str     0x00006254      0x168 ./driver_source/lpc17xx_wdt.o
+ .debug_str     0x00006246      0x168 ./driver_source/lpc17xx_wdt.o
                                 0x2f0 (size before relaxing)
- .debug_str     0x000063bc       0x19 ./Zigbee/.kdbgrc.uart.o
+ .debug_str     0x000063ae       0x19 ./Zigbee/.kdbgrc.uart.o
                                  0x9f (size before relaxing)
- .debug_str     0x000063d5       0x42 ./Zigbee/Zigbee_task.o
+ .debug_str     0x000063c7       0x42 ./Zigbee/Zigbee_task.o
                                 0x1f1 (size before relaxing)
- .debug_str     0x00006417      0x173 ./Zigbee/uart.o
+ .debug_str     0x00006409      0x16e ./Zigbee/uart.o
                                 0x8de (size before relaxing)
- .debug_str     0x0000658a      0x1db ./UsbHost/Uart/usbhost_uart.o
+ .debug_str     0x00006577      0x1db ./UsbHost/Uart/usbhost_uart.o
                                 0xa77 (size before relaxing)
- .debug_str     0x00006765      0x1f0 ./UsbHost/MassStorage/usbhost_ms.o
+ .debug_str     0x00006752      0x1f0 ./UsbHost/MassStorage/usbhost_ms.o
                                 0x346 (size before relaxing)
- .debug_str     0x00006955      0x13f ./UsbHost/Main/usbhost_main.o
+ .debug_str     0x00006942      0x13f ./UsbHost/Main/usbhost_main.o
                                 0x40f (size before relaxing)
- .debug_str     0x00006a94       0xd5 ./UsbHost/Host/usb_ms_diskio.o
+ .debug_str     0x00006a81       0xd5 ./UsbHost/Host/usb_ms_diskio.o
                                 0x5eb (size before relaxing)
- .debug_str     0x00006b69      0x5f6 ./UsbHost/Host/usbhost_lpc17xx.o
+ .debug_str     0x00006b56      0x5e1 ./UsbHost/Host/usbhost_lpc17xx.o
                                 0xce6 (size before relaxing)
- .debug_str     0x0000715f      0x151 ./LPCUSB/USB_CDC.o
-                                0x685 (size before relaxing)
- .debug_str     0x000072b0       0xc8 ./LPCUSB/usbcontrol.o
+ .debug_str     0x00007137      0x142 ./LPCUSB/USB_CDC.o
+                                0x676 (size before relaxing)
+ .debug_str     0x00007279       0xc8 ./LPCUSB/usbcontrol.o
                                 0x27a (size before relaxing)
- .debug_str     0x00007378      0x23e ./LPCUSB/usbhw_lpc.o
+ .debug_str     0x00007341      0x23e ./LPCUSB/usbhw_lpc.o
                                 0x9bc (size before relaxing)
- .debug_str     0x000075b6       0x43 ./LPCUSB/usbinit.o
+ .debug_str     0x0000757f       0x3b ./LPCUSB/usbinit.o
                                 0x188 (size before relaxing)
- .debug_str     0x000075f9      0x164 ./LPCUSB/usbstdreq.o
+ .debug_str     0x000075ba      0x164 ./LPCUSB/usbstdreq.o
                                 0x321 (size before relaxing)
- .debug_str     0x0000775d       0x55 ./FatFs/option/cc932.o
+ .debug_str     0x0000771e       0x55 ./FatFs/option/cc932.o
                                 0x13e (size before relaxing)
- .debug_str     0x000077b2       0x1a ./FatFs/option/syncobj.o
+ .debug_str     0x00007773       0x1a ./FatFs/option/syncobj.o
                                  0xf8 (size before relaxing)
- .debug_str     0x000077cc       0x1a ./FatFs/option/syscall.o
+ .debug_str     0x0000778d       0x1a ./FatFs/option/syscall.o
                                 0x129 (size before relaxing)
- .debug_str     0x000077e6       0x12 ./FatFs/diskio.o
+ .debug_str     0x000077a7       0x12 ./FatFs/diskio.o
                                 0x23f (size before relaxing)
- .debug_str     0x000077f8      0x303 ./FatFs/ff.o
+ .debug_str     0x000077b9      0x303 ./FatFs/ff.o
                                 0x6b0 (size before relaxing)
- .debug_str     0x00007afb       0x79 ./LedBlinky.o
+ .debug_str     0x00007abc      0xae0 ./AOA/AndroidAccessoryHost.o
+                                0xc7b (size before relaxing)
+ .debug_str     0x0000859c       0x79 ./LedBlinky.o
                                 0x4b6 (size before relaxing)
- .debug_str     0x00007b74      0x18a ./cr_startup_lpc17.o
+ .debug_str     0x00008615      0x18a ./cr_startup_lpc17.o
                                 0x42f (size before relaxing)
- .debug_str     0x00007cfe       0x8d ./lcd_i2c.o
+ .debug_str     0x0000879f       0x83 ./lcd_i2c.o
                                 0x3b3 (size before relaxing)
- .debug_str     0x00007d8b       0xd6 ./main.o
+ .debug_str     0x00008822       0xd6 ./main.o
                                 0x720 (size before relaxing)
- .debug_str     0x00007e61       0xa0 ./uart_fullmodem_test.o
+ .debug_str     0x000088f8       0xa0 ./uart_fullmodem_test.o
                                 0xa03 (size before relaxing)
- .debug_str     0x00007f01      0x169 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+ .debug_str     0x00008998      0x77c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+                               0x11ea (size before relaxing)
+ .debug_str     0x00009114       0x52 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+                                0x714 (size before relaxing)
+ .debug_str     0x00009166      0x5cb C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+                                0xa52 (size before relaxing)
+ .debug_str     0x00009731      0x1ff C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+                                0x821 (size before relaxing)
+ .debug_str     0x00009930      0x149 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+                                0x98c (size before relaxing)
+ .debug_str     0x00009a79       0xc4 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+                                0x7d4 (size before relaxing)
+ .debug_str     0x00009b3d      0x1ce C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+                                0x804 (size before relaxing)
+ .debug_str     0x00009d0b       0xb5 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+                                0x26d (size before relaxing)
+ .debug_str     0x00009dc0       0x54 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+                                0x29b (size before relaxing)
+ .debug_str     0x00009e14       0x99 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+                                0x735 (size before relaxing)
+ .debug_str     0x00009ead      0x113 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+                                0x322 (size before relaxing)
+ .debug_str     0x00009fc0      0x37a C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+                                0x70d (size before relaxing)
+ .debug_str     0x0000a33a       0x32 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
+                                0x5cb (size before relaxing)
+ .debug_str     0x0000a36c      0x169 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
                                 0x265 (size before relaxing)
- .debug_str     0x0000806a      0x3c0 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
+ .debug_str     0x0000a4d5      0x3c0 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
                                 0x525 (size before relaxing)
- .debug_str     0x0000842a      0x5ff C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+ .debug_str     0x0000a895      0x5ff C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
                                 0x8be (size before relaxing)
- .debug_str     0x00008a29      0x157 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+ .debug_str     0x0000ae94      0x150 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
                                 0x298 (size before relaxing)
- .debug_str     0x00008b80       0x92 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+ .debug_str     0x0000afe4       0x92 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
                                 0x258 (size before relaxing)
- .debug_str     0x00008c12       0x71 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_str     0x0000b076       0x71 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
                                 0x2ab (size before relaxing)
 
 .comment        0x00000000       0xe0
@@ -3376,11 +3843,25 @@ OUTPUT(My_Example_With_Drivers.axf elf32-littlearm)
  .comment       0x00000000       0x71 ./FatFs/option/syscall.o
  .comment       0x00000000       0x71 ./FatFs/diskio.o
  .comment       0x00000000       0x71 ./FatFs/ff.o
+ .comment       0x00000000       0x71 ./AOA/AndroidAccessoryHost.o
  .comment       0x00000000       0x71 ./LedBlinky.o
  .comment       0x00000000       0x71 ./cr_startup_lpc17.o
  .comment       0x00000000       0x71 ./lcd_i2c.o
  .comment       0x00000000       0x71 ./main.o
  .comment       0x00000000       0x71 ./uart_fullmodem_test.o
+ .comment       0x00000000       0x71 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .comment       0x00000000       0x71 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+ .comment       0x00000000       0x71 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .comment       0x00000000       0x71 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .comment       0x00000000       0x71 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .comment       0x00000000       0x71 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .comment       0x00000000       0x71 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .comment       0x00000000       0x71 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .comment       0x00000000       0x71 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .comment       0x00000000       0x71 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .comment       0x00000000       0x71 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .comment       0x00000000       0x71 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .comment       0x00000000       0x71 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
  .comment       0x00000000       0x71 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
  .comment       0x00000000       0x71 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
  .comment       0x00000000       0x71 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
@@ -3542,113 +4023,141 @@ OUTPUT(My_Example_With_Drivers.axf elf32-littlearm)
  .ARM.attributes
                 0x00000ac2       0x33 ./FatFs/ff.o
  .ARM.attributes
-                0x00000af5       0x33 ./LedBlinky.o
+                0x00000af5       0x33 ./AOA/AndroidAccessoryHost.o
  .ARM.attributes
-                0x00000b28       0x33 ./cr_startup_lpc17.o
+                0x00000b28       0x33 ./LedBlinky.o
  .ARM.attributes
-                0x00000b5b       0x33 ./lcd_i2c.o
+                0x00000b5b       0x33 ./cr_startup_lpc17.o
  .ARM.attributes
-                0x00000b8e       0x33 ./main.o
+                0x00000b8e       0x33 ./lcd_i2c.o
  .ARM.attributes
-                0x00000bc1       0x33 ./uart_fullmodem_test.o
+                0x00000bc1       0x33 ./main.o
  .ARM.attributes
-                0x00000bf4       0x33 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+                0x00000bf4       0x33 ./uart_fullmodem_test.o
  .ARM.attributes
-                0x00000c27       0x33 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
+                0x00000c27       0x33 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
  .ARM.attributes
-                0x00000c5a       0x33 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+                0x00000c5a       0x33 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
  .ARM.attributes
-                0x00000c8d       0x33 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+                0x00000c8d       0x33 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
  .ARM.attributes
-                0x00000cc0       0x33 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+                0x00000cc0       0x33 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
  .ARM.attributes
-                0x00000cf3       0x33 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x00000cf3       0x33 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
  .ARM.attributes
-                0x00000d26       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcpy.o)
+                0x00000d26       0x33 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
  .ARM.attributes
-                0x00000d59       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
+                0x00000d59       0x33 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
  .ARM.attributes
-                0x00000d8c       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+                0x00000d8c       0x33 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
  .ARM.attributes
-                0x00000dbf       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcmp.o)
+                0x00000dbf       0x33 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
  .ARM.attributes
-                0x00000df2       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(printf.o)
+                0x00000df2       0x33 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
  .ARM.attributes
-                0x00000e25       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(scanf.o)
+                0x00000e25       0x33 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
  .ARM.attributes
-                0x00000e58       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(stdio.o)
+                0x00000e58       0x33 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
  .ARM.attributes
-                0x00000e8b       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strcat.o)
+                0x00000e8b       0x33 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
  .ARM.attributes
-                0x00000ebe       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strchr.o)
+                0x00000ebe       0x33 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
  .ARM.attributes
-                0x00000ef1       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strcmp.o)
+                0x00000ef1       0x33 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
  .ARM.attributes
-                0x00000f24       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strcpy.o)
+                0x00000f24       0x33 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
  .ARM.attributes
-                0x00000f57       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+                0x00000f57       0x33 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
  .ARM.attributes
-                0x00000f8a       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncmp.o)
+                0x00000f8a       0x33 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
  .ARM.attributes
-                0x00000fbd       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncpy.o)
+                0x00000fbd       0x33 C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
  .ARM.attributes
-                0x00000ff0       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strrchr.o)
+                0x00000ff0       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcpy.o)
  .ARM.attributes
-                0x00001023       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strstr.o)
+                0x00001023       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
  .ARM.attributes
-                0x00001056       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ungetc.o)
+                0x00001056       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
  .ARM.attributes
-                0x00001089       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__fillbuf.o)
+                0x00001089       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcmp.o)
  .ARM.attributes
-                0x000010bc       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
+                0x000010bc       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(printf.o)
  .ARM.attributes
-                0x000010ef       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fflush.o)
+                0x000010ef       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(scanf.o)
  .ARM.attributes
-                0x00001122       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_frexpl.o)
+                0x00001122       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(stdio.o)
  .ARM.attributes
-                0x00001155       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_hugeval.o)
+                0x00001155       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strcat.o)
  .ARM.attributes
-                0x00001188       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_ldexpl.o)
+                0x00001188       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strchr.o)
  .ARM.attributes
-                0x000011bb       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_writebuf.o)
+                0x000011bb       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strcmp.o)
  .ARM.attributes
-                0x000011ee       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x000011ee       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strcpy.o)
  .ARM.attributes
-                0x00001221       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ctype.o)
+                0x00001221       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
  .ARM.attributes
-                0x00001254       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(errno.o)
+                0x00001254       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncmp.o)
  .ARM.attributes
-                0x00001287       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fseek.o)
+                0x00001287       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncpy.o)
  .ARM.attributes
-                0x000012ba       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ftell.o)
+                0x000012ba       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strrchr.o)
  .ARM.attributes
-                0x000012ed       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__init_alloc.o)
+                0x000012ed       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strstr.o)
  .ARM.attributes
-                0x00001320       0x21 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+                0x00001320       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ungetc.o)
  .ARM.attributes
-                0x00001341       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
+                0x00001353       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__fillbuf.o)
  .ARM.attributes
-                0x00001374       0x21 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(memcpy.o)
+                0x00001386       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
  .ARM.attributes
-                0x00001395       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_appexit.o)
+                0x000013b9       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fflush.o)
  .ARM.attributes
-                0x000013c8       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_flen.o)
+                0x000013ec       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_frexpl.o)
  .ARM.attributes
-                0x000013fb       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_istty.o)
+                0x0000141f       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_hugeval.o)
  .ARM.attributes
-                0x0000142e       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_read.o)
+                0x00001452       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_ldexpl.o)
  .ARM.attributes
-                0x00001461       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_readc.o)
+                0x00001485       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_writebuf.o)
  .ARM.attributes
-                0x00001494       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_seek.o)
+                0x000014b8       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
  .ARM.attributes
-                0x000014c7       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_write.o)
+                0x000014eb       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ctype.o)
  .ARM.attributes
-                0x000014fa       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(_cr_sbrk.o)
+                0x0000151e       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(errno.o)
  .ARM.attributes
-                0x0000152d       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(_cr_check_heap.o)
+                0x00001551       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fseek.o)
+ .ARM.attributes
+                0x00001584       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ftell.o)
+ .ARM.attributes
+                0x000015b7       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__init_alloc.o)
+ .ARM.attributes
+                0x000015ea       0x21 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+ .ARM.attributes
+                0x0000160b       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(double.o)
+ .ARM.attributes
+                0x0000163e       0x21 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(memcpy.o)
+ .ARM.attributes
+                0x0000165f       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_appexit.o)
+ .ARM.attributes
+                0x00001692       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_flen.o)
+ .ARM.attributes
+                0x000016c5       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_istty.o)
+ .ARM.attributes
+                0x000016f8       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_read.o)
+ .ARM.attributes
+                0x0000172b       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_readc.o)
+ .ARM.attributes
+                0x0000175e       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_seek.o)
+ .ARM.attributes
+                0x00001791       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_write.o)
+ .ARM.attributes
+                0x000017c4       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(_cr_sbrk.o)
+ .ARM.attributes
+                0x000017f7       0x33 c:/code_red/redsuite_5.1.2_2065/redsuite/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(_cr_check_heap.o)
 
-.debug_frame    0x00000000     0x45d8
+.debug_frame    0x00000000     0x53e0
  .debug_frame   0x00000000       0x98 ./webserver/emac.o
  .debug_frame   0x00000098      0x1ac ./webserver/httpd-cgi.o
  .debug_frame   0x00000244       0x58 ./webserver/httpd-fs.o
@@ -3691,22 +4200,36 @@ OUTPUT(My_Example_With_Drivers.axf elf32-littlearm)
  .debug_frame   0x00002fe0       0x30 ./UsbHost/Main/usbhost_main.o
  .debug_frame   0x00003010       0xb8 ./UsbHost/Host/usb_ms_diskio.o
  .debug_frame   0x000030c8      0x224 ./UsbHost/Host/usbhost_lpc17xx.o
- .debug_frame   0x000032ec       0xf4 ./LPCUSB/USB_CDC.o
- .debug_frame   0x000033e0       0x3c ./LPCUSB/usbcontrol.o
- .debug_frame   0x0000341c      0x134 ./LPCUSB/usbhw_lpc.o
- .debug_frame   0x00003550       0x38 ./LPCUSB/usbinit.o
- .debug_frame   0x00003588       0x70 ./LPCUSB/usbstdreq.o
- .debug_frame   0x000035f8       0x3c ./FatFs/option/cc932.o
- .debug_frame   0x00003634       0x88 ./FatFs/diskio.o
- .debug_frame   0x000036bc      0x4e0 ./FatFs/ff.o
- .debug_frame   0x00003b9c       0x68 ./LedBlinky.o
- .debug_frame   0x00003c04      0x100 ./cr_startup_lpc17.o
- .debug_frame   0x00003d04       0xdc ./lcd_i2c.o
- .debug_frame   0x00003de0       0x94 ./main.o
- .debug_frame   0x00003e74      0x118 ./uart_fullmodem_test.o
- .debug_frame   0x00003f8c       0xcc C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
- .debug_frame   0x00004058      0x194 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
- .debug_frame   0x000041ec      0x2d8 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
- .debug_frame   0x000044c4       0x68 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
- .debug_frame   0x0000452c       0x70 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
- .debug_frame   0x0000459c       0x3c C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_frame   0x000032ec       0xe4 ./LPCUSB/USB_CDC.o
+ .debug_frame   0x000033d0       0x3c ./LPCUSB/usbcontrol.o
+ .debug_frame   0x0000340c      0x134 ./LPCUSB/usbhw_lpc.o
+ .debug_frame   0x00003540       0x38 ./LPCUSB/usbinit.o
+ .debug_frame   0x00003578       0x70 ./LPCUSB/usbstdreq.o
+ .debug_frame   0x000035e8       0x3c ./FatFs/option/cc932.o
+ .debug_frame   0x00003624       0x88 ./FatFs/diskio.o
+ .debug_frame   0x000036ac      0x4e0 ./FatFs/ff.o
+ .debug_frame   0x00003b8c       0xfc ./AOA/AndroidAccessoryHost.o
+ .debug_frame   0x00003c88       0x68 ./LedBlinky.o
+ .debug_frame   0x00003cf0      0x100 ./cr_startup_lpc17.o
+ .debug_frame   0x00003df0       0xdc ./lcd_i2c.o
+ .debug_frame   0x00003ecc       0x94 ./main.o
+ .debug_frame   0x00003f60      0x118 ./uart_fullmodem_test.o
+ .debug_frame   0x00004078      0x530 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(OHCI.o)
+ .debug_frame   0x000045a8       0x68 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HCD.o)
+ .debug_frame   0x00004610      0x114 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Host_LPC.o)
+ .debug_frame   0x00004724      0x170 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(PipeStream_LPC.o)
+ .debug_frame   0x00004894       0xc8 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(Pipe_LPC.o)
+ .debug_frame   0x0000495c       0x88 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBController_LPC.o)
+ .debug_frame   0x000049e4       0xf4 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HostStandardReq.o)
+ .debug_frame   0x00004ad8       0x64 C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBMemory.o)
+ .debug_frame   0x00004b3c       0x4c C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(USBTask.o)
+ .debug_frame   0x00004b88       0xfc C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host\libnxpUSBlib.a(HAL_LPC17xx.o)
+ .debug_frame   0x00004c84       0x70 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(AndroidAccessoryCommands.o)
+ .debug_frame   0x00004cf4       0x70 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(ConfigDescriptor.o)
+ .debug_frame   0x00004d64       0x30 C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug\libLib_AOA.a(DeviceDescriptor.o)
+ .debug_frame   0x00004d94       0xcc C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+ .debug_frame   0x00004e60      0x194 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(queue.o)
+ .debug_frame   0x00004ff4      0x2d8 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+ .debug_frame   0x000052cc       0x68 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+ .debug_frame   0x00005334       0x70 C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+ .debug_frame   0x000053a4       0x3c C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)

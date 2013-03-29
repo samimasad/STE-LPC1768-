@@ -33,6 +33,8 @@
 								<option id="com.crt.advproject.gcc.thumb.1547385571" name="Thumb mode" superClass="com.crt.advproject.gcc.thumb" value="true" valueType="boolean"/>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.607697870" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="__LPC17XX__"/>
+									<listOptionValue builtIn="false" value="USB_HOST_ONLY"/>
 									<listOptionValue builtIn="false" value="FATFS_FLAG"/>
 									<listOptionValue builtIn="false" value="PACK_STRUCT_END=__attribute\(\(packed\)\)"/>
 									<listOptionValue builtIn="false" value="ALIGN_STRUCT_END=__attribute\(\(aligned\(4\)\)\)"/>
@@ -45,6 +47,9 @@
 								<option id="gnu.c.compiler.option.misc.other.387834042" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-fsigned-char -c -fmessage-length=0 -fno-builtin -ffunction-sections " valueType="string"/>
 								<option id="gnu.c.compiler.option.include.paths.220211450" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aes_lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Lib_AOA/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/nxpUSBlib/Common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/nxpUSBlib/Drivers/USB}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS_Library}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv2p00_LPC17xx}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS_Library/demo_code}&quot;"/>
@@ -101,13 +106,17 @@
 								</option>
 								<option id="gnu.c.link.option.paths.1172120167" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aes_lib/Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Lib_AOA/Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/nxpUSBlib/LPC17xx_Host}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS_Library/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv2p00_LPC17xx/Debug}&quot;"/>
 								</option>
 								<option id="gnu.c.link.option.libs.1681926572" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
-									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="aes_lib"/>
-									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="FreeRTOS_Library"/>
-									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="CMSISv2p00_LPC17xx"/>
+									<listOptionValue builtIn="false" value="aes_lib"/>
+									<listOptionValue builtIn="false" value="nxpUSBlib"/>
+									<listOptionValue builtIn="false" value="Lib_AOA"/>
+									<listOptionValue builtIn="false" value="FreeRTOS_Library"/>
+									<listOptionValue builtIn="false" value="CMSISv2p00_LPC17xx"/>
 								</option>
 								<option id="com.crt.advproject.link.scriptdir.1713434262" name="Script path" superClass="com.crt.advproject.link.scriptdir" value="&quot;C:\Users\Sami\git\STE-LPC1768-\My_Example_With_Drivers\linkscripts&quot;" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.2138084207" superClass="cdt.managedbuild.tool.gnu.c.linker.input">

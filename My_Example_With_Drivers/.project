@@ -6,6 +6,8 @@
 		<project>aes_lib</project>
 		<project>CMSISv2p00_LPC17xx</project>
 		<project>FreeRTOS_Library</project>
+		<project>Lib_AOA</project>
+		<project>nxpUSBlib</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

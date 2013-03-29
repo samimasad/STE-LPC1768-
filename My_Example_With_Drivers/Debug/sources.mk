@@ -26,4 +26,5 @@ UsbHost/Host \
 LPCUSB \
 FatFs/option \
 FatFs \
+AOA \
 

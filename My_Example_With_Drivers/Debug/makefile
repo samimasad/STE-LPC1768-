@@ -19,6 +19,7 @@ RM := rm -rf
 -include LPCUSB/subdir.mk
 -include FatFs/option/subdir.mk
 -include FatFs/subdir.mk
+-include AOA/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -44,7 +45,7 @@ dependents:
 My_Example_With_Drivers.axf: $(OBJS) $(USER_OBJS) C:/Users/Sami/git/STE-LPC1768-/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a C:/Users/Sami/git/STE-LPC1768-/FreeRTOS_Library/Debug/libFreeRTOS_Library.a C:/Users/Sami/git/STE-LPC1768-/aes_lib/Debug/libaes_lib.a
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"C:\Users\Sami\git\STE-LPC1768-\aes_lib\Debug" -L"C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug" -L"C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug" -Xlinker --gc-sections -Xlinker -Map=My_Example_With_Drivers.map -mcpu=cortex-m3 -mthumb -T "My_Example_With_Drivers_Debug.ld" -o "My_Example_With_Drivers.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"C:\Users\Sami\git\STE-LPC1768-\aes_lib\Debug" -L"C:\Users\Sami\Documents\Workspace\Lib_AOA\Debug" -L"C:\Users\Sami\git\STE-LPC1768-\nxpUSBlib\LPC17xx_Host" -L"C:\Users\Sami\git\STE-LPC1768-\FreeRTOS_Library\Debug" -L"C:\Users\Sami\git\STE-LPC1768-\CMSISv2p00_LPC17xx\Debug" -Xlinker --gc-sections -Xlinker -Map=My_Example_With_Drivers.map -mcpu=cortex-m3 -mthumb -T "My_Example_With_Drivers_Debug.ld" -o "My_Example_With_Drivers.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
