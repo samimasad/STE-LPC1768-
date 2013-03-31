@@ -66,7 +66,7 @@ int consoleprint(char *cpstring)
 #ifdef SEMIHOSTING
 	 res = LIBSTUB_SYS_WRITE (0, cpstring,slen);	// Note that '0' represents stdout
 #else
-	 res = 0;
+	 res = console_uart_sendString(cpstring);
 #endif
 
 	 return res;

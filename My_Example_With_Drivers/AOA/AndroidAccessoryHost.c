@@ -1,32 +1,32 @@
 /*
-             LUFA Library
-     Copyright (C) Dean Camera, 2011.
+ LUFA Library
+ Copyright (C) Dean Camera, 2011.
 
-  dean [at] fourwalledcubicle [dot] com
-           www.lufa-lib.org
-*/
+ dean [at] fourwalledcubicle [dot] com
+ www.lufa-lib.org
+ */
 
 /*
-  Copyright 2011  Dean Camera (dean [at] fourwalledcubicle [dot] com)
+ Copyright 2011  Dean Camera (dean [at] fourwalledcubicle [dot] com)
 
-  Permission to use, copy, modify, distribute, and sell this
-  software and its documentation for any purpose is hereby granted
-  without fee, provided that the above copyright notice appear in
-  all copies and that both that the copyright notice and this
-  permission notice and warranty disclaimer appear in supporting
-  documentation, and that the name of the author not be used in
-  advertising or publicity pertaining to distribution of the
-  software without specific, written prior permission.
+ Permission to use, copy, modify, distribute, and sell this
+ software and its documentation for any purpose is hereby granted
+ without fee, provided that the above copyright notice appear in
+ all copies and that both that the copyright notice and this
+ permission notice and warranty disclaimer appear in supporting
+ documentation, and that the name of the author not be used in
+ advertising or publicity pertaining to distribution of the
+ software without specific, written prior permission.
 
-  The author disclaim all warranties with regard to this
-  software, including all implied warranties of merchantability
-  and fitness.  In no event shall the author be liable for any
-  special, indirect or consequential damages or any damages
-  whatsoever resulting from loss of use, data or profits, whether
-  in an action of contract, negligence or other tortious action,
-  arising out of or in connection with the use or performance of
-  this software.
-*/
+ The author disclaim all warranties with regard to this
+ software, including all implied warranties of merchantability
+ and fitness.  In no event shall the author be liable for any
+ special, indirect or consequential damages or any damages
+ whatsoever resulting from loss of use, data or profits, whether
+ in an action of contract, negligence or other tortious action,
+ arising out of or in connection with the use or performance of
+ this software.
+ */
 
 /*
  * Embedded Artists AB.
@@ -47,32 +47,30 @@
 #include "lpc17xx_pinsel.h"
 #include "lpc17xx_timer.h"
 #include "lpc17xx_gpio.h"
-
-
-
+#include "board.h"
 
 /******************************************************************************
  * Defines and typedefs
  *****************************************************************************/
 
-
 /*
  * Message indexes for messages sent to the device
  */
-#define CMD_TRIMPOT (0)
-#define CMD_BTN_1   (1)
-#define CMD_BTN_2   (2)
+#define CMD_SENDTEMP 	(0)
+#define CMD_SENDHUM   	(1)
+#define CMD_SENDLIGHT  	(2)
 
 /*
  * Message indexes for messages sent from the device
  */
-#define CMD_RGB_LED6    (10)
-#define CMD_RGB_LED7    (11)
+#define CMD_READTEMP    (10)
+#define CMD_READHUM    	(11)
+#define CMD_READLIGHT   (12)
 #define CMD_CONNECT     (98)
 #define CMD_DISCONNECT  (99)
 
-
-uint32_t getMsTicks(void);;
+uint32_t getMsTicks(void);
+;
 
 /******************************************************************************
  * Local variables
@@ -85,14 +83,14 @@ static uint8_t lastBtn2State = 0;
 static uint8_t connected = 0;
 static uint8_t doDisconnect = 0;
 /*
-static int rgb6Red = 0;
-static int rgb6Green = 0;
-static int rgb6Blue = 0;
+ static int rgb6Red = 0;
+ static int rgb6Green = 0;
+ static int rgb6Blue = 0;
 
-static int rgb7Red = 0;
-static int rgb7Green = 0;
-static int rgb7Blue = 0;
-*/
+ static int rgb7Red = 0;
+ static int rgb7Green = 0;
+ static int rgb7Blue = 0;
+ */
 
 static uint8_t sbuf[250];
 
@@ -102,10 +100,10 @@ static uint8_t attachedCoreNum = -1;
  * Local functions
  *****************************************************************************/
 
-static void sendCommand(uint8_t corenum, uint8_t cmd, uint8_t* data, uint8_t len)
-{
+static void sendCommand(uint8_t corenum, uint8_t cmd, uint8_t* data,
+		uint8_t len) {
 	if (USB_HostState[corenum] != HOST_STATE_Configured)
-	  return;
+		return;
 
 	/* Select the data OUT pipe */
 	Pipe_SelectPipe(corenum, ANDROID_DATA_OUT_PIPE);
@@ -113,7 +111,7 @@ static void sendCommand(uint8_t corenum, uint8_t cmd, uint8_t* data, uint8_t len
 
 	if (Pipe_IsReadWriteAllowed(corenum)) {
 		Pipe_Write_8(corenum, cmd);
-		Pipe_Write_Stream_LE(corenum, data, len, NULL);
+		Pipe_Write_Stream_LE(corenum, data, len, NULL );
 		Pipe_ClearOUT(corenum);
 	}
 
@@ -121,38 +119,36 @@ static void sendCommand(uint8_t corenum, uint8_t cmd, uint8_t* data, uint8_t len
 
 }
 
-static void processCommand(uint8_t corenum, uint8_t cmd, uint8_t hi, uint8_t lo)
-{
-  uint8_t on = 0;
-  uint8_t off = 0;
+static void processCommand(uint8_t corenum, uint8_t cmd, uint8_t hi, uint8_t lo) {
+	uint8_t on = 0;
+	uint8_t off = 0;
 	switch (cmd) {
-	case CMD_RGB_LED6:
+	case CMD_READTEMP:
 
+		if (lo != 0) {
+			on = hi;
+		} else {
+			off = hi;
+		}
 
-
-    if (lo != 0) {
-      on = hi;
-    }
-    else {
-      off = hi;
-    }
-
-	  //rgb_setLeds(LED_6, on, off);
+		//rgb_setLeds(LED_6, on, off);
 
 		break;
 
-		case CMD_RGB_LED7:
+	case CMD_READLIGHT:
 
-	    if (lo != 0) {
-	      on = hi;
-	    }
-	    else {
-	      off = hi;
-	    }
+		if (lo != 0) {
+			on = hi;
+		} else {
+			off = hi;
+		}
+		break;
 
-	    //rgb_setLeds(LED_7, on, off);
+		//rgb_setLeds(LED_7, on, off);
+	case CMD_READHUM:
+		break;
 
-			break;
+		break;
 	case CMD_CONNECT:
 		connected = 1;
 		break;
@@ -161,30 +157,26 @@ static void processCommand(uint8_t corenum, uint8_t cmd, uint8_t hi, uint8_t lo)
 		break;
 	}
 
-
 }
 
-void AndroidHost_Task(void)
-{
-	if (attachedCoreNum == -1) return;
+void AndroidHost_Task(void) {
+	if (attachedCoreNum == -1)
+		return;
 
 	if (USB_HostState[attachedCoreNum] != HOST_STATE_Configured)
-	  return;	
+		return;
 
 	/* Select the data IN pipe */
 	Pipe_SelectPipe(attachedCoreNum, ANDROID_DATA_IN_PIPE);
 	Pipe_Unfreeze();
 
 	/* Check to see if a packet has been received */
-	if (Pipe_IsINReceived(attachedCoreNum))
-	{
+	if (Pipe_IsINReceived(attachedCoreNum)) {
 		/* Re-freeze IN pipe after the packet has been received */
 		Pipe_Freeze();
 
-
 		/* Check if data is in the pipe */
-		if (Pipe_IsReadWriteAllowed(attachedCoreNum))
-		{
+		if (Pipe_IsReadWriteAllowed(attachedCoreNum)) {
 			uint8_t numBytes = Pipe_BytesInPipe(attachedCoreNum);
 
 			if (numBytes == 3) {
@@ -205,8 +197,9 @@ void AndroidHost_Task(void)
 	Pipe_Freeze();
 }
 
-void Monitor_Task(void)
-{
+void Monitor_Task(void) {
+	//vTaskDelay(5);
+#if 0
 	uint8_t data[2];
 	uint8_t btn = 0;
 	uint8_t btn1 = 0;
@@ -223,7 +216,6 @@ void Monitor_Task(void)
 		return;
 	}
 
-
 	if (getMsTicks() > lastTrimpotCheck + 50) {
 		uint16_t v = trimpot_get();
 
@@ -239,7 +231,7 @@ void Monitor_Task(void)
 		lastTrimpotCheck = getMsTicks();
 	}
 
-	btn =  btn_get();
+	btn = btn_get();
 	//btn1 = ((btn & BTN_SW2) != 0);
 	//btn2 = ((btn & BTN_SW3) != 0);
 
@@ -257,97 +249,96 @@ void Monitor_Task(void)
 		sendCommand(attachedCoreNum, CMD_BTN_2, data, 1);
 	}
 
-
+#endif
 }
 
 /** Event handler for the USB_DeviceAttached event. This indicates that a device has been attached to the host, and
  *  starts the library USB task to begin the enumeration and USB management process.
  */
-void EVENT_USB_Host_DeviceAttached(const uint8_t corenum)
-{
+void EVENT_USB_Host_DeviceAttached(const uint8_t corenum) {
 //	console_sendString((uint8_t*)"Device Attached.\r\n");
-	sprintf((char*)sbuf, "Device Attached %d\r\n", corenum);
-	console_sendString(sbuf);
-	rf_uart_sendString(sbuf);
+	sprintf((char*) sbuf, "Device Attached %d\r\n", corenum);
+	console_uart_sendString(sbuf);
+
 	attachedCoreNum = corenum;
 }
 
 /** Event handler for the USB_DeviceUnattached event. This indicates that a device has been removed from the host, and
  *  stops the library USB task management process.
  */
-void EVENT_USB_Host_DeviceUnattached(const uint8_t corenum)
-{
+void EVENT_USB_Host_DeviceUnattached(const uint8_t corenum) {
 //	console_sendString((uint8_t*)"\r\nDevice Unattached.\r\n");
-	sprintf((char*)sbuf, "\r\nDevice Unattached %d\r\n", corenum);
-	console_sendString(sbuf);
-	rf_uart_sendString(sbuf);
+	sprintf((char*) sbuf, "\r\nDevice Unattached %d\r\n", corenum);
+	console_uart_sendString(sbuf);
+
 }
 
 /** Event handler for the USB_DeviceEnumerationComplete event. This indicates that a device has been successfully
  *  enumerated by the host and is now ready to be used by the application.
  */
-void EVENT_USB_Host_DeviceEnumerationComplete(const uint8_t corenum)
-{
+void EVENT_USB_Host_DeviceEnumerationComplete(const uint8_t corenum) {
 //	console_sendString((uint8_t*)"Getting Device Data.\r\n");
-	sprintf((char*)sbuf, "Getting Device Data %d\r\n", corenum);
-	console_sendString(sbuf);
-	rf_uart_sendString(sbuf);
+	sprintf((char*) sbuf, "Getting Device Data %d\r\n", corenum);
+	console_uart_sendString(sbuf);
 
 	/* Get and process the configuration descriptor data */
 	uint8_t ErrorCode = ProcessDeviceDescriptor(corenum);
-	
+
 	bool RequiresModeSwitch = (ErrorCode == NonAccessoryModeAndroidDevice);
+	sprintf((char*) sbuf, "Error code %d\r\n",ErrorCode);
+	console_uart_sendString(sbuf);
 
 	/* Error out if the device is not an Android device or an error occurred */
-	if ((ErrorCode != AccessoryModeAndroidDevice) && (ErrorCode != NonAccessoryModeAndroidDevice))
-	{
-		if (ErrorCode == ControlError)
-		{
-			console_sendString((uint8_t*)"Control Error (Get Device).\r\n");
-			rf_uart_sendString((uint8_t*)"Control Error (Get Device).\r\n");
-		}
-		else
-		{
-			console_sendString((uint8_t*)"Invalid Device.\r\n");
-			rf_uart_sendString((uint8_t*)"Control Error (Get Device).\r\n");
+	if ((ErrorCode != AccessoryModeAndroidDevice)
+			&& (ErrorCode != NonAccessoryModeAndroidDevice)) {
+		if (ErrorCode == ControlError) {
+			console_uart_sendString(
+					(uint8_t*) "Control Error (Get Device).\r\n");
+
+		} else {
+			console_uart_sendString((uint8_t*) "Invalid Device.\r\n");
+
 		}
 
-		sprintf((char*)sbuf, " -- Error Code: %d\r\n", ErrorCode);
-		console_sendString(sbuf);
-		rf_uart_sendString(sbuf);
+		sprintf((char*) sbuf, " -- Error Code: %d\r\n", ErrorCode);
+		console_uart_sendString(sbuf);
+
 		return;
 	}
 
-	sprintf((char*)sbuf, "Android Device Detected - %sAccessory mode.\r\n", (RequiresModeSwitch ? "Non-" : ""));
-	console_sendString(sbuf);
-	rf_uart_sendString(sbuf);
-	
-	/* Check if a valid Android device was attached, but it is not current in Accessory mode */
-	if (RequiresModeSwitch)
-	{
-		uint16_t AndroidProtocol;
-	
-		/* Fetch the version of the Android Accessory Protocol supported by the device */
-		if ((ErrorCode = Android_GetAccessoryProtocol(corenum, &AndroidProtocol)) != HOST_SENDCONTROL_Successful)
-		{
+	sprintf((char*) sbuf, "Android Device Detected - %sAccessory mode.\r\n",
+			(RequiresModeSwitch ? "Non-" : ""));
+	console_uart_sendString(sbuf);
 
-			sprintf((char*)sbuf, "Control Error (Get Protocol).\r\n"
-					" -- Error Code: %d\r\n"
-					,ErrorCode);
-			console_sendString(sbuf);
-			rf_uart_sendString(sbuf);
+	/* Check if a valid Android device was attached, but it is not current in Accessory mode */
+	if (RequiresModeSwitch) {
+		uint16_t AndroidProtocol;
+		sprintf((char*) sbuf, " -- RequiresModeSwitch: %d\r\n", RequiresModeSwitch);
+			console_uart_sendString(sbuf);
+
+		/* Fetch the version of the Android Accessory Protocol supported by the device */
+		if ((ErrorCode = Android_GetAccessoryProtocol(corenum, &AndroidProtocol))
+				!= HOST_SENDCONTROL_Successful) {
+
+			sprintf((char*) sbuf, "Control Error (Get Protocol).\r\n"
+					" -- Error Code: %d\r\n", ErrorCode);
+			console_uart_sendString(sbuf);
+
 			return;
 		}
-		
-    /* Validate the returned protocol version */
-    if (AndroidProtocol == 0 || AndroidProtocol >  ANDROID_PROTOCOL_Accessory)
-    {
-      sprintf((char*)sbuf, "Unsupported AOA protocol version: %d\r\n" ,AndroidProtocol);
-      console_sendString(sbuf);
-      rf_uart_sendString(sbuf);
-      return;
-    }
-	
+		sprintf((char*) sbuf, " -- Android_GetAccessoryProtocol ErrorCode : %d\r\n", ErrorCode);
+					console_uart_sendString(sbuf);
+
+		/* Validate the returned protocol version */
+		if (AndroidProtocol == 0
+				|| AndroidProtocol > ANDROID_PROTOCOL_Accessory) {
+			sprintf((char*) sbuf, "Unsupported AOA protocol version: %d\r\n",
+					AndroidProtocol);
+			console_uart_sendString(sbuf);
+
+			return;
+		}
+
 		/* Send the device strings and start the Android Accessory Mode */
 
 		// Bug: The first call to _SendString seem to generate
@@ -355,86 +346,81 @@ void EVENT_USB_Host_DeviceEnumerationComplete(const uint8_t corenum)
 		//      on the Android device.
 		//
 		// Workaround: calling twice for Manufacturer
-		Android_SendString(corenum, ANDROID_STRING_Manufacturer, "Embedded Artists AB");
+		Android_SendString(corenum, ANDROID_STRING_Manufacturer, "NXP B.V.");
 
-		Android_SendString(corenum, ANDROID_STRING_Manufacturer, "Embedded Artists AB");
-		Android_SendString(corenum, ANDROID_STRING_Model,        "AOA Board - Basic");
-		Android_SendString(corenum, ANDROID_STRING_Description,  "Demo - AOA Basic");
-		Android_SendString(corenum, ANDROID_STRING_Version,      "1.0");
-		Android_SendString(corenum, ANDROID_STRING_URI,          "http://www.embeddedartists.com/_aoa/Demo_AOA_Basic.apk");
-		Android_SendString(corenum, ANDROID_STRING_Serial,       "N/A");
+		Android_SendString(corenum, ANDROID_STRING_Manufacturer,
+				"NXP B.V.");
+		Android_SendString(corenum, ANDROID_STRING_Model,
+				"NXP ultimate Sensor Board");
+		Android_SendString(corenum, ANDROID_STRING_Description, "NXP Sensor");
+		Android_SendString(corenum, ANDROID_STRING_Version, "0.1");
+		Android_SendString(corenum, ANDROID_STRING_URI, "http://www.nxp.com");
+		Android_SendString(corenum, ANDROID_STRING_Serial, "00000000");
 
-
-		Android_StartAccessoryMode(corenum);
+		ErrorCode = Android_StartAccessoryMode(corenum);
+		sprintf((char*) sbuf, "Android_StartAccessoryMode Error %d\r\n", ErrorCode);
+		console_uart_sendString(sbuf);
 		return;
 	}
 
-	console_sendString((uint8_t*)"Getting Config Data.\r\n");
-	rf_uart_sendString((uint8_t*)"Getting Config Data.\r\n");
+	console_uart_sendString((uint8_t*) "Getting Config Data.\r\n");
 
 	/* Get and process the configuration descriptor data */
-	if ((ErrorCode = ProcessConfigurationDescriptor(corenum)) != SuccessfulConfigRead)
-	{
-		if (ErrorCode == ControlError)
-		{
-			console_sendString((uint8_t*)"Control Error (Get Configuration).\r\n");
-			rf_uart_sendString((uint8_t*)"Control Error (Get Configuration).\r\n");
-		}
-		else
-		{
-			console_sendString((uint8_t*)"Invalid Device.\r\n");
-			rf_uart_sendString((uint8_t*)"Invalid Device.\r\n");
+	if ((ErrorCode = ProcessConfigurationDescriptor(corenum))
+			!= SuccessfulConfigRead) {
+		if (ErrorCode == ControlError) {
+			console_uart_sendString(
+					(uint8_t*) "Control Error (Get Configuration).\r\n");
+
+		} else {
+			console_uart_sendString((uint8_t*) "Invalid Device.\r\n");
+
 		}
 
-		sprintf((char*)sbuf, " -- Error Code: %d\r\n", ErrorCode);
-		console_sendString(sbuf);
-		rf_uart_sendString(sbuf);
+		sprintf((char*) sbuf, " -- Error Code: %d\r\n", ErrorCode);
+		console_uart_sendString(sbuf);
 
 		return;
 	}
 
 	/* Set the device configuration to the first configuration (rarely do devices use multiple configurations) */
-	if ((ErrorCode = USB_Host_SetDeviceConfiguration(corenum, 1)) != HOST_SENDCONTROL_Successful)
-	{
+	if ((ErrorCode = USB_Host_SetDeviceConfiguration(corenum, 1))
+			!= HOST_SENDCONTROL_Successful) {
 
-		sprintf((char*)sbuf, "Control Error (Set Configuration).\r\n"
+		sprintf((char*) sbuf, "Control Error (Set Configuration).\r\n"
 				" -- Error Code: %d\r\n", ErrorCode);
-		console_sendString(sbuf);
-		rf_uart_sendString(sbuf);
+		console_uart_sendString(sbuf);
+
 		return;
 	}
 
-	console_sendString((uint8_t*)"Accessory Mode Android Enumerated.\r\n");
-	rf_uart_sendString((uint8_t*)"Accessory Mode Android Enumerated.\r\n");
+	console_uart_sendString(
+			(uint8_t*) "Accessory Mode Android Enumerated.\r\n");
 
 }
 
 /** Event handler for the USB_HostError event. This indicates that a hardware error occurred while in host mode. */
-void EVENT_USB_Host_HostError(const uint8_t corenum, const uint8_t ErrorCode)
-{
+void EVENT_USB_Host_HostError(const uint8_t corenum, const uint8_t ErrorCode) {
 	USB_Disable();
 
-	sprintf((char*)sbuf, "Host Mode Error\r\n"
+	sprintf((char*) sbuf, "Host Mode Error\r\n"
 			" -- Error Code %d\r\n", ErrorCode);
-	console_sendString(sbuf);
-	rf_uart_sendString(sbuf);
+	console_uart_sendString(sbuf);
 
-	for(;;);
+	for (;;)
+		;
 }
 
 /** Event handler for the USB_DeviceEnumerationFailed event. This indicates that a problem occurred while
  *  enumerating an attached USB device.
  */
 void EVENT_USB_Host_DeviceEnumerationFailed(const uint8_t corenum,
-											const uint8_t ErrorCode,
-                                            const uint8_t SubErrorCode)
-{
-	sprintf((char*)sbuf, "Dev Enum Error\r\n"
-	        " -- Error Code %d\r\n"
-	        " -- Sub Error Code %d\r\n"
-	        " -- In State %d\r\n", ErrorCode, SubErrorCode, USB_HostState);
-	console_sendString(sbuf);
-	rf_uart_sendString(sbuf);
+		const uint8_t ErrorCode, const uint8_t SubErrorCode) {
+	sprintf((char*) sbuf, "Dev Enum Error\r\n"
+			" -- Error Code %d\r\n"
+			" -- Sub Error Code %d\r\n"
+			" -- In State %d\r\n", ErrorCode, SubErrorCode, USB_HostState);
+	console_uart_sendString(sbuf);
 
 }
 

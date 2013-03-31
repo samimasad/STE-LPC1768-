@@ -3,8 +3,6 @@
 	<name>nxpUSBlib</name>
 	<comment></comment>
 	<projects>
-		<project>Lib_CMSISv2p00_LPC17xx</project>
-		<project>Lib_MCU</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

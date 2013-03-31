@@ -41,6 +41,7 @@
 
 /* Library includes. */
 #include "LPC17xx.h"
+#include "board.h"
 
 /* The interrupt number to use for the software interrupt generation.  This
 could be any unused number.  In this case the first chip level (non system)
@@ -76,6 +77,7 @@ extern void vUSBTask( void *pvParameters );
 extern void usb_host_main( void *pvParameters );
 extern void ftp_main( void *pvParameters );
 extern void vZigbeeTask( void *pvParameters ) ;
+extern void vAOATask(void *pvParameters);
 /* Enable the software interrupt and set its priority. */
 static void prvSetupSoftwareInterrupt();
 
@@ -100,32 +102,42 @@ int main( void )
 {
 
 	/* Configure the hardware for use by this demo. */
-	prvSetupHardware();
+	//prvSetupHardware();
 
 
-	//xTaskCreate( vuIP_Task, ( signed char * ) "uIP", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
 	//make a task for UART
 
 	char ip_address[32];
 
 	LCD_Init();
+
+    console_uart_init();
+	console_uart_sendString("\n\rStarting Program\n\r");
+	USB_Init();
 	LCD_ClearScreen();
 	sprintf(ip_address , "IP Address: %d.%d.%d.%d",configIP_ADDR0,configIP_ADDR1,configIP_ADDR2,configIP_ADDR3);
 
 	LCD_PrintText(ip_address);
 
+
+
+
+
+
+
 	//xTaskCreate( vUARTTask, ( signed char * ) "UART_Modem", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
 	/* Start the scheduler so the created tasks start executing. */
 	xTaskCreate( vLEDTask, ( signed char * ) "LED_TOGGOLE", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
 
-	//xTaskCreate( vLCDTask, ( signed char * ) "LCD_DISPLAY", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
+	xTaskCreate( vLCDTask, ( signed char * ) "LCD_DISPLAY", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
 
-	xTaskCreate( vuIP_Task, ( signed char * ) "uIP", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY+1, NULL );
+	//xTaskCreate( vuIP_Task, ( signed char * ) "uIP", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY+1, NULL );
 
 
-	xTaskCreate( usb_host_main, ( signed char * ) "USB_Device", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY+3, NULL );
+	//xTaskCreate( usb_host_main, ( signed char * ) "USB_Device", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY+3, NULL );
 	//xTaskCreate( vZigbeeTask, ( signed char * ) "Zigbee", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
-
+	xTaskCreate( vAOATask, ( signed char * ) "AOA_Device", mainBASIC_WEB_STACK_SIZE*4, ( void * ) NULL, mainUIP_TASK_PRIORITY/*configMAX_PRIORITIES-1*/, NULL );
+	console_uart_sendString("Starting the Scheduler\n\r");
 	vTaskStartScheduler();
 
 
@@ -225,6 +237,7 @@ portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
 
 void vApplicationMallocFailedHook( void )
 {
+	console_uart_sendString("vApplicationMallocFailedHook\n\r");
 	/* This function will only be called if an API call to create a task, queue
 	or semaphore fails because there is too little heap RAM remaining. */
 	for( ;; );
@@ -237,7 +250,8 @@ void vApplicationStackOverflowHook( xTaskHandle *pxTask, signed char *pcTaskName
 	that stack overflow checking does slow down the context switch
 	implementation. */
 	//toggole the LEDs
-    GPIO_SetValue(1, 0xB40000);
+	console_uart_sendString("vApplicationStackOverflowHook\n\r");
+
 	for( ;; );
 }
 /*-----------------------------------------------------------*/

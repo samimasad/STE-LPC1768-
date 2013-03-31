@@ -11,6 +11,7 @@
 #include "lpc17xx_gpio.h"
 //#include "lpc17xx_libcfg.h"
 #include "lpc17xx_nvic.h"
+#include "board.h"
 
 //#define LED_NUM     4                   /* Number of user LEDs                */
 #define LED_NUM     3                   /* Number of user LEDs , do not use first LED , used by USB               */
@@ -43,7 +44,7 @@ int entry_led (void) {                       /* Main Program                    
 */
 
 
-  SysTick_Config(SystemCoreClock/1000 - 1); /* Generate interrupt each 1 ms   */
+  //SysTick_Config(SystemCoreClock/1000 - 1); /* Generate interrupt each 1 ms   */
 
 
   GPIO_SetDir(1, 0xB40000, 1);           /* LEDs on PORT1 defined as Output    */
@@ -89,6 +90,7 @@ int entry_led (void) {                       /* Main Program                    
    file, and that startup code will setup stacks and data */
 void vLEDTask( void *pvParameters )
 {
+	console_uart_sendString("Starting vLEDTask\n\r");
 	entry_led();
     return ;
 }

@@ -37,6 +37,7 @@ uint8_t USBPortNum;
 
 void USB_Init(void)
 {
+
 #if defined(USB_MULTI_PORTS)
 	uint8_t i;
 	USB_Memory_Init(USBRAM_BUFFER_SIZE);
@@ -54,6 +55,7 @@ void USB_Init(void)
 	USB_ResetInterface(USBPortNum);
 #endif
 	USB_IsInitialized = true;
+
 }
 
 void USB_Disable(void)

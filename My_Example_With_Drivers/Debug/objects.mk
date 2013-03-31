@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -laes_lib -lnxpUSBlib -lLib_AOA -lFreeRTOS_Library -lCMSISv2p00_LPC17xx
+LIBS := -laes_lib -lLib_AOA -lnxpUSBlib -lFreeRTOS_Library -lCMSISv2p00_LPC17xx
 

@@ -58,7 +58,7 @@ int usb_host_main( void *pvParameters )
 	//SystemInit();                               /* initialize clocks */
  
 
-    UART_Init_usb(115200);         /* Initialize the serial port to view the log messages                       */
+    //UART_Init_usb(115200);     moved to board settings    /* Initialize the serial port to view the log messages                       */
 #ifdef FATFS_FLAG
     uint8_t read_buffer[80];
     uint32_t bytes_read ;
