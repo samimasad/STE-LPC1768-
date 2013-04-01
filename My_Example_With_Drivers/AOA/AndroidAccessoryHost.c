@@ -122,6 +122,9 @@ static void sendCommand(uint8_t corenum, uint8_t cmd, uint8_t* data,
 static void processCommand(uint8_t corenum, uint8_t cmd, uint8_t hi, uint8_t lo) {
 	uint8_t on = 0;
 	uint8_t off = 0;
+	sprintf((char*) sbuf, "processCommand %d\r\n", cmd);
+	console_uart_sendString(sbuf);
+
 	switch (cmd) {
 	case CMD_READTEMP:
 
@@ -198,7 +201,44 @@ void AndroidHost_Task(void) {
 }
 
 void Monitor_Task(void) {
-	//vTaskDelay(5);
+
+	int8_t data[2];
+	static int8_t counter1 = 0 ;
+	static int8_t counter2 = 100 ;
+	if (!connected || attachedCoreNum == -1) {
+			return;
+		}
+	if (doDisconnect) {
+		doDisconnect = 0;
+		sendCommand(attachedCoreNum, CMD_DISCONNECT, 0, 0);
+		connected = 0;
+		return;
+	}
+
+	if(counter1 > 100 )
+	{
+		counter1 = 0;
+		counter2 = 99 ;
+
+
+	}
+	data[0] = counter1;
+	data[1] = counter2;
+	sendCommand(attachedCoreNum, CMD_SENDTEMP, data, 2);
+	vTaskDelay(200);
+	data[0] = counter2;
+	data[1] = counter1;
+	sendCommand(attachedCoreNum, CMD_SENDLIGHT, data, 2);
+	vTaskDelay(200);
+	data[0] = counter1/2;
+	data[1] = counter2/2;
+	sendCommand(attachedCoreNum, CMD_SENDHUM, data, 2);
+	vTaskDelay(200);
+	counter1++;
+	counter2++;
+	console_uart_sendString("sending Data\r\n");
+
+
 #if 0
 	uint8_t data[2];
 	uint8_t btn = 0;
@@ -268,6 +308,7 @@ void EVENT_USB_Host_DeviceAttached(const uint8_t corenum) {
  */
 void EVENT_USB_Host_DeviceUnattached(const uint8_t corenum) {
 //	console_sendString((uint8_t*)"\r\nDevice Unattached.\r\n");
+	//doDisconnect = 1 ;
 	sprintf((char*) sbuf, "\r\nDevice Unattached %d\r\n", corenum);
 	console_uart_sendString(sbuf);
 
