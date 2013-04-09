@@ -78,6 +78,7 @@ extern void usb_host_main( void *pvParameters );
 extern void ftp_main( void *pvParameters );
 extern void vZigbeeTask( void *pvParameters ) ;
 extern void vAOATask(void *pvParameters);
+extern void  vSensorTask(void *pvParameters);
 /* Enable the software interrupt and set its priority. */
 static void prvSetupSoftwareInterrupt();
 
@@ -136,7 +137,8 @@ int main( void )
 
 	//xTaskCreate( usb_host_main, ( signed char * ) "USB_Device", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY+3, NULL );
 	//xTaskCreate( vZigbeeTask, ( signed char * ) "Zigbee", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
-	xTaskCreate( vAOATask, ( signed char * ) "AOA_Device", mainBASIC_WEB_STACK_SIZE*4, ( void * ) NULL, mainUIP_TASK_PRIORITY/*configMAX_PRIORITIES-1*/, NULL );
+	//xTaskCreate( vAOATask, ( signed char * ) "AOA_Device", mainBASIC_WEB_STACK_SIZE*4, ( void * ) NULL, mainUIP_TASK_PRIORITY/*configMAX_PRIORITIES-1*/, NULL );
+	xTaskCreate( vSensorTask, ( signed char * ) "SensorTask", mainBASIC_WEB_STACK_SIZE*2, ( void * ) NULL, mainUIP_TASK_PRIORITY/*configMAX_PRIORITIES-1*/, NULL );
 	console_uart_sendString("Starting the Scheduler\n\r");
 	vTaskStartScheduler();
 
