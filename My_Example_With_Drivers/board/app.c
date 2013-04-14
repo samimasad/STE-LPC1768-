@@ -144,7 +144,7 @@ void vSensorTask1( void *pvParameters ){
   int AlsSensor;
 
   // Activate Sensor
-  sensor_active();
+ // sensor_active();
   
   while(1){
 	  // Power TEMP and start conversion: takes 100 ms
@@ -229,7 +229,7 @@ void vSensorTask1( void *pvParameters ){
 	  vTaskDelay(10);
   }
   // Switch off Sensor
-  sensor_inactive();
+  //sensor_inactive();
 }
 
 // --------------------------------------------------------------------------
@@ -242,7 +242,7 @@ void auto_temp( void ) {
   int raw_temp_data;
   
   // Activate Sensor
-  sensor_active();
+  //sensor_active();
   
   // Power TEMP and start conversion
   sensor_sensorpower( SENSOR_TEMP, 1 );
@@ -264,7 +264,7 @@ void auto_temp( void ) {
   }
   
   // Switch off Sensor
-  sensor_inactive();
+ // sensor_inactive();
 }
 
 // --------------------------------------------------------------------------
@@ -279,7 +279,7 @@ void auto_als( int AlsSensor ) {
   if ( mode != MODE_SEN200 ) {
     
     // Activate Sensor
-    sensor_active();
+   // sensor_active();
     
     // Power ALS
     sensor_sensorpower( SENSOR_ALS, 1 );
@@ -309,7 +309,7 @@ void auto_als( int AlsSensor ) {
     }
     
     // Switch off Sensor
-    sensor_inactive();
+    //sensor_inactive();
   } else {
       sendAls( AlsSensor, 0 );
   }
@@ -327,9 +327,9 @@ void auto_rh( int RhSensor ) {
   int raw_rh_data;
   
 
-  sensor_init();
+  //sensor_init();
   // Activate Sensor
-  sensor_active();
+  //sensor_active();
 
   // Power TEMP and start conversion
   sensor_sensorpower( SENSOR_TEMP, 1 );
@@ -376,7 +376,7 @@ void auto_rh( int RhSensor ) {
   sensor_sensorpower( SENSOR_RH, 0 );
   
   // Switch off Sensor
-  sensor_inactive();
+  //sensor_inactive();
 }
 
 // ============================================================================
@@ -387,7 +387,7 @@ void nvm_dump( void ) {
   uint16_t nvm; 
   int i;
   // Activate Sensor
-  sensor_active();
+  //sensor_active();
 
   // Internal bank
   if ( sensor_testmodeunlocked() ) {
@@ -423,7 +423,7 @@ void nvm_dump( void ) {
   }
   
   // Switch off Sensor
-  sensor_inactive();
+  //sensor_inactive();
 }
 
 void nvm_read_reg( int i ) {
@@ -432,7 +432,7 @@ void nvm_read_reg( int i ) {
   int len = ( mode == MODE_MIST1431 ) ? 56 : 80;
 
   // Activate Sensor
-  sensor_active();
+  //sensor_active();
   
   if ( i < 16 ) {
     // Internal bank
@@ -449,19 +449,19 @@ void nvm_read_reg( int i ) {
   console_uart_sendString(buf);
   
   // Switch off Sensor
-  sensor_inactive();
+ // sensor_inactive();
 }
 
 void nvm_write_reg( int i, int val ) {
   // Activate Sensor
-  sensor_active();
+  //sensor_active();
 
   int len = ( mode == MODE_MIST1431 ) ? 56 : 80;
   if ( i >= 0x40 && i < ( 0x40 + len ) )
     sensor_writenvm( i, val );
   
   // Switch off Sensor
-  sensor_inactive();
+  //sensor_inactive();
 }
 
 // ============================================================================
@@ -473,7 +473,7 @@ void sen_prog( void ) {
   if ( mode != MODE_MIST1431 ) {
   
     // Activate Sensor
-    sensor_active();
+    //sensor_active();
     
     // Temp
     sensor_writenvm( 0x40, 0x000F );
@@ -505,7 +505,7 @@ void sen_prog( void ) {
     }
     
     // Switch off Sensor
-    sensor_inactive();
+    //sensor_inactive();
   }
   
   nvm_dump();
@@ -516,7 +516,7 @@ int default_sensor( int type, int sensor ) {
   int defsensor = sensor;
   
   // Activate Sensor
-  sensor_active();
+  //sensor_active();
   
   if ( mode != MODE_MIST1431 ) {
   
@@ -536,7 +536,7 @@ int default_sensor( int type, int sensor ) {
       //modem_debug( buf );
       console_uart_sendString(buf);
     }
-    
+#if 0
     // Read calib parameters in case of rh (needed for conversion)
     if ( type == TYPE_HUMIDITY ) {
       sensor_rh_readcalib( sensor );
@@ -546,10 +546,11 @@ int default_sensor( int type, int sensor ) {
     if ( type == TYPE_ALS ) {
       sensor_als_readcalib( sensor );       // All cases
     }
+#endif
   }
   
   // Switch off Sensor
-  sensor_inactive();
+  //sensor_inactive();
 
   return( response );
 }
@@ -582,21 +583,116 @@ void default_als( int sensor ) {
 
 //void auto_sen( void ) {
 void vSensorTask( void *pvParameters ){
-	 int i;
-	 console_uart_sendString("\r\nsensor_init");
+	  uint32_t i;
+	  uint32_t j;
+	  int  raw_temp_data ;
+	  int  raw_humi_data ;
+	  int  raw_lux_data ;
+	 uint8_t BuffIn[2];
+	 uint8_t BuffOut[2];
+	 int Read16 ;
+	 int cmd,n,m ;
+	 int negative;
+	 float temp;
+	  float humi;
+
+	    float lux;
+	 console_uart_sendString("\r\nsensor_init\r\n");
 	 sensor_init();
-	 console_uart_sendString("\r\nsensor_active");
-	 sensor_active();
+	 //console_uart_sendString("\r\nsensor_active");
+	 //sensor_active();
+#if 1
 while(1){
-  default_temp();
+
+	 // send read T command
+	  BuffOut[0] = 0x20;
+	  BuffOut[1] = 0x10;
+	  //temp =( (((int)BuffIn[0])<<8) + (int)BuffIn[1])>>6 ;
+	  cmd = (BuffOut[0] << 8) + BuffOut[1] ;
+	  sensor_sendcommand(cmd,&Read16);
+
+
+	// Convert
+	  raw_temp_data = Read16;
+	  negative = (raw_temp_data & 0x8000 );
+	  raw_temp_data &= 0x7FFF;
+	  temp = (float) raw_temp_data / 0x40;
+	  if ( negative ) temp = -temp;
+	  temp -= 273;
+
+      sprintf( buf, "\r\nTemp = %f ", temp );
+      //modem_debug( buf );
+      console_uart_sendString(buf);
+
+
+	  vTaskDelay(1);
+
+
+	// read humidity
+	  BuffOut[0] = 0x20;
+	  BuffOut[1] = 0x20;
+	  cmd = (BuffOut[0] << 8) + BuffOut[1] ;
+	  sensor_sendcommand(cmd,&Read16);
+
+
+	// Convert
+	  raw_humi_data = Read16;
+
+
+	  humi = (float) raw_humi_data / 512;
+      sprintf( buf, "\r\nhumidity = %f ", humi );
+      //modem_debug( buf );
+      console_uart_sendString(buf);
+	  vTaskDelay(1);
+
+
+	  // read lux
+	    BuffOut[0] = 0x20;
+	    BuffOut[1] = 0x30;
+		  cmd = (BuffOut[0] << 8) + BuffOut[1] ;
+		  sensor_sendcommand(cmd,&Read16);
+	    //temp =( (((int)BuffIn[0])<<8) + (int)BuffIn[1])>>6 ;
+	    raw_lux_data = Read16;
+
+
+	    // read n param
+	    BuffOut[0] = 0x15;
+	    BuffOut[1] = 0x69;
+		  cmd = (BuffOut[0] << 8) + BuffOut[1] ;
+		  sensor_sendcommand(cmd,&Read16);
+	    n = Read16;
+
+	    // read m param
+	    BuffOut[0] = 0x15;
+		BuffOut[1] = 0x6A;
+		  cmd = (BuffOut[0] << 8) + BuffOut[1] ;
+		  sensor_sendcommand(cmd,&Read16);
+		  m = Read16;
+
+		//convert
+
+	     lux  = ( ((float)raw_lux_data * 11997 / (float)m)  - (float)5.9 * n) / 3.4;
+
+	      sprintf( buf, "\r\nlux = %f ", lux );
+	      //modem_debug( buf );
+	      console_uart_sendString(buf);
+
+	     vTaskDelay(1);
+
+
+
+}
+#endif
+/*  default_temp();
   for (i=0; i<4; i++ ) {
     default_rh( i );
   }
   for (i=0; i<12; i++ ) {
     default_als( i );
   }
+*/
 }
-}
+
 #if 0
 // --------------------------------------------------------------------------
 // IR LED control

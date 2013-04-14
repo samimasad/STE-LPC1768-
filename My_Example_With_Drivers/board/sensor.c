@@ -20,7 +20,7 @@
 int mode           = MODE_SEN300;
 int ldo_ovr        = 0;
 int factory_status = 0;
-
+SSP_DATA_SETUP_Type xferConfig;
 static char buf[40];
 
 // External function prototypes
@@ -48,6 +48,39 @@ static void sensor_spichipselect( int select ) {
   } else {
     gpio_set( SENSORSSEL_PORTPIN );
   }
+#else
+	//GPIO_SetDir(0, 1L<<GPIO_CS , 1);
+  static int first = 1;
+  	  if ( first ) {
+  	    first = 0;
+  	    //gpio_alloc( SENSORRESET_PORTPIN, PCB_MODE_PULLUP, GPIO_OUTPUT );
+
+  		//set the enable pin to output but put it to high initially
+
+  	  GPIO_SetDir(0, 1L<<GPIO_CS , 1);
+
+
+  	  }
+	if(select)
+	{
+		//get enable signal to low
+
+		GPIO_ClearValue(0 , 1L<<GPIO_CS);
+
+
+
+
+
+	}
+	else
+	{
+		//get it to high
+		GPIO_SetValue(0 , 1L<<GPIO_CS);
+		//GPIO_ClearValue(0 , 1L<<GPIO_RESET);
+
+
+
+	}
 #endif
 }
 
@@ -59,9 +92,13 @@ void sensor_spiconfigure( void ) {
   if ( !done ) {
 	  SSP_CFG_Type config ;
 	  SSP_ConfigStructInit(&config);
-	  config.CPOL = 1 ;
-	  config.CPHA = 1 ;
+	  //config.CPOL = 1 ;
+	  //config.CPHA = 1 ;
+	  config.CPOL = 0 ;
+	  config.CPHA = 0 ;
 	  config.ClockRate = 1000000 ;
+	  config.Databit =  SSP_DATABIT_16 ;
+	  //config.Databit =  SSP_DATABIT_8;
 	  SSP_Init(PLATFORM_SPIBUS,&config);
 	  SSP_Cmd(PLATFORM_SPIBUS, ENABLE);
 
@@ -71,7 +108,8 @@ void sensor_spiconfigure( void ) {
     //gpio_alloc( SENSORSSEL_PORTPIN, PCB_MODE_PULLUP, GPIO_OUTPUT );
     done = 1;
   }
-  sensor_spichipselect( 0 );
+  //sensor_spichipselect( 0 );
+  //sensor_spichipselect( 1 );
 }
 
 /**
@@ -81,12 +119,32 @@ static void sensor_spisend16(int val) {
 	//uint8_t buf[2];
 	//buf[0] = (val >> 8) & 0xFF;
 	//buf[1] = val & 0xFF;
-	uint16_t data ;
+	uint16_t data,dummy ;
 	data = (uint16_t) val ;
-
+#if 1
 	taskENTER_CRITICAL();
+	sprintf( buf, "\r\nsensor_spisend16 Status = %x with data %x and data>>8 %x", PLATFORM_SPIBUS->SR,data,data>>8 );
+	    //modem_debug( buf );
+	//console_uart_sendString(buf);
+	while(SSP_GetStatus(PLATFORM_SPIBUS,SSP_STAT_TXFIFO_NOTFULL) == RESET);
 	SSP_SendData(PLATFORM_SPIBUS,data);
+	while(SSP_GetStatus(PLATFORM_SPIBUS,SSP_STAT_RXFIFO_NOTEMPTY) == RESET);
+		dummy = SSP_ReceiveData(PLATFORM_SPIBUS);
+	while(SSP_GetStatus(PLATFORM_SPIBUS,SSP_STAT_TXFIFO_NOTFULL) == RESET);
+	SSP_SendData(PLATFORM_SPIBUS,data>>8);
+
+	/* Whenever a byte is written, MISO FIFO counter increments, Clear FIFO
+		  on MISO. Otherwise, when SSP0Receive() is called, previous data byte
+		  is left in the FIFO. */
+	while(SSP_GetStatus(PLATFORM_SPIBUS,SSP_STAT_RXFIFO_NOTEMPTY) == RESET);
+	dummy = SSP_ReceiveData(PLATFORM_SPIBUS);
 	taskEXIT_CRITICAL();
+#else
+	xferConfig.tx_data = &data ;
+	xferConfig.rx_data = &dummy;
+	xferConfig.length = 1; //one word
+	SSP_ReadWrite(PLATFORM_SPIBUS, &xferConfig, SSP_TRANSFER_POLLING);
+#endif
 /*
  ssp_Lock(PLATFORM_SPIBUS);
  ssp_Send(PLATFORM_SPIBUS, buf, 2);
@@ -106,15 +164,31 @@ static int sensor_spireceive16( void ) {
   ssp_Receive(PLATFORM_SPIBUS, buf, 2, 0);
   ssp_Unlock(PLATFORM_SPIBUS);
   */
-	uint16_t data ;
+	uint16_t data,dummy ;
+#if 1
 	taskENTER_CRITICAL();
+	sprintf( buf, "\r\nsensor_spireceive16 Status = %x ", PLATFORM_SPIBUS->SR );
+	    //modem_debug( buf );
+	//console_uart_sendString(buf);
+
+	PLATFORM_SPIBUS->DR = 0xFF;
+	while(SSP_GetStatus(PLATFORM_SPIBUS,SSP_STAT_RXFIFO_NOTEMPTY) == RESET);
 	data = SSP_ReceiveData(PLATFORM_SPIBUS);
+    sprintf( buf, "\r\nSSP_ReceiveData = %x ", data );
+    //modem_debug( buf );
+    //console_uart_sendString(buf);
 	taskEXIT_CRITICAL();
 	/*
   unsigned int ret = 0;
   ret |= ( buf[0] << 8 );
   ret |= buf[1];
   */
+#else
+	xferConfig.tx_data = &dummy ;
+	xferConfig.rx_data = &data;
+	xferConfig.length = 1; //one word
+	SSP_ReadWrite(PLATFORM_SPIBUS, &xferConfig, SSP_TRANSFER_POLLING);
+#endif
   return( (int)data );
 }
 
@@ -125,18 +199,24 @@ static int sensor_spireceive16( void ) {
 #define CLK_STATE_NONE    0
 #define CLK_STATE_TIMER   1
 #define CLK_STATE_ZERO    2
-#ifdef STEFAN_BOARD
-#define GPIO_RESET		0
-#define GPIO_INT		1
-#else
-#define GPIO_RESET		17
-#define GPIO_INT		18
-#endif
+
 /**
 * Controls the clock to the sensor (1 MHz to MIST1431, LOW to SenX00)
 */
 static void sensor_sensorclk( int enable ) {
 
+	//GPIO_SetDir(0, 1L<<GPIO_RESET , 1);
+	static int first = 1;
+	  if ( first ) {
+	    first = 0;
+	    //gpio_alloc( SENSORRESET_PORTPIN, PCB_MODE_PULLUP, GPIO_OUTPUT );
+
+		//set the enable pin to output but put it to high initially
+
+	    GPIO_SetDir(0, 1L<<GPIO_RESET , 1);
+
+
+	  }
 	if(enable)
 	{
 		//get enable signal to low
@@ -152,6 +232,7 @@ static void sensor_sensorclk( int enable ) {
 	{
 		//get it to high
 		GPIO_SetValue(0 , 1L<<GPIO_RESET);
+		//GPIO_ClearValue(0 , 1L<<GPIO_RESET);
 
 
 
@@ -229,11 +310,13 @@ static int sensor_interrupt() {
 
   }
   //return( gpio_getval( SENSORINT_PORTPIN ) );
-  sprintf( buf, "\r\nSensor sensor_interrupt results %x", GPIO_ReadValue(0) );
-  sprintf( buf, "\r\nSensor sensor_interrupt masked results %x", GPIO_ReadValue(0)&  1L<<GPIO_INT );
-   //modem_debug( buf );
-   console_uart_sendString(buf);
-
+  if((GPIO_ReadValue(0) &  1L<<GPIO_INT))
+  {
+	  //sprintf( buf, "\r\nSensor sensor_interrupt results %x", GPIO_ReadValue(0) );
+	  sprintf( buf, "\r\nSensor sensor_interrupt masked results %x", GPIO_ReadValue(0)&  1L<<GPIO_INT );
+	  //modem_debug( buf );
+	  //console_uart_sendString(buf);
+  }
   return(GPIO_ReadValue(0) &  1L<<GPIO_INT );
 
 }
@@ -250,6 +333,12 @@ static int sensor_waitforinterrupt( void ) {
   int timeout = 50;
   //while ( !sensor_interrupt() && ( --timeout >= 0 ) ) rtk_tsk_sleep(10);    // 1);
   while ( !sensor_interrupt() && ( --timeout >= 0 ) ) vTaskDelay(10);    // 1);
+  if(timeout <= 0){
+	  sprintf( buf, "\r\nsensor_waitforinterrupt timeout %d", timeout );
+	  //modem_debug( buf );
+	  console_uart_sendString(buf);
+  }
+
   return( timeout >= 0 );
 }
 
@@ -261,6 +350,11 @@ static int sensor_waitforreadytoreceive( void ) {
   int timeout = 50;
   //while ( sensor_interrupt() && ( --timeout >= 0 ) ) rtk_tsk_sleep(10);    // 1);
   while ( sensor_interrupt() && ( --timeout >= 0 ) ) vTaskDelay(10);    // 1);
+  if(timeout <= 0){
+	  sprintf( buf, "\r\nsensor_waitforreadytoreceive timeout %d", timeout );
+	  //modem_debug( buf );
+	  console_uart_sendString(buf);
+  }
   return( timeout >= 0 );
 }
 
@@ -282,7 +376,6 @@ void sensor_hardreset( int on ) {
     // When reset is gone, clock starts automatically on SENx00, but must be 
     // done manually for MIST1431
     sensor_sensorclk( 1 );
-    vTaskDelay(2);
     // Give clock some time
     //rtk_tsk_sleep( 2 );
     vTaskDelay(2);
@@ -312,6 +405,7 @@ static int sensor_response( int numcmd, int * command, int * response ) {
   int ok = 0;
   int i;
 
+
 //dio_printf( DIO_VUART0, "111\n");
   
   // Select the Sensor SPI device
@@ -319,7 +413,7 @@ static int sensor_response( int numcmd, int * command, int * response ) {
 
 //dio_printf( DIO_VUART0, "222\n");
   
-  if ( sensor_waitforreadytoreceive() ) {
+  //if ( sensor_waitforreadytoreceive() ) {
     
 //dio_printf( DIO_VUART0, "333\n");
 
@@ -331,12 +425,14 @@ static int sensor_response( int numcmd, int * command, int * response ) {
 //dio_printf( DIO_VUART0, "444\n");
 
     // After sending the command, de-select the Sensor SPI device ...
+    //vTaskDelay(10);
     sensor_spichipselect( 0 );
-    
+    //vTaskDelay(10);
 //dio_printf( DIO_VUART0, "555\n");
 
     // ... and wait for the sensor to respond ...
     if ( sensor_waitforinterrupt() ) {
+//    if ( 1 ) { vTaskDelay(1000);
 //      dio_printf( DIO_VUART0, "666\n");
 
       // Select the Sensor SPI device to read the response
@@ -346,23 +442,24 @@ static int sensor_response( int numcmd, int * command, int * response ) {
 
       // Read response over SSP
       *response = sensor_spireceive16();
+
       ok = 1;
       
 //dio_printf( DIO_VUART0, "888\n");
 
       // Wait for the command to completely finish
-      if ( sensor_waitforreadytoreceive() ) {
+    //  if ( sensor_waitforreadytoreceive() ) {
         // Cycle finished
 //dio_printf( DIO_VUART0, "999\n");
 
-      }
+     // }
       //else modem_debug( "error" );  // Missing SINT low at cycle-end
-      else console_uart_sendString(  "\r\nerror" );
+   //   else console_uart_sendString(  "\r\nerror" );
       
     }
 //dio_printf( DIO_VUART0, "000\n");
 
-  }
+  //}
   
   // After reading the data, de-select the Sensor SPI device
   sensor_spichipselect( 0 );
@@ -390,7 +487,7 @@ static int sensor_response( int numcmd, int * command, int * response ) {
 * Print Command error.
 */
 static void sensor_printcommanderror( int command ) {
-  sprintf( buf, "\r\nSensor error on command %d", command );
+  sprintf( buf, "\r\nSensor error on command %x", command );
   //modem_debug( buf );
   console_uart_sendString(buf);
 }
@@ -444,7 +541,7 @@ void sensor_command_reset( void ) {
   int cmd = ( CMD_RESET << 8 );
   int response;
   if ( sensor_sendcommand( cmd, &response ) ) {
-    sprintf( buf, "Sensor Reset: status = 0x%x", response );
+    sprintf( buf, "\r\nSensor Reset: status = 0x%x", response );
     //modem_debug( buf );
     console_uart_sendString(buf);
   }
@@ -459,7 +556,7 @@ int sensor_command_status( int * pstatus ) {
   int cmd = ( CMD_STATUS << 8 );
   int response;
   if ( sensor_sendcommand( cmd, &response ) ) {
-    sprintf( buf, "Sensor Status : status = 0x%x", response );
+    sprintf( buf, "\r\nSensor Status : status = 0x%x", response );
     //modem_debug( buf );
     console_uart_sendString(buf);
     if ( pstatus ) *pstatus = response;
@@ -479,7 +576,7 @@ char * response2text( int response )
 {
   static char smallbuf[8];
   if ( response == 0xac00 ) return( "OK" );
-  sprintf( smallbuf, "0x%04x", response );
+  sprintf( smallbuf, "\r\n0x%04x", response );
   return( smallbuf );
 }
 
@@ -500,7 +597,7 @@ int sensor_analogpower( int on ) {
     }
     int response = 0;
     if ( sensor_sendcommand( cmd, &response ) ) {
-      sprintf( buf, "Analog power %s: %s", ((on)?"ON":"OFF"),
+      sprintf( buf, "\r\nAnalog power %s: %s", ((on)?"ON":"OFF"),
               response2text(response) );
       //modem_debug( buf );
       console_uart_sendString(buf);
@@ -519,7 +616,7 @@ int sensor_sensorpower( int sensor, int on ) {
   cmd = ( cmd << 8 ) | sensor;
   int response = 0;
   if ( sensor_sendcommand( cmd, &response ) ) {
-    sprintf( buf, "Powering S%d %s (0x%x): %s", sensor, ((on)?"ON":"OFF"), 
+    sprintf( buf, "\r\nPowering S%d %s (0x%x): %s", sensor, ((on)?"ON":"OFF"),
             cmd, response2text(response) );
     //modem_debug( buf );
     console_uart_sendString(buf);
@@ -535,7 +632,7 @@ int sensor_sensorsetup( int sensor, int reg, int data ) {
   int cmd = ( CMD_SENSOR_SETUP << 8 ) | sensor;
   int response = 0;
   if ( sensor_sendcommand2( cmd, reg, data, &response ) ) {
-    sprintf( buf, "Setting-up S%d (0x%x,0x%x): %s", 
+    sprintf( buf, "\r\nSetting-up S%d (0x%x,0x%x): %s",
             sensor, reg, data, response2text(response) );
     //modem_debug( buf );
     console_uart_sendString(buf);
@@ -551,7 +648,7 @@ int sensor_sensorstart( int sensor ) {
   int cmd = ( CMD_SENSOR_START << 8 ) | sensor;
   int response = 0;
   if ( sensor_sendcommand( cmd, &response ) ) {
-    sprintf( buf, "Starting S%d: %s", sensor, response2text(response) );
+    sprintf( buf, "\r\nStarting S%d: %s", sensor, response2text(response) );
     //modem_debug( buf );
     console_uart_sendString(buf);
   }
@@ -601,7 +698,7 @@ int sensor_readstatus( int sensor, int * pstatus ) {
   int cmd = ( CMD_SENSOR_STATUS << 8 ) | sensor;
   int response = 0;
   if ( sensor_sendcommand( cmd, &response ) ) {
-    sprintf( buf, "Reading S%d: status = 0x%x", sensor, response );
+    sprintf( buf, "\r\nReading S%d: status = 0x%x", sensor, response );
     //modem_debug( buf );
     console_uart_sendString(buf);
     if ( pstatus ) *pstatus = response;
@@ -619,7 +716,7 @@ int sensor_readdata( int sensor, int * data ) {
   int cmd = ( CMD_SENSOR_READ_OP << 8 ) | sensor;
   int response = 0;
   if ( sensor_sendcommand( cmd, &response ) ) {
-    sprintf( buf, "Reading S%d: data = 0x%x", sensor, response );
+    sprintf( buf, "\r\nReading S%d: data = 0x%x", sensor, response );
     //modem_debug( buf );
     console_uart_sendString(buf);
     *data = response;
@@ -638,7 +735,7 @@ int sensor_readnvm( int addr, uint16_t * data ) {
   int response = 0;
   if ( sensor_sendcommand( cmd, &response ) ) {
     *data = response;
-    sprintf( buf, "NVM[%02x] = 0x%x (r)", addr, (volatile uint16_t *)*data );
+    sprintf( buf, "\r\nNVM[%02x] = 0x%x (r)", addr, (volatile uint16_t *)*data );
     //modem_debug( buf );
     console_uart_sendString(buf);
     return( 1 );
@@ -653,7 +750,7 @@ int sensor_writenvm( int addr, uint16_t data ) {
   int cmd = ( CMD_NVMEM_WRITE << 8 ) | addr;
   int response = 0;
   if ( sensor_sendcommand1( cmd, data, &response ) ) {
-    sprintf( buf, "NVM[%02x] = 0x%x (w) : %s", 
+    sprintf( buf, "\r\nNVM[%02x] = 0x%x (w) : %s",
             addr, data, response2text(response) );
     //modem_debug( buf );
     console_uart_sendString(buf);
@@ -682,7 +779,7 @@ int sensor_readapb( int addr, uint16_t * data ) {
   int response = 0;
   if ( sensor_sendcommand1( cmd, addr, &response ) ) {
     *data = response;
-    sprintf( buf, "NVM[%02x] = 0x%x (r)", addr, (volatile uint16_t *)*data );
+    sprintf( buf, "\r\nNVM[%02x] = 0x%x (r)", addr, (volatile uint16_t *)*data );
     //modem_debug( buf );
     console_uart_sendString(buf);
     return( 1 );
@@ -697,7 +794,7 @@ int sensor_writeapb( int addr, uint16_t data ) {
   int cmd = ( CMD_APB_WRITE << 8 );
   int response = 0;
   if ( sensor_sendcommand2( cmd, addr, data, &response ) ) {
-    sprintf( buf, "NVM[%02x] = 0x%x (w) : %s", 
+    sprintf( buf, "\r\nNVM[%02x] = 0x%x (w) : %s",
             addr, data, response2text(response) );
     //modem_debug( buf );
     console_uart_sendString(buf);
@@ -728,7 +825,7 @@ int MistNvmReadCalib( void ) {
   }
   if ( addr < 0x78 ){
     //modem_debug( "Error reading calibration values from NVM" );
-	  console_uart_sendString("Error reading calibration values from NVM" );
+	  console_uart_sendString("\r\nError reading calibration values from NVM" );
     return( 0 );
   }
   
@@ -922,7 +1019,7 @@ float sensor_rh_convertdatatohumidity( int RhSensor, int data ) {
     }
   }
   
-  sprintf( buf, "Rh-raw (%d) 0x%x", RhSensor, data );
+  sprintf( buf, "\r\nRh-raw (%d) 0x%x", RhSensor, data );
   //modem_debug( buf );
   console_uart_sendString( buf );
   
@@ -960,7 +1057,7 @@ void sensor_als_readcalib( int AlsSensor ) {
     sensor_readnvm( addr + 0, &opmode[AlsSensor] );
     if (!opmode[AlsSensor]) {
       opmode[AlsSensor]=0xe1;
-      sprintf( buf, "Opmode not found, use default %x", opmode[AlsSensor] );
+      sprintf( buf, "\r\nOpmode not found, use default %x", opmode[AlsSensor] );
       //modem_debug( buf );
       console_uart_sendString( buf );
     }
@@ -968,7 +1065,7 @@ void sensor_als_readcalib( int AlsSensor ) {
     sensor_readnvm( addr + 2, &int_cal[AlsSensor] );
     if (!int_cal[AlsSensor]) {
       int_cal[AlsSensor]=0x09;
-      sprintf( buf, "Cal not found, use default %x", int_cal[AlsSensor] );
+      sprintf( buf, "\r\nCal not found, use default %x", int_cal[AlsSensor] );
       //modem_debug( buf );
       console_uart_sendString( buf );
     }
@@ -983,14 +1080,14 @@ void sensor_als_readcalib( int AlsSensor ) {
   sensor_readnvm( addr + 1, &m[AlsSensor] );
   if (!m[AlsSensor]) {
     m[AlsSensor]=defaultm[AlsSensor];
-    sprintf( buf, "M not found, use default %d", m[AlsSensor] );
+    sprintf( buf, "\r\nM not found, use default %d", m[AlsSensor] );
     //modem_debug( buf );
     console_uart_sendString( buf );
   }
   sensor_readnvm( addr + 0, &n[AlsSensor] );
   if (!n[AlsSensor]) {
     n[AlsSensor]=1;
-    sprintf( buf, "N not found, use default %d", n[AlsSensor] );
+    sprintf( buf, "\r\nN not found, use default %d", n[AlsSensor] );
     //modem_debug( buf );
     console_uart_sendString( buf );
   }
@@ -1068,12 +1165,12 @@ float sensor_als_convertdatatolux( int AlsSensor, int data ) {
   if ( AlsSensor >= 6 ) { rb = 0; AlsSensor -= 6; }
   
   //if ( m[AlsSensor] == 0 || n[AlsSensor] == 0 ) modem_error( "no als m+n" );
-  if ( m[AlsSensor] == 0 || n[AlsSensor] == 0 ) console_uart_sendString(  "no als m+n" );
+  if ( m[AlsSensor] == 0 || n[AlsSensor] == 0 ) console_uart_sendString(  "\r\nno als m+n" );
   
   int ls_gain = ( opmode[AlsSensor] & ( 1 << 6 ) ) != 0;
   int ls_time = opmode[AlsSensor] & 0x07;
   
-  sprintf( buf, "M=%d, N=%d, G=%d, T=%d", m[AlsSensor], n[AlsSensor], ls_gain, ls_time );
+  sprintf( buf, "\r\nM=%d, N=%d, G=%d, T=%d", m[AlsSensor], n[AlsSensor], ls_gain, ls_time );
   //modem_debug( buf );
   console_uart_sendString( buf );
 
@@ -1107,8 +1204,10 @@ float sensor_als_convertdatatolux( int AlsSensor, int data ) {
 * Performs standard startup sequence
 */
 void sensor_active( void ) {
+#if 0
   // Reset MIST
   sensor_hardreset( 1 );
+  vTaskDelay(2);
   sensor_hardreset( 0 );
   
   // Reset MIST (again) in SW
@@ -1116,6 +1215,38 @@ void sensor_active( void ) {
   
   // Enable analog power to sensors
   sensor_analogpower( 1 );
+#else
+  sensor_sensorreset( 1 );
+  sensor_spichipselect(0);
+  vTaskDelay(10);
+  sensor_sensorreset( 0 );
+  sensor_spichipselect(1);
+  vTaskDelay(10);
+
+  sensor_waitforinterrupt();
+  //sensor_spichipselect(1);
+  //sensor_spichipselect( 0 );
+  //vTaskDelay(1);
+  //sensor_spichipselect(1);
+  sensor_spireceive16();
+  //sensor_spichipselect( 0 );
+  vTaskDelay(10);
+
+  sensor_sensorreset( 1 );
+  vTaskDelay(10);
+  sensor_sensorreset( 0 );
+  vTaskDelay(2);
+  sensor_waitforinterrupt();
+  sensor_spireceive16();
+
+  //sensor_spichipselect(0);
+
+  //sensor_spichipselect(1);
+  //sensor_command_reset();
+  //sensor_spichipselect(0);
+ // sensor_spichipselect( 0 );
+
+#endif
 }
 
 /**
@@ -1124,7 +1255,7 @@ void sensor_active( void ) {
 void sensor_inactive( void ) {
   // Stop and put MIST in reset (to save power)
   sensor_analogpower( 0 );
-  sensor_hardreset( 1 );
+  //sensor_hardreset( 1 );
 }
 
 // ============================================================================
@@ -1174,16 +1305,16 @@ void sensor_init( void ) {
    * P0.6 SSEL1 -> P8
    * P0.18 INT -> P11 //my board
    * P0.17 ENA -> P12 //my board
-   * P0.0 INT -> P9 //Stefan board
-   * P0.1 ENA -> P10 //Stefan board
+   * P0.0 ENA -> P9 //Stefan board
+   * P0.1 INT -> P10 //Stefan board
    */
-  PinCfg.OpenDrain = 0;
+    PinCfg.OpenDrain = 0;
 	PinCfg.Pinmode = PINSEL_PINMODE_PULLUP;
 	PinCfg.Portnum = 0;
+	PinCfg.Funcnum = 2;
 
-	PinCfg.Funcnum = 3;
-	PinCfg.Pinnum = 6;
-	PINSEL_ConfigPin(&PinCfg);
+	//PinCfg.Pinnum = 6;
+	//PINSEL_ConfigPin(&PinCfg); //manually control CS
 	PinCfg.Pinnum = 7;
 	PINSEL_ConfigPin(&PinCfg);
 	PinCfg.Pinnum = 8;
@@ -1192,21 +1323,25 @@ void sensor_init( void ) {
 	PINSEL_ConfigPin(&PinCfg);
 #ifdef STEFAN_BOARD
 	PinCfg.Funcnum = 0;
+	PinCfg.Pinnum = 6; //manual CS
+	PINSEL_ConfigPin(&PinCfg);
 	PinCfg.Pinnum = 0;
 	PINSEL_ConfigPin(&PinCfg);
 	PinCfg.Pinnum = 1;
 	PINSEL_ConfigPin(&PinCfg);
 #else
 	PinCfg.Funcnum = 0;
+	PinCfg.Pinnum = 6; //manual CS
+	PINSEL_ConfigPin(&PinCfg);
 	PinCfg.Pinnum = 17;
 	PINSEL_ConfigPin(&PinCfg);
 	PinCfg.Pinnum = 18;
 	PINSEL_ConfigPin(&PinCfg);
 /*
 	//just check if we can play around with the LEDs
-	PinCfg.Pinnum = 15;
-	PINSEL_ConfigPin(&PinCfg);
 	PinCfg.Pinnum = 16;
+	PINSEL_ConfigPin(&PinCfg);
+	PinCfg.Pinnum = 17;
 	PINSEL_ConfigPin(&PinCfg);
 	GPIO_SetDir(0, 1L<<15 , 1);
 	GPIO_SetDir(0, 1L<<16 , 1);
@@ -1230,7 +1365,7 @@ void sensor_init( void ) {
   sensor_sendcommand( CMD_SENSOR_MEASURE_DEFAULT << 8 | 0x10, &response );
 
   // mode=(response!=0x5555) ? MODE_SEN300 : MODE_MIST1431; 
-
+#if 0
   if ( response == 0x5555 ) {
     mode = MODE_MIST1431;
   } else {
@@ -1238,8 +1373,8 @@ void sensor_init( void ) {
     if ( nvm_readtype() != 0x0200 ) mode = MODE_SEN300;
     else mode = MODE_SEN200;
   }
-  
-  sensor_inactive();
+#endif
+  //sensor_inactive();
   
   // TODO
   // - Also distinguish between SEN200 and SEN300 by calling ALS function ....

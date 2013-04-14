@@ -73,7 +73,9 @@ typedef unsigned short uint16_t;
 #define RET_VAL_SUCCESS_SEND_CMD   (1)
 
 // Platform definitions
-#define PLATFORM_SPIBUS            ((LPC_UART_TypeDef *)LPC_SSP1)		//from the schematics , this goes to PIN5,6,7
+//#define PLATFORM_SPIBUS            ((LPC_UART_TypeDef *)LPC_SSP1)		//from the schematics , this goes to PIN5,6,7
+#define PLATFORM_SPIBUS            LPC_SSP1		//from the schematics , this goes to PIN5,6,7
+#define STEFAN_BOARD				1
 /*pins to be used :
  * P0.9 MOSI1 -> P5
  * P0.8 MISO1 -> P6
@@ -81,9 +83,19 @@ typedef unsigned short uint16_t;
  * P0.6 SSEL1 -> P8
  * P0.18 INT -> P11
  * P0.17 ENA -> P12
- * P0.0 INT -> P9 //Stefan board
- * P0.1 ENA -> P10 //Stefan board
+ * P0.0 ENA -> P9 //Stefan board
+ * P0.1 INT -> P10 //Stefan board
+ *
  */
+#ifdef STEFAN_BOARD
+#define GPIO_RESET		0
+#define GPIO_INT		1
+#else
+#define GPIO_RESET		17
+#define GPIO_INT		18
+#endif
+#define GPIO_CS			6
+
 #define CLK_TIMER                  TIMER_MATCHPIN( TIMER_32BITS_0, 2 )   // PIO0_1
 #define CLK_TIMER_PORTPIN          PCB_PORTPIN(0,1)                      // idem
 
