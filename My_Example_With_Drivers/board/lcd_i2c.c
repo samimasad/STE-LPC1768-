@@ -28,8 +28,9 @@
 #include "lpc17xx_nvic.h"
 #include "lpc17xx_pinsel.h"
 #include "lcd_i2c.h"
-
-
+#include "FreeRTOS.h"
+#include "queue.h"
+#include "sensor.h"
 /************************** PRIVATE MACROS *************************/
 /** Used I2C device as slave definition */
 #define USEDI2CDEV_M		2
@@ -55,6 +56,8 @@
 uint8_t Master_Buf[BUFFER_SIZE];
 uint8_t master_test[2];
 I2C_M_SETUP_Type transferMCfg;
+
+
 
 /************************** PRIVATE FUNCTIONS *************************/
 
@@ -111,13 +114,15 @@ void Error_Loop_S(uint8_t ErrorCode)
  **********************************************************************/
 int lcd_entry(void)
 {
+
 	LCD_Init();
 
 	LCD_ClearScreen();
+	char buf[32];
 
-
-	LCD_PrintText("Testing");
-
+	//LCD_PrintText("Sen300");
+	extern xQueueHandle queuToLCD ;
+	sensor_readings sensor_data;
 
     //vTaskDelete(NULL);
     /* Loop forever */
@@ -125,8 +130,11 @@ int lcd_entry(void)
         	{
         	LCD_ClearScreen();
         	 //vTaskDelay(5);
-        	 LCD_PrintText("Testing");
-        	 vTaskDelay(10);
+        	 //LCD_PrintText("Testing");
+        	xQueueReceive(queuToLCD,&sensor_data,portMAX_DELAY);
+        	sprintf( buf, "Sen300 T:%f.3 H:%f.3 L:%f.3", sensor_data.temp,sensor_data.hum,sensor_data.lux );
+        	LCD_PrintText(buf);
+        	vTaskDelay(10);
         	}
     return 1;
 }

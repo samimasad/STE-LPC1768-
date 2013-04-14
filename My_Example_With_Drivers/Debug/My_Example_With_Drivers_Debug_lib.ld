@@ -3,7 +3,7 @@
  * (C) Code Red Technologies Ltd, 2008-2013
  * Generated linker script file for LPC1768
  * Created from LibIncTemplate.ld (vRed Suite v5.1 (2 [Build 2065] [2013-02-20] ))
- * By Red Suite v5.1.2 [Build 2065] [2013-02-20]  on Sun Apr 14 17:02:54 CEST 2013
+ * By Red Suite v5.1.2 [Build 2065] [2013-02-20]  on Sun Apr 14 20:17:21 CEST 2013
  */
 
 

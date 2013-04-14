@@ -154,5 +154,12 @@ uint16_t nvm_readsubtype( void );
 char * nvm_read12nc( void );
 void nvm_detecttest( void );
 
+typedef struct
+{
+	float temp;
+	float lux;
+	float hum;
+
+} sensor_readings;
 
 #endif /* SENSOR_H_ */

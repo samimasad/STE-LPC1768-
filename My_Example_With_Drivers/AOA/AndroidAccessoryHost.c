@@ -48,7 +48,9 @@
 #include "lpc17xx_timer.h"
 #include "lpc17xx_gpio.h"
 #include "board.h"
-
+#include "FreeRTOS.h"
+#include "queue.h"
+#include "sensor.h"
 /******************************************************************************
  * Defines and typedefs
  *****************************************************************************/
@@ -202,9 +204,15 @@ void AndroidHost_Task(void) {
 
 void Monitor_Task(void) {
 
-	int8_t data[2];
-	static int8_t counter1 = 0 ;
-	static int8_t counter2 = 100 ;
+
+	extern xQueueHandle queuToUSB ;
+	sensor_readings sensor_data;
+	//xQueueReceive(queuToUSB,&sensor_data,portMAX_DELAY);
+	//console_uart_sendString("Monitor_Task\r\n");
+
+
+
+
 	if (!connected || attachedCoreNum == -1) {
 			return;
 		}
@@ -214,29 +222,17 @@ void Monitor_Task(void) {
 		connected = 0;
 		return;
 	}
-
-	if(counter1 > 100 )
+	if(connected)
 	{
-		counter1 = 0;
-		counter2 = 99 ;
-
-
+		xQueueReceive(queuToUSB,&sensor_data,1000);
+		sendCommand(attachedCoreNum, CMD_SENDTEMP, &sensor_data.temp, 4);
+		vTaskDelay(10);
+		sendCommand(attachedCoreNum, CMD_SENDLIGHT, &sensor_data.lux, 4);
+		vTaskDelay(10);
+		sendCommand(attachedCoreNum, CMD_SENDHUM, &sensor_data.hum, 4);
+		vTaskDelay(10);
+		console_uart_sendString("\r\nsending Data\r\n");
 	}
-	data[0] = counter1;
-	data[1] = counter2;
-	sendCommand(attachedCoreNum, CMD_SENDTEMP, data, 2);
-	vTaskDelay(200);
-	data[0] = counter2;
-	data[1] = counter1;
-	sendCommand(attachedCoreNum, CMD_SENDLIGHT, data, 2);
-	vTaskDelay(200);
-	data[0] = counter1/2;
-	data[1] = counter2/2;
-	sendCommand(attachedCoreNum, CMD_SENDHUM, data, 2);
-	vTaskDelay(200);
-	counter1++;
-	counter2++;
-	console_uart_sendString("sending Data\r\n");
 
 
 #if 0

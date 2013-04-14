@@ -82,6 +82,12 @@ extern void  vSensorTask(void *pvParameters);
 /* Enable the software interrupt and set its priority. */
 static void prvSetupSoftwareInterrupt();
 
+
+//Global Queues
+xQueueHandle queuToLCD ;
+xQueueHandle queuToUSB ;
+#define QUEUE_LENGTH		20
+
 /* The service routine for the interrupt.  This is the interrupt that the
 task will be synchronized with. */
 void vSoftwareInterruptHandler( void );
@@ -109,6 +115,8 @@ int main( void )
 	//make a task for UART
 
 	char ip_address[32];
+	queuToLCD = xQueueCreate(QUEUE_LENGTH,3*4);
+	queuToUSB = xQueueCreate(QUEUE_LENGTH,3*4);
 
 	LCD_Init();
 
@@ -137,8 +145,8 @@ int main( void )
 
 	//xTaskCreate( usb_host_main, ( signed char * ) "USB_Device", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY+3, NULL );
 	//xTaskCreate( vZigbeeTask, ( signed char * ) "Zigbee", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
-	//xTaskCreate( vAOATask, ( signed char * ) "AOA_Device", mainBASIC_WEB_STACK_SIZE*4, ( void * ) NULL, mainUIP_TASK_PRIORITY/*configMAX_PRIORITIES-1*/, NULL );
-	xTaskCreate( vSensorTask, ( signed char * ) "SensorTask", mainBASIC_WEB_STACK_SIZE*2, ( void * ) NULL, mainUIP_TASK_PRIORITY/*configMAX_PRIORITIES-1*/, NULL );
+	xTaskCreate( vAOATask, ( signed char * ) "AOA_Device", mainBASIC_WEB_STACK_SIZE*4, ( void * ) NULL, mainUIP_TASK_PRIORITY/*configMAX_PRIORITIES-1*/, NULL );
+	xTaskCreate( vSensorTask, ( signed char * ) "SensorTask", mainBASIC_WEB_STACK_SIZE*2, ( void * ) NULL, mainUIP_TASK_PRIORITY-1/*configMAX_PRIORITIES-1*/, NULL );
 	console_uart_sendString("Starting the Scheduler\n\r");
 	vTaskStartScheduler();
 

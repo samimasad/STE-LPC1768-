@@ -15,6 +15,7 @@
 #include "sensor.h"
 #include "board.h"
 #include "FreeRTOS.h"
+#include "queue.h"
 #define MAX_UARTMESS_LEN     256
 
 #define TYPE_TEMP            1
@@ -45,7 +46,9 @@ char  buf[40];
 int CurAlsSensor, CurRhSensor;
 
 int nvmindex = -1;
-
+//Global Queues
+extern xQueueHandle queuToLCD ;
+extern xQueueHandle queuToUSB ;
 
 // --------------------------------------------------------------------------
 // Float printing
@@ -226,7 +229,7 @@ void vSensorTask1( void *pvParameters ){
 	  } else {
 		for (AlsSensor=0; AlsSensor<12; AlsSensor++ ) sendAls( AlsSensor, 0 );
 	  }
-	  vTaskDelay(10);
+	  vTaskDelay(100);
   }
   // Switch off Sensor
   //sensor_inactive();
@@ -595,7 +598,7 @@ void vSensorTask( void *pvParameters ){
 	 int negative;
 	 float temp;
 	  float humi;
-
+	 sensor_readings readings ;
 	    float lux;
 	 console_uart_sendString("\r\nsensor_init\r\n");
 	 sensor_init();
@@ -677,7 +680,15 @@ while(1){
 	      //modem_debug( buf );
 	      console_uart_sendString(buf);
 
-	     vTaskDelay(1);
+	     vTaskDelay(500);
+	     extern xQueueHandle queuToLCD ;
+	     extern xQueueHandle queuToUSB ;
+	     readings.hum = humi ;
+	     readings.lux = lux ;
+	     readings.temp = temp ;
+	    xQueueSend(queuToLCD,&readings,portMAX_DELAY);
+	    xQueueSend(queuToUSB,&readings,portMAX_DELAY);
+
 
 
 
