@@ -127,6 +127,7 @@ int main( void )
 	sprintf(ip_address , "IP Address: %d.%d.%d.%d",configIP_ADDR0,configIP_ADDR1,configIP_ADDR2,configIP_ADDR3);
 
 	LCD_PrintText(ip_address);
+	//vTaskDelay(1000);
 
 
 
@@ -145,7 +146,7 @@ int main( void )
 
 	//xTaskCreate( usb_host_main, ( signed char * ) "USB_Device", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY+3, NULL );
 	//xTaskCreate( vZigbeeTask, ( signed char * ) "Zigbee", mainBASIC_WEB_STACK_SIZE, ( void * ) NULL, mainUIP_TASK_PRIORITY, NULL );
-	xTaskCreate( vAOATask, ( signed char * ) "AOA_Device", mainBASIC_WEB_STACK_SIZE*4, ( void * ) NULL, mainUIP_TASK_PRIORITY/*configMAX_PRIORITIES-1*/, NULL );
+	//xTaskCreate( vAOATask, ( signed char * ) "AOA_Device", mainBASIC_WEB_STACK_SIZE*4, ( void * ) NULL, mainUIP_TASK_PRIORITY/*configMAX_PRIORITIES-1*/, NULL );
 	xTaskCreate( vSensorTask, ( signed char * ) "SensorTask", mainBASIC_WEB_STACK_SIZE*2, ( void * ) NULL, mainUIP_TASK_PRIORITY-1/*configMAX_PRIORITIES-1*/, NULL );
 	console_uart_sendString("Starting the Scheduler\n\r");
 	vTaskStartScheduler();

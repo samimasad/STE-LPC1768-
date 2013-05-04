@@ -123,16 +123,16 @@ int lcd_entry(void)
 	//LCD_PrintText("Sen300");
 	extern xQueueHandle queuToLCD ;
 	sensor_readings sensor_data;
-
+	LCD_ClearScreen();
     //vTaskDelete(NULL);
     /* Loop forever */
         while(1)
         	{
-        	LCD_ClearScreen();
+        	xQueueReceive(queuToLCD,&sensor_data,portMAX_DELAY);
+        	//LCD_ClearScreen();
         	 //vTaskDelay(5);
         	 //LCD_PrintText("Testing");
-        	xQueueReceive(queuToLCD,&sensor_data,portMAX_DELAY);
-        	sprintf( buf, "Sen300 T:%f.3 H:%f.3 L:%f.3", sensor_data.temp,sensor_data.hum,sensor_data.lux );
+        	sprintf( buf, "Sen T:%.2f H:%.2f L:%.2f", sensor_data.temp,sensor_data.hum,sensor_data.lux );
         	LCD_PrintText(buf);
         	vTaskDelay(10);
         	}

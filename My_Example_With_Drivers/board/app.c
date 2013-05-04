@@ -23,7 +23,7 @@
 #define TYPE_ALS             3
 
 #define APP_NAME             "LPC 17xx AOA Demo"
-
+#define QUEUEWAIT_MS				 1000
 // --------------------------------------------------------------------------
 // Global variables
 // --------------------------------------------------------------------------
@@ -686,8 +686,10 @@ while(1){
 	     readings.hum = humi ;
 	     readings.lux = lux ;
 	     readings.temp = temp ;
-	    xQueueSend(queuToLCD,&readings,portMAX_DELAY);
-	    xQueueSend(queuToUSB,&readings,portMAX_DELAY);
+	    //xQueueSend(queuToLCD,&readings,portMAX_DELAY);
+	    //xQueueSend(queuToUSB,&readings,portMAX_DELAY);
+	    xQueueSend(queuToLCD,&readings,QUEUEWAIT_MS*portTICK_RATE_MS);
+	    xQueueSend(queuToUSB,&readings,QUEUEWAIT_MS*portTICK_RATE_MS);
 
 
 
